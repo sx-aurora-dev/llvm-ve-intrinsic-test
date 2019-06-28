@@ -1,2 +1,3 @@
-gen/tests/*.s
-tests/*.s
+gen/tests/*.[so]
+tests/*.[so]
+gen/ref.o
