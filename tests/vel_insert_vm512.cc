@@ -1,52 +1,48 @@
 #ifdef __clang__
-#include <veintrin.h>
+#include <velintrin.h>
 
-void ve_insert_vm512u(unsigned long int *pvx, 
+void vel_insert_vm512u(unsigned long int *pvx, 
                       unsigned long int const* pvz0,
                       unsigned int const* pvz1)
 {
-    _ve_lvl(256);
+    __vr vz0 = _vel_vld_vssl(8, pvz0, 256);
+    __vm vm0 = _vel_vfmklgt_mvl(vz0, 256);
 
-    __vr vz0 = _ve_vld_vss(8, pvz0);
-    __vm vm0 = _ve_vfmkl_mcv(VECC_G, vz0);
+    __vr vz1 = _vel_vld_vssl(8, pvz1, 256);
+    __vm512 vm1 = _vel_pvfmkwgt_Mvl(vz1, 256);
 
-    __vr vz1 = _ve_vld_vss(8, pvz1);
-    __vm512 vm1 = _ve_pvfmkw_Mcv(VECC_G, vz1);
+    __vm512 vmx = _vel_insert_vm512u(vm1, vm0);
 
-    __vm512 vmx = _ve_insert_vm512u(vm1, vm0);
-
-    pvx[0] = _ve_svm_sMs(vmx, 0);
-    pvx[1] = _ve_svm_sMs(vmx, 1);
-    pvx[2] = _ve_svm_sMs(vmx, 2);
-    pvx[3] = _ve_svm_sMs(vmx, 3);
-    pvx[4] = _ve_svm_sMs(vmx, 4);
-    pvx[5] = _ve_svm_sMs(vmx, 5);
-    pvx[6] = _ve_svm_sMs(vmx, 6);
-    pvx[7] = _ve_svm_sMs(vmx, 7);
+    pvx[0] = _vel_svm_sMs(vmx, 0);
+    pvx[1] = _vel_svm_sMs(vmx, 1);
+    pvx[2] = _vel_svm_sMs(vmx, 2);
+    pvx[3] = _vel_svm_sMs(vmx, 3);
+    pvx[4] = _vel_svm_sMs(vmx, 4);
+    pvx[5] = _vel_svm_sMs(vmx, 5);
+    pvx[6] = _vel_svm_sMs(vmx, 6);
+    pvx[7] = _vel_svm_sMs(vmx, 7);
 }
 
-void ve_insert_vm512l(unsigned long int *pvx, 
+void vel_insert_vm512l(unsigned long int *pvx, 
                       unsigned long int const* pvz0,
                       unsigned int const* pvz1)
 {
-    _ve_lvl(256);
+    __vr vz0 = _vel_vld_vssl(8, pvz0, 256);
+    __vm vm0 = _vel_vfmklgt_mvl(vz0, 256);
 
-    __vr vz0 = _ve_vld_vss(8, pvz0);
-    __vm vm0 = _ve_vfmkl_mcv(VECC_G, vz0);
+    __vr vz1 = _vel_vld_vssl(8, pvz1, 256);
+    __vm512 vm1 = _vel_pvfmkwgt_Mvl(vz1, 256);
 
-    __vr vz1 = _ve_vld_vss(8, pvz1);
-    __vm512 vm1 = _ve_pvfmkw_Mcv(VECC_G, vz1);
+    __vm512 vmx = _vel_insert_vm512l(vm1, vm0);
 
-    __vm512 vmx = _ve_insert_vm512l(vm1, vm0);
-
-    pvx[0] = _ve_svm_sMs(vmx, 0);
-    pvx[1] = _ve_svm_sMs(vmx, 1);
-    pvx[2] = _ve_svm_sMs(vmx, 2);
-    pvx[3] = _ve_svm_sMs(vmx, 3);
-    pvx[4] = _ve_svm_sMs(vmx, 4);
-    pvx[5] = _ve_svm_sMs(vmx, 5);
-    pvx[6] = _ve_svm_sMs(vmx, 6);
-    pvx[7] = _ve_svm_sMs(vmx, 7);
+    pvx[0] = _vel_svm_sMs(vmx, 0);
+    pvx[1] = _vel_svm_sMs(vmx, 1);
+    pvx[2] = _vel_svm_sMs(vmx, 2);
+    pvx[3] = _vel_svm_sMs(vmx, 3);
+    pvx[4] = _vel_svm_sMs(vmx, 4);
+    pvx[5] = _vel_svm_sMs(vmx, 5);
+    pvx[6] = _vel_svm_sMs(vmx, 6);
+    pvx[7] = _vel_svm_sMs(vmx, 7);
 }
 #endif
 
@@ -55,15 +51,15 @@ void ve_insert_vm512l(unsigned long int *pvx,
 #include <cstdlib>
 #include <cstring>
 
-extern void ve_insert_vm512u(unsigned long int *pvx, 
+extern void vel_insert_vm512u(unsigned long int *pvx, 
                              unsigned long int const* pvz0,
                              unsigned int const* pvz1);
-extern void ve_insert_vm512l(unsigned long int *pvx, 
+extern void vel_insert_vm512l(unsigned long int *pvx, 
                              unsigned long int const* pvz0,
                              unsigned int const* pvz1);
 
 // c=1: upper, c=0: lower
-static int test_ve_insert_vm512(int c)
+static int test_vel_insert_vm512(int c)
 {
     unsigned long int pvz0[256];
     unsigned int pvz1[512];
@@ -104,9 +100,9 @@ static int test_ve_insert_vm512(int c)
 #endif
 
     if (c == 1) {
-        ve_insert_vm512u(pvx1, pvz0, pvz1);
+        vel_insert_vm512u(pvx1, pvz0, pvz1);
     } else {
-        ve_insert_vm512l(pvx1, pvz0, pvz1);
+        vel_insert_vm512l(pvx1, pvz0, pvz1);
     }
 
 #if 0
@@ -136,25 +132,32 @@ static int test_ve_insert_vm512(int c)
 #ifdef MAIN
     fprintf(stderr, "%s: %s\n", __FUNCTION__, flag ? "OK" : "NG");
 #endif
+
     return flag;
 }
 
-int test_ve_insert_vm512u()
+int test_vel_insert_vm512u()
 {
-    return test_ve_insert_vm512(1);
+    return test_vel_insert_vm512(1);
 }
 
-int test_ve_insert_vm512l()
+int test_vel_insert_vm512l()
 {
-    return test_ve_insert_vm512(0);
+    return test_vel_insert_vm512(0);
 }
-#endif
+
+#ifdef HAVE_REGISTER_TEST
+#include "register_test.h"
+REGISTER_TEST("vel_insert_vm512u", test_vel_insert_vm512u);
+REGISTER_TEST("vel_insert_vm512l", test_vel_insert_vm512l);
+#endif // HAVE_REGISTER_TEST
+#endif // TEST
 
 #ifdef MAIN
 int main(int argc, char* argv[])
 {
-    test_ve_insert_vm512u();
-    test_ve_insert_vm512l();
+    test_vel_insert_vm512u();
+    test_vel_insert_vm512l();
     return 0;
 }
 #endif
