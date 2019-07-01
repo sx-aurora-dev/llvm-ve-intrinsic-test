@@ -5659,33 +5659,39 @@ void vcvtsd_vvvl(float* pvx, double* pvy, float* pvd, int n)
         pvx[i] = (float)pvy[i];
     }
 }
-void vmrg_vvvml(unsigned long int* px, unsigned long int* py, unsigned long int* pz, unsigned int* pm, int n)
+void vmrg_vvvml(unsigned long int* pvx, unsigned long int* pvy, unsigned long int* pvz, unsigned int* pvm, int n)
 {
     for (int i = 0; i < n; ++i) {
-        px[i] = pm[i] > 0 ? pz[i] : py[i];
+        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
     }
 }
-void vmrg_vvvmvl(unsigned long int* px, unsigned long int* py, unsigned long int* pz, unsigned int* pm, int n)
+void vmrg_vvvmvl(unsigned long int* pvx, unsigned long int* pvy, unsigned long int* pvz, unsigned int* pvm, unsigned long int* pvd, int n)
 {
     for (int i = 0; i < n; ++i) {
-        px[i] = pm[i] > 0 ? pz[i] : py[i];
+        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
     }
 }
-void vmrgw_vvvMl(unsigned int* px, unsigned int* py, unsigned int* pz, unsigned int* pm, int n)
+void vmrgw_vvvMl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, int n)
 {
     for (int i = 0; i < n; ++i) {
-        px[i] = pm[i] > 0 ? pz[i] : py[i];
+        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
     }
 }
-void vmrgw_vvvMvl(unsigned int* px, unsigned int* py, unsigned int* pz, unsigned int* pm, int n)
+void vmrgw_vvvMvl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, unsigned int* pvd, int n)
 {
     for (int i = 0; i < n; ++i) {
-        px[i] = pm[i] > 0 ? pz[i] : py[i];
+        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
     }
 }
 void andm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     for (int i = 0; i < 4; ++i)
+        px[i] = py[i] & pz[i];
+}
+
+void andm_MMMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+{
+    for (int i = 0; i < 8; ++i)
         px[i] = py[i] & pz[i];
 }
 
@@ -5695,9 +5701,21 @@ void orm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long 
         px[i] = py[i] | pz[i];
 }
 
+void orm_MMMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+{
+    for (int i = 0; i < 8; ++i)
+        px[i] = py[i] | pz[i];
+}
+
 void xorm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     for (int i = 0; i < 4; ++i)
+        px[i] = py[i] ^ pz[i];
+}
+
+void xorm_MMMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+{
+    for (int i = 0; i < 8; ++i)
         px[i] = py[i] ^ pz[i];
 }
 
@@ -5707,15 +5725,33 @@ void eqvm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long
         px[i] = ~(py[i] ^ pz[i]);
 }
 
+void eqvm_MMMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+{
+    for (int i = 0; i < 8; ++i)
+        px[i] = ~(py[i] ^ pz[i]);
+}
+
 void nndm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     for (int i = 0; i < 4; ++i)
         px[i] = (~py[i]) & pz[i];
 }
 
+void nndm_MMMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+{
+    for (int i = 0; i < 8; ++i)
+        px[i] = (~py[i]) & pz[i];
+}
+
 void negm_mml(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     for (int i = 0; i < 4; ++i)
+        px[i] = ~py[i];
+}
+
+void negm_MMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+{
+    for (int i = 0; i < 8; ++i)
         px[i] = ~py[i];
 }
 
