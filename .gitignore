@@ -1,3 +1,4 @@
 gen/tests/*.[so]
+gen/tests/*.ll
 tests/*.[so]
 gen/ref.o
