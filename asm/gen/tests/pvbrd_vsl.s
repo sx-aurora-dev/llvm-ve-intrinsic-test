@@ -35,7 +35,6 @@ pvbrd_vsl:
 	cmov.w.lt %s40, %s38, %s39
 	lvl %s40
 	pvbrd %v0,%s1
-	lvl %s40
 	vst %v0,8,%s0
 	lea %s0, 2048(%s0)
 	lea %s34, 512(%s34)
@@ -52,5 +51,5 @@ pvbrd_vsl:
 	.size	pvbrd_vsl, .Lfunc_end0-pvbrd_vsl
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 4422c49f6a312b83b13345928bc987dfdbf803be) (llvm/llvm.git b11fc090e9c501417933be968463aa9dc5df08db)"
+	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 166ce7eaa48ef1c8891ad1012b2f5819d7674e19) (llvm/llvm.git 538e6ca3317a129b1e492a725935d84bb0a64c7f)"
 	.section	".note.GNU-stack","",@progbits

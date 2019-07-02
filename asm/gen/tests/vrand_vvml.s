@@ -52,5 +52,5 @@ vrand_vvml:
 	.size	vrand_vvml, .Lfunc_end0-vrand_vvml
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 4422c49f6a312b83b13345928bc987dfdbf803be) (llvm/llvm.git 0ea33cd75eea79cf423e48dbfb8626e6786986f0)"
+	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 166ce7eaa48ef1c8891ad1012b2f5819d7674e19) (llvm/llvm.git 538e6ca3317a129b1e492a725935d84bb0a64c7f)"
 	.section	".note.GNU-stack","",@progbits

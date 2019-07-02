@@ -25,7 +25,6 @@ lvsl_svs:
 	lea %s34, 256
 	lvl %s34
 	vld %v0,8,%s0
-	lvl %s1
 	lvs %s0,%v0(%s1)
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -61,7 +60,6 @@ lvsd_svs:
 	lea %s34, 256
 	lvl %s34
 	vld %v0,8,%s0
-	lvl %s1
 	lvs %s0,%v0(%s1)
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -97,7 +95,6 @@ lvss_svs:
 	lea %s34, 256
 	lvl %s34
 	vldu %v0,4,%s0
-	lvl %s1
 	lvs %s0,%v0(%s1)
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -109,5 +106,5 @@ lvss_svs:
 	.size	lvss_svs, .Lfunc_end2-lvss_svs
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 4422c49f6a312b83b13345928bc987dfdbf803be) (llvm/llvm.git 0ea33cd75eea79cf423e48dbfb8626e6786986f0)"
+	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 166ce7eaa48ef1c8891ad1012b2f5819d7674e19) (llvm/llvm.git 538e6ca3317a129b1e492a725935d84bb0a64c7f)"
 	.section	".note.GNU-stack","",@progbits
