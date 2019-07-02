@@ -19,7 +19,7 @@ CLANG_OPT = -target ve -O3 -fno-vectorize -fno-slp-vectorize -fno-crash-diagnost
 %.o: %.c
 
 %.o: %.cc
-	$(NCC) -o $@ -c $<
+	$(NCC) -o $@ -c $< -fdiag-vector=0
 
 %.ll: %.c
 	$(CLANG) -o $@ $(CLANG_OPT) -I. -S -emit-llvm $<
@@ -29,7 +29,7 @@ CLANG_OPT = -target ve -O3 -fno-vectorize -fno-slp-vectorize -fno-crash-diagnost
 
 gen/tests/%.o: gen/tests/%.c
 	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
-	$(NCC) -o $@ -c $(<:.c=.s)
+	$(NCC) -o $@ -c $(<:.c=.s) -fdiag-vector=0
 
 tests/%.s: tests/%.c
 	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
@@ -39,17 +39,17 @@ tests/%.s: tests/%.cc
 
 tests/%.o: tests/%.c
 	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
-	$(NCC) -o $@ -c $(<:.c=.s)
+	$(NCC) -o $@ -c $(<:.c=.s) -fdiag-vector=0
 
 tests/%.o: tests/%.cc
 	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
-	$(NCC) -o $@ -c $(<:.cc=.s)
+	$(NCC) -o $@ -c $(<:.cc=.s) -fdiag-vector=0
 
 tests/%_test.o: tests/%.c
-	$(NCC) -o $@ -DTEST -DHAVE_REGISTER_TEST -c $<
+	$(NCC) -o $@ -DTEST -DHAVE_REGISTER_TEST -c $< -fdiag-vector=0
 
 tests/%_test.o: tests/%.cc
-	$(NCC) -o $@ -DTEST -DHAVE_REGISTER_TEST -c $<
+	$(NCC) -o $@ -DTEST -DHAVE_REGISTER_TEST -c $< -fdiag-vector=0
 
 TEST_SOURCES = $(wildcard gen/tests/*.c)
 
@@ -69,7 +69,7 @@ all: test.ve # test-asm
 ll: $(TEST_SOURCES:.c=.ll)
 
 test.ve: $(TEST_OBJECTS) main.cc gen/ref.o
-	$(NCXX) -o $@ $^ -no-proginf -no-perfcnt
+	$(NCXX) -o $@ $^ -no-proginf -no-perfcnt -fdiag-vector=0
 
 test-asm: $(TEST_ASMS)
 	@for f in $(TEST_ASMS); \

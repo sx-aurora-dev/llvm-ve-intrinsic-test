@@ -1,5 +1,5 @@
 #include <velintrin.h>
-void negm_MMl(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+void nndm_MMM(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     __vm512 vmx, vmy, vmz;
     vmy = _vel_lvm_MMss(vmy, 0, py[0]);
@@ -20,7 +20,7 @@ void negm_MMl(unsigned long int* px, unsigned long int const* py, unsigned long 
     vmz = _vel_lvm_MMss(vmz, 7, pz[7]);
 
     int vl = 256;
-    vmx = _vel_negm_MMl(vmy, vl);
+    vmx = _vel_nndm_MMM(vmy, vmz);
 
     px[0] = _vel_svm_sMs(vmx, 0);
     px[1] = _vel_svm_sMs(vmx, 1);

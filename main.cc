@@ -1108,20 +1108,20 @@ struct Test
 
     // 5.3.2.15. Vector Mask Register Instructions
 
-    IntrinsicTest(andm_mmml, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(orm_mmml, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(xorm_mmml, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(eqvm_mmml, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(nndm_mmml, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(negm_mml, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(andm_mmm, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(orm_mmm, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(xorm_mmm, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(eqvm_mmm, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(nndm_mmm, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(negm_mm, test_3x_vvv<unsigned long int>, &TD_u64),
 
 #if 1
-    IntrinsicTest(andm_MMMl, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(orm_MMMl, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(xorm_MMMl, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(eqvm_MMMl, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(nndm_MMMl, test_3x_vvv<unsigned long int>, &TD_u64),
-    IntrinsicTest(negm_MMl, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(andm_MMM, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(orm_MMM, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(xorm_MMM, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(eqvm_MMM, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(nndm_MMM, test_3x_vvv<unsigned long int>, &TD_u64),
+    IntrinsicTest(negm_MM, test_3x_vvv<unsigned long int>, &TD_u64),
 #endif
 
     // 5.3.2.13. Vector Recursive Relation Instructions

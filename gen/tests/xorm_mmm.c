@@ -1,5 +1,5 @@
 #include <velintrin.h>
-void xorm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
+void xorm_mmm(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     __vm vmx, vmy, vmz;
     vmy = _vel_lvm_mmss(vmy, 0, py[0]);
@@ -12,7 +12,7 @@ void xorm_mmml(unsigned long int* px, unsigned long int const* py, unsigned long
     vmz = _vel_lvm_mmss(vmz, 3, pz[3]);
 
     int vl = 256;
-    vmx = _vel_xorm_mmml(vmy, vmz, vl);
+    vmx = _vel_xorm_mmm(vmy, vmz);
 
     px[0] = _vel_svm_sms(vmx, 0);
     px[1] = _vel_svm_sms(vmx, 1);
