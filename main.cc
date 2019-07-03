@@ -489,7 +489,7 @@ double test_4p_vvsvmv(Test* test, double& sa, double& sb)
     return diff(data->v[0], data->v[1], data->n, sa, sb);
 }
 
-#define IntrinsicTest(name, func, data) {"_ve_"#name, (void*)name, (void*)ref::name, func, data}
+#define IntrinsicTest(name, func, data) {"_vel_"#name, (void*)name, (void*)ref::name, func, data}
 
 #define I_3f64(name) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<double>, &TD_f64), \
@@ -1093,6 +1093,7 @@ struct Test
     IntrinsicTest(vcvtds_vvl, (test_cvt<double, float>), &TD_f64_f32),
     IntrinsicTest(vcvtsd_vvl, (test_cvt<float, double>), &TD_f32_f64),
 
+    IntrinsicTest(vfdivdA_vsvl, test_3x_vsv<double>, &TD_f64),
 #if 0
     IntrinsicTest(vfdivsA_vvv, test_3x_vvv<float>, &TD_f32),
     IntrinsicTest(pvfdivA_vvv, test_3x_vvv<float>, &TD_f32),
@@ -1160,6 +1161,12 @@ struct Test
 
     //I_2f32(vec_expf),
     //I_2f64(vec_exp),
+
+    IntrinsicTest(approx_vfdivs_vvvl, test_3x_vvv<float>, &TD_f32),
+    IntrinsicTest(approx_vfdivs_vsvl, test_3x_vsv<float>, &TD_f32),
+    IntrinsicTest(approx_vfdivs_vvsl, test_3x_vvs<float>, &TD_f32),
+    IntrinsicTest(approx_vfdivd_vsvl, test_3x_vsv<double>, &TD_f64),
+    IntrinsicTest(approx_pvfdiv_vvvl, test_3x_vvv<float>, &TD_f32),
 };
 
 extern "C" {
@@ -1360,7 +1367,7 @@ bool run(Test& test, int i)
         return false;
 
     d = test.func(&test, sa, sb);
-    fprintf(stderr, "%3d %-20s %s  # diff = %8.3e (%e %e)\n", i, test.name, d < threshold ? "OK" : "NG", d, sa, sb);
+    fprintf(stderr, "%3d %-24s %s  # diff = %8.3e (%e %e)\n", i, test.name, d < threshold ? "OK" : "NG", d, sa, sb);
     return d < threshold;
 }
 

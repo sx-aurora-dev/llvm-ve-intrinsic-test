@@ -4077,6 +4077,20 @@ void vfdivs_vsvmvl(float* pvx, float sy, float* pvz, unsigned int* pvm, float* p
         if (pvm[i] > 0) { pvx[i] = sy / pvz[i]; }
     }
 }
+void vfdivdA_vsvl(double* pvx, double sy, double* pvz, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sy / pvz[i];
+    }
+}
+void vfdivdA_vsvvl(double* pvx, double sy, double* pvz, double* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sy / pvz[i];
+    }
+}
 void vfsqrtd_vvl(double* pvx, double* pvy, int n)
 {
     
@@ -5755,4 +5769,74 @@ void negm_MM(unsigned long int* px, unsigned long int const* py, unsigned long i
         px[i] = ~py[i];
 }
 
+void approx_vfdivs_vvvl(float* pvx, float* pvy, float* pvz, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvy[i] / pvz[i];
+    }
+}
+void approx_vfdivs_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvy[i] / pvz[i];
+    }
+}
+void approx_vfdivs_vsvl(float* pvx, float sy, float* pvz, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sy / pvz[i];
+    }
+}
+void approx_vfdivs_vsvvl(float* pvx, float sy, float* pvz, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sy / pvz[i];
+    }
+}
+void approx_vfdivs_vvsl(float* pvx, float* pvy, float sz, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvy[i] / sz;
+    }
+}
+void approx_vfdivs_vvsvl(float* pvx, float* pvy, float sz, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvy[i] / sz;
+    }
+}
+void approx_vfdivd_vsvl(double* pvx, double sy, double* pvz, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sy / pvz[i];
+    }
+}
+void approx_vfdivd_vsvvl(double* pvx, double sy, double* pvz, double* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sy / pvz[i];
+    }
+}
+void approx_pvfdiv_vvvl(float* pvx, float* pvy, float* pvz, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvy[i] / pvz[i];
+    }
+}
+void approx_pvfdiv_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvy[i] / pvz[i];
+    }
+}
 }
