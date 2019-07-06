@@ -1,15 +1,15 @@
 	.text
-	.file	"vmv.c"
-	.globl	vmv
+	.file	"vel_vmv.cc"
+	.globl	_Z3vmvPmPKmi
 	.p2align	4
-	.type	vmv,@function
-vmv:
+	.type	_Z3vmvPmPKmi,@function
+_Z3vmvPmPKmi:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
 	st %s16, 32(,%s11)
 	or %s9, 0, %s11
-	lea %s13, -192
+	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB0_2
@@ -34,18 +34,18 @@ vmv:
 	ld %s9, (,%s11)
 	b.l (,%lr)
 .Lfunc_end0:
-	.size	vmv, .Lfunc_end0-vmv
+	.size	_Z3vmvPmPKmi, .Lfunc_end0-_Z3vmvPmPKmi
 
-	.globl	vmv_i
+	.globl	_Z5vmv_iPmPKm
 	.p2align	4
-	.type	vmv_i,@function
-vmv_i:
+	.type	_Z5vmv_iPmPKm,@function
+_Z5vmv_iPmPKm:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
 	st %s16, 32(,%s11)
 	or %s9, 0, %s11
-	lea %s13, -192
+	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB1_2
@@ -70,7 +70,7 @@ vmv_i:
 	ld %s9, (,%s11)
 	b.l (,%lr)
 .Lfunc_end1:
-	.size	vmv_i, .Lfunc_end1-vmv_i
+	.size	_Z5vmv_iPmPKm, .Lfunc_end1-_Z5vmv_iPmPKm
 
 
 	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git d467e4f0338396acbc980449a89d05f037ef4a6c) (llvm/llvm.git d49dca7a0a80fc0a3ee8f0716752ae072548b21c)"

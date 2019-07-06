@@ -1,19 +1,19 @@
 #ifdef __clang__
-#include <veintrin.h>
+#include <velintrin.h>
 void vmv(unsigned long int* p, unsigned long int const* q, int n)
 {
-    _ve_lvl(256);
-    __vr v0 = _ve_vld_vss(8, q);
-    __vr v1 = _ve_vmv_vsv(n, v0);
-    _ve_vst_vss(v1, 8, p);
+    ;
+    __vr v0 = _vel_vld_vssl(8, q, 256);
+    __vr v1 = _vel_vmv_vsvl(n, v0, 256);
+    _vel_vst_vssl(v1, 8, p, 256);
 }
 
 void vmv_i(unsigned long int* p, unsigned long int const* q)
 {
-    _ve_lvl(256);
-    __vr v0 = _ve_vld_vss(8, q);
-    __vr v1 = _ve_vmv_vsv(3, v0);
-    _ve_vst_vss(v1, 8, p);
+    ;
+    __vr v0 = _vel_vld_vssl(8, q, 256);
+    __vr v1 = _vel_vmv_vsvl(3, v0, 256);
+    _vel_vst_vssl(v1, 8, p, 256);
 }
 #endif
 
@@ -74,7 +74,13 @@ int test_vmv_vIv()
 
     return flag;
 }
+
+#ifdef HAVE_REGISTER_TEST
+#include "register_test.h"
+REGISTER_TEST("vel_vmv_vsv", test_vmv_vsv);
+REGISTER_TEST("vel_vmv_vIv", test_vmv_vIv);
 #endif
+#endif // TEST
 
 #ifdef MAIN
 int main(int argc, char* argv[])
