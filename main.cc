@@ -1052,6 +1052,9 @@ struct Test
     I_2f64(vrsqrtd),
     I_2f32(vrsqrts),
     I_2pf32(pvrsqrt),
+    I_2f64(vrsqrtdnex),
+    I_2f32(vrsqrtsnex),
+    I_2pf32(pvrsqrtnex),
 
 
     // VFIX: floating point to integer
@@ -1167,6 +1170,8 @@ struct Test
     IntrinsicTest(approx_vfdivs_vvsl, test_3x_vvs<float>, &TD_f32),
     IntrinsicTest(approx_vfdivd_vsvl, test_3x_vsv<double>, &TD_f64),
     IntrinsicTest(approx_pvfdiv_vvvl, test_3x_vvv<float>, &TD_f32),
+
+    IntrinsicTest(approx_vfsqrts_vvl, test_2x_vv<float>, &TD_f32),
 };
 
 extern "C" {

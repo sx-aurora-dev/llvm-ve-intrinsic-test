@@ -5337,6 +5337,48 @@ void pvrsqrt_vvvl(float* pvx, float* pvy, float* pvd, int n)
         pvx[i] = 1.0f / std::sqrt(pvy[i]);
     }
 }
+void vrsqrtdnex_vvl(double* pvx, double* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = 1.0f / std::sqrt(pvy[i]);
+    }
+}
+void vrsqrtdnex_vvvl(double* pvx, double* pvy, double* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = 1.0f / std::sqrt(pvy[i]);
+    }
+}
+void vrsqrtsnex_vvl(float* pvx, float* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = 1.0f / std::sqrt(pvy[i]);
+    }
+}
+void vrsqrtsnex_vvvl(float* pvx, float* pvy, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = 1.0f / std::sqrt(pvy[i]);
+    }
+}
+void pvrsqrtnex_vvl(float* pvx, float* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = 1.0f / std::sqrt(pvy[i]);
+    }
+}
+void pvrsqrtnex_vvvl(float* pvx, float* pvy, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = 1.0f / std::sqrt(pvy[i]);
+    }
+}
 void vcvtwdsx_vvl(int* pvx, double* pvy, int n)
 {
     
@@ -5837,6 +5879,20 @@ void approx_pvfdiv_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n)
     
     for (int i = 0; i < n; ++i) {
         pvx[i] = pvy[i] / pvz[i];
+    }
+}
+void approx_vfsqrts_vvl(float* pvx, float* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sqrtf(pvy[i]);
+    }
+}
+void approx_vfsqrts_vvvl(float* pvx, float* pvy, float* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = sqrtf(pvy[i]);
     }
 }
 }
