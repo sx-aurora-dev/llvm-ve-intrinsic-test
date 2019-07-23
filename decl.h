@@ -871,17 +871,12 @@ extern void nndm_MMM(unsigned long int* px, unsigned long int const* py, unsigne
 extern void negm_mm(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n);
 extern void negm_MM(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n);
 extern void approx_vfdivs_vvvl(float* pvx, float* pvy, float* pvz, int n);
-extern void approx_vfdivs_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n);
 extern void approx_vfdivs_vsvl(float* pvx, float sy, float* pvz, int n);
-extern void approx_vfdivs_vsvvl(float* pvx, float sy, float* pvz, float* pvd, int n);
 extern void approx_vfdivs_vvsl(float* pvx, float* pvy, float sz, int n);
-extern void approx_vfdivs_vvsvl(float* pvx, float* pvy, float sz, float* pvd, int n);
 extern void approx_vfdivd_vsvl(double* pvx, double sy, double* pvz, int n);
-extern void approx_vfdivd_vsvvl(double* pvx, double sy, double* pvz, double* pvd, int n);
 extern void approx_pvfdiv_vvvl(float* pvx, float* pvy, float* pvz, int n);
-extern void approx_pvfdiv_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n);
+extern void approx_vfsqrtd_vvl(double* pvx, double* pvy, int n);
 extern void approx_vfsqrts_vvl(float* pvx, float* pvy, int n);
-extern void approx_vfsqrts_vvvl(float* pvx, float* pvy, float* pvd, int n);
 extern void vec_expf_vvl(float* pvx, float* pvy, int n);
 extern void vec_expf_vvvl(float* pvx, float* pvy, float* pvd, int n);
 extern void vec_exp_vvl(double* pvx, double* pvy, int n);

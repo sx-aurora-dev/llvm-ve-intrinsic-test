@@ -1171,6 +1171,7 @@ struct Test
     IntrinsicTest(approx_vfdivd_vsvl, test_3x_vsv<double>, &TD_f64),
     IntrinsicTest(approx_pvfdiv_vvvl, test_3x_vvv<float>, &TD_f32),
 
+    IntrinsicTest(approx_vfsqrtd_vvl, test_2x_vv<double>, &TD_f64),
     IntrinsicTest(approx_vfsqrts_vvl, test_2x_vv<float>, &TD_f32),
 };
 

@@ -5818,21 +5818,7 @@ void approx_vfdivs_vvvl(float* pvx, float* pvy, float* pvz, int n)
         pvx[i] = pvy[i] / pvz[i];
     }
 }
-void approx_vfdivs_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvy[i] / pvz[i];
-    }
-}
 void approx_vfdivs_vsvl(float* pvx, float sy, float* pvz, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = sy / pvz[i];
-    }
-}
-void approx_vfdivs_vsvvl(float* pvx, float sy, float* pvz, float* pvd, int n)
 {
     
     for (int i = 0; i < n; ++i) {
@@ -5846,21 +5832,7 @@ void approx_vfdivs_vvsl(float* pvx, float* pvy, float sz, int n)
         pvx[i] = pvy[i] / sz;
     }
 }
-void approx_vfdivs_vvsvl(float* pvx, float* pvy, float sz, float* pvd, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvy[i] / sz;
-    }
-}
 void approx_vfdivd_vsvl(double* pvx, double sy, double* pvz, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = sy / pvz[i];
-    }
-}
-void approx_vfdivd_vsvvl(double* pvx, double sy, double* pvz, double* pvd, int n)
 {
     
     for (int i = 0; i < n; ++i) {
@@ -5874,21 +5846,14 @@ void approx_pvfdiv_vvvl(float* pvx, float* pvy, float* pvz, int n)
         pvx[i] = pvy[i] / pvz[i];
     }
 }
-void approx_pvfdiv_vvvvl(float* pvx, float* pvy, float* pvz, float* pvd, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvy[i] / pvz[i];
-    }
-}
-void approx_vfsqrts_vvl(float* pvx, float* pvy, int n)
+void approx_vfsqrtd_vvl(double* pvx, double* pvy, int n)
 {
     
     for (int i = 0; i < n; ++i) {
         pvx[i] = sqrtf(pvy[i]);
     }
 }
-void approx_vfsqrts_vvvl(float* pvx, float* pvy, float* pvd, int n)
+void approx_vfsqrts_vvl(float* pvx, float* pvy, int n)
 {
     
     for (int i = 0; i < n; ++i) {

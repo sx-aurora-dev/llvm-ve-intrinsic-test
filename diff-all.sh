@@ -4,7 +4,8 @@ error=
 
 for f in gen/tests/*.s tests/*.s
 do
-        echo $f
+        printf "%-30s\r" $f
+        #echo $f
         if test -f asm/$f; then
                 #./diff.sh asm/$f $f || exit
                 ./diff.sh asm/$f $f || error="$error $f"
