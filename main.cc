@@ -10,6 +10,12 @@ extern "C" {
 #undef max
 #undef min
 void register_test(char const* name, int (*func)(void));
+
+void vmrg_vvvml(unsigned long int* pvx, unsigned long int* pvy, unsigned long int* pvz, unsigned int* pvm, int n);
+void vmrg_vsvml(unsigned long int* pvx, unsigned long int sy, unsigned long int* pvz, unsigned int* pvm, int n);
+void vmrg_vIvml(unsigned long int* pvx, unsigned long int sy, unsigned long int* pvz, unsigned int* pvm, int n);
+void vmrgw_vvvMl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, int n);
+void vmrgw_vsvMl(unsigned int* pvx, unsigned long int sy, unsigned int* pvz, unsigned int* pvm, int n);
 }
 
 namespace ref {
@@ -855,9 +861,13 @@ static double test_3p_vsvm(Test* test, double& sa, double& sb)
     TestData<T>* data = (TestData<T>*)test->data;
     typedef void(*F)(T*, unsigned long int, T*, unsigned int*, int);
 
+#if 0
     T sy0 = data->v[2][0];
     unsigned long int sy = *(unsigned long int*)&sy0;
     sy = sy << 32 | (sy & 0xffffffff);
+#else
+    unsigned long int sy = *(unsigned long int*)data->v[2];
+#endif
 
     ((F)test->f0)(data->v[0], sy, data->v[3], data->mask, data->n);
     ((F)test->f1)(data->v[1], sy, data->v[3], data->mask, data->n);
@@ -879,6 +889,13 @@ void vmrg_vsvml(unsigned long int* pvx, unsigned long int sy, unsigned long int*
     }
 }
 
+void vmrg_vIvml(unsigned long int* pvx, unsigned long int sy, unsigned long int* pvz, unsigned int* pvm, int n)
+{
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvm[i] > 0 ? pvz[i] : 3;
+    }
+}
+
 void vmrgw_vvvMl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, int n)
 {
     for (int i = 0; i < n; ++i) {
@@ -888,9 +905,10 @@ void vmrgw_vvvMl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsign
 
 void vmrgw_vsvMl(unsigned int* pvx, unsigned long int sy, unsigned int* pvz, unsigned int* pvm, int n)
 {
-    unsigned int sy0 = *(unsigned int*)&sy;
+    //unsigned int sy0 = *(unsigned int*)&sy;
+    unsigned int* sy0 = (unsigned int*)&sy;
     for (int i = 0; i < n; ++i) {
-        pvx[i] = pvm[i] > 0 ? pvz[i] : sy0;
+        pvx[i] = pvm[i] > 0 ? pvz[i] : sy0[i%2];
     }
 }
 } // namespace ref
@@ -1160,6 +1178,7 @@ struct Test
     IntrinsicTest(vmrg_vvvml, test_3x_vvvm<unsigned long int>, &TD_i64),
     IntrinsicTest(vmrgw_vvvMl, test_3x_vvvm<unsigned int>, &TD_u32),
     IntrinsicTest(vmrg_vsvml, test_3x_vsvm<unsigned long int>, &TD_i64),
+    IntrinsicTest(vmrg_vIvml, test_3x_vsvm<unsigned long int>, &TD_i64),
     IntrinsicTest(vmrgw_vsvMl, test_3p_vsvm<unsigned int>, &TD_u32),
     //IntrinsicTest(vmrgw_vvvM, test_vmrg<unsigned int>, &TD_i32),
     {"_ve_vshf_vvvsl", (void*)vshf_vvvsl, NULL, test_vshf_vvvs, &TD_u64},
