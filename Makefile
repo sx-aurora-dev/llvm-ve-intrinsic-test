@@ -1,8 +1,8 @@
 VE = /opt/nec/ve
 #NCC = $(VE)/bin/ncc
 #NCXX = $(VE)/bin/nc++
-NCC = $(VE)/bin/ncc-2.3.0
-NCXX = $(VE)/bin/nc++-2.3.0
+NCC = $(VE)/bin/ncc-2.3.1
+NCXX = $(VE)/bin/nc++-2.3.1
 
 ifneq ($(LLVM_DIR),)
 CLANG ?= $(LLVM_DIR)/bin/clang
