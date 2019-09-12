@@ -70,10 +70,10 @@ _Z9vel_vst2dPdmPv:
 .Lfunc_end1:
 	.size	_Z9vel_vst2dPdmPv, .Lfunc_end1-_Z9vel_vst2dPdmPv
 
-	.globl	_Z10vel_vldu2dPfmPKv
+	.globl	_Z15vel_vst2d_vssmlPdmPvPj
 	.p2align	4
-	.type	_Z10vel_vldu2dPfmPKv,@function
-_Z10vel_vldu2dPfmPKv:
+	.type	_Z15vel_vst2d_vssmlPdmPvPj,@function
+_Z15vel_vst2d_vssmlPdmPvPj:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -94,8 +94,10 @@ _Z10vel_vldu2dPfmPKv:
 .LBB2_2:
 	lea %s34, 256
 	lvl %s34
-	vldu2d %v0,%s1,%s2
-	vstu %v0,4,%s0
+	vld %v0,8,%s0
+	vldl.sx %v1,4,%s3
+	vfmk.w.gt %vm1,%v1
+	vst2d %v0,%s1,%s2,%vm1
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -103,12 +105,12 @@ _Z10vel_vldu2dPfmPKv:
 	ld %s9, (,%s11)
 	b.l (,%lr)
 .Lfunc_end2:
-	.size	_Z10vel_vldu2dPfmPKv, .Lfunc_end2-_Z10vel_vldu2dPfmPKv
+	.size	_Z15vel_vst2d_vssmlPdmPvPj, .Lfunc_end2-_Z15vel_vst2d_vssmlPdmPvPj
 
-	.globl	_Z10vel_vstu2dPfmPv
+	.globl	_Z10vel_vldu2dPfmPKv
 	.p2align	4
-	.type	_Z10vel_vstu2dPfmPv,@function
-_Z10vel_vstu2dPfmPv:
+	.type	_Z10vel_vldu2dPfmPKv,@function
+_Z10vel_vldu2dPfmPKv:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -129,8 +131,8 @@ _Z10vel_vstu2dPfmPv:
 .LBB3_2:
 	lea %s34, 256
 	lvl %s34
-	vldu %v0,4,%s0
-	vstu2d %v0,%s1,%s2
+	vldu2d %v0,%s1,%s2
+	vstu %v0,4,%s0
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -138,12 +140,12 @@ _Z10vel_vstu2dPfmPv:
 	ld %s9, (,%s11)
 	b.l (,%lr)
 .Lfunc_end3:
-	.size	_Z10vel_vstu2dPfmPv, .Lfunc_end3-_Z10vel_vstu2dPfmPv
+	.size	_Z10vel_vldu2dPfmPKv, .Lfunc_end3-_Z10vel_vldu2dPfmPKv
 
-	.globl	_Z12vel_vldl2dsxPlmPKv
+	.globl	_Z10vel_vstu2dPfmPv
 	.p2align	4
-	.type	_Z12vel_vldl2dsxPlmPKv,@function
-_Z12vel_vldl2dsxPlmPKv:
+	.type	_Z10vel_vstu2dPfmPv,@function
+_Z10vel_vstu2dPfmPv:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -164,8 +166,8 @@ _Z12vel_vldl2dsxPlmPKv:
 .LBB4_2:
 	lea %s34, 256
 	lvl %s34
-	vldl2d.sx %v0,%s1,%s2
-	vst %v0,8,%s0
+	vldu %v0,4,%s0
+	vstu2d %v0,%s1,%s2
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -173,12 +175,12 @@ _Z12vel_vldl2dsxPlmPKv:
 	ld %s9, (,%s11)
 	b.l (,%lr)
 .Lfunc_end4:
-	.size	_Z12vel_vldl2dsxPlmPKv, .Lfunc_end4-_Z12vel_vldl2dsxPlmPKv
+	.size	_Z10vel_vstu2dPfmPv, .Lfunc_end4-_Z10vel_vstu2dPfmPv
 
-	.globl	_Z12vel_vldl2dzxPmmPKv
+	.globl	_Z16vel_vstu2d_vssmlPfmPvPj
 	.p2align	4
-	.type	_Z12vel_vldl2dzxPmmPKv,@function
-_Z12vel_vldl2dzxPmmPKv:
+	.type	_Z16vel_vstu2d_vssmlPfmPvPj,@function
+_Z16vel_vstu2d_vssmlPfmPvPj:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -199,8 +201,10 @@ _Z12vel_vldl2dzxPmmPKv:
 .LBB5_2:
 	lea %s34, 256
 	lvl %s34
-	vldl2d.zx %v0,%s1,%s2
-	vst %v0,8,%s0
+	vldu %v0,4,%s0
+	vldl.sx %v1,4,%s3
+	vfmk.w.gt %vm1,%v1
+	vstu2d %v0,%s1,%s2,%vm1
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -208,12 +212,12 @@ _Z12vel_vldl2dzxPmmPKv:
 	ld %s9, (,%s11)
 	b.l (,%lr)
 .Lfunc_end5:
-	.size	_Z12vel_vldl2dzxPmmPKv, .Lfunc_end5-_Z12vel_vldl2dzxPmmPKv
+	.size	_Z16vel_vstu2d_vssmlPfmPvPj, .Lfunc_end5-_Z16vel_vstu2d_vssmlPfmPvPj
 
-	.globl	_Z10vel_vstl2dPimPv
+	.globl	_Z12vel_vldl2dsxPlmPKv
 	.p2align	4
-	.type	_Z10vel_vstl2dPimPv,@function
-_Z10vel_vstl2dPimPv:
+	.type	_Z12vel_vldl2dsxPlmPKv,@function
+_Z12vel_vldl2dsxPlmPKv:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -234,6 +238,76 @@ _Z10vel_vstl2dPimPv:
 .LBB6_2:
 	lea %s34, 256
 	lvl %s34
+	vldl2d.sx %v0,%s1,%s2
+	vst %v0,8,%s0
+	or %s11, 0, %s9
+	ld %s16, 32(,%s11)
+	ld %s15, 24(,%s11)
+	ld %s10, 8(,%s11)
+	ld %s9, (,%s11)
+	b.l (,%lr)
+.Lfunc_end6:
+	.size	_Z12vel_vldl2dsxPlmPKv, .Lfunc_end6-_Z12vel_vldl2dsxPlmPKv
+
+	.globl	_Z12vel_vldl2dzxPmmPKv
+	.p2align	4
+	.type	_Z12vel_vldl2dzxPmmPKv,@function
+_Z12vel_vldl2dzxPmmPKv:
+	st %s9, (,%s11)
+	st %s10, 8(,%s11)
+	st %s15, 24(,%s11)
+	st %s16, 32(,%s11)
+	or %s9, 0, %s11
+	lea %s13, -176
+	and %s13, %s13, (32)0
+	lea.sl %s11, -1(%s11, %s13)
+	brge.l %s11, %s8, .LBB7_2
+	ld %s61, 24(,%s14)
+	or %s62, 0, %s0
+	lea %s63, 315
+	shm.l %s63, (%s61)
+	shm.l %s8, 8(%s61)
+	shm.l %s11, 16(%s61)
+	monc
+	or %s0, 0, %s62
+.LBB7_2:
+	lea %s34, 256
+	lvl %s34
+	vldl2d.zx %v0,%s1,%s2
+	vst %v0,8,%s0
+	or %s11, 0, %s9
+	ld %s16, 32(,%s11)
+	ld %s15, 24(,%s11)
+	ld %s10, 8(,%s11)
+	ld %s9, (,%s11)
+	b.l (,%lr)
+.Lfunc_end7:
+	.size	_Z12vel_vldl2dzxPmmPKv, .Lfunc_end7-_Z12vel_vldl2dzxPmmPKv
+
+	.globl	_Z10vel_vstl2dPimPv
+	.p2align	4
+	.type	_Z10vel_vstl2dPimPv,@function
+_Z10vel_vstl2dPimPv:
+	st %s9, (,%s11)
+	st %s10, 8(,%s11)
+	st %s15, 24(,%s11)
+	st %s16, 32(,%s11)
+	or %s9, 0, %s11
+	lea %s13, -176
+	and %s13, %s13, (32)0
+	lea.sl %s11, -1(%s11, %s13)
+	brge.l %s11, %s8, .LBB8_2
+	ld %s61, 24(,%s14)
+	or %s62, 0, %s0
+	lea %s63, 315
+	shm.l %s63, (%s61)
+	shm.l %s8, 8(%s61)
+	shm.l %s11, 16(%s61)
+	monc
+	or %s0, 0, %s62
+.LBB8_2:
+	lea %s34, 256
+	lvl %s34
 	vldl.sx %v0,4,%s0
 	vstl2d %v0,%s1,%s2
 	or %s11, 0, %s9
@@ -242,9 +316,46 @@ _Z10vel_vstl2dPimPv:
 	ld %s10, 8(,%s11)
 	ld %s9, (,%s11)
 	b.l (,%lr)
-.Lfunc_end6:
-	.size	_Z10vel_vstl2dPimPv, .Lfunc_end6-_Z10vel_vstl2dPimPv
+.Lfunc_end8:
+	.size	_Z10vel_vstl2dPimPv, .Lfunc_end8-_Z10vel_vstl2dPimPv
+
+	.globl	_Z16vel_vstl2d_vssmlPimPvPj
+	.p2align	4
+	.type	_Z16vel_vstl2d_vssmlPimPvPj,@function
+_Z16vel_vstl2d_vssmlPimPvPj:
+	st %s9, (,%s11)
+	st %s10, 8(,%s11)
+	st %s15, 24(,%s11)
+	st %s16, 32(,%s11)
+	or %s9, 0, %s11
+	lea %s13, -176
+	and %s13, %s13, (32)0
+	lea.sl %s11, -1(%s11, %s13)
+	brge.l %s11, %s8, .LBB9_2
+	ld %s61, 24(,%s14)
+	or %s62, 0, %s0
+	lea %s63, 315
+	shm.l %s63, (%s61)
+	shm.l %s8, 8(%s61)
+	shm.l %s11, 16(%s61)
+	monc
+	or %s0, 0, %s62
+.LBB9_2:
+	lea %s34, 256
+	lvl %s34
+	vldl.sx %v0,4,%s0
+	vldl.sx %v1,4,%s3
+	vfmk.w.gt %vm1,%v1
+	vstl2d %v0,%s1,%s2,%vm1
+	or %s11, 0, %s9
+	ld %s16, 32(,%s11)
+	ld %s15, 24(,%s11)
+	ld %s10, 8(,%s11)
+	ld %s9, (,%s11)
+	b.l (,%lr)
+.Lfunc_end9:
+	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git d467e4f0338396acbc980449a89d05f037ef4a6c) (llvm/llvm.git d49dca7a0a80fc0a3ee8f0716752ae072548b21c)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git cfb287de5d25505c541ccb457f47ee3aaaea4e08)"
 	.section	".note.GNU-stack","",@progbits
