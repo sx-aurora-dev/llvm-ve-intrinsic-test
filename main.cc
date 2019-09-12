@@ -830,18 +830,70 @@ static double test_vrxor_mask(Test* test, double& sa, double& sb)
 }
 
 template<typename T>
-static double test_vmrg(Test* test, double& sa, double& sb)
+static double test_3x_vvvm(Test* test, double& sa, double& sb)
 {
     TestData<T>* data = (TestData<T>*)test->data;
     typedef void(*F)(T*, T*, T*, unsigned int*, int);
-
-    memset(data->v[0], 0, sizeof(T) * data->n);
-    memset(data->v[1], 0, sizeof(T) * data->n);
-
     ((F)test->f0)(data->v[0], data->v[2], data->v[3], data->mask, data->n);
     ((F)test->f1)(data->v[1], data->v[2], data->v[3], data->mask, data->n);
     return diff(data->v[0], data->v[1], data->n, sa, sb);
 }
+
+template<typename T>
+static double test_3x_vsvm(Test* test, double& sa, double& sb)
+{
+    TestData<T>* data = (TestData<T>*)test->data;
+    typedef void(*F)(T*, T, T*, unsigned int*, int);
+    ((F)test->f0)(data->v[0], data->v[2][0], data->v[3], data->mask, data->n);
+    ((F)test->f1)(data->v[1], data->v[2][0], data->v[3], data->mask, data->n);
+    return diff(data->v[0], data->v[1], data->n, sa, sb);
+}
+
+template<typename T>
+static double test_3p_vsvm(Test* test, double& sa, double& sb)
+{
+    TestData<T>* data = (TestData<T>*)test->data;
+    typedef void(*F)(T*, unsigned long int, T*, unsigned int*, int);
+
+    T sy0 = data->v[2][0];
+    unsigned long int sy = *(unsigned long int*)&sy0;
+    sy = sy << 32 | (sy & 0xffffffff);
+
+    ((F)test->f0)(data->v[0], sy, data->v[3], data->mask, data->n);
+    ((F)test->f1)(data->v[1], sy, data->v[3], data->mask, data->n);
+    return diff(data->v[0], data->v[1], data->n, sa, sb);
+}
+
+namespace ref {
+void vmrg_vvvml(unsigned long int* pvx, unsigned long int* pvy, unsigned long int* pvz, unsigned int* pvm, int n)
+{
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
+    }
+}
+
+void vmrg_vsvml(unsigned long int* pvx, unsigned long int sy, unsigned long int* pvz, unsigned int* pvm, int n)
+{
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvm[i] > 0 ? pvz[i] : sy;
+    }
+}
+
+void vmrgw_vvvMl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, int n)
+{
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
+    }
+}
+
+void vmrgw_vsvMl(unsigned int* pvx, unsigned long int sy, unsigned int* pvz, unsigned int* pvm, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvm[i] > 0 ? pvz[i] : sy0;
+    }
+}
+} // namespace ref
 
 struct Test
 {
@@ -1105,7 +1157,10 @@ struct Test
 
     // 5.3.2.12. Vector Mask Arithmetic Instructions
 
-    IntrinsicTest(vmrg_vvvml, test_vmrg<unsigned long int>, &TD_i64),
+    IntrinsicTest(vmrg_vvvml, test_3x_vvvm<unsigned long int>, &TD_i64),
+    IntrinsicTest(vmrgw_vvvMl, test_3x_vvvm<unsigned int>, &TD_u32),
+    IntrinsicTest(vmrg_vsvml, test_3x_vsvm<unsigned long int>, &TD_i64),
+    IntrinsicTest(vmrgw_vsvMl, test_3p_vsvm<unsigned int>, &TD_u32),
     //IntrinsicTest(vmrgw_vvvM, test_vmrg<unsigned int>, &TD_i32),
     {"_ve_vshf_vvvsl", (void*)vshf_vvvsl, NULL, test_vshf_vvvs, &TD_u64},
     {"_ve_vshf_vvvIl", (void*)vshf_vvvIl, NULL, test_vshf_vvvI, &TD_u64},

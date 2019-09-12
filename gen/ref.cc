@@ -5715,30 +5715,6 @@ void vcvtsd_vvvl(float* pvx, double* pvy, float* pvd, int n)
         pvx[i] = (float)pvy[i];
     }
 }
-void vmrg_vvvml(unsigned long int* pvx, unsigned long int* pvy, unsigned long int* pvz, unsigned int* pvm, int n)
-{
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
-    }
-}
-void vmrg_vvvmvl(unsigned long int* pvx, unsigned long int* pvy, unsigned long int* pvz, unsigned int* pvm, unsigned long int* pvd, int n)
-{
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
-    }
-}
-void vmrgw_vvvMl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, int n)
-{
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
-    }
-}
-void vmrgw_vvvMvl(unsigned int* pvx, unsigned int* pvy, unsigned int* pvz, unsigned int* pvm, unsigned int* pvd, int n)
-{
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = pvm[i] > 0 ? pvz[i] : pvy[i];
-    }
-}
 void andm_mmm(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
     for (int i = 0; i < 4; ++i)
