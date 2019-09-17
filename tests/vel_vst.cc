@@ -25,6 +25,31 @@ void vstl_vssml(void* px, void const* py, unsigned int* pm)
     __vm vm = _vel_vfmkwgt_mvl(tmp, 256);
     _vel_vstl_vssml(vy, 4, px, vm, 256);
 }
+
+
+void vstnc_vssml(void* px, void const* py, unsigned int* pm)
+{
+    __vr vy = _vel_vldnc_vssl(8, py, 256);
+    __vr tmp = _vel_vldlsxnc_vssl(4, pm, 256);
+    __vm vm = _vel_vfmkwgt_mvl(tmp, 256);
+    _vel_vstnc_vssml(vy, 8, px, vm, 256);
+}
+
+void vstunc_vssml(void* px, void const* py, unsigned int* pm)
+{
+    __vr vy = _vel_vldunc_vssl(4, py, 256);
+    __vr tmp = _vel_vldlsxnc_vssl(4, pm, 256);
+    __vm vm = _vel_vfmkwgt_mvl(tmp, 256);
+    _vel_vstunc_vssml(vy, 4, px, vm, 256);
+}
+
+void vstlnc_vssml(void* px, void const* py, unsigned int* pm)
+{
+    __vr vy = _vel_vldlsxnc_vssl(4, py, 256);
+    __vr tmp = _vel_vldlsxnc_vssl(4, pm, 256);
+    __vm vm = _vel_vfmkwgt_mvl(tmp, 256);
+    _vel_vstlnc_vssml(vy, 4, px, vm, 256);
+}
 #endif // __clang__
 
 #ifdef TEST
@@ -86,15 +111,26 @@ void vst_vssml(void* px, void const* py, unsigned int* pm);
 void vstu_vssml(void* px, void const* py, unsigned int* pm);
 void vstl_vssml(void* px, void const* py, unsigned int* pm);
 
+void vstnc_vssml(void* px, void const* py, unsigned int* pm);
+void vstunc_vssml(void* px, void const* py, unsigned int* pm);
+void vstlnc_vssml(void* px, void const* py, unsigned int* pm);
+
 int test_vst_vssml() { return test_vst_mask<double>(vst_vssml); }
 int test_vstu_vssml() { return test_vst_mask<float>(vstu_vssml); }
 int test_vstl_vssml() { return test_vst_mask<int>(vstl_vssml); }
+
+int test_vstnc_vssml() { return test_vst_mask<double>(vstnc_vssml); }
+int test_vstunc_vssml() { return test_vst_mask<float>(vstunc_vssml); }
+int test_vstlnc_vssml() { return test_vst_mask<int>(vstlnc_vssml); }
 
 #ifdef HAVE_REGISTER_TEST
 #include "register_test.h"
 REGISTER_TEST("vel_vst_vssml", test_vst_vssml);
 REGISTER_TEST("vel_vstu_vssml", test_vstu_vssml);
 REGISTER_TEST("vel_vstl_vssml", test_vstl_vssml);
+REGISTER_TEST("vel_vstnc_vssml", test_vstnc_vssml);
+REGISTER_TEST("vel_vstunc_vssml", test_vstunc_vssml);
+REGISTER_TEST("vel_vstlnc_vssml", test_vstlnc_vssml);
 #endif
 #endif // TEST
 
