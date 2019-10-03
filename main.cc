@@ -190,7 +190,7 @@ double test_2x_vI(Test* test, double& sa, double& sb)
 }
 
 template <typename T>
-double test_2x_vImv(Test* test, double& sa, double& sb)
+double test_2x_vsmv_imm(Test* test, double& sa, double& sb)
 {
     TestData<T>* data = (TestData<T>*)test->data;
     typedef void(*F)(T*, unsigned int*, T*, int);
@@ -527,34 +527,34 @@ double test_4p_vvsvmv(Test* test, double& sa, double& sb)
 #define I_3u64(name) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<unsigned long int>, &TD_u64), \
     IntrinsicTest(name##_vsvl, test_3x_vsv<unsigned long int>, &TD_u64), \
-    IntrinsicTest(name##_vIvl, test_3x_vIv<unsigned long int>, &TD_u64), \
+    IntrinsicTest(name##_vsvl_imm, test_3x_vIv<unsigned long int>, &TD_u64), \
     IntrinsicTest(name##_vvvmvl, test_3x_vvvmv<unsigned long int>, &TD_u64), \
     IntrinsicTest(name##_vsvmvl, test_3x_vsvmv<unsigned long int>, &TD_u64), \
-    IntrinsicTest(name##_vIvmvl, test_3x_vIvmv<unsigned long int>, &TD_u64)
+    IntrinsicTest(name##_vsvmvl_imm, test_3x_vIvmv<unsigned long int>, &TD_u64)
 
 #define I_3i64(name) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<long int>, &TD_i64), \
     IntrinsicTest(name##_vsvl, test_3x_vsv<long int>, &TD_i64), \
-    IntrinsicTest(name##_vIvl, test_3x_vIv<long int>, &TD_i64), \
+    IntrinsicTest(name##_vsvl_imm, test_3x_vIv<long int>, &TD_i64), \
     IntrinsicTest(name##_vvvmvl, test_3x_vvvmv<long int>, &TD_u64), \
     IntrinsicTest(name##_vsvmvl, test_3x_vsvmv<long int>, &TD_u64), \
-    IntrinsicTest(name##_vIvmvl, test_3x_vIvmv<long int>, &TD_u64)
+    IntrinsicTest(name##_vsvmvl_imm, test_3x_vIvmv<long int>, &TD_u64)
 
 #define I_3u32(name) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<unsigned int>, &TD_u32), \
     IntrinsicTest(name##_vsvl, test_3x_vsv<unsigned int>, &TD_u32), \
-    IntrinsicTest(name##_vIvl, test_3x_vIv<unsigned int>, &TD_u32), \
+    IntrinsicTest(name##_vsvl_imm, test_3x_vIv<unsigned int>, &TD_u32), \
     IntrinsicTest(name##_vvvmvl, test_3x_vvvmv<unsigned int>, &TD_u32), \
     IntrinsicTest(name##_vsvmvl, test_3x_vsvmv<unsigned int>, &TD_u32), \
-    IntrinsicTest(name##_vIvmvl, test_3x_vIvmv<unsigned int>, &TD_u32)
+    IntrinsicTest(name##_vsvmvl_imm, test_3x_vIvmv<unsigned int>, &TD_u32)
 
 #define I_3i32(name) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<int>, &TD_i32), \
     IntrinsicTest(name##_vsvl, test_3x_vsv<int>, &TD_i32), \
-    IntrinsicTest(name##_vIvl, test_3x_vIv<int>, &TD_i32), \
+    IntrinsicTest(name##_vsvl_imm, test_3x_vIv<int>, &TD_i32), \
     IntrinsicTest(name##_vvvmvl, test_3x_vvvmv<int>, &TD_i32), \
     IntrinsicTest(name##_vsvmvl, test_3x_vsvmv<int>, &TD_i32), \
-    IntrinsicTest(name##_vIvmvl, test_3x_vIvmv<int>, &TD_i32)
+    IntrinsicTest(name##_vsvmvl_imm, test_3x_vIvmv<int>, &TD_i32)
 
 #define I_3pu32(name) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<unsigned int>, &TD_u32), \
@@ -594,13 +594,13 @@ double test_4p_vvsvmv(Test* test, double& sa, double& sb)
 
 static double test_mulslw_vvv(Test* test, double& sa, double& sb);
 static double test_mulslw_vsv(Test* test, double& sa, double& sb);
-static double test_mulslw_vIv(Test* test, double& sa, double& sb);
+static double test_mulslw_vsv_imm(Test* test, double& sa, double& sb);
 static double test_vsfa_vvss(Test* test, double& sa, double& sb);
 static double test_vsfa_vvssmv(Test* test, double& sa, double& sb);
 static double test_vsfa_vvIs(Test* test, double& sa, double& sb);
 static double test_vsfa_vvIsmv(Test* test, double& sa, double& sb);
 static double test_vshf_vvvs(Test* test, double& sa, double& sb);
-static double test_vshf_vvvI(Test* test, double& sa, double& sb);
+static double test_vshf_vvvs_imm(Test* test, double& sa, double& sb);
 
 template <typename Tdst, typename Tsrc>
 static double test_cvt(Test* test, double& sa, double& sb)
@@ -942,18 +942,18 @@ struct Test
 
     IntrinsicTest(vbrdd_vsl, test_2x_vs<double>, &TD_f64),
     IntrinsicTest(vbrdl_vsl, test_2x_vs<long int>, &TD_i64),
-    IntrinsicTest(vbrdl_vIl, test_2x_vI<long int>, &TD_i64),
+    IntrinsicTest(vbrdl_vsl_imm, test_2x_vI<long int>, &TD_i64),
     IntrinsicTest(vbrds_vsl, test_2x_vs<float>, &TD_f32),
     IntrinsicTest(vbrdw_vsl, test_2x_vs<int>, &TD_i32),
-    IntrinsicTest(vbrdw_vIl, test_2x_vI<int>, &TD_i32),
+    IntrinsicTest(vbrdw_vsl_imm, test_2x_vI<int>, &TD_i32),
     IntrinsicTest(pvbrd_vsl, test_2p_vs<int>, &TD_i32),
 
     IntrinsicTest(vbrdd_vsmvl, test_2x_vsmv<double>, &TD_f64),
     IntrinsicTest(vbrdl_vsmvl, test_2x_vsmv<long int>, &TD_i64),
-    IntrinsicTest(vbrdl_vImvl, test_2x_vImv<long int>, &TD_i64),
+    IntrinsicTest(vbrdl_vsmvl_imm, test_2x_vsmv_imm<long int>, &TD_i64),
     IntrinsicTest(vbrds_vsmvl, test_2x_vsmv<float>, &TD_f32),
     IntrinsicTest(vbrdw_vsmvl, test_2x_vsmv<int>, &TD_i32),
-    IntrinsicTest(vbrdw_vImvl, test_2x_vImv<int>, &TD_i32),
+    IntrinsicTest(vbrdw_vsmvl_imm, test_2x_vsmv_imm<int>, &TD_i32),
     IntrinsicTest(pvbrd_vsMvl, test_2p_vsmv<int>, &TD_i32),
 
     // 5.3.2.8. Vector Fixed-Point Arithmetic Operation Instructions
@@ -980,14 +980,14 @@ struct Test
     I_3i32(vmulswzx),
     IntrinsicTest(vmulslw_vvvl, test_mulslw_vvv, &TD_i64),
     IntrinsicTest(vmulslw_vsvl, test_mulslw_vsv, &TD_i64),
-    IntrinsicTest(vmulslw_vIvl, test_mulslw_vIv, &TD_i64),
+    IntrinsicTest(vmulslw_vsvl_imm, test_mulslw_vsv_imm, &TD_i64),
     // vmuls.l.w (i64 = i32 * i32)
 
 #define T_DivByS(name, T, data) \
     IntrinsicTest(name##_vvsl, test_3x_vvs<T>, data), \
     IntrinsicTest(name##_vvsmvl, test_3x_vvsmv<T>, data), \
-    IntrinsicTest(name##_vvIl, test_3x_vvI<T>, data), \
-    IntrinsicTest(name##_vvImvl, test_3x_vvImv<T>, data)
+    IntrinsicTest(name##_vvsl_imm, test_3x_vvI<T>, data), \
+    IntrinsicTest(name##_vvsmvl_imm, test_3x_vvImv<T>, data)
 
     I_3u64(vdivul),
     I_3u32(vdivuw),
@@ -1039,10 +1039,10 @@ struct Test
 #define T_Shift(name, ty, data) \
     IntrinsicTest(name##_vvvl, test_3x_vvv<ty>, &data), \
     IntrinsicTest(name##_vvsl, test_3x_vvs<ty>, &data), \
-    IntrinsicTest(name##_vvIl, test_3x_vIv<ty>, &data), \
+    IntrinsicTest(name##_vvsl_imm, test_3x_vIv<ty>, &data), \
     IntrinsicTest(name##_vvvmvl, test_3x_vvvmv<ty>, &data), \
     IntrinsicTest(name##_vvsmvl, test_3x_vvsmv<ty>, &data), \
-    IntrinsicTest(name##_vvImvl, test_3x_vvImv<ty>, &data)
+    IntrinsicTest(name##_vvsmvl_imm, test_3x_vvImv<ty>, &data)
 
 #define T_ShiftPacked(name, ty, data) \
     IntrinsicTest(p##name##_vvvl, test_3x_vvv<ty>, &data), \
@@ -1065,8 +1065,8 @@ struct Test
 
     IntrinsicTest(vsfa_vvssl, test_vsfa_vvss, &TD_u64),
     IntrinsicTest(vsfa_vvssmvl, test_vsfa_vvssmv, &TD_u64),
-    IntrinsicTest(vsfa_vvIsl, test_vsfa_vvIs, &TD_u64),
-    IntrinsicTest(vsfa_vvIsmvl, test_vsfa_vvIsmv, &TD_u64),
+    IntrinsicTest(vsfa_vvssl_imm, test_vsfa_vvIs, &TD_u64),
+    IntrinsicTest(vsfa_vvssmvl_imm, test_vsfa_vvIsmv, &TD_u64),
 
     // 5.3.2.11. Vector Floating-Point Operation Instructions
 
@@ -1182,7 +1182,7 @@ struct Test
     IntrinsicTest(vmrgw_vsvMl, test_3p_vsvm<unsigned int>, &TD_u32),
     //IntrinsicTest(vmrgw_vvvM, test_vmrg<unsigned int>, &TD_i32),
     {"_ve_vshf_vvvsl", (void*)vshf_vvvsl, NULL, test_vshf_vvvs, &TD_u64},
-    {"_ve_vshf_vvvIl", (void*)vshf_vvvIl, NULL, test_vshf_vvvI, &TD_u64},
+    {"_ve_vshf_vvvsl_imm", (void*)vshf_vvvsl_imm, NULL, test_vshf_vvvs_imm, &TD_u64},
 
     // 5.3.2.15. Vector Mask Register Instructions
 
@@ -1284,7 +1284,7 @@ static double test_mulslw_vsv(Test* test, double& sa, double& sb)
     return diff(data->v[0], data->v[1], data->n, sa, sb);
 }
 
-static double test_mulslw_vIv(Test* test, double& sa, double& sb)
+static double test_mulslw_vsv_imm(Test* test, double& sa, double& sb)
 {
     TestData<long int>* data = (TestData<long int>*)test->data;
     typedef void(*F)(long int*, int*, int);
@@ -1389,7 +1389,7 @@ static double test_vshf_vvvs(Test* test, double& sa, double& sb)
 #undef T
 }
 
-static double test_vshf_vvvI(Test* test, double& sa, double& sb)
+static double test_vshf_vvvs_imm(Test* test, double& sa, double& sb)
 {
 #define T unsigned long int
     TestData<T>* data = (TestData<T>*)test->data;
