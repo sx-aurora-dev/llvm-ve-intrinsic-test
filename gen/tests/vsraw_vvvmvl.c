@@ -5,7 +5,7 @@ void vsraw_vvvmvl(int* pvx, int* pvz, unsigned long int* pvy, unsigned int* pvm,
         __vr vz = _vel_vldlsx_vssl(4, pvz, l);
         __vr vy = _vel_vld_vssl(8, pvy, l);
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
-        __vm vm = _vel_vfmkwgt_mvl(vm0, l);
+        __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr vd = _vel_vldlsx_vssl(4, pvd, l);
         __vr vx = _vel_vldlsx_vssl(4, pvx, l);
         vx = _vel_vsraw_vvvmvl(vz, vy, vm, vd, l);

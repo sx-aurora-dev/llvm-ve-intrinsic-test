@@ -6,7 +6,7 @@ void vfnmsbd_vvvvmvl(double* pvx, double* pvy, double* pvz, double* pvw, unsigne
         __vr vz = _vel_vld_vssl(8, pvz, l);
         __vr vw = _vel_vld_vssl(8, pvw, l);
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
-        __vm vm = _vel_vfmkwgt_mvl(vm0, l);
+        __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr vd = _vel_vld_vssl(8, pvd, l);
         __vr vx = _vel_vld_vssl(8, pvx, l);
         vx = _vel_vfnmsbd_vvvvmvl(vy, vz, vw, vm, vd, l);

@@ -5,7 +5,7 @@ void vor_vvvmvl(unsigned long int* pvx, unsigned long int* pvy, unsigned long in
         __vr vy = _vel_vld_vssl(8, pvy, l);
         __vr vz = _vel_vld_vssl(8, pvz, l);
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
-        __vm vm = _vel_vfmkwgt_mvl(vm0, l);
+        __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr vd = _vel_vld_vssl(8, pvd, l);
         __vr vx = _vel_vld_vssl(8, pvx, l);
         vx = _vel_vor_vvvmvl(vy, vz, vm, vd, l);

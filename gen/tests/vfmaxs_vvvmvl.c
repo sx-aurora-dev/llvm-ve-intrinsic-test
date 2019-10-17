@@ -5,7 +5,7 @@ void vfmaxs_vvvmvl(float* pvx, float* pvy, float* pvz, unsigned int* pvm, float*
         __vr vy = _vel_vldu_vssl(4, pvy, l);
         __vr vz = _vel_vldu_vssl(4, pvz, l);
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
-        __vm vm = _vel_vfmkwgt_mvl(vm0, l);
+        __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr vd = _vel_vldu_vssl(4, pvd, l);
         __vr vx = _vel_vldu_vssl(4, pvx, l);
         vx = _vel_vfmaxs_vvvmvl(vy, vz, vm, vd, l);

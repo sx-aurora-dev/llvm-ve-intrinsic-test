@@ -5,7 +5,7 @@ void vsubswzx_vvvmvl(int* pvx, int* pvy, int* pvz, unsigned int* pvm, int* pvd, 
         __vr vy = _vel_vldlsx_vssl(4, pvy, l);
         __vr vz = _vel_vldlsx_vssl(4, pvz, l);
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
-        __vm vm = _vel_vfmkwgt_mvl(vm0, l);
+        __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr vd = _vel_vldlsx_vssl(4, pvd, l);
         __vr vx = _vel_vldlsx_vssl(4, pvx, l);
         vx = _vel_vsubswzx_vvvmvl(vy, vz, vm, vd, l);

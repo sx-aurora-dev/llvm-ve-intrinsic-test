@@ -1,7 +1,7 @@
 #include <velintrin.h>
 void andm_mmm(unsigned long int* px, unsigned long int const* py, unsigned long int* pz, int n)
 {
-    __vm vmx, vmy, vmz;
+    __vm256 vmx, vmy, vmz;
     vmy = _vel_lvm_mmss(vmy, 0, py[0]);
     vmz = _vel_lvm_mmss(vmz, 0, pz[0]);
     vmy = _vel_lvm_mmss(vmy, 1, py[1]);

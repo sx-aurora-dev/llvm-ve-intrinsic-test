@@ -4,7 +4,7 @@ void vsll_vvsmvl_imm(unsigned long int* pvx, unsigned long int* pvz, unsigned in
         int l = n - i < 256 ? n - i : 256;
         __vr vz = _vel_vld_vssl(8, pvz, l);
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
-        __vm vm = _vel_vfmkwgt_mvl(vm0, l);
+        __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr vd = _vel_vld_vssl(8, pvd, l);
         __vr vx = _vel_vld_vssl(8, pvx, l);
         vx = _vel_vsll_vvsmvl(vz, 3, vm, vd, l);
