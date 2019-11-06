@@ -1166,13 +1166,6 @@ struct Test
     IntrinsicTest(vcvtds_vvl, (test_cvt<double, float>), &TD_f64_f32),
     IntrinsicTest(vcvtsd_vvl, (test_cvt<float, double>), &TD_f32_f64),
 
-    IntrinsicTest(vfdivdA_vsvl, test_3x_vsv<double>, &TD_f64),
-#if 0
-    IntrinsicTest(vfdivsA_vvv, test_3x_vvv<float>, &TD_f32),
-    IntrinsicTest(pvfdivA_vvv, test_3x_vvv<float>, &TD_f32),
-    IntrinsicTest(vfdivsA_vsv, test_3x_vsv<float>, &TD_f32),
-#endif
-
     // 5.3.2.12. Vector Mask Arithmetic Instructions
 
     IntrinsicTest(vmrg_vvvml, test_3x_vvvm<unsigned long int>, &TD_i64),

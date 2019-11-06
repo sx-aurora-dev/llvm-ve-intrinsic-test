@@ -580,8 +580,6 @@ extern void vfdivs_vsvl(float* pvx, float sy, float* pvz, int n);
 extern void vfdivs_vsvvl(float* pvx, float sy, float* pvz, float* pvd, int n);
 extern void vfdivs_vvvmvl(float* pvx, float* pvy, float* pvz, unsigned int* pvm, float* pvd, int n);
 extern void vfdivs_vsvmvl(float* pvx, float sy, float* pvz, unsigned int* pvm, float* pvd, int n);
-extern void vfdivdA_vsvl(double* pvx, double sy, double* pvz, int n);
-extern void vfdivdA_vsvvl(double* pvx, double sy, double* pvz, double* pvd, int n);
 extern void vfsqrtd_vvl(double* pvx, double* pvy, int n);
 extern void vfsqrtd_vvvl(double* pvx, double* pvy, double* pvd, int n);
 extern void vfsqrts_vvl(float* pvx, float* pvy, int n);

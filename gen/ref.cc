@@ -4077,20 +4077,6 @@ void vfdivs_vsvmvl(float* pvx, float sy, float* pvz, unsigned int* pvm, float* p
         if (pvm[i] > 0) { pvx[i] = sy / pvz[i]; }
     }
 }
-void vfdivdA_vsvl(double* pvx, double sy, double* pvz, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = sy / pvz[i];
-    }
-}
-void vfdivdA_vsvvl(double* pvx, double sy, double* pvz, double* pvd, int n)
-{
-    
-    for (int i = 0; i < n; ++i) {
-        pvx[i] = sy / pvz[i];
-    }
-}
 void vfsqrtd_vvl(double* pvx, double* pvy, int n)
 {
     
