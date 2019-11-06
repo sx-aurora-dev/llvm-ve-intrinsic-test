@@ -1402,20 +1402,15 @@ static double test_vshf_vvvs_imm(Test* test, double& sa, double& sb)
 }
 
 
-
 struct Test2
 {
     char const* name;
     int (*func)();
 
     Test2(char const* name_, int (*func_)(void)) : name(name_), func(func_) {}
-} test2[] = {
-    {"fadd.d", test_faddd},
-    {"fadd.s", test_fadds},
-    {"pack_float", test_pack_float},
 };
 
-std::vector<Test2>& getVec()
+static std::vector<Test2>& getVec()
 {
     static std::vector<Test2> v;
     return v;
@@ -1459,10 +1454,6 @@ void test(char const* filter)
             if (tmp)
                 ++nok;
         }
-    }
-
-    for (int j = 0; j < sizeof(test2) / sizeof(Test2); ++j) {
-        getVec().push_back(test2[j]);
     }
 
     for (Test2& t : getVec()) {
