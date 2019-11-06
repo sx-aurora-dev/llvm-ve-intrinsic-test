@@ -42,14 +42,14 @@ unsigned long int vel_tovm_sm(unsigned long int* pvm)
 #include <stdio.h>
 int test_vel_pcvm_sm()
 {
-    unsigned long int pcvm_sm(unsigned long int* pvm);
+    unsigned long int vel_pcvm_sm(unsigned long int* pvm);
     unsigned long int vm[4];
 
     for (int i = 0; i < 4; ++i) {
         vm[i] = (lrand48() << 32 | lrand48());
     }
 
-    unsigned long int sx0 = pcvm_sm(vm);
+    unsigned long int sx0 = vel_pcvm_sm(vm);
 
     unsigned long int sx1 = 0;
     for (int i = 0; i < 256; ++i) {
@@ -68,14 +68,14 @@ int test_vel_pcvm_sm()
 
 int test_vel_lzvm_sm()
 {
-    unsigned long int lzvm_sm(unsigned long int* pvm);
+    unsigned long int vel_lzvm_sm(unsigned long int* pvm);
     unsigned long int vm[4];
 
     for (int i = 0; i < 4; ++i) {
         vm[i] = (lrand48() << 32 | lrand48());
     }
 
-    unsigned long int sx0 = lzvm_sm(vm);
+    unsigned long int sx0 = vel_lzvm_sm(vm);
 
     unsigned long int sx1 = 0;
     for (int i = 0; i < 256; ++i) {
@@ -96,14 +96,14 @@ int test_vel_lzvm_sm()
 
 int test_vel_tovm_sm()
 {
-    unsigned long int tovm_sm(unsigned long int* pvm);
+    unsigned long int vel_tovm_sm(unsigned long int* pvm);
     unsigned long int vm[4];
 
     for (int i = 0; i < 4; ++i) {
         vm[i] = (lrand48() << 32 | lrand48());
     }
 
-    unsigned long int sx0 = tovm_sm(vm);
+    unsigned long int sx0 = vel_tovm_sm(vm);
 
     unsigned long int sx1 = 0;
     for (int i = 255; i >= 0; --i) {
