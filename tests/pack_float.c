@@ -1,5 +1,4 @@
 #ifdef __clang__
-#include <veintrin.h>
 unsigned long int pack_float(float* p)
 {
     unsigned int* pi = (unsigned int*)p;

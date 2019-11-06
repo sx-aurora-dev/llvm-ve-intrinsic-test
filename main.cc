@@ -1410,18 +1410,9 @@ struct Test2
 
     Test2(char const* name_, int (*func_)(void)) : name(name_), func(func_) {}
 } test2[] = {
-    {"_ve_lsv", test_lsv},
-    {"_ve_lvs", test_lvs},
-    {"_ve_vseq", test_vseq},
-    {"_ve_pvseq", test_pvseq},
-    {"_ve_pvseqlo", test_pvseqlo},
-    {"_ve_pvsequp", test_pvsequp},
-    {"_ve_vmv_vsv", test_vmv_vsv},
-    {"_ve_vmv_vIv", test_vmv_vIv},
     {"fadd.d", test_faddd},
     {"fadd.s", test_fadds},
     {"pack_float", test_pack_float},
-    {"loop01(autovec)", test_loop01},
 };
 
 std::vector<Test2>& getVec()
@@ -1459,35 +1450,6 @@ void test(char const* filter)
 {
     int nall = 0;
     int nok = 0;
-
-    REGISTER_TEST(vld2d);
-    REGISTER_TEST(vldu2d);
-    REGISTER_TEST(vldl2dsx);
-    REGISTER_TEST(vldl2dzx);
-    REGISTER_TEST(vst2d);
-    REGISTER_TEST(vstu2d);
-    REGISTER_TEST(vstl2d);
-    REGISTER_TEST(vfmkl_mcv);
-    REGISTER_TEST(vfmkl_mcvm);
-    REGISTER_TEST(vfmkw_mcv);
-    REGISTER_TEST(vfmkw_mcvm);
-    REGISTER_TEST(vfmkd_mcv);
-    REGISTER_TEST(vfmkd_mcvm);
-    REGISTER_TEST(vfmks_mcv);
-    REGISTER_TEST(vfmks_mcvm);
-    REGISTER_TEST(pvfmkw_Mcv);
-    REGISTER_TEST(pvfmkw_McvM);
-    REGISTER_TEST(pvfmks_Mcv);
-    REGISTER_TEST(pvfmks_McvM);
-    REGISTER_TEST(pcvm_sm);
-    REGISTER_TEST(lzvm_sm);
-    REGISTER_TEST(tovm_sm);
-    REGISTER_TEST(vcp_vvmv);
-    REGISTER_TEST(vex_vvmv);
-    REGISTER_TEST(ve_extract_vm512u);
-    REGISTER_TEST(ve_extract_vm512l);
-    REGISTER_TEST(ve_insert_vm512u);
-    REGISTER_TEST(ve_insert_vm512l);
 
     for (int i = 0; i < sizeof(table) / sizeof(Test); ++i) {
         Test& t = table[i];
