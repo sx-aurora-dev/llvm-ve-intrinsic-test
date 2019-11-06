@@ -51,5 +51,5 @@ vfnmsbd_vsvvl:
 	.size	vfnmsbd_vsvvl, .Lfunc_end0-vfnmsbd_vsvvl
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 166ce7eaa48ef1c8891ad1012b2f5819d7674e19) (llvm/llvm.git 538e6ca3317a129b1e492a725935d84bb0a64c7f)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

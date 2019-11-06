@@ -37,5 +37,5 @@ vel_pack_f32a:
 	.size	vel_pack_f32a, .Lfunc_end0-vel_pack_f32a
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 7ed41ce09bd9cc62705302b8c54048b1b8092b73) (llvm/llvm.git 7d7f046a8c4051e1c87e8939bbbfac2a6f4c6056)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

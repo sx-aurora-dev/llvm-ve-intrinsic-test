@@ -49,5 +49,5 @@ vrsqrtdnex_vvl:
 	.size	vrsqrtdnex_vvl, .Lfunc_end0-vrsqrtdnex_vvl
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 1cb929683269d0b1c462d59a6281a62948bf35fe) (llvm/llvm.git 26a73effa24315891fa62ef8c4dfd0dc9728f0f0)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

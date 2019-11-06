@@ -44,5 +44,5 @@ _Z5vel01PvS_S_i:
 	.size	_Z5vel01PvS_S_i, .Lfunc_end0-_Z5vel01PvS_S_i
 
 
-	.ident	"clang version 9.0.0 (/usr/work1/home/ishizaka/work/ve-llvm/src/llvm/tools/clang 249ba95027e4c332fc9b0451eac67826e8861e2e) (llvm/src/llvm 0fcb01986d1f293be44d697a9020929f0938a880)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

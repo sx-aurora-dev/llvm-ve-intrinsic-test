@@ -229,5 +229,5 @@ _Z16vel_vstlncot_vssPKiPiS1_:
 	.size	_Z16vel_vstlncot_vssPKiPiS1_, .Lfunc_end5-_Z16vel_vstlncot_vssPKiPiS1_
 
 
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 684f35c67e2d7e0a474732547d535e7efd3486cf)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

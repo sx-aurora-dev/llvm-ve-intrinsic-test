@@ -59,5 +59,5 @@ approx_vfsqrtd_vvl:
 	.size	approx_vfsqrtd_vvl, .Lfunc_end0-approx_vfsqrtd_vvl
 
 
-	.ident	"clang version 9.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/clang.git 3242d2a7944153002561ea2bff54167b34309e4b) (llvm/llvm.git c2875fb638d57398f79f43f3f0c6a6cd09250ec6)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

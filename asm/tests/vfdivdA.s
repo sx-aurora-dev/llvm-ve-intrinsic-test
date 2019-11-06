@@ -47,5 +47,5 @@ vfsdiv:
 	.size	vfsdiv, .Lfunc_end0-vfsdiv
 
 
-	.ident	"clang version 9.0.0 (/r/home/k-marukawa/llvm/llvm/tools/clang 4422c49f6a312b83b13345928bc987dfdbf803be) (llvm/llvm a7def611a73edaf8d7e4033c2b0eb652c09180f7)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits

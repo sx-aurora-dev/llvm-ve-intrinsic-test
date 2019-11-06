@@ -270,5 +270,5 @@ vmrgw_vsvMl:
 	.size	vmrgw_vsvMl, .Lfunc_end4-vmrgw_vsvMl
 
 
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 6d5a1f53f3bc2c20934f740efefbf7240979e5da)"
+	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
 	.section	".note.GNU-stack","",@progbits
