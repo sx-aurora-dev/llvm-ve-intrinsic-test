@@ -3090,6 +3090,90 @@ void vsll_vvsmvl_imm(unsigned long int* pvx, unsigned long int* pvz, unsigned in
         if (pvm[i] > 0) { pvx[i] = pvz[i] << (3 & 0x3f); }
     }
 }
+void pvslllo_vvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvslllo_vvvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvslllo_vvsl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvslllo_vvsvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvslllo_vvvMvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (pvy[i] & 0x1f); }
+    }
+}
+void pvslllo_vvsMvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (sy0 & 0x1f); }
+    }
+}
+void pvsllup_vvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvsllup_vvvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvsllup_vvsl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvsllup_vvsvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvsllup_vvvMvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (pvy[i] & 0x1f); }
+    }
+}
+void pvsllup_vvsMvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (sy0 & 0x1f); }
+    }
+}
 void pvsll_vvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, int n)
 {
     
@@ -3195,6 +3279,90 @@ void vsrl_vvsmvl_imm(unsigned long int* pvx, unsigned long int* pvz, unsigned in
         if (pvm[i] > 0) { pvx[i] = pvz[i] >> (3 & 0x3f); }
     }
 }
+void pvsrllo_vvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsrllo_vvvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsrllo_vvsl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsrllo_vvsvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsrllo_vvvMvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (pvy[i] & 0x1f); }
+    }
+}
+void pvsrllo_vvsMvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (sy0 & 0x1f); }
+    }
+}
+void pvsrlup_vvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsrlup_vvvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsrlup_vvsl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsrlup_vvsvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsrlup_vvvMvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (pvy[i] & 0x1f); }
+    }
+}
+void pvsrlup_vvsMvl(unsigned int* pvx, unsigned int* pvz, unsigned long int sy, unsigned int* pvm, unsigned int* pvd, int n)
+{
+    unsigned int sy0 = *(unsigned int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (sy0 & 0x1f); }
+    }
+}
 void pvsrl_vvvl(unsigned int* pvx, unsigned int* pvz, unsigned int* pvy, int n)
 {
     
@@ -3298,6 +3466,90 @@ void vslaw_vvsmvl_imm(int* pvx, int* pvz, unsigned int* pvm, int* pvd, int n)
     
     for (int i = 0; i < n; ++i) {
         if (pvm[i] > 0) { pvx[i] = pvz[i] << (3 & 0x1f); }
+    }
+}
+void pvslalo_vvvl(int* pvx, int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvslalo_vvvvl(int* pvx, int* pvz, unsigned int* pvy, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvslalo_vvsl(int* pvx, int* pvz, unsigned long int sy, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvslalo_vvsvl(int* pvx, int* pvz, unsigned long int sy, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvslalo_vvvMvl(int* pvx, int* pvz, unsigned int* pvy, unsigned int* pvm, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (pvy[i] & 0x1f); }
+    }
+}
+void pvslalo_vvsMvl(int* pvx, int* pvz, unsigned long int sy, unsigned int* pvm, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (sy0 & 0x1f); }
+    }
+}
+void pvslaup_vvvl(int* pvx, int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvslaup_vvvvl(int* pvx, int* pvz, unsigned int* pvy, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (pvy[i] & 0x1f);
+    }
+}
+void pvslaup_vvsl(int* pvx, int* pvz, unsigned long int sy, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvslaup_vvsvl(int* pvx, int* pvz, unsigned long int sy, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] << (sy0 & 0x1f);
+    }
+}
+void pvslaup_vvvMvl(int* pvx, int* pvz, unsigned int* pvy, unsigned int* pvm, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (pvy[i] & 0x1f); }
+    }
+}
+void pvslaup_vvsMvl(int* pvx, int* pvz, unsigned long int sy, unsigned int* pvm, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] << (sy0 & 0x1f); }
     }
 }
 void pvsla_vvvl(int* pvx, int* pvz, unsigned int* pvy, int n)
@@ -3466,6 +3718,90 @@ void vsraw_vvsmvl_imm(int* pvx, int* pvz, unsigned int* pvm, int* pvd, int n)
     
     for (int i = 0; i < n; ++i) {
         if (pvm[i] > 0) { pvx[i] = pvz[i] >> (3 & 0x1f); }
+    }
+}
+void pvsralo_vvvl(int* pvx, int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsralo_vvvvl(int* pvx, int* pvz, unsigned int* pvy, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsralo_vvsl(int* pvx, int* pvz, unsigned long int sy, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsralo_vvsvl(int* pvx, int* pvz, unsigned long int sy, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsralo_vvvMvl(int* pvx, int* pvz, unsigned int* pvy, unsigned int* pvm, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (pvy[i] & 0x1f); }
+    }
+}
+void pvsralo_vvsMvl(int* pvx, int* pvz, unsigned long int sy, unsigned int* pvm, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (sy0 & 0x1f); }
+    }
+}
+void pvsraup_vvvl(int* pvx, int* pvz, unsigned int* pvy, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsraup_vvvvl(int* pvx, int* pvz, unsigned int* pvy, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (pvy[i] & 0x1f);
+    }
+}
+void pvsraup_vvsl(int* pvx, int* pvz, unsigned long int sy, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsraup_vvsvl(int* pvx, int* pvz, unsigned long int sy, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        pvx[i] = pvz[i] >> (sy0 & 0x1f);
+    }
+}
+void pvsraup_vvvMvl(int* pvx, int* pvz, unsigned int* pvy, unsigned int* pvm, int* pvd, int n)
+{
+    
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (pvy[i] & 0x1f); }
+    }
+}
+void pvsraup_vvsMvl(int* pvx, int* pvz, unsigned long int sy, unsigned int* pvm, int* pvd, int n)
+{
+    int sy0 = *(int*)&sy;
+    for (int i = 0; i < n; ++i) {
+        if (pvm[i] > 0) { pvx[i] = pvz[i] >> (sy0 & 0x1f); }
     }
 }
 void pvsra_vvvl(int* pvx, int* pvz, unsigned int* pvy, int n)
