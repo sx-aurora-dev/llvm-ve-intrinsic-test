@@ -8,7 +8,7 @@ grep -v .ident $2 > ${tmp1}
 #echo ${tmp0} ${tmp1}
 
 #diff -uN $1 $2
-diff -uN ${tmp0} ${tmp1}
+diff -B -uN ${tmp0} ${tmp1}
 ret=$?
 
 rm -f ${tmp0} ${tmp1}
