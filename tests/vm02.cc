@@ -41,7 +41,8 @@ int _test_vm02()
     bool flag = true;
     for (int i = 0; i < 256; ++i) {
         flag &= (x[i] == expected[i]);
-#if 1
+// Enabling this cause problem on jenkins server.
+#if 0
         if (x[i] != expected[i]) {
             fprintf(stderr, "%d %lf %lf\n", i, x[i], expected[i]);
         }
