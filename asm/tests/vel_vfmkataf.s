@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	vel_vfmklat,@function
 vel_vfmklat:
+.Lvel_vfmklat$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,21 +23,21 @@ vel_vfmklat:
 	monc
 	or %s0, 0, %s62
 .LBB0_6:
-	lea %s34, 256
-	lvl %s34
+	lea %s0, 256
+	lvl %s0
 	vfmk.l.at %vm1
-	svm %s35,%vm1,0
-	or %s34, -1, (0)1
+	svm %s2,%vm1,0
+	or %s1, -1, (0)1
 	or %s0, 0, (0)1
-	brne.l %s35, %s34, .LBB0_4
-	svm %s35,%vm1,1
-	brne.l %s35, %s34, .LBB0_4
-	svm %s35,%vm1,2
-	brne.l %s35, %s34, .LBB0_4
-	svm %s35,%vm1,3
-	cmps.l %s34, %s35, %s34
+	brne.l %s2, %s1, .LBB0_4
+	svm %s2,%vm1,1
+	brne.l %s2, %s1, .LBB0_4
+	svm %s2,%vm1,2
+	brne.l %s2, %s1, .LBB0_4
+	svm %s0,%vm1,3
+	cmps.l %s1, %s0, %s1
 	or %s0, 0, (0)1
-	cmov.l.eq %s0, (63)0, %s34
+	cmov.l.eq %s0, (63)0, %s1
 .LBB0_4:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -51,6 +52,7 @@ vel_vfmklat:
 	.p2align	4
 	.type	vel_vfmklaf,@function
 vel_vfmklaf:
+.Lvel_vfmklaf$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -69,21 +71,21 @@ vel_vfmklaf:
 	monc
 	or %s0, 0, %s62
 .LBB1_6:
-	lea %s34, 256
-	lvl %s34
+	lea %s0, 256
+	lvl %s0
 	vfmk.l.af %vm1
-	svm %s35,%vm1,0
-	or %s34, 0, (0)1
+	svm %s2,%vm1,0
+	or %s1, 0, (0)1
 	or %s0, 0, (0)1
-	brne.l %s35, %s34, .LBB1_4
-	svm %s35,%vm1,1
-	brne.l %s35, %s34, .LBB1_4
-	svm %s35,%vm1,2
-	brne.l %s35, %s34, .LBB1_4
-	svm %s35,%vm1,3
-	cmps.l %s35, %s35, %s34
-	cmov.l.eq %s34, (63)0, %s35
-	or %s0, 0, %s34
+	brne.l %s2, %s1, .LBB1_4
+	svm %s2,%vm1,1
+	brne.l %s2, %s1, .LBB1_4
+	svm %s2,%vm1,2
+	brne.l %s2, %s1, .LBB1_4
+	svm %s0,%vm1,3
+	cmps.l %s0, %s0, %s1
+	cmov.l.eq %s1, (63)0, %s0
+	or %s0, 0, %s1
 .LBB1_4:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -98,6 +100,7 @@ vel_vfmklaf:
 	.p2align	4
 	.type	vel_pvfmkat,@function
 vel_pvfmkat:
+.Lvel_pvfmkat$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -116,30 +119,30 @@ vel_pvfmkat:
 	monc
 	or %s0, 0, %s62
 .LBB2_10:
-	lea %s34, 256
-	lvl %s34
+	lea %s0, 256
+	lvl %s0
 	pvfmk.w.up.at %vm2
 	pvfmk.w.lo.at %vm3
-	svm %s35,%vm3,0
-	or %s34, -1, (0)1
+	svm %s2,%vm3,0
+	or %s1, -1, (0)1
 	or %s0, 0, (0)1
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm3,1
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm3,2
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm3,3
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm2,0
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm2,1
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm2,2
-	brne.l %s35, %s34, .LBB2_8
-	svm %s35,%vm2,3
-	cmps.l %s34, %s35, %s34
+	brne.l %s2, %s1, .LBB2_8
+	svm %s2,%vm3,1
+	brne.l %s2, %s1, .LBB2_8
+	svm %s2,%vm3,2
+	brne.l %s2, %s1, .LBB2_8
+	svm %s2,%vm3,3
+	brne.l %s2, %s1, .LBB2_8
+	svm %s2,%vm2,0
+	brne.l %s2, %s1, .LBB2_8
+	svm %s2,%vm2,1
+	brne.l %s2, %s1, .LBB2_8
+	svm %s2,%vm2,2
+	brne.l %s2, %s1, .LBB2_8
+	svm %s0,%vm2,3
+	cmps.l %s1, %s0, %s1
 	or %s0, 0, (0)1
-	cmov.l.eq %s0, (63)0, %s34
+	cmov.l.eq %s0, (63)0, %s1
 .LBB2_8:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -154,6 +157,7 @@ vel_pvfmkat:
 	.p2align	4
 	.type	vel_pvfmkaf,@function
 vel_pvfmkaf:
+.Lvel_pvfmkaf$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -172,30 +176,30 @@ vel_pvfmkaf:
 	monc
 	or %s0, 0, %s62
 .LBB3_10:
-	lea %s34, 256
-	lvl %s34
+	lea %s0, 256
+	lvl %s0
 	pvfmk.w.up.af %vm2
 	pvfmk.w.lo.af %vm3
-	svm %s35,%vm3,0
-	or %s34, 0, (0)1
+	svm %s2,%vm3,0
+	or %s1, 0, (0)1
 	or %s0, 0, (0)1
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm3,1
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm3,2
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm3,3
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm2,0
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm2,1
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm2,2
-	brne.l %s35, %s34, .LBB3_8
-	svm %s35,%vm2,3
-	cmps.l %s35, %s35, %s34
-	cmov.l.eq %s34, (63)0, %s35
-	or %s0, 0, %s34
+	brne.l %s2, %s1, .LBB3_8
+	svm %s2,%vm3,1
+	brne.l %s2, %s1, .LBB3_8
+	svm %s2,%vm3,2
+	brne.l %s2, %s1, .LBB3_8
+	svm %s2,%vm3,3
+	brne.l %s2, %s1, .LBB3_8
+	svm %s2,%vm2,0
+	brne.l %s2, %s1, .LBB3_8
+	svm %s2,%vm2,1
+	brne.l %s2, %s1, .LBB3_8
+	svm %s2,%vm2,2
+	brne.l %s2, %s1, .LBB3_8
+	svm %s0,%vm2,3
+	cmps.l %s0, %s0, %s1
+	cmov.l.eq %s1, (63)0, %s0
+	or %s0, 0, %s1
 .LBB3_8:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -206,6 +210,5 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

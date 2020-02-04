@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	approx_vfdivs_vvvl,@function
 approx_vfdivs_vvvl:
+.Lapprox_vfdivs_vvvl$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,20 +23,20 @@ approx_vfdivs_vvvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s3, %s34, .LBB0_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	lea.sl %s36, 1065353216
-	or %s37, 0, %s3
+	or %s4, 1, (0)1
+	brlt.w %s3, %s4, .LBB0_3
+	or %s4, 0, (0)1
+	lea %s5, 256
+	lea.sl %s6, 1065353216
+	or %s7, 0, %s3
 .LBB0_2:
-	mins.w.zx %s38, %s37, %s35
-	lvl %s38
+	mins.w.zx %s34, %s7, %s5
+	lvl %s34
 	vldu %v0,4,%s1
 	vldu %v1,4,%s2
 	vrcp.s %v2,%v1
-	or %s39, 0, %s36
-	vfnmsb.s %v3,%s39,%v1,%v2
+	or %s35, 0, %s6
+	vfnmsb.s %v3,%s35,%v1,%v2
 	vfmad.s %v3,%v2,%v2,%v3
 	vfmul.s %v4,%v0,%v3
 	vfnmsb.s %v5,%v0,%v4,%v1
@@ -46,9 +47,9 @@ approx_vfdivs_vvvl:
 	lea %s0, 1024(%s0)
 	lea %s1, 1024(%s1)
 	lea %s2, 1024(%s2)
-	lea %s34, 256(%s34)
-	lea %s37, -256(%s37)
-	brlt.w %s34, %s3, .LBB0_2
+	lea %s4, 256(%s4)
+	lea %s7, -256(%s7)
+	brlt.w %s4, %s3, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -59,6 +60,5 @@ approx_vfdivs_vvvl:
 .Lfunc_end0:
 	.size	approx_vfdivs_vvvl, .Lfunc_end0-approx_vfdivs_vvvl
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

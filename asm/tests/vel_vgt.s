@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z10vel_vgt_vvPvS_Pm,@function
 _Z10vel_vgt_vvPvS_Pm:
+.L_Z10vel_vgt_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ _Z10vel_vgt_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,3,%s1
 	vgt %v0,%v0,0,0
@@ -41,6 +42,7 @@ _Z10vel_vgt_vvPvS_Pm:
 	.p2align	4
 	.type	_Z11vel_vgt_vvmPvS_PmPj,@function
 _Z11vel_vgt_vvmPvS_PmPj:
+.L_Z11vel_vgt_vvmPvS_PmPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -59,8 +61,8 @@ _Z11vel_vgt_vvmPvS_PmPj:
 	monc
 	or %s0, 0, %s62
 .LBB1_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
 	vsfa %v0,%v0,3,%s1
@@ -80,6 +82,7 @@ _Z11vel_vgt_vvmPvS_PmPj:
 	.p2align	4
 	.type	_Z11vel_vgtu_vvPvS_Pm,@function
 _Z11vel_vgtu_vvPvS_Pm:
+.L_Z11vel_vgtu_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -98,8 +101,8 @@ _Z11vel_vgtu_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB2_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,2,%s1
 	vgtu %v0,%v0,0,0
@@ -117,6 +120,7 @@ _Z11vel_vgtu_vvPvS_Pm:
 	.p2align	4
 	.type	_Z12vel_vgtu_vvmPvS_PmPj,@function
 _Z12vel_vgtu_vvmPvS_PmPj:
+.L_Z12vel_vgtu_vvmPvS_PmPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -135,8 +139,8 @@ _Z12vel_vgtu_vvmPvS_PmPj:
 	monc
 	or %s0, 0, %s62
 .LBB3_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
 	vsfa %v0,%v0,2,%s1
@@ -156,6 +160,7 @@ _Z12vel_vgtu_vvmPvS_PmPj:
 	.p2align	4
 	.type	_Z13vel_vgtlsx_vvPvS_Pm,@function
 _Z13vel_vgtlsx_vvPvS_Pm:
+.L_Z13vel_vgtlsx_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -174,8 +179,8 @@ _Z13vel_vgtlsx_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB4_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,2,%s1
 	vgtl.sx %v0,%v0,0,0
@@ -193,6 +198,7 @@ _Z13vel_vgtlsx_vvPvS_Pm:
 	.p2align	4
 	.type	_Z14vel_vgtlsx_vvmPvS_PmPj,@function
 _Z14vel_vgtlsx_vvmPvS_PmPj:
+.L_Z14vel_vgtlsx_vvmPvS_PmPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -211,8 +217,8 @@ _Z14vel_vgtlsx_vvmPvS_PmPj:
 	monc
 	or %s0, 0, %s62
 .LBB5_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
 	vsfa %v0,%v0,2,%s1
@@ -232,6 +238,7 @@ _Z14vel_vgtlsx_vvmPvS_PmPj:
 	.p2align	4
 	.type	_Z13vel_vgtlzx_vvPvS_Pm,@function
 _Z13vel_vgtlzx_vvPvS_Pm:
+.L_Z13vel_vgtlzx_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -250,8 +257,8 @@ _Z13vel_vgtlzx_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB6_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,2,%s1
 	vgtl.zx %v0,%v0,0,0
@@ -269,6 +276,7 @@ _Z13vel_vgtlzx_vvPvS_Pm:
 	.p2align	4
 	.type	_Z14vel_vgtlzx_vvmPvS_PmPj,@function
 _Z14vel_vgtlzx_vvmPvS_PmPj:
+.L_Z14vel_vgtlzx_vvmPvS_PmPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -287,8 +295,8 @@ _Z14vel_vgtlzx_vvmPvS_PmPj:
 	monc
 	or %s0, 0, %s62
 .LBB7_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
 	vsfa %v0,%v0,2,%s1
@@ -308,6 +316,7 @@ _Z14vel_vgtlzx_vvmPvS_PmPj:
 	.p2align	4
 	.type	_Z12vel_vgtnc_vvPvS_Pm,@function
 _Z12vel_vgtnc_vvPvS_Pm:
+.L_Z12vel_vgtnc_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -326,8 +335,8 @@ _Z12vel_vgtnc_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB8_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,3,%s1
 	vgt.nc %v0,%v0,0,0
@@ -345,6 +354,7 @@ _Z12vel_vgtnc_vvPvS_Pm:
 	.p2align	4
 	.type	_Z13vel_vgtunc_vvPvS_Pm,@function
 _Z13vel_vgtunc_vvPvS_Pm:
+.L_Z13vel_vgtunc_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -363,8 +373,8 @@ _Z13vel_vgtunc_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB9_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,2,%s1
 	vgtu.nc %v0,%v0,0,0
@@ -382,6 +392,7 @@ _Z13vel_vgtunc_vvPvS_Pm:
 	.p2align	4
 	.type	_Z15vel_vgtlsxnc_vvPvS_Pm,@function
 _Z15vel_vgtlsxnc_vvPvS_Pm:
+.L_Z15vel_vgtlsxnc_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -400,8 +411,8 @@ _Z15vel_vgtlsxnc_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB10_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,2,%s1
 	vgtl.sx.nc %v0,%v0,0,0
@@ -419,6 +430,7 @@ _Z15vel_vgtlsxnc_vvPvS_Pm:
 	.p2align	4
 	.type	_Z15vel_vgtlzxnc_vvPvS_Pm,@function
 _Z15vel_vgtlzxnc_vvPvS_Pm:
+.L_Z15vel_vgtlzxnc_vvPvS_Pm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -437,8 +449,8 @@ _Z15vel_vgtlzxnc_vvPvS_Pm:
 	monc
 	or %s0, 0, %s62
 .LBB11_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s2
 	vsfa %v0,%v0,2,%s1
 	vgtl.zx.nc %v0,%v0,0,0
@@ -452,6 +464,5 @@ _Z15vel_vgtlzxnc_vvPvS_Pm:
 .Lfunc_end11:
 	.size	_Z15vel_vgtlzxnc_vvPvS_Pm, .Lfunc_end11-_Z15vel_vgtlzxnc_vvPvS_Pm
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

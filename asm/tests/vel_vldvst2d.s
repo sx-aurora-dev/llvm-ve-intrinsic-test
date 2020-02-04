@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z9vel_vld2dPdmPKv,@function
 _Z9vel_vld2dPdmPKv:
+.L_Z9vel_vld2dPdmPKv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ _Z9vel_vld2dPdmPKv:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld2d %v0,%s1,%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -39,6 +40,7 @@ _Z9vel_vld2dPdmPKv:
 	.p2align	4
 	.type	_Z9vel_vst2dPdmPv,@function
 _Z9vel_vst2dPdmPv:
+.L_Z9vel_vst2dPdmPv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -57,8 +59,8 @@ _Z9vel_vst2dPdmPv:
 	monc
 	or %s0, 0, %s62
 .LBB1_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s0
 	vst2d %v0,%s1,%s2
 	or %s11, 0, %s9
@@ -74,6 +76,7 @@ _Z9vel_vst2dPdmPv:
 	.p2align	4
 	.type	_Z15vel_vst2d_vssmlPdmPvPj,@function
 _Z15vel_vst2d_vssmlPdmPvPj:
+.L_Z15vel_vst2d_vssmlPdmPvPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -92,8 +95,8 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 	monc
 	or %s0, 0, %s62
 .LBB2_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s0
 	vldl.sx %v1,4,%s3
 	vfmk.w.gt %vm1,%v1
@@ -111,6 +114,7 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 	.p2align	4
 	.type	_Z10vel_vldu2dPfmPKv,@function
 _Z10vel_vldu2dPfmPKv:
+.L_Z10vel_vldu2dPfmPKv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -129,8 +133,8 @@ _Z10vel_vldu2dPfmPKv:
 	monc
 	or %s0, 0, %s62
 .LBB3_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vldu2d %v0,%s1,%s2
 	vstu %v0,4,%s0
 	or %s11, 0, %s9
@@ -146,6 +150,7 @@ _Z10vel_vldu2dPfmPKv:
 	.p2align	4
 	.type	_Z10vel_vstu2dPfmPv,@function
 _Z10vel_vstu2dPfmPv:
+.L_Z10vel_vstu2dPfmPv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -164,8 +169,8 @@ _Z10vel_vstu2dPfmPv:
 	monc
 	or %s0, 0, %s62
 .LBB4_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vldu %v0,4,%s0
 	vstu2d %v0,%s1,%s2
 	or %s11, 0, %s9
@@ -181,6 +186,7 @@ _Z10vel_vstu2dPfmPv:
 	.p2align	4
 	.type	_Z16vel_vstu2d_vssmlPfmPvPj,@function
 _Z16vel_vstu2d_vssmlPfmPvPj:
+.L_Z16vel_vstu2d_vssmlPfmPvPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -199,8 +205,8 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 	monc
 	or %s0, 0, %s62
 .LBB5_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vldu %v0,4,%s0
 	vldl.sx %v1,4,%s3
 	vfmk.w.gt %vm1,%v1
@@ -218,6 +224,7 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 	.p2align	4
 	.type	_Z12vel_vldl2dsxPlmPKv,@function
 _Z12vel_vldl2dsxPlmPKv:
+.L_Z12vel_vldl2dsxPlmPKv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -236,8 +243,8 @@ _Z12vel_vldl2dsxPlmPKv:
 	monc
 	or %s0, 0, %s62
 .LBB6_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vldl2d.sx %v0,%s1,%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -253,6 +260,7 @@ _Z12vel_vldl2dsxPlmPKv:
 	.p2align	4
 	.type	_Z12vel_vldl2dzxPmmPKv,@function
 _Z12vel_vldl2dzxPmmPKv:
+.L_Z12vel_vldl2dzxPmmPKv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -271,8 +279,8 @@ _Z12vel_vldl2dzxPmmPKv:
 	monc
 	or %s0, 0, %s62
 .LBB7_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vldl2d.zx %v0,%s1,%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -288,6 +296,7 @@ _Z12vel_vldl2dzxPmmPKv:
 	.p2align	4
 	.type	_Z10vel_vstl2dPimPv,@function
 _Z10vel_vstl2dPimPv:
+.L_Z10vel_vstl2dPimPv$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -306,8 +315,8 @@ _Z10vel_vstl2dPimPv:
 	monc
 	or %s0, 0, %s62
 .LBB8_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vldl.sx %v0,4,%s0
 	vstl2d %v0,%s1,%s2
 	or %s11, 0, %s9
@@ -323,6 +332,7 @@ _Z10vel_vstl2dPimPv:
 	.p2align	4
 	.type	_Z16vel_vstl2d_vssmlPimPvPj,@function
 _Z16vel_vstl2d_vssmlPimPvPj:
+.L_Z16vel_vstl2d_vssmlPimPvPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -341,8 +351,8 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 	monc
 	or %s0, 0, %s62
 .LBB9_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vldl.sx %v0,4,%s0
 	vldl.sx %v1,4,%s3
 	vfmk.w.gt %vm1,%v1
@@ -356,6 +366,5 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 .Lfunc_end9:
 	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

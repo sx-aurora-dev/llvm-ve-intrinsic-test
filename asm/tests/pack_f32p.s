@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	pack_f32p,@function
 pack_f32p:
+.Lpack_f32p$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,9 +23,9 @@ pack_f32p:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	ldu %s34, (,%s0)
-	ldl.zx %s35, 4(,%s0)
-	or %s0, %s34, %s35
+	ldu %s1, (,%s0)
+	ldl.zx %s0, 4(,%s0)
+	or %s0, %s1, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -34,6 +35,5 @@ pack_f32p:
 .Lfunc_end0:
 	.size	pack_f32p, .Lfunc_end0-pack_f32p
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

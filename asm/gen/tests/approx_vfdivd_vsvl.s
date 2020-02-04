@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	approx_vfdivd_vsvl,@function
 approx_vfdivd_vsvl:
+.Lapprox_vfdivd_vsvl$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,23 +23,23 @@ approx_vfdivd_vsvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s3, %s34, .LBB0_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	lea.sl %s36, 1072693248
-	or %s37, 0, %s3
+	or %s4, 1, (0)1
+	brlt.w %s3, %s4, .LBB0_3
+	or %s4, 0, (0)1
+	lea %s5, 256
+	lea.sl %s6, 1072693248
+	or %s7, 0, %s3
 .LBB0_2:
-	mins.w.zx %s38, %s37, %s35
-	lvl %s38
+	mins.w.zx %s34, %s7, %s5
+	lvl %s34
 	vld %v0,8,%s2
 	vrcp.d %v1,%v0
-	vfnmsb.d %v2,%s36,%v0,%v1
+	vfnmsb.d %v2,%s6,%v0,%v1
 	vfmad.d %v1,%v1,%v1,%v2
-	vfnmsb.d %v2,%s36,%v0,%v1
+	vfnmsb.d %v2,%s6,%v0,%v1
 	vfmad.d %v1,%v1,%v1,%v2
 	vaddu.l %v1,1,%v1
-	vfnmsb.d %v2,%s36,%v0,%v1
+	vfnmsb.d %v2,%s6,%v0,%v1
 	vfmad.d %v1,%v1,%v1,%v2
 	vfmul.d %v2,%s1,%v1
 	vfnmsb.d %v0,%s1,%v2,%v0
@@ -46,9 +47,9 @@ approx_vfdivd_vsvl:
 	vst %v0,8,%s0
 	lea %s0, 2048(%s0)
 	lea %s2, 2048(%s2)
-	lea %s34, 256(%s34)
-	lea %s37, -256(%s37)
-	brlt.w %s34, %s3, .LBB0_2
+	lea %s4, 256(%s4)
+	lea %s7, -256(%s7)
+	brlt.w %s4, %s3, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -59,6 +60,5 @@ approx_vfdivd_vsvl:
 .Lfunc_end0:
 	.size	approx_vfdivd_vsvl, .Lfunc_end0-approx_vfdivd_vsvl
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

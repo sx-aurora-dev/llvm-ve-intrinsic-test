@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	vmrg_vvvml,@function
 vmrg_vvvml:
+.Lvmrg_vvvml$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,14 +23,14 @@ vmrg_vvvml:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s4, %s34, .LBB0_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	or %s36, 0, %s4
+	or %s5, 1, (0)1
+	brlt.w %s4, %s5, .LBB0_3
+	or %s5, 0, (0)1
+	lea %s6, 256
+	or %s7, 0, %s4
 .LBB0_2:
-	mins.w.zx %s37, %s36, %s35
-	lvl %s37
+	mins.w.zx %s34, %s7, %s6
+	lvl %s34
 	vld %v0,8,%s1
 	vld %v1,8,%s2
 	vldl.zx %v2,4,%s3
@@ -40,9 +41,9 @@ vmrg_vvvml:
 	lea %s1, 2048(%s1)
 	lea %s2, 2048(%s2)
 	lea %s3, 1024(%s3)
-	lea %s34, 256(%s34)
-	lea %s36, -256(%s36)
-	brlt.w %s34, %s4, .LBB0_2
+	lea %s5, 256(%s5)
+	lea %s7, -256(%s7)
+	brlt.w %s5, %s4, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -57,6 +58,7 @@ vmrg_vvvml:
 	.p2align	4
 	.type	vmrg_vsvml,@function
 vmrg_vsvml:
+.Lvmrg_vsvml$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -75,14 +77,14 @@ vmrg_vsvml:
 	monc
 	or %s0, 0, %s62
 .LBB1_5:
-	or %s34, 1, (0)1
-	brlt.w %s4, %s34, .LBB1_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	or %s36, 0, %s4
+	or %s5, 1, (0)1
+	brlt.w %s4, %s5, .LBB1_3
+	or %s5, 0, (0)1
+	lea %s6, 256
+	or %s7, 0, %s4
 .LBB1_2:
-	mins.w.zx %s37, %s36, %s35
-	lvl %s37
+	mins.w.zx %s34, %s7, %s6
+	lvl %s34
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
 	vfmk.w.gt %vm1,%v1
@@ -91,9 +93,9 @@ vmrg_vsvml:
 	lea %s0, 2048(%s0)
 	lea %s2, 2048(%s2)
 	lea %s3, 1024(%s3)
-	lea %s34, 256(%s34)
-	lea %s36, -256(%s36)
-	brlt.w %s34, %s4, .LBB1_2
+	lea %s5, 256(%s5)
+	lea %s7, -256(%s7)
+	brlt.w %s5, %s4, .LBB1_2
 .LBB1_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -108,6 +110,7 @@ vmrg_vsvml:
 	.p2align	4
 	.type	vmrg_vIvml,@function
 vmrg_vIvml:
+.Lvmrg_vIvml$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -126,14 +129,14 @@ vmrg_vIvml:
 	monc
 	or %s0, 0, %s62
 .LBB2_5:
-	or %s34, 1, (0)1
-	brlt.w %s4, %s34, .LBB2_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	or %s36, 0, %s4
+	or %s1, 1, (0)1
+	brlt.w %s4, %s1, .LBB2_3
+	or %s1, 0, (0)1
+	lea %s5, 256
+	or %s6, 0, %s4
 .LBB2_2:
-	mins.w.zx %s37, %s36, %s35
-	lvl %s37
+	mins.w.zx %s7, %s6, %s5
+	lvl %s7
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
 	vfmk.w.gt %vm1,%v1
@@ -142,9 +145,9 @@ vmrg_vIvml:
 	lea %s0, 2048(%s0)
 	lea %s2, 2048(%s2)
 	lea %s3, 1024(%s3)
-	lea %s34, 256(%s34)
-	lea %s36, -256(%s36)
-	brlt.w %s34, %s4, .LBB2_2
+	lea %s1, 256(%s1)
+	lea %s6, -256(%s6)
+	brlt.w %s1, %s4, .LBB2_2
 .LBB2_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -159,6 +162,7 @@ vmrg_vIvml:
 	.p2align	4
 	.type	vmrgw_vvvMl,@function
 vmrgw_vvvMl:
+.Lvmrgw_vvvMl$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -177,18 +181,18 @@ vmrgw_vvvMl:
 	monc
 	or %s0, 0, %s62
 .LBB3_5:
-	or %s34, 1, (0)1
-	brlt.w %s4, %s34, .LBB3_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	lea %s36, 512
-	or %s37, 0, %s4
+	or %s5, 1, (0)1
+	brlt.w %s4, %s5, .LBB3_3
+	or %s5, 0, (0)1
+	lea %s6, 256
+	lea %s7, 512
+	or %s34, 0, %s4
 .LBB3_2:
-	sra.w.sx %s38, %s37, 1
-	cmps.w.sx %s39, %s37, %s36
-	or %s40, 0, %s35
-	cmov.w.lt %s40, %s38, %s39
-	lvl %s40
+	sra.w.sx %s35, %s34, 1
+	cmps.w.sx %s36, %s34, %s7
+	or %s37, 0, %s6
+	cmov.w.lt %s37, %s35, %s36
+	lvl %s37
 	vld %v0,8,%s1
 	vld %v1,8,%s2
 	vld %v2,8,%s3
@@ -200,9 +204,9 @@ vmrgw_vvvMl:
 	lea %s1, 2048(%s1)
 	lea %s2, 2048(%s2)
 	lea %s3, 2048(%s3)
-	lea %s34, 512(%s34)
-	lea %s37, -512(%s37)
-	brlt.w %s34, %s4, .LBB3_2
+	lea %s5, 512(%s5)
+	lea %s34, -512(%s34)
+	brlt.w %s5, %s4, .LBB3_2
 .LBB3_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -217,6 +221,7 @@ vmrgw_vvvMl:
 	.p2align	4
 	.type	vmrgw_vsvMl,@function
 vmrgw_vsvMl:
+.Lvmrgw_vsvMl$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -235,18 +240,18 @@ vmrgw_vsvMl:
 	monc
 	or %s0, 0, %s62
 .LBB4_5:
-	or %s34, 1, (0)1
-	brlt.w %s4, %s34, .LBB4_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	lea %s36, 512
-	or %s37, 0, %s4
+	or %s5, 1, (0)1
+	brlt.w %s4, %s5, .LBB4_3
+	or %s5, 0, (0)1
+	lea %s6, 256
+	lea %s7, 512
+	or %s34, 0, %s4
 .LBB4_2:
-	sra.w.sx %s38, %s37, 1
-	cmps.w.sx %s39, %s37, %s36
-	or %s40, 0, %s35
-	cmov.w.lt %s40, %s38, %s39
-	lvl %s40
+	sra.w.sx %s35, %s34, 1
+	cmps.w.sx %s36, %s34, %s7
+	or %s37, 0, %s6
+	cmov.w.lt %s37, %s35, %s36
+	lvl %s37
 	vld %v0,8,%s2
 	vld %v1,8,%s3
 	pvfmk.w.up.gt %vm2,%v1
@@ -256,9 +261,9 @@ vmrgw_vsvMl:
 	lea %s0, 2048(%s0)
 	lea %s2, 2048(%s2)
 	lea %s3, 2048(%s3)
-	lea %s34, 512(%s34)
-	lea %s37, -512(%s37)
-	brlt.w %s34, %s4, .LBB4_2
+	lea %s5, 512(%s5)
+	lea %s34, -512(%s34)
+	brlt.w %s5, %s4, .LBB4_2
 .LBB4_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -269,6 +274,5 @@ vmrgw_vsvMl:
 .Lfunc_end4:
 	.size	vmrgw_vsvMl, .Lfunc_end4-vmrgw_vsvMl
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z3vmvPmPKmi,@function
 _Z3vmvPmPKmi:
+.L_Z3vmvPmPKmi$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ _Z3vmvPmPKmi:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s1
 	vmv %v0,%s2,%v0
 	vst %v0,8,%s0
@@ -40,6 +41,7 @@ _Z3vmvPmPKmi:
 	.p2align	4
 	.type	_Z5vmv_iPmPKmi,@function
 _Z5vmv_iPmPKmi:
+.L_Z5vmv_iPmPKmi$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -58,8 +60,8 @@ _Z5vmv_iPmPKmi:
 	monc
 	or %s0, 0, %s62
 .LBB1_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s2, 256
+	lvl %s2
 	vld %v0,8,%s1
 	vmv %v0,3,%v0
 	vst %v0,8,%s0
@@ -76,6 +78,7 @@ _Z5vmv_iPmPKmi:
 	.p2align	4
 	.type	_Z10vmv_vsvmvlPmPKmiPj,@function
 _Z10vmv_vsvmvlPmPKmiPj:
+.L_Z10vmv_vsvmvlPmPKmiPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -94,8 +97,8 @@ _Z10vmv_vsvmvlPmPKmiPj:
 	monc
 	or %s0, 0, %s62
 .LBB2_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s1
 	vldl.sx %v1,4,%s3
 	vld %v2,8,%s0
@@ -115,6 +118,7 @@ _Z10vmv_vsvmvlPmPKmiPj:
 	.p2align	4
 	.type	_Z12vmv_vsvmvl_iPmPKmiPj,@function
 _Z12vmv_vsvmvl_iPmPKmiPj:
+.L_Z12vmv_vsvmvl_iPmPKmiPj$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -133,8 +137,8 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 	monc
 	or %s0, 0, %s62
 .LBB3_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s2, 256
+	lvl %s2
 	vld %v0,8,%s1
 	vldl.sx %v1,4,%s3
 	vld %v2,8,%s0
@@ -150,6 +154,5 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

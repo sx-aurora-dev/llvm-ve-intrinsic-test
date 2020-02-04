@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z8vel_vm01PdS_Pji,@function
 _Z8vel_vm01PdS_Pji:
+.L_Z8vel_vm01PdS_Pji$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,16 +23,16 @@ _Z8vel_vm01PdS_Pji:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s3, %s34, .LBB0_3
-	lea %s34, 256
-	lvl %s34
+	or %s4, 1, (0)1
+	brlt.w %s3, %s4, .LBB0_3
+	lea %s4, 256
+	lvl %s4
 	vfmk.l.at %vm1
-	or %s35, 0, (0)1
-	or %s36, 0, %s3
+	or %s5, 0, (0)1
+	or %s6, 0, %s3
 .LBB0_2:
-	mins.w.zx %s37, %s36, %s34
-	lvl %s37
+	mins.w.zx %s7, %s6, %s4
+	lvl %s7
 	vldl.zx %v0,4,%s2
 	vld %v1,8,%s0
 	vld %v2,8,%s1
@@ -39,15 +40,15 @@ _Z8vel_vm01PdS_Pji:
 	nndm %vm1,%vm2,%vm1
 	vfadd.d %v1,%v1,%v2,%vm1
 	vst %v1,8,%s0
-	adds.w.sx %s37, %s37, (0)1
-	sll %s38, %s37, 3
-	adds.l %s0, %s0, %s38
-	adds.l %s1, %s1, %s38
-	sll %s37, %s37, 2
-	adds.l %s2, %s2, %s37
-	lea %s35, 256(%s35)
-	lea %s36, -256(%s36)
-	brlt.w %s35, %s3, .LBB0_2
+	adds.w.sx %s7, %s7, (0)1
+	sll %s34, %s7, 3
+	adds.l %s0, %s0, %s34
+	adds.l %s1, %s1, %s34
+	sll %s7, %s7, 2
+	adds.l %s2, %s2, %s7
+	lea %s5, 256(%s5)
+	lea %s6, -256(%s6)
+	brlt.w %s5, %s3, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -58,6 +59,5 @@ _Z8vel_vm01PdS_Pji:
 .Lfunc_end0:
 	.size	_Z8vel_vm01PdS_Pji, .Lfunc_end0-_Z8vel_vm01PdS_Pji
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	vfnmsbd_vvsvmvl,@function
 vfnmsbd_vvsvmvl:
+.Lvfnmsbd_vvsvmvl$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,14 +23,14 @@ vfnmsbd_vvsvmvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s6, %s34, .LBB0_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	or %s36, 0, %s6
+	or %s7, 1, (0)1
+	brlt.w %s6, %s7, .LBB0_3
+	or %s7, 0, (0)1
+	lea %s34, 256
+	or %s35, 0, %s6
 .LBB0_2:
-	mins.w.zx %s37, %s36, %s35
-	lvl %s37
+	mins.w.zx %s36, %s35, %s34
+	lvl %s36
 	vld %v0,8,%s1
 	vld %v1,8,%s3
 	vldl.zx %v2,4,%s4
@@ -42,9 +43,9 @@ vfnmsbd_vvsvmvl:
 	lea %s3, 2048(%s3)
 	lea %s4, 1024(%s4)
 	lea %s5, 2048(%s5)
-	lea %s34, 256(%s34)
-	lea %s36, -256(%s36)
-	brlt.w %s34, %s6, .LBB0_2
+	lea %s7, 256(%s7)
+	lea %s35, -256(%s35)
+	brlt.w %s7, %s6, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -55,6 +56,5 @@ vfnmsbd_vvsvmvl:
 .Lfunc_end0:
 	.size	vfnmsbd_vvsvmvl, .Lfunc_end0-vfnmsbd_vvsvmvl
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

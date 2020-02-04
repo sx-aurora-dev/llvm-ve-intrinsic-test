@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z15vel_vst2dot_vssPKdmPvPd,@function
 _Z15vel_vst2dot_vssPKdmPvPd:
+.L_Z15vel_vst2dot_vssPKdmPvPd$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ _Z15vel_vst2dot_vssPKdmPvPd:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s0
 	vst2d.ot %v0,%s1,%s2
 	svob
@@ -42,6 +43,7 @@ _Z15vel_vst2dot_vssPKdmPvPd:
 	.p2align	4
 	.type	_Z16vel_vstu2dot_vssPKfmPvPf,@function
 _Z16vel_vstu2dot_vssPKfmPvPf:
+.L_Z16vel_vstu2dot_vssPKfmPvPf$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -60,8 +62,8 @@ _Z16vel_vstu2dot_vssPKfmPvPf:
 	monc
 	or %s0, 0, %s62
 .LBB1_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vldu %v0,4,%s0
 	vstu2d.ot %v0,%s1,%s2
 	svob
@@ -80,6 +82,7 @@ _Z16vel_vstu2dot_vssPKfmPvPf:
 	.p2align	4
 	.type	_Z16vel_vstl2dot_vssPKimPvPi,@function
 _Z16vel_vstl2dot_vssPKimPvPi:
+.L_Z16vel_vstl2dot_vssPKimPvPi$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -98,8 +101,8 @@ _Z16vel_vstl2dot_vssPKimPvPi:
 	monc
 	or %s0, 0, %s62
 .LBB2_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vldl.sx %v0,4,%s0
 	vstl2d.ot %v0,%s1,%s2
 	svob
@@ -114,6 +117,5 @@ _Z16vel_vstl2dot_vssPKimPvPi:
 .Lfunc_end2:
 	.size	_Z16vel_vstl2dot_vssPKimPvPi, .Lfunc_end2-_Z16vel_vstl2dot_vssPKimPvPi
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

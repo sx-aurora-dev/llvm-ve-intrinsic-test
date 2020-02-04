@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	lsv_vss,@function
 lsv_vss:
+.Llsv_vss$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ lsv_vss:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s3, 256
+	lvl %s3
 	vld %v0,8,%s0
 	lsv %v0(%s1),%s2
 	vst %v0,8,%s0
@@ -36,6 +37,5 @@ lsv_vss:
 .Lfunc_end0:
 	.size	lsv_vss, .Lfunc_end0-lsv_vss
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 4d0219ec8990a4d889196a4e2a003e64f5edc69e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

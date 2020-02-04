@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	vaddswsx_vsvmvl_imm,@function
 vaddswsx_vsvmvl_imm:
+.Lvaddswsx_vsvmvl_imm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,14 +23,14 @@ vaddswsx_vsvmvl_imm:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s4, %s34, .LBB0_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	or %s36, 0, %s4
+	or %s5, 1, (0)1
+	brlt.w %s4, %s5, .LBB0_3
+	or %s5, 0, (0)1
+	lea %s6, 256
+	or %s7, 0, %s4
 .LBB0_2:
-	mins.w.zx %s37, %s36, %s35
-	lvl %s37
+	mins.w.zx %s34, %s7, %s6
+	lvl %s34
 	vldl.sx %v0,4,%s1
 	vldl.zx %v1,4,%s2
 	vldl.sx %v2,4,%s3
@@ -40,9 +41,9 @@ vaddswsx_vsvmvl_imm:
 	lea %s1, 1024(%s1)
 	lea %s2, 1024(%s2)
 	lea %s3, 1024(%s3)
-	lea %s34, 256(%s34)
-	lea %s36, -256(%s36)
-	brlt.w %s34, %s4, .LBB0_2
+	lea %s5, 256(%s5)
+	lea %s7, -256(%s7)
+	brlt.w %s5, %s4, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -53,6 +54,5 @@ vaddswsx_vsvmvl_imm:
 .Lfunc_end0:
 	.size	vaddswsx_vsvmvl_imm, .Lfunc_end0-vaddswsx_vsvmvl_imm
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z4vseqPm,@function
 _Z4vseqPm:
+.L_Z4vseqPm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ _Z4vseqPm:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s1, 256
+	lvl %s1
 	vseq %v0
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -39,6 +40,7 @@ _Z4vseqPm:
 	.p2align	4
 	.type	_Z6vseq_pPm,@function
 _Z6vseq_pPm:
+.L_Z6vseq_pPm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -57,8 +59,8 @@ _Z6vseq_pPm:
 	monc
 	or %s0, 0, %s62
 .LBB1_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s1, 256
+	lvl %s1
 	pvseq %v0
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -74,6 +76,7 @@ _Z6vseq_pPm:
 	.p2align	4
 	.type	_Z7vseq_plPm,@function
 _Z7vseq_plPm:
+.L_Z7vseq_plPm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -92,8 +95,8 @@ _Z7vseq_plPm:
 	monc
 	or %s0, 0, %s62
 .LBB2_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s1, 256
+	lvl %s1
 	pvseq.lo %v0
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -109,6 +112,7 @@ _Z7vseq_plPm:
 	.p2align	4
 	.type	_Z7vseq_puPm,@function
 _Z7vseq_puPm:
+.L_Z7vseq_puPm$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -127,8 +131,8 @@ _Z7vseq_puPm:
 	monc
 	or %s0, 0, %s62
 .LBB3_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s1, 256
+	lvl %s1
 	pvseq.up %v0
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -140,6 +144,5 @@ _Z7vseq_puPm:
 .Lfunc_end3:
 	.size	_Z7vseq_puPm, .Lfunc_end3-_Z7vseq_puPm
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

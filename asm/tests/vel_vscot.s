@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	_Z12vel_vscot_vvPKdPdPKmS1_,@function
 _Z12vel_vscot_vvPKdPdPKmS1_:
+.L_Z12vel_vscot_vvPKdPdPKmS1_$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,8 +23,8 @@ _Z12vel_vscot_vvPKdPdPKmS1_:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vld %v0,8,%s0
 	vld %v1,8,%s2
 	vsfa %v1,%v1,3,%s3
@@ -44,6 +45,7 @@ _Z12vel_vscot_vvPKdPdPKmS1_:
 	.p2align	4
 	.type	_Z13vel_vscuot_vvPKfPfPKmS1_,@function
 _Z13vel_vscuot_vvPKfPfPKmS1_:
+.L_Z13vel_vscuot_vvPKfPfPKmS1_$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -62,8 +64,8 @@ _Z13vel_vscuot_vvPKfPfPKmS1_:
 	monc
 	or %s0, 0, %s62
 .LBB1_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vldu %v0,4,%s0
 	vld %v1,8,%s2
 	vsfa %v1,%v1,2,%s3
@@ -84,6 +86,7 @@ _Z13vel_vscuot_vvPKfPfPKmS1_:
 	.p2align	4
 	.type	_Z13vel_vsclot_vvPKiPiPKmS1_,@function
 _Z13vel_vsclot_vvPKiPiPKmS1_:
+.L_Z13vel_vsclot_vvPKiPiPKmS1_$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -102,8 +105,8 @@ _Z13vel_vsclot_vvPKiPiPKmS1_:
 	monc
 	or %s0, 0, %s62
 .LBB2_2:
-	lea %s34, 256
-	lvl %s34
+	lea %s4, 256
+	lvl %s4
 	vldl.sx %v0,4,%s0
 	vld %v1,8,%s2
 	vsfa %v1,%v1,2,%s3
@@ -120,6 +123,5 @@ _Z13vel_vsclot_vvPKiPiPKmS1_:
 .Lfunc_end2:
 	.size	_Z13vel_vsclot_vvPKiPiPKmS1_, .Lfunc_end2-_Z13vel_vsclot_vvPKiPiPKmS1_
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

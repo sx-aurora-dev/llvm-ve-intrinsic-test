@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	approx_vfsqrts_vvl,@function
 approx_vfsqrts_vvl:
+.Lapprox_vfsqrts_vvl$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,34 +23,34 @@ approx_vfsqrts_vvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s34, 1, (0)1
-	brlt.w %s2, %s34, .LBB0_3
-	or %s34, 0, (0)1
-	lea %s35, 256
-	lea.sl %s36, 1072693248
-	lea.sl %s37, 1071644672
-	or %s38, 0, %s2
+	or %s3, 1, (0)1
+	brlt.w %s2, %s3, .LBB0_3
+	or %s3, 0, (0)1
+	lea %s4, 256
+	lea.sl %s5, 1072693248
+	lea.sl %s6, 1071644672
+	or %s7, 0, %s2
 .LBB0_2:
-	mins.w.zx %s39, %s38, %s35
-	lvl %s39
+	mins.w.zx %s34, %s7, %s4
+	lvl %s34
 	vldu %v0,4,%s1
 	vcvt.d.s %v0,%v0
 	vrsqrt.d.nex %v1,%v0
 	vfmul.d %v2,%v0,%v1
-	vfnmsb.d %v2,%s36,%v2,%v1
-	vfmul.d %v2,%s37,%v2
+	vfnmsb.d %v2,%s5,%v2,%v1
+	vfmul.d %v2,%s6,%v2
 	vfmad.d %v1,%v1,%v1,%v2
 	vfmul.d %v0,%v0,%v1
-	vfnmsb.d %v1,%s36,%v0,%v1
-	vfmul.d %v1,%s37,%v1
+	vfnmsb.d %v1,%s5,%v0,%v1
+	vfmul.d %v1,%s6,%v1
 	vfmad.d %v0,%v0,%v0,%v1
 	vcvt.s.d %v0,%v0
 	vstu %v0,4,%s0
 	lea %s0, 1024(%s0)
 	lea %s1, 1024(%s1)
-	lea %s34, 256(%s34)
-	lea %s38, -256(%s38)
-	brlt.w %s34, %s2, .LBB0_2
+	lea %s3, 256(%s3)
+	lea %s7, -256(%s7)
+	brlt.w %s3, %s2, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
@@ -60,6 +61,5 @@ approx_vfsqrts_vvl:
 .Lfunc_end0:
 	.size	approx_vfsqrts_vvl, .Lfunc_end0-approx_vfsqrts_vvl
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

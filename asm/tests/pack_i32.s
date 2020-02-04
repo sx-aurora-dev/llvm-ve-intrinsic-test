@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	pack_i32,@function
 pack_i32:
+.Lpack_i32$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,9 +23,9 @@ pack_i32:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	sll %s34, %s0, 32
-	adds.w.zx %s35, %s1, (0)1
-	or %s0, %s34, %s35
+	sll %s0, %s0, 32
+	adds.w.zx %s1, %s1, (0)1
+	or %s0, %s0, %s1
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -34,6 +35,5 @@ pack_i32:
 .Lfunc_end0:
 	.size	pack_i32, .Lfunc_end0-pack_i32
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits

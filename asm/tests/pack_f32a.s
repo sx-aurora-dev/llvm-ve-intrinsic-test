@@ -4,6 +4,7 @@
 	.p2align	4
 	.type	vel_pack_f32a,@function
 vel_pack_f32a:
+.Lvel_pack_f32a$local:
 	st %s9, (,%s11)
 	st %s10, 8(,%s11)
 	st %s15, 24(,%s11)
@@ -22,11 +23,11 @@ vel_pack_f32a:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	ldl.zx %s34, (,%s0)
-	lea %s35, 1
-	and %s35, %s35, (32)0
-	lea.sl %s35, 1(%s35)
-	mulu.l %s0, %s34, %s35
+	ldl.zx %s0, (,%s0)
+	lea %s1, 1
+	and %s1, %s1, (32)0
+	lea.sl %s1, 1(%s1)
+	mulu.l %s0, %s0, %s1
 	or %s11, 0, %s9
 	ld %s16, 32(,%s11)
 	ld %s15, 24(,%s11)
@@ -36,6 +37,5 @@ vel_pack_f32a:
 .Lfunc_end0:
 	.size	vel_pack_f32a, .Lfunc_end0-vel_pack_f32a
 
-
-	.ident	"clang version 10.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 436d233fbc594d58dca6f7267bc5774b68d0c021)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
 	.section	".note.GNU-stack","",@progbits
