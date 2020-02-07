@@ -5,16 +5,16 @@
 	.type	_Z9vel_vld2dPdmPKv,@function
 _Z9vel_vld2dPdmPKv:
 .L_Z9vel_vld2dPdmPKv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB0_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -28,11 +28,11 @@ _Z9vel_vld2dPdmPKv:
 	vld2d %v0,%s1,%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end0:
 	.size	_Z9vel_vld2dPdmPKv, .Lfunc_end0-_Z9vel_vld2dPdmPKv
 
@@ -41,16 +41,16 @@ _Z9vel_vld2dPdmPKv:
 	.type	_Z9vel_vst2dPdmPv,@function
 _Z9vel_vst2dPdmPv:
 .L_Z9vel_vst2dPdmPv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB1_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -64,11 +64,11 @@ _Z9vel_vst2dPdmPv:
 	vld %v0,8,%s0
 	vst2d %v0,%s1,%s2
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end1:
 	.size	_Z9vel_vst2dPdmPv, .Lfunc_end1-_Z9vel_vst2dPdmPv
 
@@ -77,16 +77,16 @@ _Z9vel_vst2dPdmPv:
 	.type	_Z15vel_vst2d_vssmlPdmPvPj,@function
 _Z15vel_vst2d_vssmlPdmPvPj:
 .L_Z15vel_vst2d_vssmlPdmPvPj$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB2_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -102,11 +102,11 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 	vfmk.w.gt %vm1,%v1
 	vst2d %v0,%s1,%s2,%vm1
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end2:
 	.size	_Z15vel_vst2d_vssmlPdmPvPj, .Lfunc_end2-_Z15vel_vst2d_vssmlPdmPvPj
 
@@ -115,16 +115,16 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 	.type	_Z10vel_vldu2dPfmPKv,@function
 _Z10vel_vldu2dPfmPKv:
 .L_Z10vel_vldu2dPfmPKv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB3_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -138,11 +138,11 @@ _Z10vel_vldu2dPfmPKv:
 	vldu2d %v0,%s1,%s2
 	vstu %v0,4,%s0
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end3:
 	.size	_Z10vel_vldu2dPfmPKv, .Lfunc_end3-_Z10vel_vldu2dPfmPKv
 
@@ -151,16 +151,16 @@ _Z10vel_vldu2dPfmPKv:
 	.type	_Z10vel_vstu2dPfmPv,@function
 _Z10vel_vstu2dPfmPv:
 .L_Z10vel_vstu2dPfmPv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB4_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -174,11 +174,11 @@ _Z10vel_vstu2dPfmPv:
 	vldu %v0,4,%s0
 	vstu2d %v0,%s1,%s2
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end4:
 	.size	_Z10vel_vstu2dPfmPv, .Lfunc_end4-_Z10vel_vstu2dPfmPv
 
@@ -187,16 +187,16 @@ _Z10vel_vstu2dPfmPv:
 	.type	_Z16vel_vstu2d_vssmlPfmPvPj,@function
 _Z16vel_vstu2d_vssmlPfmPvPj:
 .L_Z16vel_vstu2d_vssmlPfmPvPj$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB5_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -212,11 +212,11 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 	vfmk.w.gt %vm1,%v1
 	vstu2d %v0,%s1,%s2,%vm1
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end5:
 	.size	_Z16vel_vstu2d_vssmlPfmPvPj, .Lfunc_end5-_Z16vel_vstu2d_vssmlPfmPvPj
 
@@ -225,16 +225,16 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 	.type	_Z12vel_vldl2dsxPlmPKv,@function
 _Z12vel_vldl2dsxPlmPKv:
 .L_Z12vel_vldl2dsxPlmPKv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB6_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -248,11 +248,11 @@ _Z12vel_vldl2dsxPlmPKv:
 	vldl2d.sx %v0,%s1,%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end6:
 	.size	_Z12vel_vldl2dsxPlmPKv, .Lfunc_end6-_Z12vel_vldl2dsxPlmPKv
 
@@ -261,16 +261,16 @@ _Z12vel_vldl2dsxPlmPKv:
 	.type	_Z12vel_vldl2dzxPmmPKv,@function
 _Z12vel_vldl2dzxPmmPKv:
 .L_Z12vel_vldl2dzxPmmPKv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB7_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -284,11 +284,11 @@ _Z12vel_vldl2dzxPmmPKv:
 	vldl2d.zx %v0,%s1,%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end7:
 	.size	_Z12vel_vldl2dzxPmmPKv, .Lfunc_end7-_Z12vel_vldl2dzxPmmPKv
 
@@ -297,16 +297,16 @@ _Z12vel_vldl2dzxPmmPKv:
 	.type	_Z10vel_vstl2dPimPv,@function
 _Z10vel_vstl2dPimPv:
 .L_Z10vel_vstl2dPimPv$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB8_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -320,11 +320,11 @@ _Z10vel_vstl2dPimPv:
 	vldl.sx %v0,4,%s0
 	vstl2d %v0,%s1,%s2
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end8:
 	.size	_Z10vel_vstl2dPimPv, .Lfunc_end8-_Z10vel_vstl2dPimPv
 
@@ -333,16 +333,16 @@ _Z10vel_vstl2dPimPv:
 	.type	_Z16vel_vstl2d_vssmlPimPvPj,@function
 _Z16vel_vstl2d_vssmlPimPvPj:
 .L_Z16vel_vstl2d_vssmlPimPvPj$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB9_2
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -358,13 +358,13 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 	vfmk.w.gt %vm1,%v1
 	vstl2d %v0,%s1,%s2,%vm1
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end9:
 	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 890342c8b12a139820ad5b21fdf1742f70b7eee8)"
 	.section	".note.GNU-stack","",@progbits

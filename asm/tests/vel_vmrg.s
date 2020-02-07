@@ -5,16 +5,16 @@
 	.type	vmrg_vvvml,@function
 vmrg_vvvml:
 .Lvmrg_vvvml$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB0_5
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -37,20 +37,20 @@ vmrg_vvvml:
 	vfmk.w.gt %vm1,%v2
 	vmrg %v0,%v0,%v1,%vm1
 	vst %v0,8,%s0
-	lea %s0, 2048(%s0)
-	lea %s1, 2048(%s1)
-	lea %s2, 2048(%s2)
-	lea %s3, 1024(%s3)
-	lea %s5, 256(%s5)
-	lea %s7, -256(%s7)
+	lea %s0, 2048(, %s0)
+	lea %s1, 2048(, %s1)
+	lea %s2, 2048(, %s2)
+	lea %s3, 1024(, %s3)
+	lea %s5, 256(, %s5)
+	lea %s7, -256(, %s7)
 	brlt.w %s5, %s4, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end0:
 	.size	vmrg_vvvml, .Lfunc_end0-vmrg_vvvml
 
@@ -59,16 +59,16 @@ vmrg_vvvml:
 	.type	vmrg_vsvml,@function
 vmrg_vsvml:
 .Lvmrg_vsvml$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB1_5
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -90,19 +90,19 @@ vmrg_vsvml:
 	vfmk.w.gt %vm1,%v1
 	vmrg %v0,%s1,%v0,%vm1
 	vst %v0,8,%s0
-	lea %s0, 2048(%s0)
-	lea %s2, 2048(%s2)
-	lea %s3, 1024(%s3)
-	lea %s5, 256(%s5)
-	lea %s7, -256(%s7)
+	lea %s0, 2048(, %s0)
+	lea %s2, 2048(, %s2)
+	lea %s3, 1024(, %s3)
+	lea %s5, 256(, %s5)
+	lea %s7, -256(, %s7)
 	brlt.w %s5, %s4, .LBB1_2
 .LBB1_3:
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end1:
 	.size	vmrg_vsvml, .Lfunc_end1-vmrg_vsvml
 
@@ -111,16 +111,16 @@ vmrg_vsvml:
 	.type	vmrg_vIvml,@function
 vmrg_vIvml:
 .Lvmrg_vIvml$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB2_5
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -142,19 +142,19 @@ vmrg_vIvml:
 	vfmk.w.gt %vm1,%v1
 	vmrg %v0,3,%v0,%vm1
 	vst %v0,8,%s0
-	lea %s0, 2048(%s0)
-	lea %s2, 2048(%s2)
-	lea %s3, 1024(%s3)
-	lea %s1, 256(%s1)
-	lea %s6, -256(%s6)
+	lea %s0, 2048(, %s0)
+	lea %s2, 2048(, %s2)
+	lea %s3, 1024(, %s3)
+	lea %s1, 256(, %s1)
+	lea %s6, -256(, %s6)
 	brlt.w %s1, %s4, .LBB2_2
 .LBB2_3:
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end2:
 	.size	vmrg_vIvml, .Lfunc_end2-vmrg_vIvml
 
@@ -163,16 +163,16 @@ vmrg_vIvml:
 	.type	vmrgw_vvvMl,@function
 vmrgw_vvvMl:
 .Lvmrgw_vvvMl$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB3_5
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -200,20 +200,20 @@ vmrgw_vvvMl:
 	pvfmk.w.lo.gt %vm3,%v2
 	vmrg.w %v0,%v0,%v1,%vm2
 	vst %v0,8,%s0
-	lea %s0, 2048(%s0)
-	lea %s1, 2048(%s1)
-	lea %s2, 2048(%s2)
-	lea %s3, 2048(%s3)
-	lea %s5, 512(%s5)
-	lea %s34, -512(%s34)
+	lea %s0, 2048(, %s0)
+	lea %s1, 2048(, %s1)
+	lea %s2, 2048(, %s2)
+	lea %s3, 2048(, %s3)
+	lea %s5, 512(, %s5)
+	lea %s34, -512(, %s34)
 	brlt.w %s5, %s4, .LBB3_2
 .LBB3_3:
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end3:
 	.size	vmrgw_vvvMl, .Lfunc_end3-vmrgw_vvvMl
 
@@ -222,16 +222,16 @@ vmrgw_vvvMl:
 	.type	vmrgw_vsvMl,@function
 vmrgw_vsvMl:
 .Lvmrgw_vsvMl$local:
-	st %s9, (,%s11)
-	st %s10, 8(,%s11)
-	st %s15, 24(,%s11)
-	st %s16, 32(,%s11)
+	st %s9, (, %s11)
+	st %s10, 8(, %s11)
+	st %s15, 24(, %s11)
+	st %s16, 32(, %s11)
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s11, %s13)
 	brge.l %s11, %s8, .LBB4_5
-	ld %s61, 24(,%s14)
+	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
 	shm.l %s63, (%s61)
@@ -258,21 +258,21 @@ vmrgw_vsvMl:
 	pvfmk.w.lo.gt %vm3,%v1
 	vmrg.w %v0,%s1,%v0,%vm2
 	vst %v0,8,%s0
-	lea %s0, 2048(%s0)
-	lea %s2, 2048(%s2)
-	lea %s3, 2048(%s3)
-	lea %s5, 512(%s5)
-	lea %s34, -512(%s34)
+	lea %s0, 2048(, %s0)
+	lea %s2, 2048(, %s2)
+	lea %s3, 2048(, %s3)
+	lea %s5, 512(, %s5)
+	lea %s34, -512(, %s34)
 	brlt.w %s5, %s4, .LBB4_2
 .LBB4_3:
 	or %s11, 0, %s9
-	ld %s16, 32(,%s11)
-	ld %s15, 24(,%s11)
-	ld %s10, 8(,%s11)
-	ld %s9, (,%s11)
-	b.l (,%lr)
+	ld %s16, 32(, %s11)
+	ld %s15, 24(, %s11)
+	ld %s10, 8(, %s11)
+	ld %s9, (, %s11)
+	b.l (, %lr)
 .Lfunc_end4:
 	.size	vmrgw_vsvMl, .Lfunc_end4-vmrgw_vsvMl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7a685b51bd790cc7255f609e2d5b66386cf4c768)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 890342c8b12a139820ad5b21fdf1742f70b7eee8)"
 	.section	".note.GNU-stack","",@progbits

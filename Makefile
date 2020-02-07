@@ -80,6 +80,12 @@ test-asm: $(TEST_ASMS)
 
 gen-asm: $(TEST_ASMS)
 
+update-asm: gen-asm
+	@for f in $(TEST_ASMS); \
+	do \
+		cp $$f asm/$$f; \
+	done
+
 .PHONY: llvm-test
 
 llvm-test: ll test-asm
