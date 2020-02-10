@@ -12,7 +12,7 @@ _Z15vel_vfmklgt_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB0_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -56,7 +56,7 @@ _Z15vel_vfmkllt_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB1_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -100,7 +100,7 @@ _Z15vel_vfmklne_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB2_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -144,7 +144,7 @@ _Z15vel_vfmkleq_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB3_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -188,7 +188,7 @@ _Z15vel_vfmklge_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB4_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -232,7 +232,7 @@ _Z15vel_vfmklle_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB5_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -276,7 +276,7 @@ _Z16vel_vfmklnum_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB6_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -320,7 +320,7 @@ _Z16vel_vfmklnan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB7_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -364,7 +364,7 @@ _Z18vel_vfmklgtnan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB8_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -408,7 +408,7 @@ _Z18vel_vfmklltnan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB9_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -452,7 +452,7 @@ _Z18vel_vfmklnenan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB10_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -496,7 +496,7 @@ _Z18vel_vfmkleqnan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB11_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -540,7 +540,7 @@ _Z18vel_vfmklgenan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB12_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -584,7 +584,7 @@ _Z18vel_vfmkllenan_mvlPmPKl:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB13_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -628,7 +628,7 @@ _Z15vel_vfmkwgt_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB14_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -672,7 +672,7 @@ _Z15vel_vfmkwlt_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB15_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -716,7 +716,7 @@ _Z15vel_vfmkwne_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB16_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -760,7 +760,7 @@ _Z15vel_vfmkweq_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB17_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -804,7 +804,7 @@ _Z15vel_vfmkwge_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB18_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -848,7 +848,7 @@ _Z15vel_vfmkwle_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB19_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -892,7 +892,7 @@ _Z16vel_vfmkwnum_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB20_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -936,7 +936,7 @@ _Z16vel_vfmkwnan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB21_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -980,7 +980,7 @@ _Z18vel_vfmkwgtnan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB22_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1024,7 +1024,7 @@ _Z18vel_vfmkwltnan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB23_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1068,7 +1068,7 @@ _Z18vel_vfmkwnenan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB24_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1112,7 +1112,7 @@ _Z18vel_vfmkweqnan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB25_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1156,7 +1156,7 @@ _Z18vel_vfmkwgenan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB26_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1200,7 +1200,7 @@ _Z18vel_vfmkwlenan_mvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB27_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1244,7 +1244,7 @@ _Z15vel_vfmkdgt_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB28_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1288,7 +1288,7 @@ _Z15vel_vfmkdlt_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB29_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1332,7 +1332,7 @@ _Z15vel_vfmkdne_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB30_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1376,7 +1376,7 @@ _Z15vel_vfmkdeq_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB31_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1420,7 +1420,7 @@ _Z15vel_vfmkdge_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB32_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1464,7 +1464,7 @@ _Z15vel_vfmkdle_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB33_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1508,7 +1508,7 @@ _Z16vel_vfmkdnum_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB34_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1552,7 +1552,7 @@ _Z16vel_vfmkdnan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB35_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1596,7 +1596,7 @@ _Z18vel_vfmkdgtnan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB36_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1640,7 +1640,7 @@ _Z18vel_vfmkdltnan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB37_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1684,7 +1684,7 @@ _Z18vel_vfmkdnenan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB38_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1728,7 +1728,7 @@ _Z18vel_vfmkdeqnan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB39_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1772,7 +1772,7 @@ _Z18vel_vfmkdgenan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB40_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1816,7 +1816,7 @@ _Z18vel_vfmkdlenan_mvlPmPKd:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB41_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1860,7 +1860,7 @@ _Z15vel_vfmksgt_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB42_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1904,7 +1904,7 @@ _Z15vel_vfmkslt_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB43_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1948,7 +1948,7 @@ _Z15vel_vfmksne_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB44_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -1992,7 +1992,7 @@ _Z15vel_vfmkseq_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB45_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2036,7 +2036,7 @@ _Z15vel_vfmksge_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB46_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2080,7 +2080,7 @@ _Z15vel_vfmksle_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB47_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2124,7 +2124,7 @@ _Z16vel_vfmksnum_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB48_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2168,7 +2168,7 @@ _Z16vel_vfmksnan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB49_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2212,7 +2212,7 @@ _Z18vel_vfmksgtnan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB50_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2256,7 +2256,7 @@ _Z18vel_vfmksltnan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB51_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2300,7 +2300,7 @@ _Z18vel_vfmksnenan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB52_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2344,7 +2344,7 @@ _Z18vel_vfmkseqnan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB53_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2388,7 +2388,7 @@ _Z18vel_vfmksgenan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB54_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2432,7 +2432,7 @@ _Z18vel_vfmkslenan_mvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB55_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2476,7 +2476,7 @@ _Z16vel_vfmklgt_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB56_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2528,7 +2528,7 @@ _Z16vel_vfmkllt_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB57_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2580,7 +2580,7 @@ _Z16vel_vfmklne_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB58_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2632,7 +2632,7 @@ _Z16vel_vfmkleq_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB59_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2684,7 +2684,7 @@ _Z16vel_vfmklge_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB60_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2736,7 +2736,7 @@ _Z16vel_vfmklle_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB61_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2788,7 +2788,7 @@ _Z17vel_vfmklnum_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB62_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2840,7 +2840,7 @@ _Z17vel_vfmklnan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB63_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2892,7 +2892,7 @@ _Z19vel_vfmklgtnan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB64_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2944,7 +2944,7 @@ _Z19vel_vfmklltnan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB65_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -2996,7 +2996,7 @@ _Z19vel_vfmklnenan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB66_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3048,7 +3048,7 @@ _Z19vel_vfmkleqnan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB67_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3100,7 +3100,7 @@ _Z19vel_vfmklgenan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB68_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3152,7 +3152,7 @@ _Z19vel_vfmkllenan_mvmlPmPKlPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB69_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3204,7 +3204,7 @@ _Z16vel_vfmkwgt_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB70_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3256,7 +3256,7 @@ _Z16vel_vfmkwlt_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB71_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3308,7 +3308,7 @@ _Z16vel_vfmkwne_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB72_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3360,7 +3360,7 @@ _Z16vel_vfmkweq_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB73_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3412,7 +3412,7 @@ _Z16vel_vfmkwge_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB74_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3464,7 +3464,7 @@ _Z16vel_vfmkwle_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB75_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3516,7 +3516,7 @@ _Z17vel_vfmkwnum_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB76_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3568,7 +3568,7 @@ _Z17vel_vfmkwnan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB77_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3620,7 +3620,7 @@ _Z19vel_vfmkwgtnan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB78_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3672,7 +3672,7 @@ _Z19vel_vfmkwltnan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB79_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3724,7 +3724,7 @@ _Z19vel_vfmkwnenan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB80_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3776,7 +3776,7 @@ _Z19vel_vfmkweqnan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB81_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3828,7 +3828,7 @@ _Z19vel_vfmkwgenan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB82_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3880,7 +3880,7 @@ _Z19vel_vfmkwlenan_mvmlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB83_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3932,7 +3932,7 @@ _Z16vel_vfmkdgt_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB84_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -3984,7 +3984,7 @@ _Z16vel_vfmkdlt_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB85_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4036,7 +4036,7 @@ _Z16vel_vfmkdne_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB86_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4088,7 +4088,7 @@ _Z16vel_vfmkdeq_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB87_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4140,7 +4140,7 @@ _Z16vel_vfmkdge_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB88_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4192,7 +4192,7 @@ _Z16vel_vfmkdle_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB89_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4244,7 +4244,7 @@ _Z17vel_vfmkdnum_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB90_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4296,7 +4296,7 @@ _Z17vel_vfmkdnan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB91_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4348,7 +4348,7 @@ _Z19vel_vfmkdgtnan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB92_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4400,7 +4400,7 @@ _Z19vel_vfmkdltnan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB93_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4452,7 +4452,7 @@ _Z19vel_vfmkdnenan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB94_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4504,7 +4504,7 @@ _Z19vel_vfmkdeqnan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB95_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4556,7 +4556,7 @@ _Z19vel_vfmkdgenan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB96_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4608,7 +4608,7 @@ _Z19vel_vfmkdlenan_mvmlPmPKdPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB97_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4660,7 +4660,7 @@ _Z16vel_vfmksgt_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB98_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4712,7 +4712,7 @@ _Z16vel_vfmkslt_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB99_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4764,7 +4764,7 @@ _Z16vel_vfmksne_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB100_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4816,7 +4816,7 @@ _Z16vel_vfmkseq_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB101_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4868,7 +4868,7 @@ _Z16vel_vfmksge_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB102_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4920,7 +4920,7 @@ _Z16vel_vfmksle_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB103_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -4972,7 +4972,7 @@ _Z17vel_vfmksnum_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB104_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5024,7 +5024,7 @@ _Z17vel_vfmksnan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB105_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5076,7 +5076,7 @@ _Z19vel_vfmksgtnan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB106_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5128,7 +5128,7 @@ _Z19vel_vfmksltnan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB107_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5180,7 +5180,7 @@ _Z19vel_vfmksnenan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB108_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5232,7 +5232,7 @@ _Z19vel_vfmkseqnan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB109_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5284,7 +5284,7 @@ _Z19vel_vfmksgenan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB110_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5336,7 +5336,7 @@ _Z19vel_vfmkslenan_mvmlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB111_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5388,7 +5388,7 @@ _Z16vel_pvfmkwgt_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB112_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5441,7 +5441,7 @@ _Z16vel_pvfmkwlt_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB113_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5494,7 +5494,7 @@ _Z16vel_pvfmkwne_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB114_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5547,7 +5547,7 @@ _Z16vel_pvfmkweq_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB115_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5600,7 +5600,7 @@ _Z16vel_pvfmkwge_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB116_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5653,7 +5653,7 @@ _Z16vel_pvfmkwle_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB117_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5706,7 +5706,7 @@ _Z17vel_pvfmkwnum_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB118_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5759,7 +5759,7 @@ _Z17vel_pvfmkwnan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB119_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5812,7 +5812,7 @@ _Z19vel_pvfmkwgtnan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB120_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5865,7 +5865,7 @@ _Z19vel_pvfmkwltnan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB121_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5918,7 +5918,7 @@ _Z19vel_pvfmkwnenan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB122_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -5971,7 +5971,7 @@ _Z19vel_pvfmkweqnan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB123_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6024,7 +6024,7 @@ _Z19vel_pvfmkwgenan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB124_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6077,7 +6077,7 @@ _Z19vel_pvfmkwlenan_MvlPmPKi:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB125_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6130,7 +6130,7 @@ _Z16vel_pvfmksgt_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB126_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6183,7 +6183,7 @@ _Z16vel_pvfmkslt_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB127_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6236,7 +6236,7 @@ _Z16vel_pvfmksne_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB128_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6289,7 +6289,7 @@ _Z16vel_pvfmkseq_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB129_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6342,7 +6342,7 @@ _Z16vel_pvfmksge_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB130_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6395,7 +6395,7 @@ _Z16vel_pvfmksle_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB131_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6448,7 +6448,7 @@ _Z17vel_pvfmksnum_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB132_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6501,7 +6501,7 @@ _Z17vel_pvfmksnan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB133_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6554,7 +6554,7 @@ _Z19vel_pvfmksgtnan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB134_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6607,7 +6607,7 @@ _Z19vel_pvfmksltnan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB135_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6660,7 +6660,7 @@ _Z19vel_pvfmksnenan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB136_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6713,7 +6713,7 @@ _Z19vel_pvfmkseqnan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB137_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6766,7 +6766,7 @@ _Z19vel_pvfmksgenan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB138_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6819,7 +6819,7 @@ _Z19vel_pvfmkslenan_MvlPmPKf:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB139_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6872,7 +6872,7 @@ _Z17vel_pvfmkwgt_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB140_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -6941,7 +6941,7 @@ _Z17vel_pvfmkwlt_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB141_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7010,7 +7010,7 @@ _Z17vel_pvfmkwne_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB142_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7079,7 +7079,7 @@ _Z17vel_pvfmkweq_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB143_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7148,7 +7148,7 @@ _Z17vel_pvfmkwge_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB144_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7217,7 +7217,7 @@ _Z17vel_pvfmkwle_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB145_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7286,7 +7286,7 @@ _Z18vel_pvfmkwnum_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB146_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7355,7 +7355,7 @@ _Z18vel_pvfmkwnan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB147_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7424,7 +7424,7 @@ _Z20vel_pvfmkwgtnan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB148_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7493,7 +7493,7 @@ _Z20vel_pvfmkwltnan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB149_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7562,7 +7562,7 @@ _Z20vel_pvfmkwnenan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB150_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7631,7 +7631,7 @@ _Z20vel_pvfmkweqnan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB151_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7700,7 +7700,7 @@ _Z20vel_pvfmkwgenan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB152_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7769,7 +7769,7 @@ _Z20vel_pvfmkwlenan_MvMlPmPKiPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB153_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7838,7 +7838,7 @@ _Z17vel_pvfmksgt_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB154_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7907,7 +7907,7 @@ _Z17vel_pvfmkslt_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB155_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -7976,7 +7976,7 @@ _Z17vel_pvfmksne_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB156_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8045,7 +8045,7 @@ _Z17vel_pvfmkseq_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB157_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8114,7 +8114,7 @@ _Z17vel_pvfmksge_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB158_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8183,7 +8183,7 @@ _Z17vel_pvfmksle_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB159_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8252,7 +8252,7 @@ _Z18vel_pvfmksnum_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB160_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8321,7 +8321,7 @@ _Z18vel_pvfmksnan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB161_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8390,7 +8390,7 @@ _Z20vel_pvfmksgtnan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB162_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8459,7 +8459,7 @@ _Z20vel_pvfmksltnan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB163_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8528,7 +8528,7 @@ _Z20vel_pvfmksnenan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB164_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8597,7 +8597,7 @@ _Z20vel_pvfmkseqnan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB165_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8666,7 +8666,7 @@ _Z20vel_pvfmksgenan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB166_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8735,7 +8735,7 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB167_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -8792,5 +8792,5 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 .Lfunc_end167:
 	.size	_Z20vel_pvfmkslenan_MvMlPmPKfPKm, .Lfunc_end167-_Z20vel_pvfmkslenan_MvMlPmPKfPKm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 890342c8b12a139820ad5b21fdf1742f70b7eee8)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 95d24fb5084e064d9620f7baddf8c5f3f4d9bcb4)"
 	.section	".note.GNU-stack","",@progbits

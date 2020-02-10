@@ -12,7 +12,7 @@ _Z9vel_vld2dPdmPKv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB0_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -48,7 +48,7 @@ _Z9vel_vst2dPdmPv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB1_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -84,7 +84,7 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB2_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -122,7 +122,7 @@ _Z10vel_vldu2dPfmPKv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB3_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -158,7 +158,7 @@ _Z10vel_vstu2dPfmPv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB4_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -194,7 +194,7 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB5_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -232,7 +232,7 @@ _Z12vel_vldl2dsxPlmPKv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB6_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -268,7 +268,7 @@ _Z12vel_vldl2dzxPmmPKv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB7_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -304,7 +304,7 @@ _Z10vel_vstl2dPimPv:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB8_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -340,7 +340,7 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB9_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -366,5 +366,5 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 .Lfunc_end9:
 	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 890342c8b12a139820ad5b21fdf1742f70b7eee8)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 95d24fb5084e064d9620f7baddf8c5f3f4d9bcb4)"
 	.section	".note.GNU-stack","",@progbits

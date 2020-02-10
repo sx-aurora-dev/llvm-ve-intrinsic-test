@@ -12,7 +12,7 @@ _Z4funcDv256_dS_S_Dv4_m:
 	or %s9, 0, %s11
 	lea %s13, -176
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB0_2
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -63,7 +63,7 @@ _Z10_test_vm02v:
 	or %s9, 0, %s11
 	lea %s13, -17680
 	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s11, %s13)
+	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB1_6
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
@@ -106,7 +106,7 @@ _Z10_test_vm02v:
 	or %s38, 0, %s7
 	cmov.w.eq %s38, %s35, %s36
 	st %s38, (, %s37)
-	lea %s34, 1(, %s34)
+	adds.w.sx %s34, 1, %s34
 	lea %s2, 8(, %s2)
 	lea %s4, 4(, %s4)
 	brne.l %s2, %s21, .LBB1_1
@@ -125,21 +125,17 @@ _Z10_test_vm02v:
 	lea %s0, 240(, %s11)
 	vst %v0,8,%s0
 	svm %s0,%vm1,3
-	lea %s1, 6408(, %s11)
-	st %s0, (, %s1)
+	st %s0, 6408(, %s11)
 	svm %s0,%vm1,2
-	lea %s1, 6400(, %s11)
-	st %s0, (, %s1)
+	st %s0, 6400(, %s11)
 	svm %s0,%vm1,1
-	lea %s1, 6392(, %s11)
-	st %s0, (, %s1)
+	st %s0, 6392(, %s11)
 	svm %s0,%vm1,0
-	lea %s1, 6384(, %s11)
-	lea %s2, _Z4funcDv256_dS_S_Dv4_m@lo
-	and %s2, %s2, (32)0
-	lea.sl %s12, _Z4funcDv256_dS_S_Dv4_m@hi(, %s2)
+	lea %s1, _Z4funcDv256_dS_S_Dv4_m@lo
+	and %s1, %s1, (32)0
+	lea.sl %s12, _Z4funcDv256_dS_S_Dv4_m@hi(, %s1)
 	lea %s18, -11264(, %s9)
-	st %s0, (, %s1)
+	st %s0, 6384(, %s11)
 	or %s0, 0, %s18
 	bsic %lr, (, %s12)
 	vld %v0,8,%s18
@@ -172,5 +168,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 890342c8b12a139820ad5b21fdf1742f70b7eee8)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 95d24fb5084e064d9620f7baddf8c5f3f4d9bcb4)"
 	.section	".note.GNU-stack","",@progbits
