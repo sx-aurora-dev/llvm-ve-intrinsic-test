@@ -70,53 +70,46 @@ _Z10_test_vm01v:
 	monc
 	or %s0, 0, %s62
 .LBB1_6:
-	or %s4, 0, (0)1
-	or %s6, 0, (0)1
-	lea %s1, -4096(, %s9)
-	lea %s0, -6144(, %s9)
-	lea.sl %s7, 1072693248
-	lea %s5, -8192(, %s9)
-	lea.sl %s34, 1073741824
-	lea %s2, -2048(, %s9)
-	lea %s3, 2048
+	or %s0, 0, (0)1
+	or %s2, 0, (0)1
+	lea.sl %s3, 1072693248
+	lea.sl %s4, 1073741824
+	lea %s1, 2048
 .LBB1_1:
-	cvt.d.w %s35, %s4
-	adds.l %s36, %s1, %s6
-	st %s35, (, %s36)
-	adds.l %s36, %s0, %s6
-	st %s7, (, %s36)
-	adds.l %s36, %s5, %s6
-	st %s34, (, %s36)
-	adds.l %s36, %s2, %s6
-	st %s35, (, %s36)
-	lea %s6, 8(, %s6)
-	adds.w.sx %s4, 1, %s4
-	brne.l %s6, %s3, .LBB1_1
-	lea %s6, 256
-	lvl %s6
-	vld %v0,8,%s1
-	vld %v1,8,%s0
-	vld %v2,8,%s5
-	or %s4, 0, (0)1
-	lvm %vm1,0,%s4
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s4
-	lvm %vm1,3,%s4
+	cvt.d.w %s5, %s0
+	st %s5, -4096(%s2, %s9)
+	st %s3, -6144(%s2, %s9)
+	st %s4, -8192(%s2, %s9)
+	st %s5, -2048(%s2, %s9)
+	lea %s2, 8(, %s2)
+	adds.w.sx %s0, 1, %s0
+	brne.l %s2, %s1, .LBB1_1
+	lea %s0, 256
+	lea %s3, -4096(, %s9)
+	lvl %s0
+	vld %v0,8,%s3
+	lea %s2, -6144(, %s9)
+	vld %v1,8,%s2
+	lea %s2, -8192(, %s9)
+	vld %v2,8,%s2
+	or %s2, 0, (0)1
+	lvm %vm1,0,%s2
+	lvm %vm1,1,%s2
+	lvm %vm1,2,%s2
+	lvm %vm1,3,%s2
 	vfadd.d %v0,%v1,%v2,%vm1
-	vst %v0,8,%s1
+	vst %v0,8,%s3
 	or %s0, 1, (0)1
-	or %s5, 0, %s4
+	or %s3, 0, %s2
 .LBB1_3:
-	adds.l %s6, %s1, %s5
-	ld %s6, (, %s6)
-	adds.l %s7, %s2, %s5
-	ld %s7, (, %s7)
-	fcmp.d %s6, %s6, %s7
-	or %s7, 0, %s4
-	cmov.d.eq %s7, (63)0, %s6
-	lea %s5, 8(, %s5)
-	and %s0, %s0, %s7
-	brne.l %s5, %s3, .LBB1_3
+	ld %s4, -4096(%s3, %s9)
+	ld %s5, -2048(%s3, %s9)
+	fcmp.d %s4, %s4, %s5
+	or %s5, 0, %s2
+	cmov.d.eq %s5, (63)0, %s4
+	lea %s3, 8(, %s3)
+	and %s0, %s0, %s5
+	brne.l %s3, %s1, .LBB1_3
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -126,5 +119,5 @@ _Z10_test_vm01v:
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 95d24fb5084e064d9620f7baddf8c5f3f4d9bcb4)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
 	.section	".note.GNU-stack","",@progbits

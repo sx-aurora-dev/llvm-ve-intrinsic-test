@@ -210,5 +210,5 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 95d24fb5084e064d9620f7baddf8c5f3f4d9bcb4)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
 	.section	".note.GNU-stack","",@progbits

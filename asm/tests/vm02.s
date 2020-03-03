@@ -78,43 +78,37 @@ _Z10_test_vm02v:
 	st %s19, 56(, %s9)
 	st %s20, 64(, %s9)
 	st %s21, 72(, %s9)
-	st %s22, 80(, %s9)
 	or %s0, 0, (0)1
-	or %s2, 0, (0)1
-	lea %s4, -9216(, %s9)
-	lea %s19, -2048(, %s9)
-	lea %s1, -6144(, %s9)
-	lea.sl %s5, 1072693248
-	lea %s3, -8192(, %s9)
-	lea.sl %s6, 1073741824
-	lea %s20, -4096(, %s9)
-	lea.sl %s7, 1074266112
-	lea %s21, 2048
-	or %s34, 0, %s0
+	or %s1, 0, (0)1
+	lea %s2, -9216(, %s9)
+	lea.sl %s3, 1072693248
+	lea.sl %s4, 1073741824
+	lea.sl %s5, 1074266112
+	lea %s19, 2048
+	or %s6, 0, %s0
 .LBB1_1:
-	cvt.d.w %s35, %s34
-	adds.l %s36, %s19, %s2
-	st %s35, (, %s36)
-	adds.l %s36, %s1, %s2
-	st %s5, (, %s36)
-	adds.l %s36, %s3, %s2
-	st %s6, (, %s36)
-	and %s36, 1, %s34
-	stl %s36, (, %s4)
-	adds.l %s37, %s20, %s2
-	cmps.w.sx %s36, %s36, %s0
-	or %s38, 0, %s7
-	cmov.w.eq %s38, %s35, %s36
-	st %s38, (, %s37)
-	adds.w.sx %s34, 1, %s34
-	lea %s2, 8(, %s2)
-	lea %s4, 4(, %s4)
-	brne.l %s2, %s21, .LBB1_1
-	lea %s22, 256
-	lvl %s22
-	vld %v0,8,%s19
-	vld %v1,8,%s1
-	vld %v2,8,%s3
+	cvt.d.w %s7, %s6
+	st %s7, -2048(%s1, %s9)
+	st %s3, -6144(%s1, %s9)
+	st %s4, -8192(%s1, %s9)
+	and %s34, 1, %s6
+	stl %s34, (, %s2)
+	cmps.w.sx %s34, %s34, %s0
+	or %s35, 0, %s5
+	cmov.w.eq %s35, %s7, %s34
+	st %s35, -4096(%s1, %s9)
+	adds.w.sx %s6, 1, %s6
+	lea %s1, 8(, %s1)
+	lea %s2, 4(, %s2)
+	brne.l %s1, %s19, .LBB1_1
+	lea %s20, 256
+	lea %s21, -2048(, %s9)
+	lvl %s20
+	vld %v0,8,%s21
+	lea %s0, -6144(, %s9)
+	vld %v1,8,%s0
+	lea %s0, -8192(, %s9)
+	vld %v2,8,%s0
 	lea %s0, -9216(, %s9)
 	vldl.zx %v3,4,%s0
 	vfmk.w.gt %vm1,%v3
@@ -139,22 +133,19 @@ _Z10_test_vm02v:
 	or %s0, 0, %s18
 	bsic %lr, (, %s12)
 	vld %v0,8,%s18
-	vst %v0,8,%s19
+	vst %v0,8,%s21
 	or %s1, 0, (0)1
 	or %s0, 1, (0)1
 	or %s2, 0, %s1
 .LBB1_3:
-	adds.l %s3, %s19, %s2
-	ld %s3, (, %s3)
-	adds.l %s4, %s20, %s2
-	ld %s4, (, %s4)
+	ld %s3, -2048(%s2, %s9)
+	ld %s4, -4096(%s2, %s9)
 	fcmp.d %s3, %s3, %s4
 	or %s4, 0, %s1
 	cmov.d.eq %s4, (63)0, %s3
 	lea %s2, 8(, %s2)
 	and %s0, %s0, %s4
-	brne.l %s2, %s21, .LBB1_3
-	ld %s22, 80(, %s9)
+	brne.l %s2, %s19, .LBB1_3
 	ld %s21, 72(, %s9)
 	ld %s20, 64(, %s9)
 	ld %s19, 56(, %s9)
@@ -168,5 +159,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 95d24fb5084e064d9620f7baddf8c5f3f4d9bcb4)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
 	.section	".note.GNU-stack","",@progbits
