@@ -23,8 +23,7 @@ approx_vfdivd_vsvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s4, 1, (0)1
-	brlt.w %s3, %s4, .LBB0_3
+	brgt.w 1, %s3, .LBB0_3
 	or %s4, 0, (0)1
 	lea %s5, 256
 	lea.sl %s6, 1072693248
@@ -60,5 +59,5 @@ approx_vfdivd_vsvl:
 .Lfunc_end0:
 	.size	approx_vfdivd_vsvl, .Lfunc_end0-approx_vfdivd_vsvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
 	.section	".note.GNU-stack","",@progbits

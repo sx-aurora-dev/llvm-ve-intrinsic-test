@@ -26,15 +26,15 @@ vel_vfmklat:
 	lea %s0, 256
 	lvl %s0
 	vfmk.l.at %vm1
-	svm %s2,%vm1,0
-	or %s1, -1, (0)1
+	svm %s1,%vm1,0
 	or %s0, 0, (0)1
-	brne.l %s2, %s1, .LBB0_4
-	svm %s2,%vm1,1
-	brne.l %s2, %s1, .LBB0_4
-	svm %s2,%vm1,2
-	brne.l %s2, %s1, .LBB0_4
+	brne.l -1, %s1, .LBB0_4
+	svm %s1,%vm1,1
+	brne.l -1, %s1, .LBB0_4
+	svm %s1,%vm1,2
+	brne.l -1, %s1, .LBB0_4
 	svm %s0,%vm1,3
+	or %s1, -1, (0)1
 	cmps.l %s1, %s0, %s1
 	or %s0, 0, (0)1
 	cmov.l.eq %s0, (63)0, %s1
@@ -74,18 +74,17 @@ vel_vfmklaf:
 	lea %s0, 256
 	lvl %s0
 	vfmk.l.af %vm1
-	svm %s2,%vm1,0
-	or %s1, 0, (0)1
+	svm %s1,%vm1,0
 	or %s0, 0, (0)1
-	brne.l %s2, %s1, .LBB1_4
-	svm %s2,%vm1,1
-	brne.l %s2, %s1, .LBB1_4
-	svm %s2,%vm1,2
-	brne.l %s2, %s1, .LBB1_4
-	svm %s0,%vm1,3
-	cmps.l %s0, %s0, %s1
-	cmov.l.eq %s1, (63)0, %s0
-	or %s0, 0, %s1
+	brne.l 0, %s1, .LBB1_4
+	svm %s1,%vm1,1
+	brne.l 0, %s1, .LBB1_4
+	svm %s1,%vm1,2
+	brne.l 0, %s1, .LBB1_4
+	svm %s1,%vm1,3
+	or %s0, 0, (0)1
+	cmps.l %s1, %s1, %s0
+	cmov.l.eq %s0, (63)0, %s1
 .LBB1_4:
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -123,23 +122,23 @@ vel_pvfmkat:
 	lvl %s0
 	pvfmk.w.up.at %vm2
 	pvfmk.w.lo.at %vm3
-	svm %s2,%vm3,0
-	or %s1, -1, (0)1
+	svm %s1,%vm3,0
 	or %s0, 0, (0)1
-	brne.l %s2, %s1, .LBB2_8
-	svm %s2,%vm3,1
-	brne.l %s2, %s1, .LBB2_8
-	svm %s2,%vm3,2
-	brne.l %s2, %s1, .LBB2_8
-	svm %s2,%vm3,3
-	brne.l %s2, %s1, .LBB2_8
-	svm %s2,%vm2,0
-	brne.l %s2, %s1, .LBB2_8
-	svm %s2,%vm2,1
-	brne.l %s2, %s1, .LBB2_8
-	svm %s2,%vm2,2
-	brne.l %s2, %s1, .LBB2_8
+	brne.l -1, %s1, .LBB2_8
+	svm %s1,%vm3,1
+	brne.l -1, %s1, .LBB2_8
+	svm %s1,%vm3,2
+	brne.l -1, %s1, .LBB2_8
+	svm %s1,%vm3,3
+	brne.l -1, %s1, .LBB2_8
+	svm %s1,%vm2,0
+	brne.l -1, %s1, .LBB2_8
+	svm %s1,%vm2,1
+	brne.l -1, %s1, .LBB2_8
+	svm %s1,%vm2,2
+	brne.l -1, %s1, .LBB2_8
 	svm %s0,%vm2,3
+	or %s1, -1, (0)1
 	cmps.l %s1, %s0, %s1
 	or %s0, 0, (0)1
 	cmov.l.eq %s0, (63)0, %s1
@@ -180,26 +179,25 @@ vel_pvfmkaf:
 	lvl %s0
 	pvfmk.w.up.af %vm2
 	pvfmk.w.lo.af %vm3
-	svm %s2,%vm3,0
-	or %s1, 0, (0)1
+	svm %s1,%vm3,0
 	or %s0, 0, (0)1
-	brne.l %s2, %s1, .LBB3_8
-	svm %s2,%vm3,1
-	brne.l %s2, %s1, .LBB3_8
-	svm %s2,%vm3,2
-	brne.l %s2, %s1, .LBB3_8
-	svm %s2,%vm3,3
-	brne.l %s2, %s1, .LBB3_8
-	svm %s2,%vm2,0
-	brne.l %s2, %s1, .LBB3_8
-	svm %s2,%vm2,1
-	brne.l %s2, %s1, .LBB3_8
-	svm %s2,%vm2,2
-	brne.l %s2, %s1, .LBB3_8
-	svm %s0,%vm2,3
-	cmps.l %s0, %s0, %s1
-	cmov.l.eq %s1, (63)0, %s0
-	or %s0, 0, %s1
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm3,1
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm3,2
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm3,3
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm2,0
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm2,1
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm2,2
+	brne.l 0, %s1, .LBB3_8
+	svm %s1,%vm2,3
+	or %s0, 0, (0)1
+	cmps.l %s1, %s1, %s0
+	cmov.l.eq %s0, (63)0, %s1
 .LBB3_8:
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -210,5 +208,5 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
 	.section	".note.GNU-stack","",@progbits

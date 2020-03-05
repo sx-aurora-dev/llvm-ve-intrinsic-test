@@ -23,8 +23,7 @@ vmrg_vvvml:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	or %s5, 1, (0)1
-	brlt.w %s4, %s5, .LBB0_3
+	brgt.w 1, %s4, .LBB0_3
 	or %s5, 0, (0)1
 	lea %s6, 256
 	or %s7, 0, %s4
@@ -77,8 +76,7 @@ vmrg_vsvml:
 	monc
 	or %s0, 0, %s62
 .LBB1_5:
-	or %s5, 1, (0)1
-	brlt.w %s4, %s5, .LBB1_3
+	brgt.w 1, %s4, .LBB1_3
 	or %s5, 0, (0)1
 	lea %s6, 256
 	or %s7, 0, %s4
@@ -129,8 +127,7 @@ vmrg_vIvml:
 	monc
 	or %s0, 0, %s62
 .LBB2_5:
-	or %s1, 1, (0)1
-	brlt.w %s4, %s1, .LBB2_3
+	brgt.w 1, %s4, .LBB2_3
 	or %s1, 0, (0)1
 	lea %s5, 256
 	or %s6, 0, %s4
@@ -181,8 +178,7 @@ vmrgw_vvvMl:
 	monc
 	or %s0, 0, %s62
 .LBB3_5:
-	or %s5, 1, (0)1
-	brlt.w %s4, %s5, .LBB3_3
+	brgt.w 1, %s4, .LBB3_3
 	or %s5, 0, (0)1
 	lea %s6, 256
 	lea %s7, 512
@@ -240,8 +236,7 @@ vmrgw_vsvMl:
 	monc
 	or %s0, 0, %s62
 .LBB4_5:
-	or %s5, 1, (0)1
-	brlt.w %s4, %s5, .LBB4_3
+	brgt.w 1, %s4, .LBB4_3
 	or %s5, 0, (0)1
 	lea %s6, 256
 	lea %s7, 512
@@ -274,5 +269,5 @@ vmrgw_vsvMl:
 .Lfunc_end4:
 	.size	vmrgw_vsvMl, .Lfunc_end4-vmrgw_vsvMl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
 	.section	".note.GNU-stack","",@progbits

@@ -129,5 +129,5 @@ _Z11vel_tovm_smPm:
 .Lfunc_end2:
 	.size	_Z11vel_tovm_smPm, .Lfunc_end2-_Z11vel_tovm_smPm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 2b268b318a1e2d4a7d775af703f1004a9c94cb6d)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
 	.section	".note.GNU-stack","",@progbits
