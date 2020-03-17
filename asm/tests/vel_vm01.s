@@ -30,7 +30,7 @@ _Z8vel_vm01PdS_Pji:
 	or %s5, 0, (0)1
 	or %s6, 0, %s3
 .LBB0_2:
-	mins.w.zx %s7, %s6, %s4
+	mins.w.sx %s7, %s6, %s4
 	lvl %s7
 	vldl.zx %v0,4,%s2
 	vld %v1,8,%s0
@@ -54,9 +54,9 @@ _Z8vel_vm01PdS_Pji:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end0:
 	.size	_Z8vel_vm01PdS_Pji, .Lfunc_end0-_Z8vel_vm01PdS_Pji
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
 	.section	".note.GNU-stack","",@progbits

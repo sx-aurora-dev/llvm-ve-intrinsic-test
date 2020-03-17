@@ -28,7 +28,7 @@ vfmaxd_vsvl:
 	lea %s5, 256
 	or %s6, 0, %s3
 .LBB0_2:
-	mins.w.zx %s7, %s6, %s5
+	mins.w.sx %s7, %s6, %s5
 	lvl %s7
 	vld %v0,8,%s2
 	vfmax.d %v0,%s1,%v0
@@ -44,9 +44,9 @@ vfmaxd_vsvl:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end0:
 	.size	vfmaxd_vsvl, .Lfunc_end0-vfmaxd_vsvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
 	.section	".note.GNU-stack","",@progbits

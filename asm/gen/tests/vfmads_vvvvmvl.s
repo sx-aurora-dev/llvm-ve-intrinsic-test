@@ -28,7 +28,7 @@ vfmads_vvvvmvl:
 	lea %s34, 256
 	or %s35, 0, %s6
 .LBB0_2:
-	mins.w.zx %s36, %s35, %s34
+	mins.w.sx %s36, %s35, %s34
 	lvl %s36
 	vldu %v0,4,%s1
 	vldu %v1,4,%s2
@@ -53,9 +53,9 @@ vfmads_vvvvmvl:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end0:
 	.size	vfmads_vvvvmvl, .Lfunc_end0-vfmads_vvvvmvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
 	.section	".note.GNU-stack","",@progbits

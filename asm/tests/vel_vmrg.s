@@ -28,7 +28,7 @@ vmrg_vvvml:
 	lea %s6, 256
 	or %s7, 0, %s4
 .LBB0_2:
-	mins.w.zx %s34, %s7, %s6
+	mins.w.sx %s34, %s7, %s6
 	lvl %s34
 	vld %v0,8,%s1
 	vld %v1,8,%s2
@@ -49,7 +49,7 @@ vmrg_vvvml:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end0:
 	.size	vmrg_vvvml, .Lfunc_end0-vmrg_vvvml
 
@@ -81,7 +81,7 @@ vmrg_vsvml:
 	lea %s6, 256
 	or %s7, 0, %s4
 .LBB1_2:
-	mins.w.zx %s34, %s7, %s6
+	mins.w.sx %s34, %s7, %s6
 	lvl %s34
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
@@ -100,7 +100,7 @@ vmrg_vsvml:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end1:
 	.size	vmrg_vsvml, .Lfunc_end1-vmrg_vsvml
 
@@ -132,7 +132,7 @@ vmrg_vIvml:
 	lea %s5, 256
 	or %s6, 0, %s4
 .LBB2_2:
-	mins.w.zx %s7, %s6, %s5
+	mins.w.sx %s7, %s6, %s5
 	lvl %s7
 	vld %v0,8,%s2
 	vldl.zx %v1,4,%s3
@@ -151,7 +151,7 @@ vmrg_vIvml:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end2:
 	.size	vmrg_vIvml, .Lfunc_end2-vmrg_vIvml
 
@@ -209,7 +209,7 @@ vmrgw_vvvMl:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end3:
 	.size	vmrgw_vvvMl, .Lfunc_end3-vmrgw_vvvMl
 
@@ -265,9 +265,9 @@ vmrgw_vsvMl:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l (, %lr)
+	b.l.t (, %lr)
 .Lfunc_end4:
 	.size	vmrgw_vsvMl, .Lfunc_end4-vmrgw_vsvMl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3d99b1caff346d559e3e184ecb5ab1fadefc79ae)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
 	.section	".note.GNU-stack","",@progbits
