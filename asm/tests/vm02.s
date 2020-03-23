@@ -131,7 +131,7 @@ _Z10_test_vm02v:
 	lea %s18, -11264(, %s9)
 	st %s0, 6384(, %s11)
 	or %s0, 0, %s18
-	bsic %lr, (, %s12)
+	bsic %s10, (, %s12)
 	vld %v0,8,%s18
 	vst %v0,8,%s21
 	or %s1, 0, (0)1
@@ -159,5 +159,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
 	.section	".note.GNU-stack","",@progbits

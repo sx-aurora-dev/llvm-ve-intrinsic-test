@@ -154,5 +154,5 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
 	.section	".note.GNU-stack","",@progbits

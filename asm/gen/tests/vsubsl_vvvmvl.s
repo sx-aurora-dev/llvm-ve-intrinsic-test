@@ -55,5 +55,5 @@ vsubsl_vvvmvl:
 .Lfunc_end0:
 	.size	vsubsl_vvvmvl, .Lfunc_end0-vsubsl_vvvmvl
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
 	.section	".note.GNU-stack","",@progbits

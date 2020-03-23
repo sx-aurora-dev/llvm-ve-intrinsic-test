@@ -72,7 +72,7 @@ _Z10_test_vm03v:
 	and %s0, %s0, (32)0
 	lea.sl %s12, _Z4funcv@hi(, %s0)
 	lea %s0, -32(, %s9)
-	bsic %lr, (, %s12)
+	bsic %s10, (, %s12)
 	or %s0, 0, (0)1
 	lvm %vm1,0,%s0
 	lvm %vm1,1,%s0
@@ -96,5 +96,5 @@ _Z10_test_vm03v:
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git 7cc853a8ecec062c53e2c861476377faf064b8e1)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
 	.section	".note.GNU-stack","",@progbits
