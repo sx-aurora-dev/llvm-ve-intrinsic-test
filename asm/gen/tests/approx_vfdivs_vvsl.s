@@ -25,7 +25,6 @@ approx_vfdivs_vvsl:
 .LBB0_5:
 	brgt.w 1, %s3, .LBB0_3
 	lea.sl %s4, 1065353216
-	or %s4, 0, %s4
 	fdiv.s %s4, %s4, %s2
 	or %s5, 0, (0)1
 	lea %s6, 256
@@ -53,5 +52,5 @@ approx_vfdivs_vvsl:
 .Lfunc_end0:
 	.size	approx_vfdivs_vvsl, .Lfunc_end0-approx_vfdivs_vvsl
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
 	.section	".note.GNU-stack","",@progbits

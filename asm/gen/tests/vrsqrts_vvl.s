@@ -48,5 +48,5 @@ vrsqrts_vvl:
 .Lfunc_end0:
 	.size	vrsqrts_vvl, .Lfunc_end0-vrsqrts_vvl
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
 	.section	".note.GNU-stack","",@progbits

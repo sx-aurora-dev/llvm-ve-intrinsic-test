@@ -33,8 +33,7 @@ approx_vfdivs_vsvl:
 	lvl %s34
 	vldu %v0,4,%s2
 	vrcp.s %v1,%v0
-	or %s35, 0, %s6
-	vfnmsb.s %v2,%s35,%v0,%v1
+	vfnmsb.s %v2,%s6,%v0,%v1
 	vfmad.s %v2,%v1,%v1,%v2
 	vfmul.s %v3,%s1,%v2
 	vfnmsb.s %v4,%s1,%v3,%v0
@@ -57,5 +56,5 @@ approx_vfdivs_vsvl:
 .Lfunc_end0:
 	.size	approx_vfdivs_vsvl, .Lfunc_end0-approx_vfdivs_vsvl
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git b65bb90b50a69e0eda5081d618bf8d5875b9df5c)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
 	.section	".note.GNU-stack","",@progbits
