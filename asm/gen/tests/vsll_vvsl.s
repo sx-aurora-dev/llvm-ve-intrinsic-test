@@ -48,5 +48,5 @@ vsll_vvsl:
 .Lfunc_end0:
 	.size	vsll_vvsl, .Lfunc_end0-vsll_vvsl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
 	.section	".note.GNU-stack","",@progbits

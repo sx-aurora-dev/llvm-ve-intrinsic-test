@@ -54,5 +54,5 @@ pvfmad_vsvvl:
 .Lfunc_end0:
 	.size	pvfmad_vsvvl, .Lfunc_end0-pvfmad_vsvvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
 	.section	".note.GNU-stack","",@progbits

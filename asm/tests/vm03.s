@@ -78,15 +78,15 @@ _Z10_test_vm03v:
 	lvm %vm1,1,%s0
 	lvm %vm1,2,%s0
 	lvm %vm1,3,%s0
-	svm %s1,%vm1,0
-	svm %s2,%vm1,1
-	or %s1, %s1, %s2
-	svm %s2,%vm1,2
-	or %s1, %s1, %s2
-	svm %s2,%vm1,3
-	or %s1, %s1, %s2
-	cmps.l %s1, %s1, %s0
-	cmov.l.eq %s0, (63)0, %s1
+	svm %s0,%vm1,0
+	svm %s1,%vm1,1
+	or %s0, %s0, %s1
+	svm %s1,%vm1,2
+	or %s0, %s0, %s1
+	svm %s1,%vm1,3
+	or %s0, %s0, %s1
+	ldz %s0, %s0
+	srl %s0, %s0, 6
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -96,5 +96,5 @@ _Z10_test_vm03v:
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
 	.section	".note.GNU-stack","",@progbits

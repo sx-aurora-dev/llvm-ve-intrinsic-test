@@ -34,10 +34,9 @@ vel_vfmklat:
 	svm %s1,%vm1,2
 	brne.l -1, %s1, .LBB0_4
 	svm %s0,%vm1,3
-	or %s1, -1, (0)1
-	cmps.l %s1, %s0, %s1
-	or %s0, 0, (0)1
-	cmov.l.eq %s0, (63)0, %s1
+	cmps.l %s0, %s0, (0)0
+	ldz %s0, %s0
+	srl %s0, %s0, 6
 .LBB0_4:
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -81,10 +80,9 @@ vel_vfmklaf:
 	brne.l 0, %s1, .LBB1_4
 	svm %s1,%vm1,2
 	brne.l 0, %s1, .LBB1_4
-	svm %s1,%vm1,3
-	or %s0, 0, (0)1
-	cmps.l %s1, %s1, %s0
-	cmov.l.eq %s0, (63)0, %s1
+	svm %s0,%vm1,3
+	ldz %s0, %s0
+	srl %s0, %s0, 6
 .LBB1_4:
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -138,10 +136,9 @@ vel_pvfmkat:
 	svm %s1,%vm2,2
 	brne.l -1, %s1, .LBB2_8
 	svm %s0,%vm2,3
-	or %s1, -1, (0)1
-	cmps.l %s1, %s0, %s1
-	or %s0, 0, (0)1
-	cmov.l.eq %s0, (63)0, %s1
+	cmps.l %s0, %s0, (0)0
+	ldz %s0, %s0
+	srl %s0, %s0, 6
 .LBB2_8:
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -194,10 +191,9 @@ vel_pvfmkaf:
 	brne.l 0, %s1, .LBB3_8
 	svm %s1,%vm2,2
 	brne.l 0, %s1, .LBB3_8
-	svm %s1,%vm2,3
-	or %s0, 0, (0)1
-	cmps.l %s1, %s1, %s0
-	cmov.l.eq %s0, (63)0, %s1
+	svm %s0,%vm2,3
+	ldz %s0, %s0
+	srl %s0, %s0, 6
 .LBB3_8:
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -208,5 +204,5 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
 	.section	".note.GNU-stack","",@progbits

@@ -85,19 +85,17 @@ _Z10_test_vm02v:
 	lea.sl %s4, 1073741824
 	lea.sl %s5, 1074266112
 	lea %s19, 2048
-	or %s6, 0, %s0
 .LBB1_1:
-	cvt.d.w %s7, %s6
-	st %s7, -2048(%s1, %s9)
+	cvt.d.w %s6, %s0
+	st %s6, -2048(%s1, %s9)
 	st %s3, -6144(%s1, %s9)
 	st %s4, -8192(%s1, %s9)
-	and %s34, 1, %s6
-	stl %s34, (, %s2)
-	cmps.w.sx %s34, %s34, %s0
-	or %s35, 0, %s5
-	cmov.w.eq %s35, %s7, %s34
-	st %s35, -4096(%s1, %s9)
-	adds.w.sx %s6, 1, %s6
+	and %s7, 1, %s0
+	stl %s7, (, %s2)
+	or %s34, 0, %s5
+	cmov.w.eq %s34, %s6, %s7
+	st %s34, -4096(%s1, %s9)
+	adds.w.sx %s0, 1, %s0
 	lea %s1, 8(, %s1)
 	lea %s2, 4(, %s2)
 	brne.l %s1, %s19, .LBB1_1
@@ -159,5 +157,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ca75812108fffbf4e076f7cb1e3b1ea84187497b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
 	.section	".note.GNU-stack","",@progbits
