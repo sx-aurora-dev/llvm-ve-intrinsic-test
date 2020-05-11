@@ -33,7 +33,7 @@ _Z3vmvPmPKmi:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z3vmvPmPKmi, .Lfunc_end0-_Z3vmvPmPKmi
 
@@ -70,7 +70,7 @@ _Z5vmv_iPmPKmi:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z5vmv_iPmPKmi, .Lfunc_end1-_Z5vmv_iPmPKmi
 
@@ -110,7 +110,7 @@ _Z10vmv_vsvmvlPmPKmiPj:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	_Z10vmv_vsvmvlPmPKmiPj, .Lfunc_end2-_Z10vmv_vsvmvlPmPKmiPj
 
@@ -150,9 +150,9 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
 	.section	".note.GNU-stack","",@progbits

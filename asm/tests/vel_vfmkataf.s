@@ -43,7 +43,7 @@ vel_vfmklat:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	vel_vfmklat, .Lfunc_end0-vel_vfmklat
 
@@ -89,7 +89,7 @@ vel_vfmklaf:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	vel_vfmklaf, .Lfunc_end1-vel_vfmklaf
 
@@ -145,7 +145,7 @@ vel_pvfmkat:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	vel_pvfmkat, .Lfunc_end2-vel_pvfmkat
 
@@ -200,9 +200,9 @@ vel_pvfmkaf:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
 	.section	".note.GNU-stack","",@progbits

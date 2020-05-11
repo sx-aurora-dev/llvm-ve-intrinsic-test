@@ -39,7 +39,7 @@ _Z11vel_pcvm_smPm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z11vel_pcvm_smPm, .Lfunc_end0-_Z11vel_pcvm_smPm
 
@@ -82,7 +82,7 @@ _Z11vel_lzvm_smPm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z11vel_lzvm_smPm, .Lfunc_end1-_Z11vel_lzvm_smPm
 
@@ -125,9 +125,9 @@ _Z11vel_tovm_smPm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	_Z11vel_tovm_smPm, .Lfunc_end2-_Z11vel_tovm_smPm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
 	.section	".note.GNU-stack","",@progbits

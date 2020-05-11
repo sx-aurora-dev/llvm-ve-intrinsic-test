@@ -34,7 +34,7 @@ _Z10vel_vgt_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z10vel_vgt_vvPvS_Pm, .Lfunc_end0-_Z10vel_vgt_vvPvS_Pm
 
@@ -74,7 +74,7 @@ _Z11vel_vgt_vvmPvS_PmPj:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z11vel_vgt_vvmPvS_PmPj, .Lfunc_end1-_Z11vel_vgt_vvmPvS_PmPj
 
@@ -112,7 +112,7 @@ _Z11vel_vgtu_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	_Z11vel_vgtu_vvPvS_Pm, .Lfunc_end2-_Z11vel_vgtu_vvPvS_Pm
 
@@ -152,7 +152,7 @@ _Z12vel_vgtu_vvmPvS_PmPj:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end3:
 	.size	_Z12vel_vgtu_vvmPvS_PmPj, .Lfunc_end3-_Z12vel_vgtu_vvmPvS_PmPj
 
@@ -190,7 +190,7 @@ _Z13vel_vgtlsx_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end4:
 	.size	_Z13vel_vgtlsx_vvPvS_Pm, .Lfunc_end4-_Z13vel_vgtlsx_vvPvS_Pm
 
@@ -230,7 +230,7 @@ _Z14vel_vgtlsx_vvmPvS_PmPj:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end5:
 	.size	_Z14vel_vgtlsx_vvmPvS_PmPj, .Lfunc_end5-_Z14vel_vgtlsx_vvmPvS_PmPj
 
@@ -268,7 +268,7 @@ _Z13vel_vgtlzx_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end6:
 	.size	_Z13vel_vgtlzx_vvPvS_Pm, .Lfunc_end6-_Z13vel_vgtlzx_vvPvS_Pm
 
@@ -308,7 +308,7 @@ _Z14vel_vgtlzx_vvmPvS_PmPj:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end7:
 	.size	_Z14vel_vgtlzx_vvmPvS_PmPj, .Lfunc_end7-_Z14vel_vgtlzx_vvmPvS_PmPj
 
@@ -346,7 +346,7 @@ _Z12vel_vgtnc_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end8:
 	.size	_Z12vel_vgtnc_vvPvS_Pm, .Lfunc_end8-_Z12vel_vgtnc_vvPvS_Pm
 
@@ -384,7 +384,7 @@ _Z13vel_vgtunc_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end9:
 	.size	_Z13vel_vgtunc_vvPvS_Pm, .Lfunc_end9-_Z13vel_vgtunc_vvPvS_Pm
 
@@ -422,7 +422,7 @@ _Z15vel_vgtlsxnc_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end10:
 	.size	_Z15vel_vgtlsxnc_vvPvS_Pm, .Lfunc_end10-_Z15vel_vgtlsxnc_vvPvS_Pm
 
@@ -460,9 +460,9 @@ _Z15vel_vgtlzxnc_vvPvS_Pm:
 	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
-	b.l.t (, %lr)
+	b.l.t (, %s10)
 .Lfunc_end11:
 	.size	_Z15vel_vgtlzxnc_vvPvS_Pm, .Lfunc_end11-_Z15vel_vgtlzxnc_vvPvS_Pm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3ee59c4ec1dea5a868c036e02054711cdaaf86f6)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
 	.section	".note.GNU-stack","",@progbits
