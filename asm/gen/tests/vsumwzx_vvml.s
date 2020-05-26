@@ -38,8 +38,8 @@ vsumwzx_vvml:
 	lea %s0, 1024(, %s0)
 	lea %s1, 1024(, %s1)
 	lea %s2, 1024(, %s2)
-	lea %s4, 256(, %s4)
-	lea %s6, -256(, %s6)
+	adds.w.sx %s4, %s4, %s5
+	adds.w.sx %s6, %s6, (56)1
 	brlt.w %s4, %s3, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
@@ -51,5 +51,5 @@ vsumwzx_vvml:
 .Lfunc_end0:
 	.size	vsumwzx_vvml, .Lfunc_end0-vsumwzx_vvml
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits

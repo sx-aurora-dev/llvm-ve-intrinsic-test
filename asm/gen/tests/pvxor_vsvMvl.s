@@ -45,8 +45,8 @@ pvxor_vsvMvl:
 	lea %s2, 2048(, %s2)
 	lea %s3, 2048(, %s3)
 	lea %s4, 2048(, %s4)
-	lea %s6, 512(, %s6)
-	lea %s35, -512(, %s35)
+	adds.w.sx %s6, %s6, %s34
+	adds.w.sx %s35, %s35, (55)1
 	brlt.w %s6, %s5, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
@@ -58,5 +58,5 @@ pvxor_vsvMvl:
 .Lfunc_end0:
 	.size	pvxor_vsvMvl, .Lfunc_end0-pvxor_vsvMvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits

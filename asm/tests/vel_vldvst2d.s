@@ -366,5 +366,5 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 .Lfunc_end9:
 	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits

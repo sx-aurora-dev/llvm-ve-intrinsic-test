@@ -112,5 +112,5 @@ _Z17vel_insert_vm512lPmPKmPKj:
 .Lfunc_end1:
 	.size	_Z17vel_insert_vm512lPmPKmPKj, .Lfunc_end1-_Z17vel_insert_vm512lPmPKmPKj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits

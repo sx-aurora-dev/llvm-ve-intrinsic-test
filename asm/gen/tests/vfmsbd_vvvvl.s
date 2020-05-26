@@ -39,8 +39,8 @@ vfmsbd_vvvvl:
 	lea %s1, 2048(, %s1)
 	lea %s2, 2048(, %s2)
 	lea %s3, 2048(, %s3)
-	lea %s5, 256(, %s5)
-	lea %s7, -256(, %s7)
+	adds.w.sx %s5, %s5, %s6
+	adds.w.sx %s7, %s7, (56)1
 	brlt.w %s5, %s4, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
@@ -52,5 +52,5 @@ vfmsbd_vvvvl:
 .Lfunc_end0:
 	.size	vfmsbd_vvvvl, .Lfunc_end0-vfmsbd_vvvvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits

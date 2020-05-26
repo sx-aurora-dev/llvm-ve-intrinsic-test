@@ -33,8 +33,8 @@ vbrdl_vsl_imm:
 	vbrd %v0,3
 	vst %v0,8,%s0
 	lea %s0, 2048(, %s0)
-	lea %s2, 256(, %s2)
-	lea %s4, -256(, %s4)
+	adds.w.sx %s2, %s2, %s3
+	adds.w.sx %s4, %s4, (56)1
 	brlt.w %s2, %s1, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
@@ -46,5 +46,5 @@ vbrdl_vsl_imm:
 .Lfunc_end0:
 	.size	vbrdl_vsl_imm, .Lfunc_end0-vbrdl_vsl_imm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits

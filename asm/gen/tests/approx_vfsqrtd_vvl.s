@@ -45,8 +45,8 @@ approx_vfsqrtd_vvl:
 	vst %v0,8,%s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
-	lea %s3, 256(, %s3)
-	lea %s7, -256(, %s7)
+	adds.w.sx %s3, %s3, %s4
+	adds.w.sx %s7, %s7, (56)1
 	brlt.w %s3, %s2, .LBB0_2
 .LBB0_3:
 	or %s11, 0, %s9
@@ -58,5 +58,5 @@ approx_vfsqrtd_vvl:
 .Lfunc_end0:
 	.size	approx_vfsqrtd_vvl, .Lfunc_end0-approx_vfsqrtd_vvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 072128447b185a0efac468ec289aad14e6a2222e)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
 	.section	".note.GNU-stack","",@progbits
