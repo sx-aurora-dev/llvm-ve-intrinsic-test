@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	vel_vfmklat,@function
 vel_vfmklat:
-.Lvel_vfmklat$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -51,7 +50,6 @@ vel_vfmklat:
 	.p2align	4
 	.type	vel_vfmklaf,@function
 vel_vfmklaf:
-.Lvel_vfmklaf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -97,7 +95,6 @@ vel_vfmklaf:
 	.p2align	4
 	.type	vel_pvfmkat,@function
 vel_pvfmkat:
-.Lvel_pvfmkat$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -153,7 +150,6 @@ vel_pvfmkat:
 	.p2align	4
 	.type	vel_pvfmkaf,@function
 vel_pvfmkaf:
-.Lvel_pvfmkaf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -204,5 +200,5 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

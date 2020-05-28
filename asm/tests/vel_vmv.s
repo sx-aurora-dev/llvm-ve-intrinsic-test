@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	_Z3vmvPmPKmi,@function
 _Z3vmvPmPKmi:
-.L_Z3vmvPmPKmi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -41,7 +40,6 @@ _Z3vmvPmPKmi:
 	.p2align	4
 	.type	_Z5vmv_iPmPKmi,@function
 _Z5vmv_iPmPKmi:
-.L_Z5vmv_iPmPKmi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -78,7 +76,6 @@ _Z5vmv_iPmPKmi:
 	.p2align	4
 	.type	_Z10vmv_vsvmvlPmPKmiPj,@function
 _Z10vmv_vsvmvlPmPKmiPj:
-.L_Z10vmv_vsvmvlPmPKmiPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -118,7 +115,6 @@ _Z10vmv_vsvmvlPmPKmiPj:
 	.p2align	4
 	.type	_Z12vmv_vsvmvl_iPmPKmiPj,@function
 _Z12vmv_vsvmvl_iPmPKmiPj:
-.L_Z12vmv_vsvmvl_iPmPKmiPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -154,5 +150,5 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	_Z9vst_vssmlPvPKvPj,@function
 _Z9vst_vssmlPvPKvPj:
-.L_Z9vst_vssmlPvPKvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -42,7 +41,6 @@ _Z9vst_vssmlPvPKvPj:
 	.p2align	4
 	.type	_Z10vstu_vssmlPvPKvPj,@function
 _Z10vstu_vssmlPvPKvPj:
-.L_Z10vstu_vssmlPvPKvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -80,7 +78,6 @@ _Z10vstu_vssmlPvPKvPj:
 	.p2align	4
 	.type	_Z10vstl_vssmlPvPKvPj,@function
 _Z10vstl_vssmlPvPKvPj:
-.L_Z10vstl_vssmlPvPKvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -118,7 +115,6 @@ _Z10vstl_vssmlPvPKvPj:
 	.p2align	4
 	.type	_Z11vstnc_vssmlPvPKvPj,@function
 _Z11vstnc_vssmlPvPKvPj:
-.L_Z11vstnc_vssmlPvPKvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -156,7 +152,6 @@ _Z11vstnc_vssmlPvPKvPj:
 	.p2align	4
 	.type	_Z12vstunc_vssmlPvPKvPj,@function
 _Z12vstunc_vssmlPvPKvPj:
-.L_Z12vstunc_vssmlPvPKvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -194,7 +189,6 @@ _Z12vstunc_vssmlPvPKvPj:
 	.p2align	4
 	.type	_Z12vstlnc_vssmlPvPKvPj,@function
 _Z12vstlnc_vssmlPvPKvPj:
-.L_Z12vstlnc_vssmlPvPKvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -228,5 +222,5 @@ _Z12vstlnc_vssmlPvPKvPj:
 .Lfunc_end5:
 	.size	_Z12vstlnc_vssmlPvPKvPj, .Lfunc_end5-_Z12vstlnc_vssmlPvPKvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

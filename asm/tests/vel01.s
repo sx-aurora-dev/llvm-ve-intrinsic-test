@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	_Z5vel01PvS_S_i,@function
 _Z5vel01PvS_S_i:
-.L_Z5vel01PvS_S_i$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -44,5 +43,5 @@ _Z5vel01PvS_S_i:
 .Lfunc_end0:
 	.size	_Z5vel01PvS_S_i, .Lfunc_end0-_Z5vel01PvS_S_i
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

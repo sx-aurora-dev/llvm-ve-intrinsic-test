@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	_Z13vel_vstot_vssPKdPdS1_,@function
 _Z13vel_vstot_vssPKdPdS1_:
-.L_Z13vel_vstot_vssPKdPdS1_$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -43,7 +42,6 @@ _Z13vel_vstot_vssPKdPdS1_:
 	.p2align	4
 	.type	_Z14vel_vstuot_vssPKfPfS1_,@function
 _Z14vel_vstuot_vssPKfPfS1_:
-.L_Z14vel_vstuot_vssPKfPfS1_$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -82,7 +80,6 @@ _Z14vel_vstuot_vssPKfPfS1_:
 	.p2align	4
 	.type	_Z14vel_vstlot_vssPKiPiS1_,@function
 _Z14vel_vstlot_vssPKiPiS1_:
-.L_Z14vel_vstlot_vssPKiPiS1_$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -121,7 +118,6 @@ _Z14vel_vstlot_vssPKiPiS1_:
 	.p2align	4
 	.type	_Z15vel_vstncot_vssPKdPdS1_,@function
 _Z15vel_vstncot_vssPKdPdS1_:
-.L_Z15vel_vstncot_vssPKdPdS1_$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -160,7 +156,6 @@ _Z15vel_vstncot_vssPKdPdS1_:
 	.p2align	4
 	.type	_Z16vel_vstuncot_vssPKfPfS1_,@function
 _Z16vel_vstuncot_vssPKfPfS1_:
-.L_Z16vel_vstuncot_vssPKfPfS1_$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -199,7 +194,6 @@ _Z16vel_vstuncot_vssPKfPfS1_:
 	.p2align	4
 	.type	_Z16vel_vstlncot_vssPKiPiS1_,@function
 _Z16vel_vstlncot_vssPKiPiS1_:
-.L_Z16vel_vstlncot_vssPKiPiS1_$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -234,5 +228,5 @@ _Z16vel_vstlncot_vssPKiPiS1_:
 .Lfunc_end5:
 	.size	_Z16vel_vstlncot_vssPKiPiS1_, .Lfunc_end5-_Z16vel_vstlncot_vssPKiPiS1_
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

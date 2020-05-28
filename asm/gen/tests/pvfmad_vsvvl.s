@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	pvfmad_vsvvl,@function
 pvfmad_vsvvl:
-.Lpvfmad_vsvvl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -54,5 +53,5 @@ pvfmad_vsvvl:
 .Lfunc_end0:
 	.size	pvfmad_vsvvl, .Lfunc_end0-pvfmad_vsvvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

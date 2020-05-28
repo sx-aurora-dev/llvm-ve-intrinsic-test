@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	_Z15vel_vfmklgt_mvlPmPKl,@function
 _Z15vel_vfmklgt_mvlPmPKl:
-.L_Z15vel_vfmklgt_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -48,7 +47,6 @@ _Z15vel_vfmklgt_mvlPmPKl:
 	.p2align	4
 	.type	_Z15vel_vfmkllt_mvlPmPKl,@function
 _Z15vel_vfmkllt_mvlPmPKl:
-.L_Z15vel_vfmkllt_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -92,7 +90,6 @@ _Z15vel_vfmkllt_mvlPmPKl:
 	.p2align	4
 	.type	_Z15vel_vfmklne_mvlPmPKl,@function
 _Z15vel_vfmklne_mvlPmPKl:
-.L_Z15vel_vfmklne_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -136,7 +133,6 @@ _Z15vel_vfmklne_mvlPmPKl:
 	.p2align	4
 	.type	_Z15vel_vfmkleq_mvlPmPKl,@function
 _Z15vel_vfmkleq_mvlPmPKl:
-.L_Z15vel_vfmkleq_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -180,7 +176,6 @@ _Z15vel_vfmkleq_mvlPmPKl:
 	.p2align	4
 	.type	_Z15vel_vfmklge_mvlPmPKl,@function
 _Z15vel_vfmklge_mvlPmPKl:
-.L_Z15vel_vfmklge_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -224,7 +219,6 @@ _Z15vel_vfmklge_mvlPmPKl:
 	.p2align	4
 	.type	_Z15vel_vfmklle_mvlPmPKl,@function
 _Z15vel_vfmklle_mvlPmPKl:
-.L_Z15vel_vfmklle_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -268,7 +262,6 @@ _Z15vel_vfmklle_mvlPmPKl:
 	.p2align	4
 	.type	_Z16vel_vfmklnum_mvlPmPKl,@function
 _Z16vel_vfmklnum_mvlPmPKl:
-.L_Z16vel_vfmklnum_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -312,7 +305,6 @@ _Z16vel_vfmklnum_mvlPmPKl:
 	.p2align	4
 	.type	_Z16vel_vfmklnan_mvlPmPKl,@function
 _Z16vel_vfmklnan_mvlPmPKl:
-.L_Z16vel_vfmklnan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -356,7 +348,6 @@ _Z16vel_vfmklnan_mvlPmPKl:
 	.p2align	4
 	.type	_Z18vel_vfmklgtnan_mvlPmPKl,@function
 _Z18vel_vfmklgtnan_mvlPmPKl:
-.L_Z18vel_vfmklgtnan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -400,7 +391,6 @@ _Z18vel_vfmklgtnan_mvlPmPKl:
 	.p2align	4
 	.type	_Z18vel_vfmklltnan_mvlPmPKl,@function
 _Z18vel_vfmklltnan_mvlPmPKl:
-.L_Z18vel_vfmklltnan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -444,7 +434,6 @@ _Z18vel_vfmklltnan_mvlPmPKl:
 	.p2align	4
 	.type	_Z18vel_vfmklnenan_mvlPmPKl,@function
 _Z18vel_vfmklnenan_mvlPmPKl:
-.L_Z18vel_vfmklnenan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -488,7 +477,6 @@ _Z18vel_vfmklnenan_mvlPmPKl:
 	.p2align	4
 	.type	_Z18vel_vfmkleqnan_mvlPmPKl,@function
 _Z18vel_vfmkleqnan_mvlPmPKl:
-.L_Z18vel_vfmkleqnan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -532,7 +520,6 @@ _Z18vel_vfmkleqnan_mvlPmPKl:
 	.p2align	4
 	.type	_Z18vel_vfmklgenan_mvlPmPKl,@function
 _Z18vel_vfmklgenan_mvlPmPKl:
-.L_Z18vel_vfmklgenan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -576,7 +563,6 @@ _Z18vel_vfmklgenan_mvlPmPKl:
 	.p2align	4
 	.type	_Z18vel_vfmkllenan_mvlPmPKl,@function
 _Z18vel_vfmkllenan_mvlPmPKl:
-.L_Z18vel_vfmkllenan_mvlPmPKl$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -620,7 +606,6 @@ _Z18vel_vfmkllenan_mvlPmPKl:
 	.p2align	4
 	.type	_Z15vel_vfmkwgt_mvlPmPKi,@function
 _Z15vel_vfmkwgt_mvlPmPKi:
-.L_Z15vel_vfmkwgt_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -664,7 +649,6 @@ _Z15vel_vfmkwgt_mvlPmPKi:
 	.p2align	4
 	.type	_Z15vel_vfmkwlt_mvlPmPKi,@function
 _Z15vel_vfmkwlt_mvlPmPKi:
-.L_Z15vel_vfmkwlt_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -708,7 +692,6 @@ _Z15vel_vfmkwlt_mvlPmPKi:
 	.p2align	4
 	.type	_Z15vel_vfmkwne_mvlPmPKi,@function
 _Z15vel_vfmkwne_mvlPmPKi:
-.L_Z15vel_vfmkwne_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -752,7 +735,6 @@ _Z15vel_vfmkwne_mvlPmPKi:
 	.p2align	4
 	.type	_Z15vel_vfmkweq_mvlPmPKi,@function
 _Z15vel_vfmkweq_mvlPmPKi:
-.L_Z15vel_vfmkweq_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -796,7 +778,6 @@ _Z15vel_vfmkweq_mvlPmPKi:
 	.p2align	4
 	.type	_Z15vel_vfmkwge_mvlPmPKi,@function
 _Z15vel_vfmkwge_mvlPmPKi:
-.L_Z15vel_vfmkwge_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -840,7 +821,6 @@ _Z15vel_vfmkwge_mvlPmPKi:
 	.p2align	4
 	.type	_Z15vel_vfmkwle_mvlPmPKi,@function
 _Z15vel_vfmkwle_mvlPmPKi:
-.L_Z15vel_vfmkwle_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -884,7 +864,6 @@ _Z15vel_vfmkwle_mvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_vfmkwnum_mvlPmPKi,@function
 _Z16vel_vfmkwnum_mvlPmPKi:
-.L_Z16vel_vfmkwnum_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -928,7 +907,6 @@ _Z16vel_vfmkwnum_mvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_vfmkwnan_mvlPmPKi,@function
 _Z16vel_vfmkwnan_mvlPmPKi:
-.L_Z16vel_vfmkwnan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -972,7 +950,6 @@ _Z16vel_vfmkwnan_mvlPmPKi:
 	.p2align	4
 	.type	_Z18vel_vfmkwgtnan_mvlPmPKi,@function
 _Z18vel_vfmkwgtnan_mvlPmPKi:
-.L_Z18vel_vfmkwgtnan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1016,7 +993,6 @@ _Z18vel_vfmkwgtnan_mvlPmPKi:
 	.p2align	4
 	.type	_Z18vel_vfmkwltnan_mvlPmPKi,@function
 _Z18vel_vfmkwltnan_mvlPmPKi:
-.L_Z18vel_vfmkwltnan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1060,7 +1036,6 @@ _Z18vel_vfmkwltnan_mvlPmPKi:
 	.p2align	4
 	.type	_Z18vel_vfmkwnenan_mvlPmPKi,@function
 _Z18vel_vfmkwnenan_mvlPmPKi:
-.L_Z18vel_vfmkwnenan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1104,7 +1079,6 @@ _Z18vel_vfmkwnenan_mvlPmPKi:
 	.p2align	4
 	.type	_Z18vel_vfmkweqnan_mvlPmPKi,@function
 _Z18vel_vfmkweqnan_mvlPmPKi:
-.L_Z18vel_vfmkweqnan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1148,7 +1122,6 @@ _Z18vel_vfmkweqnan_mvlPmPKi:
 	.p2align	4
 	.type	_Z18vel_vfmkwgenan_mvlPmPKi,@function
 _Z18vel_vfmkwgenan_mvlPmPKi:
-.L_Z18vel_vfmkwgenan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1192,7 +1165,6 @@ _Z18vel_vfmkwgenan_mvlPmPKi:
 	.p2align	4
 	.type	_Z18vel_vfmkwlenan_mvlPmPKi,@function
 _Z18vel_vfmkwlenan_mvlPmPKi:
-.L_Z18vel_vfmkwlenan_mvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1236,7 +1208,6 @@ _Z18vel_vfmkwlenan_mvlPmPKi:
 	.p2align	4
 	.type	_Z15vel_vfmkdgt_mvlPmPKd,@function
 _Z15vel_vfmkdgt_mvlPmPKd:
-.L_Z15vel_vfmkdgt_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1280,7 +1251,6 @@ _Z15vel_vfmkdgt_mvlPmPKd:
 	.p2align	4
 	.type	_Z15vel_vfmkdlt_mvlPmPKd,@function
 _Z15vel_vfmkdlt_mvlPmPKd:
-.L_Z15vel_vfmkdlt_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1324,7 +1294,6 @@ _Z15vel_vfmkdlt_mvlPmPKd:
 	.p2align	4
 	.type	_Z15vel_vfmkdne_mvlPmPKd,@function
 _Z15vel_vfmkdne_mvlPmPKd:
-.L_Z15vel_vfmkdne_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1368,7 +1337,6 @@ _Z15vel_vfmkdne_mvlPmPKd:
 	.p2align	4
 	.type	_Z15vel_vfmkdeq_mvlPmPKd,@function
 _Z15vel_vfmkdeq_mvlPmPKd:
-.L_Z15vel_vfmkdeq_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1412,7 +1380,6 @@ _Z15vel_vfmkdeq_mvlPmPKd:
 	.p2align	4
 	.type	_Z15vel_vfmkdge_mvlPmPKd,@function
 _Z15vel_vfmkdge_mvlPmPKd:
-.L_Z15vel_vfmkdge_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1456,7 +1423,6 @@ _Z15vel_vfmkdge_mvlPmPKd:
 	.p2align	4
 	.type	_Z15vel_vfmkdle_mvlPmPKd,@function
 _Z15vel_vfmkdle_mvlPmPKd:
-.L_Z15vel_vfmkdle_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1500,7 +1466,6 @@ _Z15vel_vfmkdle_mvlPmPKd:
 	.p2align	4
 	.type	_Z16vel_vfmkdnum_mvlPmPKd,@function
 _Z16vel_vfmkdnum_mvlPmPKd:
-.L_Z16vel_vfmkdnum_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1544,7 +1509,6 @@ _Z16vel_vfmkdnum_mvlPmPKd:
 	.p2align	4
 	.type	_Z16vel_vfmkdnan_mvlPmPKd,@function
 _Z16vel_vfmkdnan_mvlPmPKd:
-.L_Z16vel_vfmkdnan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1588,7 +1552,6 @@ _Z16vel_vfmkdnan_mvlPmPKd:
 	.p2align	4
 	.type	_Z18vel_vfmkdgtnan_mvlPmPKd,@function
 _Z18vel_vfmkdgtnan_mvlPmPKd:
-.L_Z18vel_vfmkdgtnan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1632,7 +1595,6 @@ _Z18vel_vfmkdgtnan_mvlPmPKd:
 	.p2align	4
 	.type	_Z18vel_vfmkdltnan_mvlPmPKd,@function
 _Z18vel_vfmkdltnan_mvlPmPKd:
-.L_Z18vel_vfmkdltnan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1676,7 +1638,6 @@ _Z18vel_vfmkdltnan_mvlPmPKd:
 	.p2align	4
 	.type	_Z18vel_vfmkdnenan_mvlPmPKd,@function
 _Z18vel_vfmkdnenan_mvlPmPKd:
-.L_Z18vel_vfmkdnenan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1720,7 +1681,6 @@ _Z18vel_vfmkdnenan_mvlPmPKd:
 	.p2align	4
 	.type	_Z18vel_vfmkdeqnan_mvlPmPKd,@function
 _Z18vel_vfmkdeqnan_mvlPmPKd:
-.L_Z18vel_vfmkdeqnan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1764,7 +1724,6 @@ _Z18vel_vfmkdeqnan_mvlPmPKd:
 	.p2align	4
 	.type	_Z18vel_vfmkdgenan_mvlPmPKd,@function
 _Z18vel_vfmkdgenan_mvlPmPKd:
-.L_Z18vel_vfmkdgenan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1808,7 +1767,6 @@ _Z18vel_vfmkdgenan_mvlPmPKd:
 	.p2align	4
 	.type	_Z18vel_vfmkdlenan_mvlPmPKd,@function
 _Z18vel_vfmkdlenan_mvlPmPKd:
-.L_Z18vel_vfmkdlenan_mvlPmPKd$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1852,7 +1810,6 @@ _Z18vel_vfmkdlenan_mvlPmPKd:
 	.p2align	4
 	.type	_Z15vel_vfmksgt_mvlPmPKf,@function
 _Z15vel_vfmksgt_mvlPmPKf:
-.L_Z15vel_vfmksgt_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1896,7 +1853,6 @@ _Z15vel_vfmksgt_mvlPmPKf:
 	.p2align	4
 	.type	_Z15vel_vfmkslt_mvlPmPKf,@function
 _Z15vel_vfmkslt_mvlPmPKf:
-.L_Z15vel_vfmkslt_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1940,7 +1896,6 @@ _Z15vel_vfmkslt_mvlPmPKf:
 	.p2align	4
 	.type	_Z15vel_vfmksne_mvlPmPKf,@function
 _Z15vel_vfmksne_mvlPmPKf:
-.L_Z15vel_vfmksne_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -1984,7 +1939,6 @@ _Z15vel_vfmksne_mvlPmPKf:
 	.p2align	4
 	.type	_Z15vel_vfmkseq_mvlPmPKf,@function
 _Z15vel_vfmkseq_mvlPmPKf:
-.L_Z15vel_vfmkseq_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2028,7 +1982,6 @@ _Z15vel_vfmkseq_mvlPmPKf:
 	.p2align	4
 	.type	_Z15vel_vfmksge_mvlPmPKf,@function
 _Z15vel_vfmksge_mvlPmPKf:
-.L_Z15vel_vfmksge_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2072,7 +2025,6 @@ _Z15vel_vfmksge_mvlPmPKf:
 	.p2align	4
 	.type	_Z15vel_vfmksle_mvlPmPKf,@function
 _Z15vel_vfmksle_mvlPmPKf:
-.L_Z15vel_vfmksle_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2116,7 +2068,6 @@ _Z15vel_vfmksle_mvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_vfmksnum_mvlPmPKf,@function
 _Z16vel_vfmksnum_mvlPmPKf:
-.L_Z16vel_vfmksnum_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2160,7 +2111,6 @@ _Z16vel_vfmksnum_mvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_vfmksnan_mvlPmPKf,@function
 _Z16vel_vfmksnan_mvlPmPKf:
-.L_Z16vel_vfmksnan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2204,7 +2154,6 @@ _Z16vel_vfmksnan_mvlPmPKf:
 	.p2align	4
 	.type	_Z18vel_vfmksgtnan_mvlPmPKf,@function
 _Z18vel_vfmksgtnan_mvlPmPKf:
-.L_Z18vel_vfmksgtnan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2248,7 +2197,6 @@ _Z18vel_vfmksgtnan_mvlPmPKf:
 	.p2align	4
 	.type	_Z18vel_vfmksltnan_mvlPmPKf,@function
 _Z18vel_vfmksltnan_mvlPmPKf:
-.L_Z18vel_vfmksltnan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2292,7 +2240,6 @@ _Z18vel_vfmksltnan_mvlPmPKf:
 	.p2align	4
 	.type	_Z18vel_vfmksnenan_mvlPmPKf,@function
 _Z18vel_vfmksnenan_mvlPmPKf:
-.L_Z18vel_vfmksnenan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2336,7 +2283,6 @@ _Z18vel_vfmksnenan_mvlPmPKf:
 	.p2align	4
 	.type	_Z18vel_vfmkseqnan_mvlPmPKf,@function
 _Z18vel_vfmkseqnan_mvlPmPKf:
-.L_Z18vel_vfmkseqnan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2380,7 +2326,6 @@ _Z18vel_vfmkseqnan_mvlPmPKf:
 	.p2align	4
 	.type	_Z18vel_vfmksgenan_mvlPmPKf,@function
 _Z18vel_vfmksgenan_mvlPmPKf:
-.L_Z18vel_vfmksgenan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2424,7 +2369,6 @@ _Z18vel_vfmksgenan_mvlPmPKf:
 	.p2align	4
 	.type	_Z18vel_vfmkslenan_mvlPmPKf,@function
 _Z18vel_vfmkslenan_mvlPmPKf:
-.L_Z18vel_vfmkslenan_mvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2468,7 +2412,6 @@ _Z18vel_vfmkslenan_mvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_vfmklgt_mvmlPmPKlPKm,@function
 _Z16vel_vfmklgt_mvmlPmPKlPKm:
-.L_Z16vel_vfmklgt_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2520,7 +2463,6 @@ _Z16vel_vfmklgt_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkllt_mvmlPmPKlPKm,@function
 _Z16vel_vfmkllt_mvmlPmPKlPKm:
-.L_Z16vel_vfmkllt_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2572,7 +2514,6 @@ _Z16vel_vfmkllt_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z16vel_vfmklne_mvmlPmPKlPKm,@function
 _Z16vel_vfmklne_mvmlPmPKlPKm:
-.L_Z16vel_vfmklne_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2624,7 +2565,6 @@ _Z16vel_vfmklne_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkleq_mvmlPmPKlPKm,@function
 _Z16vel_vfmkleq_mvmlPmPKlPKm:
-.L_Z16vel_vfmkleq_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2676,7 +2616,6 @@ _Z16vel_vfmkleq_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z16vel_vfmklge_mvmlPmPKlPKm,@function
 _Z16vel_vfmklge_mvmlPmPKlPKm:
-.L_Z16vel_vfmklge_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2728,7 +2667,6 @@ _Z16vel_vfmklge_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z16vel_vfmklle_mvmlPmPKlPKm,@function
 _Z16vel_vfmklle_mvmlPmPKlPKm:
-.L_Z16vel_vfmklle_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2780,7 +2718,6 @@ _Z16vel_vfmklle_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z17vel_vfmklnum_mvmlPmPKlPKm,@function
 _Z17vel_vfmklnum_mvmlPmPKlPKm:
-.L_Z17vel_vfmklnum_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2832,7 +2769,6 @@ _Z17vel_vfmklnum_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z17vel_vfmklnan_mvmlPmPKlPKm,@function
 _Z17vel_vfmklnan_mvmlPmPKlPKm:
-.L_Z17vel_vfmklnan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2884,7 +2820,6 @@ _Z17vel_vfmklnan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z19vel_vfmklgtnan_mvmlPmPKlPKm,@function
 _Z19vel_vfmklgtnan_mvmlPmPKlPKm:
-.L_Z19vel_vfmklgtnan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2936,7 +2871,6 @@ _Z19vel_vfmklgtnan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z19vel_vfmklltnan_mvmlPmPKlPKm,@function
 _Z19vel_vfmklltnan_mvmlPmPKlPKm:
-.L_Z19vel_vfmklltnan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -2988,7 +2922,6 @@ _Z19vel_vfmklltnan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z19vel_vfmklnenan_mvmlPmPKlPKm,@function
 _Z19vel_vfmklnenan_mvmlPmPKlPKm:
-.L_Z19vel_vfmklnenan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3040,7 +2973,6 @@ _Z19vel_vfmklnenan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkleqnan_mvmlPmPKlPKm,@function
 _Z19vel_vfmkleqnan_mvmlPmPKlPKm:
-.L_Z19vel_vfmkleqnan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3092,7 +3024,6 @@ _Z19vel_vfmkleqnan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z19vel_vfmklgenan_mvmlPmPKlPKm,@function
 _Z19vel_vfmklgenan_mvmlPmPKlPKm:
-.L_Z19vel_vfmklgenan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3144,7 +3075,6 @@ _Z19vel_vfmklgenan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkllenan_mvmlPmPKlPKm,@function
 _Z19vel_vfmkllenan_mvmlPmPKlPKm:
-.L_Z19vel_vfmkllenan_mvmlPmPKlPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3196,7 +3126,6 @@ _Z19vel_vfmkllenan_mvmlPmPKlPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkwgt_mvmlPmPKiPKm,@function
 _Z16vel_vfmkwgt_mvmlPmPKiPKm:
-.L_Z16vel_vfmkwgt_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3248,7 +3177,6 @@ _Z16vel_vfmkwgt_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkwlt_mvmlPmPKiPKm,@function
 _Z16vel_vfmkwlt_mvmlPmPKiPKm:
-.L_Z16vel_vfmkwlt_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3300,7 +3228,6 @@ _Z16vel_vfmkwlt_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkwne_mvmlPmPKiPKm,@function
 _Z16vel_vfmkwne_mvmlPmPKiPKm:
-.L_Z16vel_vfmkwne_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3352,7 +3279,6 @@ _Z16vel_vfmkwne_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkweq_mvmlPmPKiPKm,@function
 _Z16vel_vfmkweq_mvmlPmPKiPKm:
-.L_Z16vel_vfmkweq_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3404,7 +3330,6 @@ _Z16vel_vfmkweq_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkwge_mvmlPmPKiPKm,@function
 _Z16vel_vfmkwge_mvmlPmPKiPKm:
-.L_Z16vel_vfmkwge_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3456,7 +3381,6 @@ _Z16vel_vfmkwge_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkwle_mvmlPmPKiPKm,@function
 _Z16vel_vfmkwle_mvmlPmPKiPKm:
-.L_Z16vel_vfmkwle_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3508,7 +3432,6 @@ _Z16vel_vfmkwle_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_vfmkwnum_mvmlPmPKiPKm,@function
 _Z17vel_vfmkwnum_mvmlPmPKiPKm:
-.L_Z17vel_vfmkwnum_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3560,7 +3483,6 @@ _Z17vel_vfmkwnum_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_vfmkwnan_mvmlPmPKiPKm,@function
 _Z17vel_vfmkwnan_mvmlPmPKiPKm:
-.L_Z17vel_vfmkwnan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3612,7 +3534,6 @@ _Z17vel_vfmkwnan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkwgtnan_mvmlPmPKiPKm,@function
 _Z19vel_vfmkwgtnan_mvmlPmPKiPKm:
-.L_Z19vel_vfmkwgtnan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3664,7 +3585,6 @@ _Z19vel_vfmkwgtnan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkwltnan_mvmlPmPKiPKm,@function
 _Z19vel_vfmkwltnan_mvmlPmPKiPKm:
-.L_Z19vel_vfmkwltnan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3716,7 +3636,6 @@ _Z19vel_vfmkwltnan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkwnenan_mvmlPmPKiPKm,@function
 _Z19vel_vfmkwnenan_mvmlPmPKiPKm:
-.L_Z19vel_vfmkwnenan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3768,7 +3687,6 @@ _Z19vel_vfmkwnenan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkweqnan_mvmlPmPKiPKm,@function
 _Z19vel_vfmkweqnan_mvmlPmPKiPKm:
-.L_Z19vel_vfmkweqnan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3820,7 +3738,6 @@ _Z19vel_vfmkweqnan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkwgenan_mvmlPmPKiPKm,@function
 _Z19vel_vfmkwgenan_mvmlPmPKiPKm:
-.L_Z19vel_vfmkwgenan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3872,7 +3789,6 @@ _Z19vel_vfmkwgenan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkwlenan_mvmlPmPKiPKm,@function
 _Z19vel_vfmkwlenan_mvmlPmPKiPKm:
-.L_Z19vel_vfmkwlenan_mvmlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3924,7 +3840,6 @@ _Z19vel_vfmkwlenan_mvmlPmPKiPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkdgt_mvmlPmPKdPKm,@function
 _Z16vel_vfmkdgt_mvmlPmPKdPKm:
-.L_Z16vel_vfmkdgt_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -3976,7 +3891,6 @@ _Z16vel_vfmkdgt_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkdlt_mvmlPmPKdPKm,@function
 _Z16vel_vfmkdlt_mvmlPmPKdPKm:
-.L_Z16vel_vfmkdlt_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4028,7 +3942,6 @@ _Z16vel_vfmkdlt_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkdne_mvmlPmPKdPKm,@function
 _Z16vel_vfmkdne_mvmlPmPKdPKm:
-.L_Z16vel_vfmkdne_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4080,7 +3993,6 @@ _Z16vel_vfmkdne_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkdeq_mvmlPmPKdPKm,@function
 _Z16vel_vfmkdeq_mvmlPmPKdPKm:
-.L_Z16vel_vfmkdeq_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4132,7 +4044,6 @@ _Z16vel_vfmkdeq_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkdge_mvmlPmPKdPKm,@function
 _Z16vel_vfmkdge_mvmlPmPKdPKm:
-.L_Z16vel_vfmkdge_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4184,7 +4095,6 @@ _Z16vel_vfmkdge_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkdle_mvmlPmPKdPKm,@function
 _Z16vel_vfmkdle_mvmlPmPKdPKm:
-.L_Z16vel_vfmkdle_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4236,7 +4146,6 @@ _Z16vel_vfmkdle_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z17vel_vfmkdnum_mvmlPmPKdPKm,@function
 _Z17vel_vfmkdnum_mvmlPmPKdPKm:
-.L_Z17vel_vfmkdnum_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4288,7 +4197,6 @@ _Z17vel_vfmkdnum_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z17vel_vfmkdnan_mvmlPmPKdPKm,@function
 _Z17vel_vfmkdnan_mvmlPmPKdPKm:
-.L_Z17vel_vfmkdnan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4340,7 +4248,6 @@ _Z17vel_vfmkdnan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkdgtnan_mvmlPmPKdPKm,@function
 _Z19vel_vfmkdgtnan_mvmlPmPKdPKm:
-.L_Z19vel_vfmkdgtnan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4392,7 +4299,6 @@ _Z19vel_vfmkdgtnan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkdltnan_mvmlPmPKdPKm,@function
 _Z19vel_vfmkdltnan_mvmlPmPKdPKm:
-.L_Z19vel_vfmkdltnan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4444,7 +4350,6 @@ _Z19vel_vfmkdltnan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkdnenan_mvmlPmPKdPKm,@function
 _Z19vel_vfmkdnenan_mvmlPmPKdPKm:
-.L_Z19vel_vfmkdnenan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4496,7 +4401,6 @@ _Z19vel_vfmkdnenan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkdeqnan_mvmlPmPKdPKm,@function
 _Z19vel_vfmkdeqnan_mvmlPmPKdPKm:
-.L_Z19vel_vfmkdeqnan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4548,7 +4452,6 @@ _Z19vel_vfmkdeqnan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkdgenan_mvmlPmPKdPKm,@function
 _Z19vel_vfmkdgenan_mvmlPmPKdPKm:
-.L_Z19vel_vfmkdgenan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4600,7 +4503,6 @@ _Z19vel_vfmkdgenan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkdlenan_mvmlPmPKdPKm,@function
 _Z19vel_vfmkdlenan_mvmlPmPKdPKm:
-.L_Z19vel_vfmkdlenan_mvmlPmPKdPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4652,7 +4554,6 @@ _Z19vel_vfmkdlenan_mvmlPmPKdPKm:
 	.p2align	4
 	.type	_Z16vel_vfmksgt_mvmlPmPKfPKm,@function
 _Z16vel_vfmksgt_mvmlPmPKfPKm:
-.L_Z16vel_vfmksgt_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4704,7 +4605,6 @@ _Z16vel_vfmksgt_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkslt_mvmlPmPKfPKm,@function
 _Z16vel_vfmkslt_mvmlPmPKfPKm:
-.L_Z16vel_vfmkslt_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4756,7 +4656,6 @@ _Z16vel_vfmkslt_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z16vel_vfmksne_mvmlPmPKfPKm,@function
 _Z16vel_vfmksne_mvmlPmPKfPKm:
-.L_Z16vel_vfmksne_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4808,7 +4707,6 @@ _Z16vel_vfmksne_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z16vel_vfmkseq_mvmlPmPKfPKm,@function
 _Z16vel_vfmkseq_mvmlPmPKfPKm:
-.L_Z16vel_vfmkseq_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4860,7 +4758,6 @@ _Z16vel_vfmkseq_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z16vel_vfmksge_mvmlPmPKfPKm,@function
 _Z16vel_vfmksge_mvmlPmPKfPKm:
-.L_Z16vel_vfmksge_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4912,7 +4809,6 @@ _Z16vel_vfmksge_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z16vel_vfmksle_mvmlPmPKfPKm,@function
 _Z16vel_vfmksle_mvmlPmPKfPKm:
-.L_Z16vel_vfmksle_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -4964,7 +4860,6 @@ _Z16vel_vfmksle_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_vfmksnum_mvmlPmPKfPKm,@function
 _Z17vel_vfmksnum_mvmlPmPKfPKm:
-.L_Z17vel_vfmksnum_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5016,7 +4911,6 @@ _Z17vel_vfmksnum_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_vfmksnan_mvmlPmPKfPKm,@function
 _Z17vel_vfmksnan_mvmlPmPKfPKm:
-.L_Z17vel_vfmksnan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5068,7 +4962,6 @@ _Z17vel_vfmksnan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z19vel_vfmksgtnan_mvmlPmPKfPKm,@function
 _Z19vel_vfmksgtnan_mvmlPmPKfPKm:
-.L_Z19vel_vfmksgtnan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5120,7 +5013,6 @@ _Z19vel_vfmksgtnan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z19vel_vfmksltnan_mvmlPmPKfPKm,@function
 _Z19vel_vfmksltnan_mvmlPmPKfPKm:
-.L_Z19vel_vfmksltnan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5172,7 +5064,6 @@ _Z19vel_vfmksltnan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z19vel_vfmksnenan_mvmlPmPKfPKm,@function
 _Z19vel_vfmksnenan_mvmlPmPKfPKm:
-.L_Z19vel_vfmksnenan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5224,7 +5115,6 @@ _Z19vel_vfmksnenan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkseqnan_mvmlPmPKfPKm,@function
 _Z19vel_vfmkseqnan_mvmlPmPKfPKm:
-.L_Z19vel_vfmkseqnan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5276,7 +5166,6 @@ _Z19vel_vfmkseqnan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z19vel_vfmksgenan_mvmlPmPKfPKm,@function
 _Z19vel_vfmksgenan_mvmlPmPKfPKm:
-.L_Z19vel_vfmksgenan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5328,7 +5217,6 @@ _Z19vel_vfmksgenan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z19vel_vfmkslenan_mvmlPmPKfPKm,@function
 _Z19vel_vfmkslenan_mvmlPmPKfPKm:
-.L_Z19vel_vfmkslenan_mvmlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5380,7 +5268,6 @@ _Z19vel_vfmkslenan_mvmlPmPKfPKm:
 	.p2align	4
 	.type	_Z16vel_pvfmkwgt_MvlPmPKi,@function
 _Z16vel_pvfmkwgt_MvlPmPKi:
-.L_Z16vel_pvfmkwgt_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5433,7 +5320,6 @@ _Z16vel_pvfmkwgt_MvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_pvfmkwlt_MvlPmPKi,@function
 _Z16vel_pvfmkwlt_MvlPmPKi:
-.L_Z16vel_pvfmkwlt_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5486,7 +5372,6 @@ _Z16vel_pvfmkwlt_MvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_pvfmkwne_MvlPmPKi,@function
 _Z16vel_pvfmkwne_MvlPmPKi:
-.L_Z16vel_pvfmkwne_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5539,7 +5424,6 @@ _Z16vel_pvfmkwne_MvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_pvfmkweq_MvlPmPKi,@function
 _Z16vel_pvfmkweq_MvlPmPKi:
-.L_Z16vel_pvfmkweq_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5592,7 +5476,6 @@ _Z16vel_pvfmkweq_MvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_pvfmkwge_MvlPmPKi,@function
 _Z16vel_pvfmkwge_MvlPmPKi:
-.L_Z16vel_pvfmkwge_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5645,7 +5528,6 @@ _Z16vel_pvfmkwge_MvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_pvfmkwle_MvlPmPKi,@function
 _Z16vel_pvfmkwle_MvlPmPKi:
-.L_Z16vel_pvfmkwle_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5698,7 +5580,6 @@ _Z16vel_pvfmkwle_MvlPmPKi:
 	.p2align	4
 	.type	_Z17vel_pvfmkwnum_MvlPmPKi,@function
 _Z17vel_pvfmkwnum_MvlPmPKi:
-.L_Z17vel_pvfmkwnum_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5751,7 +5632,6 @@ _Z17vel_pvfmkwnum_MvlPmPKi:
 	.p2align	4
 	.type	_Z17vel_pvfmkwnan_MvlPmPKi,@function
 _Z17vel_pvfmkwnan_MvlPmPKi:
-.L_Z17vel_pvfmkwnan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5804,7 +5684,6 @@ _Z17vel_pvfmkwnan_MvlPmPKi:
 	.p2align	4
 	.type	_Z19vel_pvfmkwgtnan_MvlPmPKi,@function
 _Z19vel_pvfmkwgtnan_MvlPmPKi:
-.L_Z19vel_pvfmkwgtnan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5857,7 +5736,6 @@ _Z19vel_pvfmkwgtnan_MvlPmPKi:
 	.p2align	4
 	.type	_Z19vel_pvfmkwltnan_MvlPmPKi,@function
 _Z19vel_pvfmkwltnan_MvlPmPKi:
-.L_Z19vel_pvfmkwltnan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5910,7 +5788,6 @@ _Z19vel_pvfmkwltnan_MvlPmPKi:
 	.p2align	4
 	.type	_Z19vel_pvfmkwnenan_MvlPmPKi,@function
 _Z19vel_pvfmkwnenan_MvlPmPKi:
-.L_Z19vel_pvfmkwnenan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -5963,7 +5840,6 @@ _Z19vel_pvfmkwnenan_MvlPmPKi:
 	.p2align	4
 	.type	_Z19vel_pvfmkweqnan_MvlPmPKi,@function
 _Z19vel_pvfmkweqnan_MvlPmPKi:
-.L_Z19vel_pvfmkweqnan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6016,7 +5892,6 @@ _Z19vel_pvfmkweqnan_MvlPmPKi:
 	.p2align	4
 	.type	_Z19vel_pvfmkwgenan_MvlPmPKi,@function
 _Z19vel_pvfmkwgenan_MvlPmPKi:
-.L_Z19vel_pvfmkwgenan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6069,7 +5944,6 @@ _Z19vel_pvfmkwgenan_MvlPmPKi:
 	.p2align	4
 	.type	_Z19vel_pvfmkwlenan_MvlPmPKi,@function
 _Z19vel_pvfmkwlenan_MvlPmPKi:
-.L_Z19vel_pvfmkwlenan_MvlPmPKi$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6122,7 +5996,6 @@ _Z19vel_pvfmkwlenan_MvlPmPKi:
 	.p2align	4
 	.type	_Z16vel_pvfmksgt_MvlPmPKf,@function
 _Z16vel_pvfmksgt_MvlPmPKf:
-.L_Z16vel_pvfmksgt_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6175,7 +6048,6 @@ _Z16vel_pvfmksgt_MvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_pvfmkslt_MvlPmPKf,@function
 _Z16vel_pvfmkslt_MvlPmPKf:
-.L_Z16vel_pvfmkslt_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6228,7 +6100,6 @@ _Z16vel_pvfmkslt_MvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_pvfmksne_MvlPmPKf,@function
 _Z16vel_pvfmksne_MvlPmPKf:
-.L_Z16vel_pvfmksne_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6281,7 +6152,6 @@ _Z16vel_pvfmksne_MvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_pvfmkseq_MvlPmPKf,@function
 _Z16vel_pvfmkseq_MvlPmPKf:
-.L_Z16vel_pvfmkseq_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6334,7 +6204,6 @@ _Z16vel_pvfmkseq_MvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_pvfmksge_MvlPmPKf,@function
 _Z16vel_pvfmksge_MvlPmPKf:
-.L_Z16vel_pvfmksge_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6387,7 +6256,6 @@ _Z16vel_pvfmksge_MvlPmPKf:
 	.p2align	4
 	.type	_Z16vel_pvfmksle_MvlPmPKf,@function
 _Z16vel_pvfmksle_MvlPmPKf:
-.L_Z16vel_pvfmksle_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6440,7 +6308,6 @@ _Z16vel_pvfmksle_MvlPmPKf:
 	.p2align	4
 	.type	_Z17vel_pvfmksnum_MvlPmPKf,@function
 _Z17vel_pvfmksnum_MvlPmPKf:
-.L_Z17vel_pvfmksnum_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6493,7 +6360,6 @@ _Z17vel_pvfmksnum_MvlPmPKf:
 	.p2align	4
 	.type	_Z17vel_pvfmksnan_MvlPmPKf,@function
 _Z17vel_pvfmksnan_MvlPmPKf:
-.L_Z17vel_pvfmksnan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6546,7 +6412,6 @@ _Z17vel_pvfmksnan_MvlPmPKf:
 	.p2align	4
 	.type	_Z19vel_pvfmksgtnan_MvlPmPKf,@function
 _Z19vel_pvfmksgtnan_MvlPmPKf:
-.L_Z19vel_pvfmksgtnan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6599,7 +6464,6 @@ _Z19vel_pvfmksgtnan_MvlPmPKf:
 	.p2align	4
 	.type	_Z19vel_pvfmksltnan_MvlPmPKf,@function
 _Z19vel_pvfmksltnan_MvlPmPKf:
-.L_Z19vel_pvfmksltnan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6652,7 +6516,6 @@ _Z19vel_pvfmksltnan_MvlPmPKf:
 	.p2align	4
 	.type	_Z19vel_pvfmksnenan_MvlPmPKf,@function
 _Z19vel_pvfmksnenan_MvlPmPKf:
-.L_Z19vel_pvfmksnenan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6705,7 +6568,6 @@ _Z19vel_pvfmksnenan_MvlPmPKf:
 	.p2align	4
 	.type	_Z19vel_pvfmkseqnan_MvlPmPKf,@function
 _Z19vel_pvfmkseqnan_MvlPmPKf:
-.L_Z19vel_pvfmkseqnan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6758,7 +6620,6 @@ _Z19vel_pvfmkseqnan_MvlPmPKf:
 	.p2align	4
 	.type	_Z19vel_pvfmksgenan_MvlPmPKf,@function
 _Z19vel_pvfmksgenan_MvlPmPKf:
-.L_Z19vel_pvfmksgenan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6811,7 +6672,6 @@ _Z19vel_pvfmksgenan_MvlPmPKf:
 	.p2align	4
 	.type	_Z19vel_pvfmkslenan_MvlPmPKf,@function
 _Z19vel_pvfmkslenan_MvlPmPKf:
-.L_Z19vel_pvfmkslenan_MvlPmPKf$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6864,7 +6724,6 @@ _Z19vel_pvfmkslenan_MvlPmPKf:
 	.p2align	4
 	.type	_Z17vel_pvfmkwgt_MvMlPmPKiPKm,@function
 _Z17vel_pvfmkwgt_MvMlPmPKiPKm:
-.L_Z17vel_pvfmkwgt_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -6933,7 +6792,6 @@ _Z17vel_pvfmkwgt_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkwlt_MvMlPmPKiPKm,@function
 _Z17vel_pvfmkwlt_MvMlPmPKiPKm:
-.L_Z17vel_pvfmkwlt_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7002,7 +6860,6 @@ _Z17vel_pvfmkwlt_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkwne_MvMlPmPKiPKm,@function
 _Z17vel_pvfmkwne_MvMlPmPKiPKm:
-.L_Z17vel_pvfmkwne_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7071,7 +6928,6 @@ _Z17vel_pvfmkwne_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkweq_MvMlPmPKiPKm,@function
 _Z17vel_pvfmkweq_MvMlPmPKiPKm:
-.L_Z17vel_pvfmkweq_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7140,7 +6996,6 @@ _Z17vel_pvfmkweq_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkwge_MvMlPmPKiPKm,@function
 _Z17vel_pvfmkwge_MvMlPmPKiPKm:
-.L_Z17vel_pvfmkwge_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7209,7 +7064,6 @@ _Z17vel_pvfmkwge_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkwle_MvMlPmPKiPKm,@function
 _Z17vel_pvfmkwle_MvMlPmPKiPKm:
-.L_Z17vel_pvfmkwle_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7278,7 +7132,6 @@ _Z17vel_pvfmkwle_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z18vel_pvfmkwnum_MvMlPmPKiPKm,@function
 _Z18vel_pvfmkwnum_MvMlPmPKiPKm:
-.L_Z18vel_pvfmkwnum_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7347,7 +7200,6 @@ _Z18vel_pvfmkwnum_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z18vel_pvfmkwnan_MvMlPmPKiPKm,@function
 _Z18vel_pvfmkwnan_MvMlPmPKiPKm:
-.L_Z18vel_pvfmkwnan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7416,7 +7268,6 @@ _Z18vel_pvfmkwnan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkwgtnan_MvMlPmPKiPKm,@function
 _Z20vel_pvfmkwgtnan_MvMlPmPKiPKm:
-.L_Z20vel_pvfmkwgtnan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7485,7 +7336,6 @@ _Z20vel_pvfmkwgtnan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkwltnan_MvMlPmPKiPKm,@function
 _Z20vel_pvfmkwltnan_MvMlPmPKiPKm:
-.L_Z20vel_pvfmkwltnan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7554,7 +7404,6 @@ _Z20vel_pvfmkwltnan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkwnenan_MvMlPmPKiPKm,@function
 _Z20vel_pvfmkwnenan_MvMlPmPKiPKm:
-.L_Z20vel_pvfmkwnenan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7623,7 +7472,6 @@ _Z20vel_pvfmkwnenan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkweqnan_MvMlPmPKiPKm,@function
 _Z20vel_pvfmkweqnan_MvMlPmPKiPKm:
-.L_Z20vel_pvfmkweqnan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7692,7 +7540,6 @@ _Z20vel_pvfmkweqnan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkwgenan_MvMlPmPKiPKm,@function
 _Z20vel_pvfmkwgenan_MvMlPmPKiPKm:
-.L_Z20vel_pvfmkwgenan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7761,7 +7608,6 @@ _Z20vel_pvfmkwgenan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkwlenan_MvMlPmPKiPKm,@function
 _Z20vel_pvfmkwlenan_MvMlPmPKiPKm:
-.L_Z20vel_pvfmkwlenan_MvMlPmPKiPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7830,7 +7676,6 @@ _Z20vel_pvfmkwlenan_MvMlPmPKiPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmksgt_MvMlPmPKfPKm,@function
 _Z17vel_pvfmksgt_MvMlPmPKfPKm:
-.L_Z17vel_pvfmksgt_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7899,7 +7744,6 @@ _Z17vel_pvfmksgt_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkslt_MvMlPmPKfPKm,@function
 _Z17vel_pvfmkslt_MvMlPmPKfPKm:
-.L_Z17vel_pvfmkslt_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -7968,7 +7812,6 @@ _Z17vel_pvfmkslt_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmksne_MvMlPmPKfPKm,@function
 _Z17vel_pvfmksne_MvMlPmPKfPKm:
-.L_Z17vel_pvfmksne_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8037,7 +7880,6 @@ _Z17vel_pvfmksne_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmkseq_MvMlPmPKfPKm,@function
 _Z17vel_pvfmkseq_MvMlPmPKfPKm:
-.L_Z17vel_pvfmkseq_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8106,7 +7948,6 @@ _Z17vel_pvfmkseq_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmksge_MvMlPmPKfPKm,@function
 _Z17vel_pvfmksge_MvMlPmPKfPKm:
-.L_Z17vel_pvfmksge_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8175,7 +8016,6 @@ _Z17vel_pvfmksge_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z17vel_pvfmksle_MvMlPmPKfPKm,@function
 _Z17vel_pvfmksle_MvMlPmPKfPKm:
-.L_Z17vel_pvfmksle_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8244,7 +8084,6 @@ _Z17vel_pvfmksle_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z18vel_pvfmksnum_MvMlPmPKfPKm,@function
 _Z18vel_pvfmksnum_MvMlPmPKfPKm:
-.L_Z18vel_pvfmksnum_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8313,7 +8152,6 @@ _Z18vel_pvfmksnum_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z18vel_pvfmksnan_MvMlPmPKfPKm,@function
 _Z18vel_pvfmksnan_MvMlPmPKfPKm:
-.L_Z18vel_pvfmksnan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8382,7 +8220,6 @@ _Z18vel_pvfmksnan_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmksgtnan_MvMlPmPKfPKm,@function
 _Z20vel_pvfmksgtnan_MvMlPmPKfPKm:
-.L_Z20vel_pvfmksgtnan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8451,7 +8288,6 @@ _Z20vel_pvfmksgtnan_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmksltnan_MvMlPmPKfPKm,@function
 _Z20vel_pvfmksltnan_MvMlPmPKfPKm:
-.L_Z20vel_pvfmksltnan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8520,7 +8356,6 @@ _Z20vel_pvfmksltnan_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmksnenan_MvMlPmPKfPKm,@function
 _Z20vel_pvfmksnenan_MvMlPmPKfPKm:
-.L_Z20vel_pvfmksnenan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8589,7 +8424,6 @@ _Z20vel_pvfmksnenan_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkseqnan_MvMlPmPKfPKm,@function
 _Z20vel_pvfmkseqnan_MvMlPmPKfPKm:
-.L_Z20vel_pvfmkseqnan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8658,7 +8492,6 @@ _Z20vel_pvfmkseqnan_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmksgenan_MvMlPmPKfPKm,@function
 _Z20vel_pvfmksgenan_MvMlPmPKfPKm:
-.L_Z20vel_pvfmksgenan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8727,7 +8560,6 @@ _Z20vel_pvfmksgenan_MvMlPmPKfPKm:
 	.p2align	4
 	.type	_Z20vel_pvfmkslenan_MvMlPmPKfPKm,@function
 _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
-.L_Z20vel_pvfmkslenan_MvMlPmPKfPKm$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -8792,5 +8624,5 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 .Lfunc_end167:
 	.size	_Z20vel_pvfmkslenan_MvMlPmPKfPKm, .Lfunc_end167-_Z20vel_pvfmkslenan_MvMlPmPKfPKm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits

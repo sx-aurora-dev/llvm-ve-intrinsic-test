@@ -4,7 +4,6 @@
 	.p2align	4
 	.type	_Z9vel_vld2dPdmPKv,@function
 _Z9vel_vld2dPdmPKv:
-.L_Z9vel_vld2dPdmPKv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -40,7 +39,6 @@ _Z9vel_vld2dPdmPKv:
 	.p2align	4
 	.type	_Z9vel_vst2dPdmPv,@function
 _Z9vel_vst2dPdmPv:
-.L_Z9vel_vst2dPdmPv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -76,7 +74,6 @@ _Z9vel_vst2dPdmPv:
 	.p2align	4
 	.type	_Z15vel_vst2d_vssmlPdmPvPj,@function
 _Z15vel_vst2d_vssmlPdmPvPj:
-.L_Z15vel_vst2d_vssmlPdmPvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -114,7 +111,6 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 	.p2align	4
 	.type	_Z10vel_vldu2dPfmPKv,@function
 _Z10vel_vldu2dPfmPKv:
-.L_Z10vel_vldu2dPfmPKv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -150,7 +146,6 @@ _Z10vel_vldu2dPfmPKv:
 	.p2align	4
 	.type	_Z10vel_vstu2dPfmPv,@function
 _Z10vel_vstu2dPfmPv:
-.L_Z10vel_vstu2dPfmPv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -186,7 +181,6 @@ _Z10vel_vstu2dPfmPv:
 	.p2align	4
 	.type	_Z16vel_vstu2d_vssmlPfmPvPj,@function
 _Z16vel_vstu2d_vssmlPfmPvPj:
-.L_Z16vel_vstu2d_vssmlPfmPvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -224,7 +218,6 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 	.p2align	4
 	.type	_Z12vel_vldl2dsxPlmPKv,@function
 _Z12vel_vldl2dsxPlmPKv:
-.L_Z12vel_vldl2dsxPlmPKv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -260,7 +253,6 @@ _Z12vel_vldl2dsxPlmPKv:
 	.p2align	4
 	.type	_Z12vel_vldl2dzxPmmPKv,@function
 _Z12vel_vldl2dzxPmmPKv:
-.L_Z12vel_vldl2dzxPmmPKv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -296,7 +288,6 @@ _Z12vel_vldl2dzxPmmPKv:
 	.p2align	4
 	.type	_Z10vel_vstl2dPimPv,@function
 _Z10vel_vstl2dPimPv:
-.L_Z10vel_vstl2dPimPv$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -332,7 +323,6 @@ _Z10vel_vstl2dPimPv:
 	.p2align	4
 	.type	_Z16vel_vstl2d_vssmlPimPvPj,@function
 _Z16vel_vstl2d_vssmlPimPvPj:
-.L_Z16vel_vstl2d_vssmlPimPvPj$local:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -366,5 +356,5 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 .Lfunc_end9:
 	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 5fd7f330bcd66d601a441aa1832f5173dd6e0d9b)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
 	.section	".note.GNU-stack","",@progbits
