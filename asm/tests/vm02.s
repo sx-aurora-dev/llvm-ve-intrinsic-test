@@ -77,26 +77,26 @@ _Z10_test_vm02v:
 	st %s20, 64(, %s9)
 	st %s21, 72(, %s9)
 	or %s0, 0, (0)1
-	or %s1, 0, (0)1
-	lea %s2, -9216(, %s9)
-	lea.sl %s3, 1072693248
-	lea.sl %s4, 1073741824
-	lea.sl %s5, 1074266112
+	lea %s1, -9216(, %s9)
+	lea.sl %s2, 1072693248
+	lea.sl %s3, 1073741824
+	lea.sl %s4, 1074266112
 	lea %s19, 2048
+	or %s5, 0, %s0
 .LBB1_1:
-	cvt.d.w %s6, %s0
-	st %s6, -2048(%s1, %s9)
-	st %s3, -6144(%s1, %s9)
-	st %s4, -8192(%s1, %s9)
-	and %s7, 1, %s0
-	stl %s7, (, %s2)
-	or %s34, 0, %s5
+	cvt.d.w %s6, %s5
+	st %s6, -2048(%s0, %s9)
+	st %s2, -6144(%s0, %s9)
+	st %s3, -8192(%s0, %s9)
+	and %s7, 1, %s5
+	stl %s7, (, %s1)
+	or %s34, 0, %s4
 	cmov.w.eq %s34, %s6, %s7
-	st %s34, -4096(%s1, %s9)
-	adds.w.sx %s0, 1, %s0
-	lea %s1, 8(, %s1)
-	lea %s2, 4(, %s2)
-	brne.l %s1, %s19, .LBB1_1
+	st %s34, -4096(%s0, %s9)
+	adds.w.sx %s5, 1, %s5
+	lea %s0, 8(, %s0)
+	lea %s1, 4(, %s1)
+	brne.l %s0, %s19, .LBB1_1
 	lea %s20, 256
 	lea %s21, -2048(, %s9)
 	lvl %s20
@@ -130,18 +130,20 @@ _Z10_test_vm02v:
 	bsic %s10, (, %s12)
 	vld %v0,8,%s18
 	vst %v0,8,%s21
-	or %s1, 0, (0)1
-	or %s0, 1, (0)1
-	or %s2, 0, %s1
+	or %s0, 0, (0)1
+	or %s2, 1, (0)1
+	or %s1, 0, %s0
 .LBB1_3:
-	ld %s3, -2048(%s2, %s9)
-	ld %s4, -4096(%s2, %s9)
+	ld %s3, -2048(%s1, %s9)
+	ld %s4, -4096(%s1, %s9)
 	fcmp.d %s3, %s3, %s4
-	or %s4, 0, %s1
+	or %s4, 0, %s0
 	cmov.d.eq %s4, (63)0, %s3
-	lea %s2, 8(, %s2)
-	and %s0, %s0, %s4
-	brne.l %s2, %s19, .LBB1_3
+	and %s2, %s2, %s4
+	lea %s1, 8(, %s1)
+	adds.w.sx %s2, %s2, (0)1
+	brne.l %s1, %s19, .LBB1_3
+	adds.w.sx %s0, %s2, (0)1
 	ld %s21, 72(, %s9)
 	ld %s20, 64(, %s9)
 	ld %s19, 56(, %s9)
@@ -155,5 +157,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
 	.section	".note.GNU-stack","",@progbits

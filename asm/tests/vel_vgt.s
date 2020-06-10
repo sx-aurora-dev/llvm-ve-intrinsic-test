@@ -452,5 +452,5 @@ _Z15vel_vgtlzxnc_vvPvS_Pm:
 .Lfunc_end11:
 	.size	_Z15vel_vgtlzxnc_vvPvS_Pm, .Lfunc_end11-_Z15vel_vgtlzxnc_vvPvS_Pm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
 	.section	".note.GNU-stack","",@progbits

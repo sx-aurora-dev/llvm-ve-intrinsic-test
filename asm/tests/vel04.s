@@ -27,10 +27,11 @@ _Z5vel04PvS_S_i:
 	vld %v0,8,%s0
 	vld %v1,8,%s1
 	vld %v2,8,%s2
-	lea %s0, 128
-	lvl %s0
+	adds.w.sx %s0, %s3, (0)1
+	lea %s1, 128
+	lvl %s1
 	vfadd.d %v2,%v0,%v1
-	lvl %s3
+	lvl %s0
 	vst %v2,8,%s2
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -41,5 +42,5 @@ _Z5vel04PvS_S_i:
 .Lfunc_end0:
 	.size	_Z5vel04PvS_S_i, .Lfunc_end0-_Z5vel04PvS_S_i
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
 	.section	".note.GNU-stack","",@progbits

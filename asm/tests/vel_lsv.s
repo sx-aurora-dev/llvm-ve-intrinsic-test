@@ -25,6 +25,7 @@ lsv_vss:
 	lea %s3, 256
 	lvl %s3
 	vld %v0,8,%s0
+	adds.w.sx %s1, %s1, (0)1
 	lsv %v0(%s1),%s2
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -36,5 +37,5 @@ lsv_vss:
 .Lfunc_end0:
 	.size	lsv_vss, .Lfunc_end0-lsv_vss
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
 	.section	".note.GNU-stack","",@progbits

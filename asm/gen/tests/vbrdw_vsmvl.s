@@ -22,7 +22,9 @@ vbrdw_vsmvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
+	adds.w.sx %s4, %s4, (0)1
 	brgt.w 1, %s4, .LBB0_3
+	adds.w.sx %s1, %s1, (0)1
 	or %s5, 0, (0)1
 	lea %s6, 256
 	or %s7, 0, %s4
@@ -50,5 +52,5 @@ vbrdw_vsmvl:
 .Lfunc_end0:
 	.size	vbrdw_vsmvl, .Lfunc_end0-vbrdw_vsmvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 7cda3c814c99665dbae38aed1250c3d76586a568)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
 	.section	".note.GNU-stack","",@progbits
