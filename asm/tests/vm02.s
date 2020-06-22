@@ -140,7 +140,7 @@ _Z10_test_vm02v:
 	cmov.d.eq %s4, (63)0, %s3
 	and %s2, %s2, %s4
 	lea %s1, 8(, %s1)
-	adds.w.sx %s2, %s2, (0)1
+	and %s2, %s2, (32)0
 	brne.l %s1, %s19, .LBB1_3
 	adds.w.sx %s0, %s2, (0)1
 	ld %s21, 72(, %s9)
@@ -156,5 +156,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
 	.section	".note.GNU-stack","",@progbits

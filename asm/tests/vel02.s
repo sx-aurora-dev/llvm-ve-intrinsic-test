@@ -22,7 +22,7 @@ _Z5vel02PvS_S_S_i:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	adds.w.sx %s4, %s4, (0)1
+	and %s4, %s4, (32)0
 	lvl %s4
 	vld %v0,8,%s0
 	vld %v1,8,%s1
@@ -48,5 +48,5 @@ _Z5vel02PvS_S_S_i:
 .Lfunc_end0:
 	.size	_Z5vel02PvS_S_S_i, .Lfunc_end0-_Z5vel02PvS_S_S_i
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
 	.section	".note.GNU-stack","",@progbits

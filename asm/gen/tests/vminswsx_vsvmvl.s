@@ -22,9 +22,9 @@ vminswsx_vsvmvl:
 	monc
 	or %s0, 0, %s62
 .LBB0_5:
-	adds.w.sx %s5, %s5, (0)1
+	and %s5, %s5, (32)0
 	brgt.w 1, %s5, .LBB0_3
-	adds.w.sx %s1, %s1, (0)1
+	and %s1, %s1, (32)0
 	or %s6, 0, (0)1
 	lea %s7, 256
 	or %s34, 0, %s5
@@ -54,5 +54,5 @@ vminswsx_vsvmvl:
 .Lfunc_end0:
 	.size	vminswsx_vsvmvl, .Lfunc_end0-vminswsx_vsvmvl
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
 	.section	".note.GNU-stack","",@progbits

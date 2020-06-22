@@ -25,7 +25,7 @@ _Z3vmvPmPKmi:
 	lea %s3, 256
 	lvl %s3
 	vld %v0,8,%s1
-	adds.w.sx %s1, %s2, (0)1
+	and %s1, %s2, (32)0
 	vmv %v0,%s1,%v0
 	vst %v0,8,%s0
 	or %s11, 0, %s9
@@ -100,7 +100,7 @@ _Z10vmv_vsvmvlPmPKmiPj:
 	vld %v0,8,%s1
 	vldl.sx %v1,4,%s3
 	vld %v2,8,%s0
-	adds.w.sx %s1, %s2, (0)1
+	and %s1, %s2, (32)0
 	vfmk.w.gt %vm1,%v1
 	vmv %v2,%s1,%v0,%vm1
 	vst %v2,8,%s0
@@ -152,5 +152,5 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
 
-	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
 	.section	".note.GNU-stack","",@progbits
