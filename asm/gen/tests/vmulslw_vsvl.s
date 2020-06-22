@@ -49,5 +49,5 @@ vmulslw_vsvl:
 .Lfunc_end0:
 	.size	vmulslw_vsvl, .Lfunc_end0-vmulslw_vsvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
 	.section	".note.GNU-stack","",@progbits

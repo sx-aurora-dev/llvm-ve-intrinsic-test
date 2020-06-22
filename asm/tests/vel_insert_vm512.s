@@ -30,21 +30,21 @@ _Z17vel_insert_vm512uPmPKmPKj:
 	pvfmk.w.up.gt %vm2,%v1
 	pvfmk.w.lo.gt %vm3,%v1
 	andm %vm2,%vm0,%vm1
-	svm %s1,%vm3,0
+	svm %s1, %vm3, 0
 	st %s1, (, %s0)
-	svm %s1,%vm3,1
+	svm %s1, %vm3, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm3,2
+	svm %s1, %vm3, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm3,3
+	svm %s1, %vm3, 3
 	st %s1, 24(, %s0)
-	svm %s1,%vm2,0
+	svm %s1, %vm2, 0
 	st %s1, 32(, %s0)
-	svm %s1,%vm2,1
+	svm %s1, %vm2, 1
 	st %s1, 40(, %s0)
-	svm %s1,%vm2,2
+	svm %s1, %vm2, 2
 	st %s1, 48(, %s0)
-	svm %s1,%vm2,3
+	svm %s1, %vm2, 3
 	st %s1, 56(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -85,21 +85,21 @@ _Z17vel_insert_vm512lPmPKmPKj:
 	pvfmk.w.up.gt %vm2,%v1
 	pvfmk.w.lo.gt %vm3,%v1
 	andm %vm3,%vm0,%vm1
-	svm %s1,%vm3,0
+	svm %s1, %vm3, 0
 	st %s1, (, %s0)
-	svm %s1,%vm3,1
+	svm %s1, %vm3, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm3,2
+	svm %s1, %vm3, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm3,3
+	svm %s1, %vm3, 3
 	st %s1, 24(, %s0)
-	svm %s1,%vm2,0
+	svm %s1, %vm2, 0
 	st %s1, 32(, %s0)
-	svm %s1,%vm2,1
+	svm %s1, %vm2, 1
 	st %s1, 40(, %s0)
-	svm %s1,%vm2,2
+	svm %s1, %vm2, 2
 	st %s1, 48(, %s0)
-	svm %s1,%vm2,3
+	svm %s1, %vm2, 3
 	st %s1, 56(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -110,5 +110,5 @@ _Z17vel_insert_vm512lPmPKmPKj:
 .Lfunc_end1:
 	.size	_Z17vel_insert_vm512lPmPKmPKj, .Lfunc_end1-_Z17vel_insert_vm512lPmPKmPKj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
 	.section	".note.GNU-stack","",@progbits

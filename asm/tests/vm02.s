@@ -25,22 +25,21 @@ _Z4funcDv256_dS_S_Dv4_m:
 	lea %s1, 256
 	lea %s2, 240(, %s9)
 	lvl %s1
-	vld %v0,8,%s2
+	vld %v0, 8, %s2
 	lea %s2, 4336(, %s9)
-	vld %v1,8,%s2
+	vld %v1, 8, %s2
 	lea %s2, 2288(, %s9)
-	vld %v2,8,%s2
-	lea %s2, 6384(, %s9)
-	ld %s3, (, %s2)
-	ld %s4, 8(, %s2)
-	ld %s5, 16(, %s2)
-	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s3
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
+	vld %v2, 8, %s2
+	ld %s16, 6384(, %s9)
+	lvm %vm1, 0, %s16
+	ld %s16, 6392(, %s9)
+	lvm %vm1, 1, %s16
+	ld %s16, 6400(, %s9)
+	lvm %vm1, 2, %s16
+	ld %s16, 6408(, %s9)
+	lvm %vm1, 3, %s16
 	vfadd.d %v0,%v2,%v1,%vm1
-	vst %v0,8,%s0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -109,18 +108,18 @@ _Z10_test_vm02v:
 	vldl.zx %v3,4,%s0
 	vfmk.w.gt %vm1,%v3
 	lea %s0, 4336(, %s11)
-	vst %v2,8,%s0
+	vst %v2, 8, %s0
 	lea %s0, 2288(, %s11)
-	vst %v1,8,%s0
+	vst %v1, 8, %s0
 	lea %s0, 240(, %s11)
-	vst %v0,8,%s0
-	svm %s0,%vm1,3
+	vst %v0, 8, %s0
+	svm %s0, %vm1, 3
 	st %s0, 6408(, %s11)
-	svm %s0,%vm1,2
+	svm %s0, %vm1, 2
 	st %s0, 6400(, %s11)
-	svm %s0,%vm1,1
+	svm %s0, %vm1, 1
 	st %s0, 6392(, %s11)
-	svm %s0,%vm1,0
+	svm %s0, %vm1, 0
 	lea %s1, _Z4funcDv256_dS_S_Dv4_m@lo
 	and %s1, %s1, (32)0
 	lea.sl %s12, _Z4funcDv256_dS_S_Dv4_m@hi(, %s1)
@@ -128,7 +127,7 @@ _Z10_test_vm02v:
 	st %s0, 6384(, %s11)
 	or %s0, 0, %s18
 	bsic %s10, (, %s12)
-	vld %v0,8,%s18
+	vld %v0, 8, %s18
 	vst %v0,8,%s21
 	or %s0, 0, (0)1
 	or %s2, 1, (0)1
@@ -157,5 +156,5 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
 	.section	".note.GNU-stack","",@progbits

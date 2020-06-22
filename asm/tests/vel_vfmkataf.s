@@ -125,19 +125,19 @@ vel_pvfmkat:
 	lvl %s0
 	pvfmk.w.up.at %vm2
 	pvfmk.w.lo.at %vm3
-	svm %s0,%vm3,0
+	svm %s0, %vm3, 0
 	brne.l -1, %s0, .LBB2_3
-	svm %s0,%vm3,1
+	svm %s0, %vm3, 1
 	brne.l -1, %s0, .LBB2_3
-	svm %s0,%vm3,2
+	svm %s0, %vm3, 2
 	brne.l -1, %s0, .LBB2_3
-	svm %s0,%vm3,3
+	svm %s0, %vm3, 3
 	brne.l -1, %s0, .LBB2_3
-	svm %s0,%vm2,0
+	svm %s0, %vm2, 0
 	brne.l -1, %s0, .LBB2_3
-	svm %s0,%vm2,1
+	svm %s0, %vm2, 1
 	brne.l -1, %s0, .LBB2_3
-	svm %s0,%vm2,2
+	svm %s0, %vm2, 2
 	breq.l -1, %s0, .LBB2_16
 .LBB2_3:
 	or %s0, 0, (0)1
@@ -150,7 +150,7 @@ vel_pvfmkat:
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .LBB2_16:
-	svm %s0,%vm2,3
+	svm %s0, %vm2, 3
 	cmps.l %s0, %s0, (0)0
 	ldz %s0, %s0
 	srl %s0, %s0, 6
@@ -184,19 +184,19 @@ vel_pvfmkaf:
 	lvl %s0
 	pvfmk.w.up.af %vm2
 	pvfmk.w.lo.af %vm3
-	svm %s0,%vm3,0
+	svm %s0, %vm3, 0
 	brne.l 0, %s0, .LBB3_3
-	svm %s0,%vm3,1
+	svm %s0, %vm3, 1
 	brne.l 0, %s0, .LBB3_3
-	svm %s0,%vm3,2
+	svm %s0, %vm3, 2
 	brne.l 0, %s0, .LBB3_3
-	svm %s0,%vm3,3
+	svm %s0, %vm3, 3
 	brne.l 0, %s0, .LBB3_3
-	svm %s0,%vm2,0
+	svm %s0, %vm2, 0
 	brne.l 0, %s0, .LBB3_3
-	svm %s0,%vm2,1
+	svm %s0, %vm2, 1
 	brne.l 0, %s0, .LBB3_3
-	svm %s0,%vm2,2
+	svm %s0, %vm2, 2
 	breq.l 0, %s0, .LBB3_16
 .LBB3_3:
 	or %s0, 0, (0)1
@@ -209,12 +209,12 @@ vel_pvfmkaf:
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .LBB3_16:
-	svm %s0,%vm2,3
+	svm %s0, %vm2, 3
 	ldz %s0, %s0
 	srl %s0, %s0, 6
 	br.l.t .LBB3_17
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
 	.section	".note.GNU-stack","",@progbits

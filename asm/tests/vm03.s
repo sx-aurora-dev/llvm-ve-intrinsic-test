@@ -23,17 +23,17 @@ _Z4funcv:
 	or %s0, 0, %s62
 .LBB0_2:
 	or %s1, 0, (0)1
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s1
-	lvm %vm1,2,%s1
-	lvm %vm1,3,%s1
-	svm %s1,%vm1,3
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s1
+	lvm %vm1, 2, %s1
+	lvm %vm1, 3, %s1
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -72,10 +72,10 @@ _Z10_test_vm03v:
 	lea %s0, -32(, %s9)
 	bsic %s10, (, %s12)
 	or %s0, 0, (0)1
-	lvm %vm1,0,%s0
-	lvm %vm1,1,%s0
-	lvm %vm1,2,%s0
-	lvm %vm1,3,%s0
+	lvm %vm1, 0, %s0
+	lvm %vm1, 1, %s0
+	lvm %vm1, 2, %s0
+	lvm %vm1, 3, %s0
 	svm %s0,%vm1,0
 	svm %s1,%vm1,1
 	or %s0, %s0, %s1
@@ -94,5 +94,5 @@ _Z10_test_vm03v:
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
 	.section	".note.GNU-stack","",@progbits

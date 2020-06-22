@@ -25,18 +25,18 @@ _Z4funcDv256_dS_S_:
 	lea %s1, 256
 	lea %s2, 240(, %s9)
 	lvl %s1
-	vld %v0,8,%s2
+	vld %v0, 8, %s2
 	lea %s2, 4336(, %s9)
-	vld %v1,8,%s2
+	vld %v1, 8, %s2
 	lea %s2, 2288(, %s9)
-	vld %v2,8,%s2
+	vld %v2, 8, %s2
 	or %s2, 0, (0)1
-	lvm %vm1,0,%s2
-	lvm %vm1,1,%s2
-	lvm %vm1,2,%s2
-	lvm %vm1,3,%s2
+	lvm %vm1, 0, %s2
+	lvm %vm1, 1, %s2
+	lvm %vm1, 2, %s2
+	lvm %vm1, 3, %s2
 	vfadd.d %v0,%v2,%v1,%vm1
-	vst %v0,8,%s0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -91,10 +91,10 @@ _Z10_test_vm01v:
 	lea %s1, -8192(, %s9)
 	vld %v2,8,%s1
 	or %s1, 0, (0)1
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s1
-	lvm %vm1,2,%s1
-	lvm %vm1,3,%s1
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s1
+	lvm %vm1, 2, %s1
+	lvm %vm1, 3, %s1
 	vfadd.d %v0,%v1,%v2,%vm1
 	vst %v0,8,%s3
 	or %s3, 1, (0)1
@@ -119,5 +119,5 @@ _Z10_test_vm01v:
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 539b33211b75ad5049b55f0790768b8529d77f00)"
+	.ident	"clang version 11.0.0 (https://github.com/jam7/llvm-project.git cc8bb2ddfbd980c9a589eba30a8c9e0b921065db)"
 	.section	".note.GNU-stack","",@progbits
