@@ -75,7 +75,7 @@ __attribute__((constructor))
     register_test("vel_vfmklat", test_vel_vfmklat);
     register_test("vel_vfmklaf", test_vel_vfmklaf);
     register_test("vel_pvfmkat", test_vel_pvfmkat);
-    register_test("vel_pvfmkat", test_vel_pvfmkaf);
+    register_test("vel_pvfmkaf", test_vel_pvfmkaf);
 }
 #endif // HAVE_REGISTER_TEST
 

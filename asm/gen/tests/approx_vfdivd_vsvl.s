@@ -58,5 +58,5 @@ approx_vfdivd_vsvl:
 .Lfunc_end0:
 	.size	approx_vfdivd_vsvl, .Lfunc_end0-approx_vfdivd_vsvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
 	.section	".note.GNU-stack","",@progbits

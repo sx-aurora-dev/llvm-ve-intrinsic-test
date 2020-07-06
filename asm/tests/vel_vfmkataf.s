@@ -123,8 +123,8 @@ vel_pvfmkat:
 .LBB2_2:
 	lea %s0, 256
 	lvl %s0
-	pvfmk.w.up.at %vm2
-	pvfmk.w.lo.at %vm3
+	vfmk.l.at %vm2
+	vfmk.l.at %vm3
 	svm %s0, %vm3, 0
 	brne.l -1, %s0, .LBB2_3
 	svm %s0, %vm3, 1
@@ -182,8 +182,8 @@ vel_pvfmkaf:
 .LBB3_2:
 	lea %s0, 256
 	lvl %s0
-	pvfmk.w.up.af %vm2
-	pvfmk.w.lo.af %vm3
+	vfmk.l.af %vm2
+	vfmk.l.af %vm3
 	svm %s0, %vm3, 0
 	brne.l 0, %s0, .LBB3_3
 	svm %s0, %vm3, 1
@@ -216,5 +216,5 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
 	.section	".note.GNU-stack","",@progbits

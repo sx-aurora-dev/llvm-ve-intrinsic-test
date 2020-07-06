@@ -5290,7 +5290,7 @@ _Z16vel_pvfmkwgt_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.gt %vm2,%v0
-	pvfmk.w.lo.gt %vm3,%v0
+	vfmk.w.gt %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5342,7 +5342,7 @@ _Z16vel_pvfmkwlt_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.lt %vm2,%v0
-	pvfmk.w.lo.lt %vm3,%v0
+	vfmk.w.lt %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5394,7 +5394,7 @@ _Z16vel_pvfmkwne_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.ne %vm2,%v0
-	pvfmk.w.lo.ne %vm3,%v0
+	vfmk.w.ne %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5446,7 +5446,7 @@ _Z16vel_pvfmkweq_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.eq %vm2,%v0
-	pvfmk.w.lo.eq %vm3,%v0
+	vfmk.w.eq %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5498,7 +5498,7 @@ _Z16vel_pvfmkwge_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.ge %vm2,%v0
-	pvfmk.w.lo.ge %vm3,%v0
+	vfmk.w.ge %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5550,7 +5550,7 @@ _Z16vel_pvfmkwle_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.le %vm2,%v0
-	pvfmk.w.lo.le %vm3,%v0
+	vfmk.w.le %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5602,7 +5602,7 @@ _Z17vel_pvfmkwnum_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.num %vm2,%v0
-	pvfmk.w.lo.num %vm3,%v0
+	vfmk.w.num %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5654,7 +5654,7 @@ _Z17vel_pvfmkwnan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.nan %vm2,%v0
-	pvfmk.w.lo.nan %vm3,%v0
+	vfmk.w.nan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5706,7 +5706,7 @@ _Z19vel_pvfmkwgtnan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.gtnan %vm2,%v0
-	pvfmk.w.lo.gtnan %vm3,%v0
+	vfmk.w.gtnan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5758,7 +5758,7 @@ _Z19vel_pvfmkwltnan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.ltnan %vm2,%v0
-	pvfmk.w.lo.ltnan %vm3,%v0
+	vfmk.w.ltnan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5810,7 +5810,7 @@ _Z19vel_pvfmkwnenan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.nenan %vm2,%v0
-	pvfmk.w.lo.nenan %vm3,%v0
+	vfmk.w.nenan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5862,7 +5862,7 @@ _Z19vel_pvfmkweqnan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.eqnan %vm2,%v0
-	pvfmk.w.lo.eqnan %vm3,%v0
+	vfmk.w.eqnan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5914,7 +5914,7 @@ _Z19vel_pvfmkwgenan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.genan %vm2,%v0
-	pvfmk.w.lo.genan %vm3,%v0
+	vfmk.w.genan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5966,7 +5966,7 @@ _Z19vel_pvfmkwlenan_MvlPmPKi:
 	lvl %s2
 	vld %v0,8,%s1
 	pvfmk.w.up.lenan %vm2,%v0
-	pvfmk.w.lo.lenan %vm3,%v0
+	vfmk.w.lenan %vm3,%v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6762,7 +6762,7 @@ _Z17vel_pvfmkwgt_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.gt %vm2,%v0,%vm2
-	pvfmk.w.lo.gt %vm3,%v0,%vm3
+	vfmk.w.gt %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6830,7 +6830,7 @@ _Z17vel_pvfmkwlt_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.lt %vm2,%v0,%vm2
-	pvfmk.w.lo.lt %vm3,%v0,%vm3
+	vfmk.w.lt %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6898,7 +6898,7 @@ _Z17vel_pvfmkwne_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.ne %vm2,%v0,%vm2
-	pvfmk.w.lo.ne %vm3,%v0,%vm3
+	vfmk.w.ne %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6966,7 +6966,7 @@ _Z17vel_pvfmkweq_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.eq %vm2,%v0,%vm2
-	pvfmk.w.lo.eq %vm3,%v0,%vm3
+	vfmk.w.eq %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7034,7 +7034,7 @@ _Z17vel_pvfmkwge_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.ge %vm2,%v0,%vm2
-	pvfmk.w.lo.ge %vm3,%v0,%vm3
+	vfmk.w.ge %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7102,7 +7102,7 @@ _Z17vel_pvfmkwle_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.le %vm2,%v0,%vm2
-	pvfmk.w.lo.le %vm3,%v0,%vm3
+	vfmk.w.le %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7170,7 +7170,7 @@ _Z18vel_pvfmkwnum_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.num %vm2,%v0,%vm2
-	pvfmk.w.lo.num %vm3,%v0,%vm3
+	vfmk.w.num %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7238,7 +7238,7 @@ _Z18vel_pvfmkwnan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.nan %vm2,%v0,%vm2
-	pvfmk.w.lo.nan %vm3,%v0,%vm3
+	vfmk.w.nan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7306,7 +7306,7 @@ _Z20vel_pvfmkwgtnan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.gtnan %vm2,%v0,%vm2
-	pvfmk.w.lo.gtnan %vm3,%v0,%vm3
+	vfmk.w.gtnan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7374,7 +7374,7 @@ _Z20vel_pvfmkwltnan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.ltnan %vm2,%v0,%vm2
-	pvfmk.w.lo.ltnan %vm3,%v0,%vm3
+	vfmk.w.ltnan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7442,7 +7442,7 @@ _Z20vel_pvfmkwnenan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.nenan %vm2,%v0,%vm2
-	pvfmk.w.lo.nenan %vm3,%v0,%vm3
+	vfmk.w.nenan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7510,7 +7510,7 @@ _Z20vel_pvfmkweqnan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.eqnan %vm2,%v0,%vm2
-	pvfmk.w.lo.eqnan %vm3,%v0,%vm3
+	vfmk.w.eqnan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7578,7 +7578,7 @@ _Z20vel_pvfmkwgenan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.genan %vm2,%v0,%vm2
-	pvfmk.w.lo.genan %vm3,%v0,%vm3
+	vfmk.w.genan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7646,7 +7646,7 @@ _Z20vel_pvfmkwlenan_MvMlPmPKiPKm:
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
 	pvfmk.w.up.lenan %vm2,%v0,%vm2
-	pvfmk.w.lo.lenan %vm3,%v0,%vm3
+	vfmk.w.lenan %vm3,%v0,%vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8624,5 +8624,5 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 .Lfunc_end167:
 	.size	_Z20vel_pvfmkslenan_MvMlPmPKfPKm, .Lfunc_end167-_Z20vel_pvfmkslenan_MvMlPmPKfPKm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
 	.section	".note.GNU-stack","",@progbits

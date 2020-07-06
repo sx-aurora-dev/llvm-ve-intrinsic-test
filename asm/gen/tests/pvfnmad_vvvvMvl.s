@@ -39,7 +39,7 @@ pvfnmad_vvvvMvl:
 	vld %v3,8,%s4
 	vld %v4,8,%s5
 	pvfmk.w.up.gt %vm2,%v3
-	pvfmk.w.lo.gt %vm3,%v3
+	vfmk.w.gt %vm3,%v3
 	pvfnmad %v4,%v0,%v1,%v2,%vm2
 	vst %v4,8,%s0
 	lea %s0, 2048(, %s0)
@@ -61,5 +61,5 @@ pvfnmad_vvvvMvl:
 .Lfunc_end0:
 	.size	pvfnmad_vvvvMvl, .Lfunc_end0-pvfnmad_vvvvMvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
 	.section	".note.GNU-stack","",@progbits
