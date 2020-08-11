@@ -50,8 +50,8 @@ def gen(ll_filename, args):
     lines = read_asm(asm_filename, asm)
     if len(lines) == 0:
         raise Exception("{} not found".format(asm))
-    if len(lines) > 1:
-        raise Exception("multiple {} found".format(asm))
+#    if len(lines) > 1:
+#        raise Exception("multiple {} found".format(asm))
 
     if args.verbose > 0:
         print(lines)
