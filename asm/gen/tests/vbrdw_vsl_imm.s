@@ -29,8 +29,8 @@ vbrdw_vsl_imm:
 .LBB0_2:
 	mins.w.sx %s5, %s4, %s3
 	lvl %s5
-	vbrdl %v0,3
-	vstl %v0,4,%s0
+	vbrdl %v0, 3
+	vstl %v0, 4, %s0
 	lea %s0, 1024(, %s0)
 	adds.w.sx %s2, %s2, %s3
 	adds.w.sx %s4, %s4, (56)1
@@ -45,5 +45,5 @@ vbrdw_vsl_imm:
 .Lfunc_end0:
 	.size	vbrdw_vsl_imm, .Lfunc_end0-vbrdw_vsl_imm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

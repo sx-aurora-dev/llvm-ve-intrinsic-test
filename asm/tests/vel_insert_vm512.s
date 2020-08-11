@@ -24,11 +24,11 @@ _Z17vel_insert_vm512uPmPKmPKj:
 .LBB0_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
-	vld %v1,8,%s2
-	vfmk.l.gt %vm1,%v0
-	pvfmk.w.up.gt %vm2,%v1
-	vfmk.w.gt %vm3,%v1
+	vld %v0, 8, %s1
+	vld %v1, 8, %s2
+	vfmk.l.gt %vm1, %v0
+	pvfmk.w.up.gt %vm2, %v1
+	vfmk.w.gt %vm3, %v1
 	andm %vm2,%vm0,%vm1
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
@@ -79,11 +79,11 @@ _Z17vel_insert_vm512lPmPKmPKj:
 .LBB1_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
-	vld %v1,8,%s2
-	vfmk.l.gt %vm1,%v0
-	pvfmk.w.up.gt %vm2,%v1
-	vfmk.w.gt %vm3,%v1
+	vld %v0, 8, %s1
+	vld %v1, 8, %s2
+	vfmk.l.gt %vm1, %v0
+	pvfmk.w.up.gt %vm2, %v1
+	vfmk.w.gt %vm3, %v1
 	andm %vm3,%vm0,%vm1
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
@@ -110,5 +110,5 @@ _Z17vel_insert_vm512lPmPKmPKj:
 .Lfunc_end1:
 	.size	_Z17vel_insert_vm512lPmPKmPKj, .Lfunc_end1-_Z17vel_insert_vm512lPmPKmPKj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

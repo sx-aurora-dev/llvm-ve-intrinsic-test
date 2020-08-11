@@ -24,10 +24,10 @@ _Z10vel_vgt_vvPvS_Pm:
 .LBB0_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,3,%s1
-	vgt %v0,%v0,0,0
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 3, %s1
+	vgt %v0, %v0, 0, 0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -61,12 +61,12 @@ _Z11vel_vgt_vvmPvS_PmPj:
 .LBB1_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s2
-	vldl.zx %v1,4,%s3
-	vsfa %v0,%v0,3,%s1
-	vfmk.w.gt %vm1,%v1
-	vgt %v0,%v0,0,0,%vm1
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vldl.zx %v1, 4, %s3
+	vsfa %v0, %v0, 3, %s1
+	vfmk.w.gt %vm1, %v1
+	vgt %v0, %v0, 0, 0, %vm1
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -100,10 +100,10 @@ _Z11vel_vgtu_vvPvS_Pm:
 .LBB2_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,2,%s1
-	vgtu %v0,%v0,0,0
-	vstu %v0,4,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 2, %s1
+	vgtu %v0, %v0, 0, 0
+	vstu %v0, 4, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -137,12 +137,12 @@ _Z12vel_vgtu_vvmPvS_PmPj:
 .LBB3_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s2
-	vldl.zx %v1,4,%s3
-	vsfa %v0,%v0,2,%s1
-	vfmk.w.gt %vm1,%v1
-	vgtu %v0,%v0,0,0,%vm1
-	vstu %v0,4,%s0
+	vld %v0, 8, %s2
+	vldl.zx %v1, 4, %s3
+	vsfa %v0, %v0, 2, %s1
+	vfmk.w.gt %vm1, %v1
+	vgtu %v0, %v0, 0, 0, %vm1
+	vstu %v0, 4, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -176,10 +176,10 @@ _Z13vel_vgtlsx_vvPvS_Pm:
 .LBB4_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,2,%s1
-	vgtl.sx %v0,%v0,0,0
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 2, %s1
+	vgtl.sx %v0, %v0, 0, 0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -213,12 +213,12 @@ _Z14vel_vgtlsx_vvmPvS_PmPj:
 .LBB5_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s2
-	vldl.zx %v1,4,%s3
-	vsfa %v0,%v0,2,%s1
-	vfmk.w.gt %vm1,%v1
-	vgtl.sx %v0,%v0,0,0,%vm1
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vldl.zx %v1, 4, %s3
+	vsfa %v0, %v0, 2, %s1
+	vfmk.w.gt %vm1, %v1
+	vgtl.sx %v0, %v0, 0, 0, %vm1
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -252,10 +252,10 @@ _Z13vel_vgtlzx_vvPvS_Pm:
 .LBB6_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,2,%s1
-	vgtl.zx %v0,%v0,0,0
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 2, %s1
+	vgtl.zx %v0, %v0, 0, 0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -289,12 +289,12 @@ _Z14vel_vgtlzx_vvmPvS_PmPj:
 .LBB7_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s2
-	vldl.zx %v1,4,%s3
-	vsfa %v0,%v0,2,%s1
-	vfmk.w.gt %vm1,%v1
-	vgtl.zx %v0,%v0,0,0,%vm1
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vldl.zx %v1, 4, %s3
+	vsfa %v0, %v0, 2, %s1
+	vfmk.w.gt %vm1, %v1
+	vgtl.zx %v0, %v0, 0, 0, %vm1
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -328,10 +328,10 @@ _Z12vel_vgtnc_vvPvS_Pm:
 .LBB8_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,3,%s1
-	vgt.nc %v0,%v0,0,0
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 3, %s1
+	vgt.nc %v0, %v0, 0, 0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -365,10 +365,10 @@ _Z13vel_vgtunc_vvPvS_Pm:
 .LBB9_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,2,%s1
-	vgtu.nc %v0,%v0,0,0
-	vstu %v0,4,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 2, %s1
+	vgtu.nc %v0, %v0, 0, 0
+	vstu %v0, 4, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -402,10 +402,10 @@ _Z15vel_vgtlsxnc_vvPvS_Pm:
 .LBB10_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,2,%s1
-	vgtl.sx.nc %v0,%v0,0,0
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 2, %s1
+	vgtl.sx.nc %v0, %v0, 0, 0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -439,10 +439,10 @@ _Z15vel_vgtlzxnc_vvPvS_Pm:
 .LBB11_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s2
-	vsfa %v0,%v0,2,%s1
-	vgtl.zx.nc %v0,%v0,0,0
-	vst %v0,8,%s0
+	vld %v0, 8, %s2
+	vsfa %v0, %v0, 2, %s1
+	vgtl.zx.nc %v0, %v0, 0, 0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -452,5 +452,5 @@ _Z15vel_vgtlzxnc_vvPvS_Pm:
 .Lfunc_end11:
 	.size	_Z15vel_vgtlzxnc_vvPvS_Pm, .Lfunc_end11-_Z15vel_vgtlzxnc_vvPvS_Pm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

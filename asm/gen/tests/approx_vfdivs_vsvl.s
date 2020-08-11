@@ -31,16 +31,16 @@ approx_vfdivs_vsvl:
 .LBB0_2:
 	mins.w.sx %s34, %s7, %s5
 	lvl %s34
-	vldu %v0,4,%s2
-	vrcp.s %v1,%v0
-	vfnmsb.s %v2,%s6,%v0,%v1
-	vfmad.s %v2,%v1,%v1,%v2
-	vfmul.s %v3,%s1,%v2
-	vfnmsb.s %v4,%s1,%v3,%v0
-	vfmad.s %v1,%v3,%v1,%v4
-	vfnmsb.s %v0,%s1,%v1,%v0
-	vfmad.s %v0,%v1,%v2,%v0
-	vstu %v0,4,%s0
+	vldu %v0, 4, %s2
+	vrcp.s %v1, %v0
+	vfnmsb.s %v2, %s6, %v0, %v1
+	vfmad.s %v2, %v1, %v1, %v2
+	vfmul.s %v3, %s1, %v2
+	vfnmsb.s %v4, %s1, %v3, %v0
+	vfmad.s %v1, %v3, %v1, %v4
+	vfnmsb.s %v0, %s1, %v1, %v0
+	vfmad.s %v0, %v1, %v2, %v0
+	vstu %v0, 4, %s0
 	lea %s0, 1024(, %s0)
 	lea %s2, 1024(, %s2)
 	adds.w.sx %s4, %s4, %s5
@@ -56,5 +56,5 @@ approx_vfdivs_vsvl:
 .Lfunc_end0:
 	.size	approx_vfdivs_vsvl, .Lfunc_end0-approx_vfdivs_vsvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

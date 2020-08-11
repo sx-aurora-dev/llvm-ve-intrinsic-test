@@ -24,15 +24,15 @@ _Z5vel04PvS_S_i:
 .LBB0_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s0
-	vld %v1,8,%s1
-	vld %v2,8,%s2
+	vld %v0, 8, %s0
+	vld %v1, 8, %s1
+	vld %v2, 8, %s2
 	and %s0, %s3, (32)0
 	lea %s1, 128
 	lvl %s1
-	vfadd.d %v2,%v0,%v1
+	vfadd.d %v2, %v0, %v1
 	lvl %s0
-	vst %v2,8,%s2
+	vst %v2, 8, %s2
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -42,5 +42,5 @@ _Z5vel04PvS_S_i:
 .Lfunc_end0:
 	.size	_Z5vel04PvS_S_i, .Lfunc_end0-_Z5vel04PvS_S_i
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

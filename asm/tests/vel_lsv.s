@@ -24,10 +24,10 @@ lsv_vss:
 .LBB0_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s0
+	vld %v0, 8, %s0
 	and %s1, %s1, (32)0
-	lsv %v0(%s1),%s2
-	vst %v0,8,%s0
+	lsv %v0(%s1), %s2
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -37,5 +37,5 @@ lsv_vss:
 .Lfunc_end0:
 	.size	lsv_vss, .Lfunc_end0-lsv_vss
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

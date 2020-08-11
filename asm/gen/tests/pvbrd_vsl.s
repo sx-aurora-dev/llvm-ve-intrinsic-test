@@ -33,8 +33,8 @@ pvbrd_vsl:
 	or %s35, 0, %s4
 	cmov.w.lt %s35, %s7, %s34
 	lvl %s35
-	pvbrd %v0,%s1
-	vst %v0,8,%s0
+	pvbrd %v0, %s1
+	vst %v0, 8, %s0
 	lea %s0, 2048(, %s0)
 	adds.w.sx %s3, %s3, %s5
 	adds.w.sx %s6, %s6, (55)1
@@ -49,5 +49,5 @@ pvbrd_vsl:
 .Lfunc_end0:
 	.size	pvbrd_vsl, .Lfunc_end0-pvbrd_vsl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

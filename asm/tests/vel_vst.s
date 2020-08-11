@@ -24,10 +24,10 @@ _Z9vst_vssmlPvPKvPj:
 .LBB0_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
-	vldl.sx %v1,4,%s2
-	vfmk.w.gt %vm1,%v1
-	vst %v0,8,%s0,%vm1
+	vld %v0, 8, %s1
+	vldl.sx %v1, 4, %s2
+	vfmk.w.gt %vm1, %v1
+	vst %v0, 8, %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -61,10 +61,10 @@ _Z10vstu_vssmlPvPKvPj:
 .LBB1_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
-	vldl.sx %v1,4,%s2
-	vfmk.w.gt %vm1,%v1
-	vstu %v0,4,%s0,%vm1
+	vldu %v0, 4, %s1
+	vldl.sx %v1, 4, %s2
+	vfmk.w.gt %vm1, %v1
+	vstu %v0, 4, %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -98,10 +98,10 @@ _Z10vstl_vssmlPvPKvPj:
 .LBB2_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
-	vldl.sx %v1,4,%s2
-	vfmk.w.gt %vm1,%v1
-	vstl %v0,4,%s0,%vm1
+	vldl.sx %v0, 4, %s1
+	vldl.sx %v1, 4, %s2
+	vfmk.w.gt %vm1, %v1
+	vstl %v0, 4, %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -135,10 +135,10 @@ _Z11vstnc_vssmlPvPKvPj:
 .LBB3_2:
 	lea %s3, 256
 	lvl %s3
-	vld.nc %v0,8,%s1
-	vldl.sx.nc %v1,4,%s2
-	vfmk.w.gt %vm1,%v1
-	vst.nc %v0,8,%s0,%vm1
+	vld.nc %v0, 8, %s1
+	vldl.sx.nc %v1, 4, %s2
+	vfmk.w.gt %vm1, %v1
+	vst.nc %v0, 8, %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -172,10 +172,10 @@ _Z12vstunc_vssmlPvPKvPj:
 .LBB4_2:
 	lea %s3, 256
 	lvl %s3
-	vldu.nc %v0,4,%s1
-	vldl.sx.nc %v1,4,%s2
-	vfmk.w.gt %vm1,%v1
-	vstu.nc %v0,4,%s0,%vm1
+	vldu.nc %v0, 4, %s1
+	vldl.sx.nc %v1, 4, %s2
+	vfmk.w.gt %vm1, %v1
+	vstu.nc %v0, 4, %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -209,10 +209,10 @@ _Z12vstlnc_vssmlPvPKvPj:
 .LBB5_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx.nc %v0,4,%s1
-	vldl.sx.nc %v1,4,%s2
-	vfmk.w.gt %vm1,%v1
-	vstl.nc %v0,4,%s0,%vm1
+	vldl.sx.nc %v0, 4, %s1
+	vldl.sx.nc %v1, 4, %s2
+	vfmk.w.gt %vm1, %v1
+	vstl.nc %v0, 4, %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -222,5 +222,5 @@ _Z12vstlnc_vssmlPvPKvPj:
 .Lfunc_end5:
 	.size	_Z12vstlnc_vssmlPvPKvPj, .Lfunc_end5-_Z12vstlnc_vssmlPvPKvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

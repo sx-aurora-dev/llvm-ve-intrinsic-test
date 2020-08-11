@@ -30,11 +30,11 @@ vbrds_vsmvl:
 .LBB0_2:
 	mins.w.sx %s34, %s7, %s6
 	lvl %s34
-	vldl.zx %v0,4,%s2
-	vldu %v1,4,%s3
-	vfmk.w.gt %vm1,%v0
-	vbrdu %v1,%s1,%vm1
-	vstu %v1,4,%s0
+	vldl.zx %v0, 4, %s2
+	vldu %v1, 4, %s3
+	vfmk.w.gt %vm1, %v0
+	vbrdu %v1, %s1, %vm1
+	vstu %v1, 4, %s0
 	lea %s0, 1024(, %s0)
 	lea %s2, 1024(, %s2)
 	lea %s3, 1024(, %s3)
@@ -51,5 +51,5 @@ vbrds_vsmvl:
 .Lfunc_end0:
 	.size	vbrds_vsmvl, .Lfunc_end0-vbrds_vsmvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

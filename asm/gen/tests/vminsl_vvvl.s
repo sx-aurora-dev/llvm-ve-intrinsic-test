@@ -29,10 +29,10 @@ vminsl_vvvl:
 .LBB0_2:
 	mins.w.sx %s7, %s6, %s5
 	lvl %s7
-	vld %v0,8,%s1
-	vld %v1,8,%s2
-	vmins.l %v0,%v0,%v1
-	vst %v0,8,%s0
+	vld %v0, 8, %s1
+	vld %v1, 8, %s2
+	vmins.l %v0, %v0, %v1
+	vst %v0, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
 	lea %s2, 2048(, %s2)
@@ -49,5 +49,5 @@ vminsl_vvvl:
 .Lfunc_end0:
 	.size	vminsl_vvvl, .Lfunc_end0-vminsl_vvvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

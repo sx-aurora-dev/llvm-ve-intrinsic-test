@@ -24,11 +24,11 @@ _Z15vel_vst2dot_vssPKdmPvPd:
 .LBB0_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s0
-	vst2d.ot %v0,%s1,%s2
+	vld %v0, 8, %s0
+	vst2d.ot %v0, %s1, %s2
 	svob
-	vld2d %v0,%s1,%s2
-	vst %v0,8,%s3
+	vld2d %v0, %s1, %s2
+	vst %v0, 8, %s3
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -62,11 +62,11 @@ _Z16vel_vstu2dot_vssPKfmPvPf:
 .LBB1_2:
 	lea %s4, 256
 	lvl %s4
-	vldu %v0,4,%s0
-	vstu2d.ot %v0,%s1,%s2
+	vldu %v0, 4, %s0
+	vstu2d.ot %v0, %s1, %s2
 	svob
-	vldu2d %v0,%s1,%s2
-	vstu %v0,4,%s3
+	vldu2d %v0, %s1, %s2
+	vstu %v0, 4, %s3
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -100,11 +100,11 @@ _Z16vel_vstl2dot_vssPKimPvPi:
 .LBB2_2:
 	lea %s4, 256
 	lvl %s4
-	vldl.sx %v0,4,%s0
-	vstl2d.ot %v0,%s1,%s2
+	vldl.sx %v0, 4, %s0
+	vstl2d.ot %v0, %s1, %s2
 	svob
-	vldl2d.sx %v0,%s1,%s2
-	vstl %v0,4,%s3
+	vldl2d.sx %v0, %s1, %s2
+	vstl %v0, 4, %s3
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -114,5 +114,5 @@ _Z16vel_vstl2dot_vssPKimPvPi:
 .Lfunc_end2:
 	.size	_Z16vel_vstl2dot_vssPKimPvPi, .Lfunc_end2-_Z16vel_vstl2dot_vssPKimPvPi
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

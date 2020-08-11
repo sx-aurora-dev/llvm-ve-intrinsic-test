@@ -29,9 +29,9 @@ vfsumd_vvl:
 .LBB0_2:
 	mins.w.sx %s6, %s5, %s4
 	lvl %s6
-	vld %v0,8,%s1
-	vfsum.d %v0,%v0
-	vst %v0,8,%s0
+	vld %v0, 8, %s1
+	vfsum.d %v0, %v0
+	vst %v0, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
 	adds.w.sx %s3, %s3, %s4
@@ -47,5 +47,5 @@ vfsumd_vvl:
 .Lfunc_end0:
 	.size	vfsumd_vvl, .Lfunc_end0-vfsumd_vvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

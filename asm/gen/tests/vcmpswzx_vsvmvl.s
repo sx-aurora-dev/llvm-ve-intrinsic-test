@@ -31,12 +31,12 @@ vcmpswzx_vsvmvl:
 .LBB0_2:
 	mins.w.sx %s35, %s34, %s7
 	lvl %s35
-	vldl.sx %v0,4,%s2
-	vldl.zx %v1,4,%s3
-	vldl.sx %v2,4,%s4
-	vfmk.w.gt %vm1,%v1
-	vcmps.w.zx %v2,%s1,%v0,%vm1
-	vstl %v2,4,%s0
+	vldl.sx %v0, 4, %s2
+	vldl.zx %v1, 4, %s3
+	vldl.sx %v2, 4, %s4
+	vfmk.w.gt %vm1, %v1
+	vcmps.w.zx %v2, %s1, %v0, %vm1
+	vstl %v2, 4, %s0
 	lea %s0, 1024(, %s0)
 	lea %s2, 1024(, %s2)
 	lea %s3, 1024(, %s3)
@@ -54,5 +54,5 @@ vcmpswzx_vsvmvl:
 .Lfunc_end0:
 	.size	vcmpswzx_vsvmvl, .Lfunc_end0-vcmpswzx_vsvmvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

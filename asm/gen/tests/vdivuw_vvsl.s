@@ -30,9 +30,9 @@ vdivuw_vvsl:
 .LBB0_2:
 	mins.w.sx %s7, %s6, %s5
 	lvl %s7
-	vldl.sx %v0,4,%s1
-	vdivu.w %v0,%v0,%s2
-	vstl %v0,4,%s0
+	vldl.sx %v0, 4, %s1
+	vdivu.w %v0, %v0, %s2
+	vstl %v0, 4, %s0
 	lea %s0, 1024(, %s0)
 	lea %s1, 1024(, %s1)
 	adds.w.sx %s4, %s4, %s5
@@ -48,5 +48,5 @@ vdivuw_vvsl:
 .Lfunc_end0:
 	.size	vdivuw_vvsl, .Lfunc_end0-vdivuw_vvsl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

@@ -24,10 +24,10 @@ _Z3vmvPmPKmi:
 .LBB0_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	and %s1, %s2, (32)0
-	vmv %v0,%s1,%v0
-	vst %v0,8,%s0
+	vmv %v0, %s1, %v0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -61,9 +61,9 @@ _Z5vmv_iPmPKmi:
 .LBB1_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vmv %v0,3,%v0
-	vst %v0,8,%s0
+	vld %v0, 8, %s1
+	vmv %v0, 3, %v0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -97,13 +97,13 @@ _Z10vmv_vsvmvlPmPKmiPj:
 .LBB2_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s1
-	vldl.sx %v1,4,%s3
-	vld %v2,8,%s0
+	vld %v0, 8, %s1
+	vldl.sx %v1, 4, %s3
+	vld %v2, 8, %s0
 	and %s1, %s2, (32)0
-	vfmk.w.gt %vm1,%v1
-	vmv %v2,%s1,%v0,%vm1
-	vst %v2,8,%s0
+	vfmk.w.gt %vm1, %v1
+	vmv %v2, %s1, %v0, %vm1
+	vst %v2, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -137,12 +137,12 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 .LBB3_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vldl.sx %v1,4,%s3
-	vld %v2,8,%s0
-	vfmk.w.gt %vm1,%v1
-	vmv %v2,3,%v0,%vm1
-	vst %v2,8,%s0
+	vld %v0, 8, %s1
+	vldl.sx %v1, 4, %s3
+	vld %v2, 8, %s0
+	vfmk.w.gt %vm1, %v1
+	vmv %v2, 3, %v0, %vm1
+	vst %v2, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -152,5 +152,5 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

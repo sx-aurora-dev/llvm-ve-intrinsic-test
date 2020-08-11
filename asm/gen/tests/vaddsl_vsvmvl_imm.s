@@ -29,12 +29,12 @@ vaddsl_vsvmvl_imm:
 .LBB0_2:
 	mins.w.sx %s34, %s7, %s6
 	lvl %s34
-	vld %v0,8,%s1
-	vldl.zx %v1,4,%s2
-	vld %v2,8,%s3
-	vfmk.w.gt %vm1,%v1
-	vadds.l %v2,3,%v0,%vm1
-	vst %v2,8,%s0
+	vld %v0, 8, %s1
+	vldl.zx %v1, 4, %s2
+	vld %v2, 8, %s3
+	vfmk.w.gt %vm1, %v1
+	vadds.l %v2, 3, %v0, %vm1
+	vst %v2, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
 	lea %s2, 1024(, %s2)
@@ -52,5 +52,5 @@ vaddsl_vsvmvl_imm:
 .Lfunc_end0:
 	.size	vaddsl_vsvmvl_imm, .Lfunc_end0-vaddsl_vsvmvl_imm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits

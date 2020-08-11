@@ -24,9 +24,9 @@ lvsl_svs:
 .LBB0_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s0
+	vld %v0, 8, %s0
 	and %s0, %s1, (32)0
-	lvs %s0,%v0(%s0)
+	lvs %s0, %v0(%s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -60,9 +60,9 @@ lvsd_svs:
 .LBB1_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s0
+	vld %v0, 8, %s0
 	and %s0, %s1, (32)0
-	lvs %s0,%v0(%s0)
+	lvs %s0, %v0(%s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -96,7 +96,7 @@ lvss_svs:
 .LBB2_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s0
+	vldu %v0, 4, %s0
 	and %s0, %s1, (32)0
 	lvs %s0, %v0(%s0)
 	or %s11, 0, %s9
@@ -108,5 +108,5 @@ lvss_svs:
 .Lfunc_end2:
 	.size	lvss_svs, .Lfunc_end2-lvss_svs
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ee2ffcab516a85247ef736ed279b146eea5244d6)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git a0d000a8b9fc77dccd0c2af6986053df77759a6e)"
 	.section	".note.GNU-stack","",@progbits
