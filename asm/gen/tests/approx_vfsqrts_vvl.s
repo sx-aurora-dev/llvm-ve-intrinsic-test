@@ -31,19 +31,19 @@ approx_vfsqrts_vvl:
 .LBB0_2:
 	mins.w.sx %s34, %s7, %s4
 	lvl %s34
-	vldu %v0,4,%s1
-	vcvt.d.s %v0,%v0
-	vrsqrt.d.nex %v1,%v0
-	vfmul.d %v2,%v0,%v1
-	vfnmsb.d %v2,%s5,%v2,%v1
-	vfmul.d %v2,%s6,%v2
-	vfmad.d %v1,%v1,%v1,%v2
-	vfmul.d %v0,%v0,%v1
-	vfnmsb.d %v1,%s5,%v0,%v1
-	vfmul.d %v1,%s6,%v1
-	vfmad.d %v0,%v0,%v0,%v1
-	vcvt.s.d %v0,%v0
-	vstu %v0,4,%s0
+	vldu %v0, 4, %s1
+	vcvt.d.s %v0, %v0
+	vrsqrt.d.nex %v1, %v0
+	vfmul.d %v2, %v0, %v1
+	vfnmsb.d %v2, %s5, %v2, %v1
+	vfmul.d %v2, %s6, %v2
+	vfmad.d %v1, %v1, %v1, %v2
+	vfmul.d %v0, %v0, %v1
+	vfnmsb.d %v1, %s5, %v0, %v1
+	vfmul.d %v1, %s6, %v1
+	vfmad.d %v0, %v0, %v0, %v1
+	vcvt.s.d %v0, %v0
+	vstu %v0, 4, %s0
 	lea %s0, 1024(, %s0)
 	lea %s1, 1024(, %s1)
 	adds.w.sx %s3, %s3, %s4
@@ -59,5 +59,6 @@ approx_vfsqrts_vvl:
 .Lfunc_end0:
 	.size	approx_vfsqrts_vvl, .Lfunc_end0-approx_vfsqrts_vvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

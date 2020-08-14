@@ -29,9 +29,9 @@ vsfa_vvssl:
 .LBB0_2:
 	mins.w.sx %s34, %s7, %s6
 	lvl %s34
-	vld %v0,8,%s1
-	vsfa %v0,%v0,%s2,%s3
-	vst %v0,8,%s0
+	vld %v0, 8, %s1
+	vsfa %v0, %v0, %s2, %s3
+	vst %v0, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
 	adds.w.sx %s5, %s5, %s6
@@ -47,5 +47,6 @@ vsfa_vvssl:
 .Lfunc_end0:
 	.size	vsfa_vvssl, .Lfunc_end0-vsfa_vvssl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

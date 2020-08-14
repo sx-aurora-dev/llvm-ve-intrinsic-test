@@ -1057,10 +1057,12 @@ struct Test
     T_ShiftPacked(vsrl, unsigned int, TD_u32),
 
     T_Shift(vslal, long int, TD_i64),
-    T_Shift(vslaw, int, TD_i32),
+    T_Shift(vslawsx, int, TD_i32),
+    T_Shift(vslawzx, int, TD_i32),
     T_ShiftPacked(vsla, int, TD_i32),
     T_Shift(vsral, long int, TD_i64),
-    T_Shift(vsraw, int, TD_i32),
+    T_Shift(vsrawsx, int, TD_i32),
+    T_Shift(vsrawzx, int, TD_i32),
     T_ShiftPacked(vsra, int, TD_i32),
 
     IntrinsicTest(vsfa_vvssl, test_vsfa_vvss, &TD_u64),

@@ -29,12 +29,12 @@ vsubul_vsvmvl:
 .LBB0_2:
 	mins.w.sx %s35, %s34, %s7
 	lvl %s35
-	vld %v0,8,%s2
-	vldl.zx %v1,4,%s3
-	vld %v2,8,%s4
-	vfmk.w.gt %vm1,%v1
-	vsubu.l %v2,%s1,%v0,%vm1
-	vst %v2,8,%s0
+	vld %v0, 8, %s2
+	vldl.zx %v1, 4, %s3
+	vld %v2, 8, %s4
+	vfmk.w.gt %vm1, %v1
+	vsubu.l %v2, %s1, %v0, %vm1
+	vst %v2, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s2, 2048(, %s2)
 	lea %s3, 1024(, %s3)
@@ -52,5 +52,6 @@ vsubul_vsvmvl:
 .Lfunc_end0:
 	.size	vsubul_vsvmvl, .Lfunc_end0-vsubul_vsvmvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

@@ -321,8 +321,8 @@ int test_vfmk_mvml(char const* name,
     for (int i = 0; i < N; ++i) {
         fprintf(stderr, "%s: %d %016lx %016lx\n", name, i, vx0[i], vx1[i]);
     }
-    fprintf(stderr, "%s: %s\n", name, flag ? "OK" : "NG");
 #endif
+    fprintf(stderr, "%s: %s\n", name, flag ? "OK" : "NG");
 #endif
 
     return flag;

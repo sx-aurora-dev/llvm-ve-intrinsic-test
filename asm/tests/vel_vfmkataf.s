@@ -25,11 +25,11 @@ vel_vfmklat:
 	lea %s0, 256
 	lvl %s0
 	vfmk.l.at %vm1
-	svm %s0,%vm1,0
+	svm %s0, %vm1, 0
 	brne.l -1, %s0, .LBB0_3
-	svm %s0,%vm1,1
+	svm %s0, %vm1, 1
 	brne.l -1, %s0, .LBB0_3
-	svm %s0,%vm1,2
+	svm %s0, %vm1, 2
 	breq.l -1, %s0, .LBB0_8
 .LBB0_3:
 	or %s0, 0, (0)1
@@ -42,7 +42,7 @@ vel_vfmklat:
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .LBB0_8:
-	svm %s0,%vm1,3
+	svm %s0, %vm1, 3
 	cmps.l %s0, %s0, (0)0
 	ldz %s0, %s0
 	srl %s0, %s0, 6
@@ -75,11 +75,11 @@ vel_vfmklaf:
 	lea %s0, 256
 	lvl %s0
 	vfmk.l.af %vm1
-	svm %s0,%vm1,0
+	svm %s0, %vm1, 0
 	brne.l 0, %s0, .LBB1_3
-	svm %s0,%vm1,1
+	svm %s0, %vm1, 1
 	brne.l 0, %s0, .LBB1_3
-	svm %s0,%vm1,2
+	svm %s0, %vm1, 2
 	breq.l 0, %s0, .LBB1_8
 .LBB1_3:
 	or %s0, 0, (0)1
@@ -92,7 +92,7 @@ vel_vfmklaf:
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .LBB1_8:
-	svm %s0,%vm1,3
+	svm %s0, %vm1, 3
 	ldz %s0, %s0
 	srl %s0, %s0, 6
 	br.l.t .LBB1_9
@@ -123,8 +123,8 @@ vel_pvfmkat:
 .LBB2_2:
 	lea %s0, 256
 	lvl %s0
-	pvfmk.w.up.at %vm2
-	pvfmk.w.lo.at %vm3
+	vfmk.l.at %vm2
+	vfmk.l.at %vm3
 	svm %s0, %vm3, 0
 	brne.l -1, %s0, .LBB2_3
 	svm %s0, %vm3, 1
@@ -182,8 +182,8 @@ vel_pvfmkaf:
 .LBB3_2:
 	lea %s0, 256
 	lvl %s0
-	pvfmk.w.up.af %vm2
-	pvfmk.w.lo.af %vm3
+	vfmk.l.af %vm2
+	vfmk.l.af %vm3
 	svm %s0, %vm3, 0
 	brne.l 0, %s0, .LBB3_3
 	svm %s0, %vm3, 1
@@ -216,5 +216,6 @@ vel_pvfmkaf:
 .Lfunc_end3:
 	.size	vel_pvfmkaf, .Lfunc_end3-vel_pvfmkaf
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

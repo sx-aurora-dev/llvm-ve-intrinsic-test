@@ -38,8 +38,8 @@ negm_MM:
 	lvm %vm2, 1, %s3
 	lvm %vm2, 2, %s4
 	lvm %vm2, 3, %s1
-	negm %vm2,%vm2
-	negm %vm3,%vm3
+	negm %vm2, %vm2
+	negm %vm3, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -65,5 +65,6 @@ negm_MM:
 .Lfunc_end0:
 	.size	negm_MM, .Lfunc_end0-negm_MM
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

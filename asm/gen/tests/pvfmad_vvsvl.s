@@ -33,10 +33,10 @@ pvfmad_vvsvl:
 	or %s37, 0, %s6
 	cmov.w.lt %s37, %s35, %s36
 	lvl %s37
-	vld %v0,8,%s1
-	vld %v1,8,%s3
-	pvfmad %v0,%v0,%s2,%v1
-	vst %v0,8,%s0
+	vld %v0, 8, %s1
+	vld %v1, 8, %s3
+	pvfmad %v0, %v0, %s2, %v1
+	vst %v0, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
 	lea %s3, 2048(, %s3)
@@ -53,5 +53,6 @@ pvfmad_vvsvl:
 .Lfunc_end0:
 	.size	pvfmad_vvsvl, .Lfunc_end0-pvfmad_vvsvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

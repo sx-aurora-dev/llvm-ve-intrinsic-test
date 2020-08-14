@@ -24,15 +24,15 @@ _Z15vel_vfmklgt_mvlPmPKl:
 .LBB0_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.gt %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.gt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -67,15 +67,15 @@ _Z15vel_vfmkllt_mvlPmPKl:
 .LBB1_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.lt %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.lt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -110,15 +110,15 @@ _Z15vel_vfmklne_mvlPmPKl:
 .LBB2_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.ne %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.ne %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -153,15 +153,15 @@ _Z15vel_vfmkleq_mvlPmPKl:
 .LBB3_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.eq %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.eq %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -196,15 +196,15 @@ _Z15vel_vfmklge_mvlPmPKl:
 .LBB4_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.ge %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.ge %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -239,15 +239,15 @@ _Z15vel_vfmklle_mvlPmPKl:
 .LBB5_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.le %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.le %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -282,15 +282,15 @@ _Z16vel_vfmklnum_mvlPmPKl:
 .LBB6_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.num %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.num %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -325,15 +325,15 @@ _Z16vel_vfmklnan_mvlPmPKl:
 .LBB7_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.nan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.nan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -368,15 +368,15 @@ _Z18vel_vfmklgtnan_mvlPmPKl:
 .LBB8_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.gtnan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.gtnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -411,15 +411,15 @@ _Z18vel_vfmklltnan_mvlPmPKl:
 .LBB9_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.ltnan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.ltnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -454,15 +454,15 @@ _Z18vel_vfmklnenan_mvlPmPKl:
 .LBB10_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.nenan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.nenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -497,15 +497,15 @@ _Z18vel_vfmkleqnan_mvlPmPKl:
 .LBB11_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.eqnan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.eqnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -540,15 +540,15 @@ _Z18vel_vfmklgenan_mvlPmPKl:
 .LBB12_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.genan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.genan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -583,15 +583,15 @@ _Z18vel_vfmkllenan_mvlPmPKl:
 .LBB13_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.l.lenan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.l.lenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -626,15 +626,15 @@ _Z15vel_vfmkwgt_mvlPmPKi:
 .LBB14_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.gt %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.gt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -669,15 +669,15 @@ _Z15vel_vfmkwlt_mvlPmPKi:
 .LBB15_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.lt %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.lt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -712,15 +712,15 @@ _Z15vel_vfmkwne_mvlPmPKi:
 .LBB16_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.ne %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.ne %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -755,15 +755,15 @@ _Z15vel_vfmkweq_mvlPmPKi:
 .LBB17_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.eq %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.eq %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -798,15 +798,15 @@ _Z15vel_vfmkwge_mvlPmPKi:
 .LBB18_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.ge %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.ge %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -841,15 +841,15 @@ _Z15vel_vfmkwle_mvlPmPKi:
 .LBB19_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.le %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.le %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -884,15 +884,15 @@ _Z16vel_vfmkwnum_mvlPmPKi:
 .LBB20_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.num %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.num %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -927,15 +927,15 @@ _Z16vel_vfmkwnan_mvlPmPKi:
 .LBB21_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.nan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.nan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -970,15 +970,15 @@ _Z18vel_vfmkwgtnan_mvlPmPKi:
 .LBB22_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.gtnan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.gtnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1013,15 +1013,15 @@ _Z18vel_vfmkwltnan_mvlPmPKi:
 .LBB23_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.ltnan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.ltnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1056,15 +1056,15 @@ _Z18vel_vfmkwnenan_mvlPmPKi:
 .LBB24_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.nenan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.nenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1099,15 +1099,15 @@ _Z18vel_vfmkweqnan_mvlPmPKi:
 .LBB25_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.eqnan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.eqnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1142,15 +1142,15 @@ _Z18vel_vfmkwgenan_mvlPmPKi:
 .LBB26_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.genan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.genan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1185,15 +1185,15 @@ _Z18vel_vfmkwlenan_mvlPmPKi:
 .LBB27_2:
 	lea %s2, 256
 	lvl %s2
-	vldl.sx %v0,4,%s1
-	vfmk.l.lenan %vm1,%v0
-	svm %s1,%vm1,0
+	vldl.sx %v0, 4, %s1
+	vfmk.l.lenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1228,15 +1228,15 @@ _Z15vel_vfmkdgt_mvlPmPKd:
 .LBB28_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.gt %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.gt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1271,15 +1271,15 @@ _Z15vel_vfmkdlt_mvlPmPKd:
 .LBB29_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.lt %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.lt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1314,15 +1314,15 @@ _Z15vel_vfmkdne_mvlPmPKd:
 .LBB30_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.ne %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.ne %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1357,15 +1357,15 @@ _Z15vel_vfmkdeq_mvlPmPKd:
 .LBB31_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.eq %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.eq %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1400,15 +1400,15 @@ _Z15vel_vfmkdge_mvlPmPKd:
 .LBB32_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.ge %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.ge %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1443,15 +1443,15 @@ _Z15vel_vfmkdle_mvlPmPKd:
 .LBB33_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.le %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.le %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1486,15 +1486,15 @@ _Z16vel_vfmkdnum_mvlPmPKd:
 .LBB34_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.num %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.num %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1529,15 +1529,15 @@ _Z16vel_vfmkdnan_mvlPmPKd:
 .LBB35_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.nan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.nan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1572,15 +1572,15 @@ _Z18vel_vfmkdgtnan_mvlPmPKd:
 .LBB36_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.gtnan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.gtnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1615,15 +1615,15 @@ _Z18vel_vfmkdltnan_mvlPmPKd:
 .LBB37_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.ltnan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.ltnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1658,15 +1658,15 @@ _Z18vel_vfmkdnenan_mvlPmPKd:
 .LBB38_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.nenan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.nenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1701,15 +1701,15 @@ _Z18vel_vfmkdeqnan_mvlPmPKd:
 .LBB39_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.eqnan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.eqnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1744,15 +1744,15 @@ _Z18vel_vfmkdgenan_mvlPmPKd:
 .LBB40_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.genan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.genan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1787,15 +1787,15 @@ _Z18vel_vfmkdlenan_mvlPmPKd:
 .LBB41_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	vfmk.d.lenan %vm1,%v0
-	svm %s1,%vm1,0
+	vld %v0, 8, %s1
+	vfmk.d.lenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1830,15 +1830,15 @@ _Z15vel_vfmksgt_mvlPmPKf:
 .LBB42_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.gt %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.gt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1873,15 +1873,15 @@ _Z15vel_vfmkslt_mvlPmPKf:
 .LBB43_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.lt %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.lt %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1916,15 +1916,15 @@ _Z15vel_vfmksne_mvlPmPKf:
 .LBB44_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.ne %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.ne %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -1959,15 +1959,15 @@ _Z15vel_vfmkseq_mvlPmPKf:
 .LBB45_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.eq %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.eq %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2002,15 +2002,15 @@ _Z15vel_vfmksge_mvlPmPKf:
 .LBB46_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.ge %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.ge %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2045,15 +2045,15 @@ _Z15vel_vfmksle_mvlPmPKf:
 .LBB47_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.le %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.le %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2088,15 +2088,15 @@ _Z16vel_vfmksnum_mvlPmPKf:
 .LBB48_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.num %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.num %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2131,15 +2131,15 @@ _Z16vel_vfmksnan_mvlPmPKf:
 .LBB49_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.nan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.nan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2174,15 +2174,15 @@ _Z18vel_vfmksgtnan_mvlPmPKf:
 .LBB50_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.gtnan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.gtnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2217,15 +2217,15 @@ _Z18vel_vfmksltnan_mvlPmPKf:
 .LBB51_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.ltnan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.ltnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2260,15 +2260,15 @@ _Z18vel_vfmksnenan_mvlPmPKf:
 .LBB52_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.nenan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.nenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2303,15 +2303,15 @@ _Z18vel_vfmkseqnan_mvlPmPKf:
 .LBB53_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.eqnan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.eqnan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2346,15 +2346,15 @@ _Z18vel_vfmksgenan_mvlPmPKf:
 .LBB54_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.genan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.genan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2389,15 +2389,15 @@ _Z18vel_vfmkslenan_mvlPmPKf:
 .LBB55_2:
 	lea %s2, 256
 	lvl %s2
-	vldu %v0,4,%s1
-	vfmk.l.lenan %vm1,%v0
-	svm %s1,%vm1,0
+	vldu %v0, 4, %s1
+	vfmk.l.lenan %vm1, %v0
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2432,23 +2432,23 @@ _Z16vel_vfmklgt_mvmlPmPKlPKm:
 .LBB56_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.gt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.gt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2483,23 +2483,23 @@ _Z16vel_vfmkllt_mvmlPmPKlPKm:
 .LBB57_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.lt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.lt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2534,23 +2534,23 @@ _Z16vel_vfmklne_mvmlPmPKlPKm:
 .LBB58_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.ne %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.ne %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2585,23 +2585,23 @@ _Z16vel_vfmkleq_mvmlPmPKlPKm:
 .LBB59_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.eq %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.eq %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2636,23 +2636,23 @@ _Z16vel_vfmklge_mvmlPmPKlPKm:
 .LBB60_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.ge %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.ge %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2687,23 +2687,23 @@ _Z16vel_vfmklle_mvmlPmPKlPKm:
 .LBB61_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.le %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.le %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2738,23 +2738,23 @@ _Z17vel_vfmklnum_mvmlPmPKlPKm:
 .LBB62_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.num %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.num %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2789,23 +2789,23 @@ _Z17vel_vfmklnan_mvmlPmPKlPKm:
 .LBB63_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.nan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.nan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2840,23 +2840,23 @@ _Z19vel_vfmklgtnan_mvmlPmPKlPKm:
 .LBB64_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.gtnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.gtnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2891,23 +2891,23 @@ _Z19vel_vfmklltnan_mvmlPmPKlPKm:
 .LBB65_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.ltnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.ltnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2942,23 +2942,23 @@ _Z19vel_vfmklnenan_mvmlPmPKlPKm:
 .LBB66_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.nenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.nenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -2993,23 +2993,23 @@ _Z19vel_vfmkleqnan_mvmlPmPKlPKm:
 .LBB67_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.eqnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.eqnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3044,23 +3044,23 @@ _Z19vel_vfmklgenan_mvmlPmPKlPKm:
 .LBB68_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.genan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.genan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3095,23 +3095,23 @@ _Z19vel_vfmkllenan_mvmlPmPKlPKm:
 .LBB69_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.lenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.lenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3146,23 +3146,23 @@ _Z16vel_vfmkwgt_mvmlPmPKiPKm:
 .LBB70_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.gt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.gt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3197,23 +3197,23 @@ _Z16vel_vfmkwlt_mvmlPmPKiPKm:
 .LBB71_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.lt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.lt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3248,23 +3248,23 @@ _Z16vel_vfmkwne_mvmlPmPKiPKm:
 .LBB72_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.ne %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.ne %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3299,23 +3299,23 @@ _Z16vel_vfmkweq_mvmlPmPKiPKm:
 .LBB73_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.eq %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.eq %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3350,23 +3350,23 @@ _Z16vel_vfmkwge_mvmlPmPKiPKm:
 .LBB74_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.ge %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.ge %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3401,23 +3401,23 @@ _Z16vel_vfmkwle_mvmlPmPKiPKm:
 .LBB75_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.le %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.le %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3452,23 +3452,23 @@ _Z17vel_vfmkwnum_mvmlPmPKiPKm:
 .LBB76_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.num %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.num %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3503,23 +3503,23 @@ _Z17vel_vfmkwnan_mvmlPmPKiPKm:
 .LBB77_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.nan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.nan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3554,23 +3554,23 @@ _Z19vel_vfmkwgtnan_mvmlPmPKiPKm:
 .LBB78_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.gtnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.gtnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3605,23 +3605,23 @@ _Z19vel_vfmkwltnan_mvmlPmPKiPKm:
 .LBB79_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.ltnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.ltnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3656,23 +3656,23 @@ _Z19vel_vfmkwnenan_mvmlPmPKiPKm:
 .LBB80_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.nenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.nenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3707,23 +3707,23 @@ _Z19vel_vfmkweqnan_mvmlPmPKiPKm:
 .LBB81_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.eqnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.eqnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3758,23 +3758,23 @@ _Z19vel_vfmkwgenan_mvmlPmPKiPKm:
 .LBB82_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.genan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.genan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3809,23 +3809,23 @@ _Z19vel_vfmkwlenan_mvmlPmPKiPKm:
 .LBB83_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s1
+	vldl.sx %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.l.lenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.l.lenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3860,23 +3860,23 @@ _Z16vel_vfmkdgt_mvmlPmPKdPKm:
 .LBB84_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.gt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.gt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3911,23 +3911,23 @@ _Z16vel_vfmkdlt_mvmlPmPKdPKm:
 .LBB85_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.lt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.lt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -3962,23 +3962,23 @@ _Z16vel_vfmkdne_mvmlPmPKdPKm:
 .LBB86_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.ne %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.ne %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4013,23 +4013,23 @@ _Z16vel_vfmkdeq_mvmlPmPKdPKm:
 .LBB87_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.eq %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.eq %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4064,23 +4064,23 @@ _Z16vel_vfmkdge_mvmlPmPKdPKm:
 .LBB88_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.ge %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.ge %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4115,23 +4115,23 @@ _Z16vel_vfmkdle_mvmlPmPKdPKm:
 .LBB89_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.le %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.le %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4166,23 +4166,23 @@ _Z17vel_vfmkdnum_mvmlPmPKdPKm:
 .LBB90_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.num %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.num %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4217,23 +4217,23 @@ _Z17vel_vfmkdnan_mvmlPmPKdPKm:
 .LBB91_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.nan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.nan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4268,23 +4268,23 @@ _Z19vel_vfmkdgtnan_mvmlPmPKdPKm:
 .LBB92_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.gtnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.gtnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4319,23 +4319,23 @@ _Z19vel_vfmkdltnan_mvmlPmPKdPKm:
 .LBB93_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.ltnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.ltnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4370,23 +4370,23 @@ _Z19vel_vfmkdnenan_mvmlPmPKdPKm:
 .LBB94_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.nenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.nenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4421,23 +4421,23 @@ _Z19vel_vfmkdeqnan_mvmlPmPKdPKm:
 .LBB95_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.eqnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.eqnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4472,23 +4472,23 @@ _Z19vel_vfmkdgenan_mvmlPmPKdPKm:
 .LBB96_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.genan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.genan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4523,23 +4523,23 @@ _Z19vel_vfmkdlenan_mvmlPmPKdPKm:
 .LBB97_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.d.lenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.d.lenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4574,23 +4574,23 @@ _Z16vel_vfmksgt_mvmlPmPKfPKm:
 .LBB98_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.gt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.gt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4625,23 +4625,23 @@ _Z16vel_vfmkslt_mvmlPmPKfPKm:
 .LBB99_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.lt %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.lt %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4676,23 +4676,23 @@ _Z16vel_vfmksne_mvmlPmPKfPKm:
 .LBB100_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.ne %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.ne %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4727,23 +4727,23 @@ _Z16vel_vfmkseq_mvmlPmPKfPKm:
 .LBB101_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.eq %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.eq %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4778,23 +4778,23 @@ _Z16vel_vfmksge_mvmlPmPKfPKm:
 .LBB102_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.ge %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.ge %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4829,23 +4829,23 @@ _Z16vel_vfmksle_mvmlPmPKfPKm:
 .LBB103_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.le %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.le %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4880,23 +4880,23 @@ _Z17vel_vfmksnum_mvmlPmPKfPKm:
 .LBB104_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.num %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.num %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4931,23 +4931,23 @@ _Z17vel_vfmksnan_mvmlPmPKfPKm:
 .LBB105_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.nan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.nan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -4982,23 +4982,23 @@ _Z19vel_vfmksgtnan_mvmlPmPKfPKm:
 .LBB106_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.gtnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.gtnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -5033,23 +5033,23 @@ _Z19vel_vfmksltnan_mvmlPmPKfPKm:
 .LBB107_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.ltnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.ltnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -5084,23 +5084,23 @@ _Z19vel_vfmksnenan_mvmlPmPKfPKm:
 .LBB108_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.nenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.nenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -5135,23 +5135,23 @@ _Z19vel_vfmkseqnan_mvmlPmPKfPKm:
 .LBB109_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.eqnan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.eqnan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -5186,23 +5186,23 @@ _Z19vel_vfmksgenan_mvmlPmPKfPKm:
 .LBB110_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.genan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.genan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -5237,23 +5237,23 @@ _Z19vel_vfmkslenan_mvmlPmPKfPKm:
 .LBB111_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s1
+	vldu %v0, 4, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
 	ld %s2, 24(, %s2)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s4
-	lvm %vm1,2,%s5
-	lvm %vm1,3,%s2
-	vfmk.s.lenan %vm1,%v0,%vm1
-	svm %s1,%vm1,0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s4
+	lvm %vm1, 2, %s5
+	lvm %vm1, 3, %s2
+	vfmk.s.lenan %vm1, %v0, %vm1
+	svm %s1, %vm1, 0
 	st %s1, (, %s0)
-	svm %s1,%vm1,1
+	svm %s1, %vm1, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm1,2
+	svm %s1, %vm1, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm1,3
+	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -5288,9 +5288,9 @@ _Z16vel_pvfmkwgt_MvlPmPKi:
 .LBB112_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.gt %vm2,%v0
-	pvfmk.w.lo.gt %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.gt %vm2, %v0
+	vfmk.w.gt %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5340,9 +5340,9 @@ _Z16vel_pvfmkwlt_MvlPmPKi:
 .LBB113_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.lt %vm2,%v0
-	pvfmk.w.lo.lt %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.lt %vm2, %v0
+	vfmk.w.lt %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5392,9 +5392,9 @@ _Z16vel_pvfmkwne_MvlPmPKi:
 .LBB114_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.ne %vm2,%v0
-	pvfmk.w.lo.ne %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.ne %vm2, %v0
+	vfmk.w.ne %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5444,9 +5444,9 @@ _Z16vel_pvfmkweq_MvlPmPKi:
 .LBB115_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.eq %vm2,%v0
-	pvfmk.w.lo.eq %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.eq %vm2, %v0
+	vfmk.w.eq %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5496,9 +5496,9 @@ _Z16vel_pvfmkwge_MvlPmPKi:
 .LBB116_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.ge %vm2,%v0
-	pvfmk.w.lo.ge %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.ge %vm2, %v0
+	vfmk.w.ge %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5548,9 +5548,9 @@ _Z16vel_pvfmkwle_MvlPmPKi:
 .LBB117_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.le %vm2,%v0
-	pvfmk.w.lo.le %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.le %vm2, %v0
+	vfmk.w.le %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5600,9 +5600,9 @@ _Z17vel_pvfmkwnum_MvlPmPKi:
 .LBB118_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.num %vm2,%v0
-	pvfmk.w.lo.num %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.num %vm2, %v0
+	vfmk.w.num %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5652,9 +5652,9 @@ _Z17vel_pvfmkwnan_MvlPmPKi:
 .LBB119_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.nan %vm2,%v0
-	pvfmk.w.lo.nan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.nan %vm2, %v0
+	vfmk.w.nan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5704,9 +5704,9 @@ _Z19vel_pvfmkwgtnan_MvlPmPKi:
 .LBB120_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.gtnan %vm2,%v0
-	pvfmk.w.lo.gtnan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.gtnan %vm2, %v0
+	vfmk.w.gtnan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5756,9 +5756,9 @@ _Z19vel_pvfmkwltnan_MvlPmPKi:
 .LBB121_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.ltnan %vm2,%v0
-	pvfmk.w.lo.ltnan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.ltnan %vm2, %v0
+	vfmk.w.ltnan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5808,9 +5808,9 @@ _Z19vel_pvfmkwnenan_MvlPmPKi:
 .LBB122_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.nenan %vm2,%v0
-	pvfmk.w.lo.nenan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.nenan %vm2, %v0
+	vfmk.w.nenan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5860,9 +5860,9 @@ _Z19vel_pvfmkweqnan_MvlPmPKi:
 .LBB123_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.eqnan %vm2,%v0
-	pvfmk.w.lo.eqnan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.eqnan %vm2, %v0
+	vfmk.w.eqnan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5912,9 +5912,9 @@ _Z19vel_pvfmkwgenan_MvlPmPKi:
 .LBB124_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.genan %vm2,%v0
-	pvfmk.w.lo.genan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.genan %vm2, %v0
+	vfmk.w.genan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -5964,9 +5964,9 @@ _Z19vel_pvfmkwlenan_MvlPmPKi:
 .LBB125_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.lenan %vm2,%v0
-	pvfmk.w.lo.lenan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.w.up.lenan %vm2, %v0
+	vfmk.w.lenan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6016,9 +6016,9 @@ _Z16vel_pvfmksgt_MvlPmPKf:
 .LBB126_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.gt %vm2,%v0
-	pvfmk.s.lo.gt %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.gt %vm2, %v0
+	pvfmk.s.lo.gt %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6068,9 +6068,9 @@ _Z16vel_pvfmkslt_MvlPmPKf:
 .LBB127_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.lt %vm2,%v0
-	pvfmk.s.lo.lt %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.lt %vm2, %v0
+	pvfmk.s.lo.lt %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6120,9 +6120,9 @@ _Z16vel_pvfmksne_MvlPmPKf:
 .LBB128_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.ne %vm2,%v0
-	pvfmk.s.lo.ne %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.ne %vm2, %v0
+	pvfmk.s.lo.ne %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6172,9 +6172,9 @@ _Z16vel_pvfmkseq_MvlPmPKf:
 .LBB129_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.eq %vm2,%v0
-	pvfmk.s.lo.eq %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.eq %vm2, %v0
+	pvfmk.s.lo.eq %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6224,9 +6224,9 @@ _Z16vel_pvfmksge_MvlPmPKf:
 .LBB130_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.ge %vm2,%v0
-	pvfmk.s.lo.ge %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.ge %vm2, %v0
+	pvfmk.s.lo.ge %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6276,9 +6276,9 @@ _Z16vel_pvfmksle_MvlPmPKf:
 .LBB131_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.le %vm2,%v0
-	pvfmk.s.lo.le %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.le %vm2, %v0
+	pvfmk.s.lo.le %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6328,9 +6328,9 @@ _Z17vel_pvfmksnum_MvlPmPKf:
 .LBB132_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.num %vm2,%v0
-	pvfmk.s.lo.num %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.num %vm2, %v0
+	pvfmk.s.lo.num %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6380,9 +6380,9 @@ _Z17vel_pvfmksnan_MvlPmPKf:
 .LBB133_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.nan %vm2,%v0
-	pvfmk.s.lo.nan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.nan %vm2, %v0
+	pvfmk.s.lo.nan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6432,9 +6432,9 @@ _Z19vel_pvfmksgtnan_MvlPmPKf:
 .LBB134_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.gtnan %vm2,%v0
-	pvfmk.s.lo.gtnan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.gtnan %vm2, %v0
+	pvfmk.s.lo.gtnan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6484,9 +6484,9 @@ _Z19vel_pvfmksltnan_MvlPmPKf:
 .LBB135_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.ltnan %vm2,%v0
-	pvfmk.s.lo.ltnan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.ltnan %vm2, %v0
+	pvfmk.s.lo.ltnan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6536,9 +6536,9 @@ _Z19vel_pvfmksnenan_MvlPmPKf:
 .LBB136_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.nenan %vm2,%v0
-	pvfmk.s.lo.nenan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.nenan %vm2, %v0
+	pvfmk.s.lo.nenan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6588,9 +6588,9 @@ _Z19vel_pvfmkseqnan_MvlPmPKf:
 .LBB137_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.eqnan %vm2,%v0
-	pvfmk.s.lo.eqnan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.eqnan %vm2, %v0
+	pvfmk.s.lo.eqnan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6640,9 +6640,9 @@ _Z19vel_pvfmksgenan_MvlPmPKf:
 .LBB138_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.genan %vm2,%v0
-	pvfmk.s.lo.genan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.genan %vm2, %v0
+	pvfmk.s.lo.genan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6692,9 +6692,9 @@ _Z19vel_pvfmkslenan_MvlPmPKf:
 .LBB139_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.s.up.lenan %vm2,%v0
-	pvfmk.s.lo.lenan %vm3,%v0
+	vld %v0, 8, %s1
+	pvfmk.s.up.lenan %vm2, %v0
+	pvfmk.s.lo.lenan %vm3, %v0
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6744,7 +6744,7 @@ _Z17vel_pvfmkwgt_MvMlPmPKiPKm:
 .LBB140_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -6761,8 +6761,8 @@ _Z17vel_pvfmkwgt_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.gt %vm2,%v0,%vm2
-	pvfmk.w.lo.gt %vm3,%v0,%vm3
+	pvfmk.w.up.gt %vm2, %v0, %vm2
+	vfmk.w.gt %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6812,7 +6812,7 @@ _Z17vel_pvfmkwlt_MvMlPmPKiPKm:
 .LBB141_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -6829,8 +6829,8 @@ _Z17vel_pvfmkwlt_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.lt %vm2,%v0,%vm2
-	pvfmk.w.lo.lt %vm3,%v0,%vm3
+	pvfmk.w.up.lt %vm2, %v0, %vm2
+	vfmk.w.lt %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6880,7 +6880,7 @@ _Z17vel_pvfmkwne_MvMlPmPKiPKm:
 .LBB142_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -6897,8 +6897,8 @@ _Z17vel_pvfmkwne_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.ne %vm2,%v0,%vm2
-	pvfmk.w.lo.ne %vm3,%v0,%vm3
+	pvfmk.w.up.ne %vm2, %v0, %vm2
+	vfmk.w.ne %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -6948,7 +6948,7 @@ _Z17vel_pvfmkweq_MvMlPmPKiPKm:
 .LBB143_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -6965,8 +6965,8 @@ _Z17vel_pvfmkweq_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.eq %vm2,%v0,%vm2
-	pvfmk.w.lo.eq %vm3,%v0,%vm3
+	pvfmk.w.up.eq %vm2, %v0, %vm2
+	vfmk.w.eq %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7016,7 +7016,7 @@ _Z17vel_pvfmkwge_MvMlPmPKiPKm:
 .LBB144_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7033,8 +7033,8 @@ _Z17vel_pvfmkwge_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.ge %vm2,%v0,%vm2
-	pvfmk.w.lo.ge %vm3,%v0,%vm3
+	pvfmk.w.up.ge %vm2, %v0, %vm2
+	vfmk.w.ge %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7084,7 +7084,7 @@ _Z17vel_pvfmkwle_MvMlPmPKiPKm:
 .LBB145_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7101,8 +7101,8 @@ _Z17vel_pvfmkwle_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.le %vm2,%v0,%vm2
-	pvfmk.w.lo.le %vm3,%v0,%vm3
+	pvfmk.w.up.le %vm2, %v0, %vm2
+	vfmk.w.le %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7152,7 +7152,7 @@ _Z18vel_pvfmkwnum_MvMlPmPKiPKm:
 .LBB146_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7169,8 +7169,8 @@ _Z18vel_pvfmkwnum_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.num %vm2,%v0,%vm2
-	pvfmk.w.lo.num %vm3,%v0,%vm3
+	pvfmk.w.up.num %vm2, %v0, %vm2
+	vfmk.w.num %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7220,7 +7220,7 @@ _Z18vel_pvfmkwnan_MvMlPmPKiPKm:
 .LBB147_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7237,8 +7237,8 @@ _Z18vel_pvfmkwnan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.nan %vm2,%v0,%vm2
-	pvfmk.w.lo.nan %vm3,%v0,%vm3
+	pvfmk.w.up.nan %vm2, %v0, %vm2
+	vfmk.w.nan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7288,7 +7288,7 @@ _Z20vel_pvfmkwgtnan_MvMlPmPKiPKm:
 .LBB148_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7305,8 +7305,8 @@ _Z20vel_pvfmkwgtnan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.gtnan %vm2,%v0,%vm2
-	pvfmk.w.lo.gtnan %vm3,%v0,%vm3
+	pvfmk.w.up.gtnan %vm2, %v0, %vm2
+	vfmk.w.gtnan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7356,7 +7356,7 @@ _Z20vel_pvfmkwltnan_MvMlPmPKiPKm:
 .LBB149_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7373,8 +7373,8 @@ _Z20vel_pvfmkwltnan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.ltnan %vm2,%v0,%vm2
-	pvfmk.w.lo.ltnan %vm3,%v0,%vm3
+	pvfmk.w.up.ltnan %vm2, %v0, %vm2
+	vfmk.w.ltnan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7424,7 +7424,7 @@ _Z20vel_pvfmkwnenan_MvMlPmPKiPKm:
 .LBB150_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7441,8 +7441,8 @@ _Z20vel_pvfmkwnenan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.nenan %vm2,%v0,%vm2
-	pvfmk.w.lo.nenan %vm3,%v0,%vm3
+	pvfmk.w.up.nenan %vm2, %v0, %vm2
+	vfmk.w.nenan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7492,7 +7492,7 @@ _Z20vel_pvfmkweqnan_MvMlPmPKiPKm:
 .LBB151_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7509,8 +7509,8 @@ _Z20vel_pvfmkweqnan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.eqnan %vm2,%v0,%vm2
-	pvfmk.w.lo.eqnan %vm3,%v0,%vm3
+	pvfmk.w.up.eqnan %vm2, %v0, %vm2
+	vfmk.w.eqnan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7560,7 +7560,7 @@ _Z20vel_pvfmkwgenan_MvMlPmPKiPKm:
 .LBB152_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7577,8 +7577,8 @@ _Z20vel_pvfmkwgenan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.genan %vm2,%v0,%vm2
-	pvfmk.w.lo.genan %vm3,%v0,%vm3
+	pvfmk.w.up.genan %vm2, %v0, %vm2
+	vfmk.w.genan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7628,7 +7628,7 @@ _Z20vel_pvfmkwlenan_MvMlPmPKiPKm:
 .LBB153_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7645,8 +7645,8 @@ _Z20vel_pvfmkwlenan_MvMlPmPKiPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.w.up.lenan %vm2,%v0,%vm2
-	pvfmk.w.lo.lenan %vm3,%v0,%vm3
+	pvfmk.w.up.lenan %vm2, %v0, %vm2
+	vfmk.w.lenan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7696,7 +7696,7 @@ _Z17vel_pvfmksgt_MvMlPmPKfPKm:
 .LBB154_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7713,8 +7713,8 @@ _Z17vel_pvfmksgt_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.gt %vm2,%v0,%vm2
-	pvfmk.s.lo.gt %vm3,%v0,%vm3
+	pvfmk.s.up.gt %vm2, %v0, %vm2
+	pvfmk.s.lo.gt %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7764,7 +7764,7 @@ _Z17vel_pvfmkslt_MvMlPmPKfPKm:
 .LBB155_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7781,8 +7781,8 @@ _Z17vel_pvfmkslt_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.lt %vm2,%v0,%vm2
-	pvfmk.s.lo.lt %vm3,%v0,%vm3
+	pvfmk.s.up.lt %vm2, %v0, %vm2
+	pvfmk.s.lo.lt %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7832,7 +7832,7 @@ _Z17vel_pvfmksne_MvMlPmPKfPKm:
 .LBB156_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7849,8 +7849,8 @@ _Z17vel_pvfmksne_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.ne %vm2,%v0,%vm2
-	pvfmk.s.lo.ne %vm3,%v0,%vm3
+	pvfmk.s.up.ne %vm2, %v0, %vm2
+	pvfmk.s.lo.ne %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7900,7 +7900,7 @@ _Z17vel_pvfmkseq_MvMlPmPKfPKm:
 .LBB157_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7917,8 +7917,8 @@ _Z17vel_pvfmkseq_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.eq %vm2,%v0,%vm2
-	pvfmk.s.lo.eq %vm3,%v0,%vm3
+	pvfmk.s.up.eq %vm2, %v0, %vm2
+	pvfmk.s.lo.eq %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -7968,7 +7968,7 @@ _Z17vel_pvfmksge_MvMlPmPKfPKm:
 .LBB158_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -7985,8 +7985,8 @@ _Z17vel_pvfmksge_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.ge %vm2,%v0,%vm2
-	pvfmk.s.lo.ge %vm3,%v0,%vm3
+	pvfmk.s.up.ge %vm2, %v0, %vm2
+	pvfmk.s.lo.ge %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8036,7 +8036,7 @@ _Z17vel_pvfmksle_MvMlPmPKfPKm:
 .LBB159_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8053,8 +8053,8 @@ _Z17vel_pvfmksle_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.le %vm2,%v0,%vm2
-	pvfmk.s.lo.le %vm3,%v0,%vm3
+	pvfmk.s.up.le %vm2, %v0, %vm2
+	pvfmk.s.lo.le %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8104,7 +8104,7 @@ _Z18vel_pvfmksnum_MvMlPmPKfPKm:
 .LBB160_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8121,8 +8121,8 @@ _Z18vel_pvfmksnum_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.num %vm2,%v0,%vm2
-	pvfmk.s.lo.num %vm3,%v0,%vm3
+	pvfmk.s.up.num %vm2, %v0, %vm2
+	pvfmk.s.lo.num %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8172,7 +8172,7 @@ _Z18vel_pvfmksnan_MvMlPmPKfPKm:
 .LBB161_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8189,8 +8189,8 @@ _Z18vel_pvfmksnan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.nan %vm2,%v0,%vm2
-	pvfmk.s.lo.nan %vm3,%v0,%vm3
+	pvfmk.s.up.nan %vm2, %v0, %vm2
+	pvfmk.s.lo.nan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8240,7 +8240,7 @@ _Z20vel_pvfmksgtnan_MvMlPmPKfPKm:
 .LBB162_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8257,8 +8257,8 @@ _Z20vel_pvfmksgtnan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.gtnan %vm2,%v0,%vm2
-	pvfmk.s.lo.gtnan %vm3,%v0,%vm3
+	pvfmk.s.up.gtnan %vm2, %v0, %vm2
+	pvfmk.s.lo.gtnan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8308,7 +8308,7 @@ _Z20vel_pvfmksltnan_MvMlPmPKfPKm:
 .LBB163_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8325,8 +8325,8 @@ _Z20vel_pvfmksltnan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.ltnan %vm2,%v0,%vm2
-	pvfmk.s.lo.ltnan %vm3,%v0,%vm3
+	pvfmk.s.up.ltnan %vm2, %v0, %vm2
+	pvfmk.s.lo.ltnan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8376,7 +8376,7 @@ _Z20vel_pvfmksnenan_MvMlPmPKfPKm:
 .LBB164_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8393,8 +8393,8 @@ _Z20vel_pvfmksnenan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.nenan %vm2,%v0,%vm2
-	pvfmk.s.lo.nenan %vm3,%v0,%vm3
+	pvfmk.s.up.nenan %vm2, %v0, %vm2
+	pvfmk.s.lo.nenan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8444,7 +8444,7 @@ _Z20vel_pvfmkseqnan_MvMlPmPKfPKm:
 .LBB165_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8461,8 +8461,8 @@ _Z20vel_pvfmkseqnan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.eqnan %vm2,%v0,%vm2
-	pvfmk.s.lo.eqnan %vm3,%v0,%vm3
+	pvfmk.s.up.eqnan %vm2, %v0, %vm2
+	pvfmk.s.lo.eqnan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8512,7 +8512,7 @@ _Z20vel_pvfmksgenan_MvMlPmPKfPKm:
 .LBB166_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8529,8 +8529,8 @@ _Z20vel_pvfmksgenan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.genan %vm2,%v0,%vm2
-	pvfmk.s.lo.genan %vm3,%v0,%vm3
+	pvfmk.s.up.genan %vm2, %v0, %vm2
+	pvfmk.s.lo.genan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8580,7 +8580,7 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 .LBB167_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s1
+	vld %v0, 8, %s1
 	ld %s1, (, %s2)
 	ld %s4, 8(, %s2)
 	ld %s5, 16(, %s2)
@@ -8597,8 +8597,8 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 	lvm %vm2, 1, %s4
 	lvm %vm2, 2, %s5
 	lvm %vm2, 3, %s2
-	pvfmk.s.up.lenan %vm2,%v0,%vm2
-	pvfmk.s.lo.lenan %vm3,%v0,%vm3
+	pvfmk.s.up.lenan %vm2, %v0, %vm2
+	pvfmk.s.lo.lenan %vm3, %v0, %vm3
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -8624,5 +8624,6 @@ _Z20vel_pvfmkslenan_MvMlPmPKfPKm:
 .Lfunc_end167:
 	.size	_Z20vel_pvfmkslenan_MvMlPmPKfPKm, .Lfunc_end167-_Z20vel_pvfmkslenan_MvMlPmPKfPKm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

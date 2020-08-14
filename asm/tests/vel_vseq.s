@@ -25,7 +25,7 @@ _Z4vseqPm:
 	lea %s1, 256
 	lvl %s1
 	vseq %v0
-	vst %v0,8,%s0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -60,7 +60,7 @@ _Z6vseq_pPm:
 	lea %s1, 256
 	lvl %s1
 	pvseq %v0
-	vst %v0,8,%s0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -95,7 +95,7 @@ _Z7vseq_plPm:
 	lea %s1, 256
 	lvl %s1
 	pvseq.lo %v0
-	vst %v0,8,%s0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -130,7 +130,7 @@ _Z7vseq_puPm:
 	lea %s1, 256
 	lvl %s1
 	pvseq.up %v0
-	vst %v0,8,%s0
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -140,5 +140,6 @@ _Z7vseq_puPm:
 .Lfunc_end3:
 	.size	_Z7vseq_puPm, .Lfunc_end3-_Z7vseq_puPm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

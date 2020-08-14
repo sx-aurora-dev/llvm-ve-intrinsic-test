@@ -24,16 +24,16 @@ _Z18vel_extract_vm512uPmPKj:
 .LBB0_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.gt %vm2,%v0
-	pvfmk.w.lo.gt %vm3,%v0
-	svm %s1,%vm2,0
+	vld %v0, 8, %s1
+	pvfmk.w.up.gt %vm2, %v0
+	vfmk.w.gt %vm3, %v0
+	svm %s1, %vm2, 0
 	st %s1, (, %s0)
-	svm %s1,%vm2,1
+	svm %s1, %vm2, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm2,2
+	svm %s1, %vm2, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm2,3
+	svm %s1, %vm2, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -68,16 +68,16 @@ _Z18vel_extract_vm512lPmPKj:
 .LBB1_2:
 	lea %s2, 256
 	lvl %s2
-	vld %v0,8,%s1
-	pvfmk.w.up.gt %vm2,%v0
-	pvfmk.w.lo.gt %vm3,%v0
-	svm %s1,%vm3,0
+	vld %v0, 8, %s1
+	pvfmk.w.up.gt %vm2, %v0
+	vfmk.w.gt %vm3, %v0
+	svm %s1, %vm3, 0
 	st %s1, (, %s0)
-	svm %s1,%vm3,1
+	svm %s1, %vm3, 1
 	st %s1, 8(, %s0)
-	svm %s1,%vm3,2
+	svm %s1, %vm3, 2
 	st %s1, 16(, %s0)
-	svm %s1,%vm3,3
+	svm %s1, %vm3, 3
 	st %s1, 24(, %s0)
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -88,5 +88,6 @@ _Z18vel_extract_vm512lPmPKj:
 .Lfunc_end1:
 	.size	_Z18vel_extract_vm512lPmPKj, .Lfunc_end1-_Z18vel_extract_vm512lPmPKj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

@@ -33,14 +33,14 @@ pvfnmsb_vvsvMvl:
 	or %s39, 0, %s34
 	cmov.w.lt %s39, %s37, %s38
 	lvl %s39
-	vld %v0,8,%s1
-	vld %v1,8,%s3
-	vld %v2,8,%s4
-	vld %v3,8,%s5
-	pvfmk.w.up.gt %vm2,%v2
-	pvfmk.w.lo.gt %vm3,%v2
-	pvfnmsb %v3,%v0,%s2,%v1,%vm2
-	vst %v3,8,%s0
+	vld %v0, 8, %s1
+	vld %v1, 8, %s3
+	vld %v2, 8, %s4
+	vld %v3, 8, %s5
+	pvfmk.w.up.gt %vm2, %v2
+	vfmk.w.gt %vm3, %v2
+	pvfnmsb %v3, %v0, %s2, %v1, %vm2
+	vst %v3, 8, %s0
 	lea %s0, 2048(, %s0)
 	lea %s1, 2048(, %s1)
 	lea %s3, 2048(, %s3)
@@ -59,5 +59,6 @@ pvfnmsb_vvsvMvl:
 .Lfunc_end0:
 	.size	pvfnmsb_vvsvMvl, .Lfunc_end0-pvfnmsb_vvsvMvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

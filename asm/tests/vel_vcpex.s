@@ -23,19 +23,19 @@ _Z8vcp_vvmvPmPKmS1_:
 	or %s0, 0, %s62
 .LBB0_2:
 	ld %s3, (, %s2)
-	lvm %vm1,0,%s3
+	lvm %vm1, 0, %s3
 	ld %s3, 8(, %s2)
 	ld %s4, 16(, %s2)
 	ld %s2, 24(, %s2)
 	lea %s5, 256
 	lvl %s5
-	vld %v0,8,%s1
-	vld %v1,8,%s0
-	lvm %vm1,1,%s3
-	lvm %vm1,2,%s4
-	lvm %vm1,3,%s2
-	vcp %v1,%v0,%vm1
-	vst %v1,8,%s0
+	vld %v0, 8, %s1
+	vld %v1, 8, %s0
+	lvm %vm1, 1, %s3
+	lvm %vm1, 2, %s4
+	lvm %vm1, 3, %s2
+	vcp %v1, %v0, %vm1
+	vst %v1, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -68,19 +68,19 @@ _Z8vex_vvmvPmPKmS1_:
 	or %s0, 0, %s62
 .LBB1_2:
 	ld %s3, (, %s2)
-	lvm %vm1,0,%s3
+	lvm %vm1, 0, %s3
 	ld %s3, 8(, %s2)
 	ld %s4, 16(, %s2)
 	ld %s2, 24(, %s2)
 	lea %s5, 256
 	lvl %s5
-	vld %v0,8,%s1
-	vld %v1,8,%s0
-	lvm %vm1,1,%s3
-	lvm %vm1,2,%s4
-	lvm %vm1,3,%s2
-	vex %v1,%v0,%vm1
-	vst %v1,8,%s0
+	vld %v0, 8, %s1
+	vld %v1, 8, %s0
+	lvm %vm1, 1, %s3
+	lvm %vm1, 2, %s4
+	lvm %vm1, 3, %s2
+	vex %v1, %v0, %vm1
+	vst %v1, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -90,5 +90,6 @@ _Z8vex_vvmvPmPKmS1_:
 .Lfunc_end1:
 	.size	_Z8vex_vvmvPmPKmS1_, .Lfunc_end1-_Z8vex_vvmvPmPKmS1_
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

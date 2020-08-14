@@ -24,8 +24,8 @@ _Z9vel_vld2dPdmPKv:
 .LBB0_2:
 	lea %s3, 256
 	lvl %s3
-	vld2d %v0,%s1,%s2
-	vst %v0,8,%s0
+	vld2d %v0, %s1, %s2
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -59,8 +59,8 @@ _Z9vel_vst2dPdmPv:
 .LBB1_2:
 	lea %s3, 256
 	lvl %s3
-	vld %v0,8,%s0
-	vst2d %v0,%s1,%s2
+	vld %v0, 8, %s0
+	vst2d %v0, %s1, %s2
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -94,10 +94,10 @@ _Z15vel_vst2d_vssmlPdmPvPj:
 .LBB2_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s0
-	vldl.sx %v1,4,%s3
-	vfmk.w.gt %vm1,%v1
-	vst2d %v0,%s1,%s2,%vm1
+	vld %v0, 8, %s0
+	vldl.sx %v1, 4, %s3
+	vfmk.w.gt %vm1, %v1
+	vst2d %v0, %s1, %s2, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -131,8 +131,8 @@ _Z10vel_vldu2dPfmPKv:
 .LBB3_2:
 	lea %s3, 256
 	lvl %s3
-	vldu2d %v0,%s1,%s2
-	vstu %v0,4,%s0
+	vldu2d %v0, %s1, %s2
+	vstu %v0, 4, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -166,8 +166,8 @@ _Z10vel_vstu2dPfmPv:
 .LBB4_2:
 	lea %s3, 256
 	lvl %s3
-	vldu %v0,4,%s0
-	vstu2d %v0,%s1,%s2
+	vldu %v0, 4, %s0
+	vstu2d %v0, %s1, %s2
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -201,10 +201,10 @@ _Z16vel_vstu2d_vssmlPfmPvPj:
 .LBB5_2:
 	lea %s4, 256
 	lvl %s4
-	vldu %v0,4,%s0
-	vldl.sx %v1,4,%s3
-	vfmk.w.gt %vm1,%v1
-	vstu2d %v0,%s1,%s2,%vm1
+	vldu %v0, 4, %s0
+	vldl.sx %v1, 4, %s3
+	vfmk.w.gt %vm1, %v1
+	vstu2d %v0, %s1, %s2, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -238,8 +238,8 @@ _Z12vel_vldl2dsxPlmPKv:
 .LBB6_2:
 	lea %s3, 256
 	lvl %s3
-	vldl2d.sx %v0,%s1,%s2
-	vst %v0,8,%s0
+	vldl2d.sx %v0, %s1, %s2
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -273,8 +273,8 @@ _Z12vel_vldl2dzxPmmPKv:
 .LBB7_2:
 	lea %s3, 256
 	lvl %s3
-	vldl2d.zx %v0,%s1,%s2
-	vst %v0,8,%s0
+	vldl2d.zx %v0, %s1, %s2
+	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -308,8 +308,8 @@ _Z10vel_vstl2dPimPv:
 .LBB8_2:
 	lea %s3, 256
 	lvl %s3
-	vldl.sx %v0,4,%s0
-	vstl2d %v0,%s1,%s2
+	vldl.sx %v0, 4, %s0
+	vstl2d %v0, %s1, %s2
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -343,10 +343,10 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 .LBB9_2:
 	lea %s4, 256
 	lvl %s4
-	vldl.sx %v0,4,%s0
-	vldl.sx %v1,4,%s3
-	vfmk.w.gt %vm1,%v1
-	vstl2d %v0,%s1,%s2,%vm1
+	vldl.sx %v0, 4, %s0
+	vldl.sx %v1, 4, %s3
+	vfmk.w.gt %vm1, %v1
+	vstl2d %v0, %s1, %s2, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -356,5 +356,6 @@ _Z16vel_vstl2d_vssmlPimPvPj:
 .Lfunc_end9:
 	.size	_Z16vel_vstl2d_vssmlPimPvPj, .Lfunc_end9-_Z16vel_vstl2d_vssmlPimPvPj
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

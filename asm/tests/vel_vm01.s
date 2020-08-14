@@ -31,13 +31,13 @@ _Z8vel_vm01PdS_Pji:
 .LBB0_2:
 	mins.w.sx %s7, %s6, %s4
 	lvl %s7
-	vldl.zx %v0,4,%s2
-	vld %v1,8,%s0
-	vld %v2,8,%s1
-	vfmk.w.gt %vm2,%v0
-	nndm %vm1,%vm2,%vm1
-	vfadd.d %v1,%v1,%v2,%vm1
-	vst %v1,8,%s0
+	vldl.zx %v0, 4, %s2
+	vld %v1, 8, %s0
+	vld %v2, 8, %s1
+	vfmk.w.gt %vm2, %v0
+	nndm %vm1, %vm2, %vm1
+	vfadd.d %v1, %v1, %v2, %vm1
+	vst %v1, 8, %s0
 	adds.w.sx %s7, %s7, (0)1
 	sll %s34, %s7, 3
 	adds.l %s0, %s0, %s34
@@ -57,5 +57,6 @@ _Z8vel_vm01PdS_Pji:
 .Lfunc_end0:
 	.size	_Z8vel_vm01PdS_Pji, .Lfunc_end0-_Z8vel_vm01PdS_Pji
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

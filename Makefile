@@ -11,6 +11,7 @@ CLANG ?= clang
 endif
 
 CLANG_OPT = -target ve -O3 -fno-vectorize -fno-slp-vectorize -fno-crash-diagnostics
+CLANG_OPT += -fintegrated-as
 
 .PRECIOUS: %.s %.ll %.ve %.out
 
@@ -28,8 +29,7 @@ CLANG_OPT = -target ve -O3 -fno-vectorize -fno-slp-vectorize -fno-crash-diagnost
 	$(CLANG) -o $@ $(CLANG_OPT) -I. -S $<
 
 gen/tests/%.o: gen/tests/%.c
-	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
-	$(NCC) -o $@ -c $(<:.c=.s) -fdiag-vector=0
+	$(CLANG) -o $@ $(CLANG_OPT) -I. -c $<
 
 tests/%.s: tests/%.c
 	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
@@ -38,12 +38,11 @@ tests/%.s: tests/%.cc
 	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
 
 tests/%.o: tests/%.c
-	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
-	$(NCC) -o $@ -c $(<:.c=.s) -fdiag-vector=0
+	$(CLANG) -o $@ $(CLANG_OPT) -I. -c $<
+
 
 tests/%.o: tests/%.cc
-	$(CLANG) -o $(@:.o=.s) $(CLANG_OPT) -I. -S $<
-	$(NCC) -o $@ -c $(<:.cc=.s) -fdiag-vector=0
+	$(CLANG) -o $@ $(CLANG_OPT) -I. -c $<
 
 tests/%_test.o: tests/%.c
 	$(NCC) -o $@ -DTEST -DHAVE_REGISTER_TEST -c $< -fdiag-vector=0

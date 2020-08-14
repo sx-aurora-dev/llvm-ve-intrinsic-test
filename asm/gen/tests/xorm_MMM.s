@@ -54,8 +54,8 @@ xorm_MMM:
 	lvm %vm4, 2, %s4
 	lvm %vm2, 3, %s1
 	lvm %vm4, 3, %s2
-	xorm %vm2,%vm2,%vm4
-	xorm %vm3,%vm3,%vm5
+	xorm %vm2, %vm2, %vm4
+	xorm %vm3, %vm3, %vm5
 	svm %s1, %vm3, 0
 	st %s1, (, %s0)
 	svm %s1, %vm3, 1
@@ -81,5 +81,6 @@ xorm_MMM:
 .Lfunc_end0:
 	.size	xorm_MMM, .Lfunc_end0-xorm_MMM
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

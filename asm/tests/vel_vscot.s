@@ -24,13 +24,13 @@ _Z12vel_vscot_vvPKdPdPKmS1_:
 .LBB0_2:
 	lea %s4, 256
 	lvl %s4
-	vld %v0,8,%s0
-	vld %v1,8,%s2
-	vsfa %v1,%v1,3,%s3
-	vsc.ot %v0,%v1,0,0
+	vld %v0, 8, %s0
+	vld %v1, 8, %s2
+	vsfa %v1, %v1, 3, %s3
+	vsc.ot %v0, %v1, 0, 0
 	svob
-	vld %v0,8,%s3
-	vst %v0,8,%s1
+	vld %v0, 8, %s3
+	vst %v0, 8, %s1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -64,13 +64,13 @@ _Z13vel_vscuot_vvPKfPfPKmS1_:
 .LBB1_2:
 	lea %s4, 256
 	lvl %s4
-	vldu %v0,4,%s0
-	vld %v1,8,%s2
-	vsfa %v1,%v1,2,%s3
-	vscu %v0,%v1,0,0
+	vldu %v0, 4, %s0
+	vld %v1, 8, %s2
+	vsfa %v1, %v1, 2, %s3
+	vscu %v0, %v1, 0, 0
 	svob
-	vldu %v0,4,%s3
-	vstu %v0,4,%s1
+	vldu %v0, 4, %s3
+	vstu %v0, 4, %s1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -104,13 +104,13 @@ _Z13vel_vsclot_vvPKiPiPKmS1_:
 .LBB2_2:
 	lea %s4, 256
 	lvl %s4
-	vldl.sx %v0,4,%s0
-	vld %v1,8,%s2
-	vsfa %v1,%v1,2,%s3
-	vscl.ot %v0,%v1,0,0
+	vldl.sx %v0, 4, %s0
+	vld %v1, 8, %s2
+	vsfa %v1, %v1, 2, %s3
+	vscl.ot %v0, %v1, 0, 0
 	svob
-	vldl.sx %v0,4,%s3
-	vstl %v0,4,%s1
+	vldl.sx %v0, 4, %s3
+	vstl %v0, 4, %s1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -120,5 +120,6 @@ _Z13vel_vsclot_vvPKiPiPKmS1_:
 .Lfunc_end2:
 	.size	_Z13vel_vsclot_vvPKiPiPKmS1_, .Lfunc_end2-_Z13vel_vsclot_vvPKiPiPKmS1_
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

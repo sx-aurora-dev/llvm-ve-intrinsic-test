@@ -26,13 +26,13 @@ _Z11vel_pcvm_smPm:
 	ld %s2, 8(, %s0)
 	ld %s3, 16(, %s0)
 	ld %s0, 24(, %s0)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s2
-	lvm %vm1,2,%s3
-	lvm %vm1,3,%s0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s2
+	lvm %vm1, 2, %s3
+	lvm %vm1, 3, %s0
 	lea %s0, 256
 	lvl %s0
-	pcvm %s0,%vm1
+	pcvm %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -68,13 +68,13 @@ _Z11vel_lzvm_smPm:
 	ld %s2, 8(, %s0)
 	ld %s3, 16(, %s0)
 	ld %s0, 24(, %s0)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s2
-	lvm %vm1,2,%s3
-	lvm %vm1,3,%s0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s2
+	lvm %vm1, 2, %s3
+	lvm %vm1, 3, %s0
 	lea %s0, 256
 	lvl %s0
-	lzvm %s0,%vm1
+	lzvm %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -110,13 +110,13 @@ _Z11vel_tovm_smPm:
 	ld %s2, 8(, %s0)
 	ld %s3, 16(, %s0)
 	ld %s0, 24(, %s0)
-	lvm %vm1,0,%s1
-	lvm %vm1,1,%s2
-	lvm %vm1,2,%s3
-	lvm %vm1,3,%s0
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s2
+	lvm %vm1, 2, %s3
+	lvm %vm1, 3, %s0
 	lea %s0, 256
 	lvl %s0
-	tovm %s0,%vm1
+	tovm %s0, %vm1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -126,5 +126,6 @@ _Z11vel_tovm_smPm:
 .Lfunc_end2:
 	.size	_Z11vel_tovm_smPm, .Lfunc_end2-_Z11vel_tovm_smPm
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

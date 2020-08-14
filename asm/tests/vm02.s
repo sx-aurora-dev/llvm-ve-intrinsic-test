@@ -38,7 +38,7 @@ _Z4funcDv256_dS_S_Dv4_m:
 	lvm %vm1, 2, %s16
 	ld %s16, 6408(, %s9)
 	lvm %vm1, 3, %s16
-	vfadd.d %v0,%v2,%v1,%vm1
+	vfadd.d %v0, %v2, %v1, %vm1
 	vst %v0, 8, %s0
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -99,14 +99,14 @@ _Z10_test_vm02v:
 	lea %s20, 256
 	lea %s21, -2048(, %s9)
 	lvl %s20
-	vld %v0,8,%s21
+	vld %v0, 8, %s21
 	lea %s0, -6144(, %s9)
-	vld %v1,8,%s0
+	vld %v1, 8, %s0
 	lea %s0, -8192(, %s9)
-	vld %v2,8,%s0
+	vld %v2, 8, %s0
 	lea %s0, -9216(, %s9)
-	vldl.zx %v3,4,%s0
-	vfmk.w.gt %vm1,%v3
+	vldl.zx %v3, 4, %s0
+	vfmk.w.gt %vm1, %v3
 	lea %s0, 4336(, %s11)
 	vst %v2, 8, %s0
 	lea %s0, 2288(, %s11)
@@ -128,7 +128,7 @@ _Z10_test_vm02v:
 	or %s0, 0, %s18
 	bsic %s10, (, %s12)
 	vld %v0, 8, %s18
-	vst %v0,8,%s21
+	vst %v0, 8, %s21
 	or %s0, 0, (0)1
 	or %s2, 1, (0)1
 	or %s1, 0, %s0
@@ -156,5 +156,6 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig

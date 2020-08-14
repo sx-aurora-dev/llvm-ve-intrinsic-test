@@ -30,12 +30,12 @@ vfadds_vsvmvl:
 .LBB0_2:
 	mins.w.sx %s35, %s34, %s7
 	lvl %s35
-	vldu %v0,4,%s2
-	vldl.zx %v1,4,%s3
-	vldu %v2,4,%s4
-	vfmk.w.gt %vm1,%v1
-	vfadd.s %v2,%s1,%v0,%vm1
-	vstu %v2,4,%s0
+	vldu %v0, 4, %s2
+	vldl.zx %v1, 4, %s3
+	vldu %v2, 4, %s4
+	vfmk.w.gt %vm1, %v1
+	vfadd.s %v2, %s1, %v0, %vm1
+	vstu %v2, 4, %s0
 	lea %s0, 1024(, %s0)
 	lea %s2, 1024(, %s2)
 	lea %s3, 1024(, %s3)
@@ -53,5 +53,6 @@ vfadds_vsvmvl:
 .Lfunc_end0:
 	.size	vfadds_vsvmvl, .Lfunc_end0-vfadds_vsvmvl
 
-	.ident	"clang version 11.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf2bd2baf6c26029de1da06f9d4948e4ad04cc90)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
 	.section	".note.GNU-stack","",@progbits
+	.addrsig
