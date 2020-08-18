@@ -30,10 +30,11 @@ _Z4funcDv256_dS_S_:
 	vld %v1, 8, %s2
 	lea %s2, 2288(, %s9)
 	vld %v2, 8, %s2
-	lvm %vm1, 0, (0)1
-	lvm %vm1, 1, (0)1
-	lvm %vm1, 2, (0)1
-	lvm %vm1, 3, (0)1
+	or %s2, 0, (0)1
+	lvm %vm1, 0, %s2
+	lvm %vm1, 1, %s2
+	lvm %vm1, 2, %s2
+	lvm %vm1, 3, %s2
 	vfadd.d %v0, %v2, %v1, %vm1
 	vst %v0, 8, %s0
 	or %s11, 0, %s9
@@ -81,21 +82,21 @@ _Z10_test_vm01v:
 	lea %s1, 8(, %s1)
 	adds.w.sx %s4, 1, %s4
 	brne.l %s1, %s0, .LBB1_1
-	lea %s1, 256
-	lea %s2, -4096(, %s9)
-	lvl %s1
-	vld %v0, 8, %s2
-	lea %s3, -6144(, %s9)
-	vld %v1, 8, %s3
-	lea %s3, -8192(, %s9)
-	vld %v2, 8, %s3
-	lvm %vm1, 0, (0)1
-	lvm %vm1, 1, (0)1
-	lvm %vm1, 2, (0)1
-	lvm %vm1, 3, (0)1
-	vfadd.d %v0, %v1, %v2, %vm1
-	vst %v0, 8, %s2
+	lea %s2, 256
+	lea %s3, -4096(, %s9)
+	lvl %s2
+	vld %v0, 8, %s3
+	lea %s1, -6144(, %s9)
+	vld %v1, 8, %s1
+	lea %s1, -8192(, %s9)
+	vld %v2, 8, %s1
 	or %s1, 0, (0)1
+	lvm %vm1, 0, %s1
+	lvm %vm1, 1, %s1
+	lvm %vm1, 2, %s1
+	lvm %vm1, 3, %s1
+	vfadd.d %v0, %v1, %v2, %vm1
+	vst %v0, 8, %s3
 	or %s3, 1, (0)1
 	or %s2, 0, %s1
 .LBB1_3:
@@ -118,6 +119,6 @@ _Z10_test_vm01v:
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
 
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 1f077216cc0a051df84173f68782a0cf9ada50ea)"
+	.ident	"clang version 12.0.0 (/usr/uhome/aurora/fccg/t-baba/llvm-dev/llvm-project/clang 3fad6478895c162a7bc491cc4b66c08dd4558a03)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
