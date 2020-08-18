@@ -4,11 +4,10 @@
 	.p2align	4
 	.type	_Z4funcv,@function
 _Z4funcv:
-	or %s1, 0, (0)1
-	lvm %vm1, 0, %s1
-	lvm %vm1, 1, %s1
-	lvm %vm1, 2, %s1
-	lvm %vm1, 3, %s1
+	lvm %vm1, 0, (0)1
+	lvm %vm1, 1, (0)1
+	lvm %vm1, 2, (0)1
+	lvm %vm1, 3, (0)1
 	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	svm %s1, %vm1, 2
@@ -48,11 +47,10 @@ _Z10_test_vm03v:
 	lea.sl %s12, _Z4funcv@hi(, %s0)
 	lea %s0, -32(, %s9)
 	bsic %s10, (, %s12)
-	or %s0, 0, (0)1
-	lvm %vm1, 0, %s0
-	lvm %vm1, 1, %s0
-	lvm %vm1, 2, %s0
-	lvm %vm1, 3, %s0
+	lvm %vm1, 0, (0)1
+	lvm %vm1, 1, (0)1
+	lvm %vm1, 2, (0)1
+	lvm %vm1, 3, (0)1
 	svm %s0, %vm1, 0
 	svm %s1, %vm1, 1
 	or %s0, %s0, %s1
@@ -71,6 +69,6 @@ _Z10_test_vm03v:
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
 
-	.ident	"clang version 12.0.0 (/usr/uhome/aurora/fccg/t-baba/llvm-dev/llvm-project/clang 3fad6478895c162a7bc491cc4b66c08dd4558a03)"
+	.ident	"clang version 12.0.0 (/usr/uhome/aurora/fccg/t-baba/llvm-dev/llvm-project/clang 76671bfa0044ecc8169daea9529b76c8de5e3cc0)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
