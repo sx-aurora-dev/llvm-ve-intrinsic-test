@@ -48,6 +48,6 @@ negm_mm:
 .Lfunc_end0:
 	.size	negm_mm, .Lfunc_end0-negm_mm
 
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 1f077216cc0a051df84173f68782a0cf9ada50ea)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

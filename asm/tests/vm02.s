@@ -1,9 +1,9 @@
 	.text
 	.file	"vm02.cc"
-	.globl	_Z4funcDv256_dS_S_Dv4_m
+	.globl	_Z4funcDv256_dS_S_Dv256_b
 	.p2align	4
-	.type	_Z4funcDv256_dS_S_Dv4_m,@function
-_Z4funcDv256_dS_S_Dv4_m:
+	.type	_Z4funcDv256_dS_S_Dv256_b,@function
+_Z4funcDv256_dS_S_Dv256_b:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -47,7 +47,7 @@ _Z4funcDv256_dS_S_Dv4_m:
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .Lfunc_end0:
-	.size	_Z4funcDv256_dS_S_Dv4_m, .Lfunc_end0-_Z4funcDv256_dS_S_Dv4_m
+	.size	_Z4funcDv256_dS_S_Dv256_b, .Lfunc_end0-_Z4funcDv256_dS_S_Dv256_b
 
 	.globl	_Z10_test_vm02v
 	.p2align	4
@@ -120,9 +120,9 @@ _Z10_test_vm02v:
 	svm %s0, %vm1, 1
 	st %s0, 6392(, %s11)
 	svm %s0, %vm1, 0
-	lea %s1, _Z4funcDv256_dS_S_Dv4_m@lo
+	lea %s1, _Z4funcDv256_dS_S_Dv256_b@lo
 	and %s1, %s1, (32)0
-	lea.sl %s12, _Z4funcDv256_dS_S_Dv4_m@hi(, %s1)
+	lea.sl %s12, _Z4funcDv256_dS_S_Dv256_b@hi(, %s1)
 	lea %s18, -11264(, %s9)
 	st %s0, 6384(, %s11)
 	or %s0, 0, %s18
@@ -156,6 +156,6 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 1f077216cc0a051df84173f68782a0cf9ada50ea)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

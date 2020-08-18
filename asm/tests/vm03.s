@@ -22,11 +22,10 @@ _Z4funcv:
 	monc
 	or %s0, 0, %s62
 .LBB0_2:
-	or %s1, 0, (0)1
-	lvm %vm1, 0, %s1
-	lvm %vm1, 1, %s1
-	lvm %vm1, 2, %s1
-	lvm %vm1, 3, %s1
+	lvm %vm1, 0, (0)1
+	lvm %vm1, 1, (0)1
+	lvm %vm1, 2, (0)1
+	lvm %vm1, 3, (0)1
 	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	svm %s1, %vm1, 2
@@ -71,11 +70,10 @@ _Z10_test_vm03v:
 	lea.sl %s12, _Z4funcv@hi(, %s0)
 	lea %s0, -32(, %s9)
 	bsic %s10, (, %s12)
-	or %s0, 0, (0)1
-	lvm %vm1, 0, %s0
-	lvm %vm1, 1, %s0
-	lvm %vm1, 2, %s0
-	lvm %vm1, 3, %s0
+	lvm %vm1, 0, (0)1
+	lvm %vm1, 1, (0)1
+	lvm %vm1, 2, (0)1
+	lvm %vm1, 3, (0)1
 	svm %s0, %vm1, 0
 	svm %s1, %vm1, 1
 	or %s0, %s0, %s1
@@ -94,6 +92,6 @@ _Z10_test_vm03v:
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
 
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git ea1e45464a3c0492368cbabae9242628b03e399d)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 1f077216cc0a051df84173f68782a0cf9ada50ea)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
