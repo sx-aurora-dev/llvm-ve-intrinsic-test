@@ -22,6 +22,6 @@ vbrdl_vsl:
 .Lfunc_end0:
 	.size	vbrdl_vsl, .Lfunc_end0-vbrdl_vsl
 
-	.ident	"clang version 12.0.0 (/usr/uhome/aurora/fccg/t-baba/llvm-dev/llvm-project/clang 3fad6478895c162a7bc491cc4b66c08dd4558a03)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

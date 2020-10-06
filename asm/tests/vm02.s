@@ -83,19 +83,19 @@ _Z10_test_vm02v:
 	lea %s19, 2048
 	or %s5, 0, %s0
 .LBB1_1:
-	cvt.d.w %s6, %s5
-	st %s6, -2048(%s0, %s9)
-	st %s2, -6144(%s0, %s9)
-	st %s3, -8192(%s0, %s9)
-	and %s7, 1, %s5
+	cvt.d.w %s6, %s0
+	st %s6, -2048(%s5, %s9)
+	st %s2, -6144(%s5, %s9)
+	st %s3, -8192(%s5, %s9)
+	and %s7, 1, %s0
 	stl %s7, (, %s1)
 	or %s34, 0, %s4
 	cmov.w.eq %s34, %s6, %s7
-	st %s34, -4096(%s0, %s9)
-	adds.w.sx %s5, 1, %s5
-	lea %s0, 8(, %s0)
+	st %s34, -4096(%s5, %s9)
+	lea %s5, 8(, %s5)
+	adds.w.sx %s0, 1, %s0
 	lea %s1, 4(, %s1)
-	brne.l %s0, %s19, .LBB1_1
+	brne.l %s5, %s19, .LBB1_1
 	lea %s20, 256
 	lea %s21, -2048(, %s9)
 	lvl %s20
@@ -156,6 +156,6 @@ _Z10_test_vm02v:
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
 
-	.ident	"clang version 12.0.0 (/usr/uhome/aurora/fccg/t-baba/llvm-dev/llvm-project/clang 76671bfa0044ecc8169daea9529b76c8de5e3cc0)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

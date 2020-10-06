@@ -118,6 +118,6 @@ _Z10_test_vm01v:
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
 
-	.ident	"clang version 12.0.0 (/usr/uhome/aurora/fccg/t-baba/llvm-dev/llvm-project/clang 76671bfa0044ecc8169daea9529b76c8de5e3cc0)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
