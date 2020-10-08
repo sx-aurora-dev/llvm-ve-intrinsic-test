@@ -1,16 +1,18 @@
 	.text
 	.file	"approx_vfsqrts_vvl.c"
-	.globl	approx_vfsqrts_vvl
+	.globl	approx_vfsqrts_vvl              # -- Begin function approx_vfsqrts_vvl
 	.p2align	4
 	.type	approx_vfsqrts_vvl,@function
-approx_vfsqrts_vvl:
+approx_vfsqrts_vvl:                     # @approx_vfsqrts_vvl
+# %bb.0:
 	brgt.w 1, %s2, .LBB0_3
+# %bb.1:
 	or %s3, 0, (0)1
 	lea %s4, 256
 	lea.sl %s5, 1072693248
 	lea.sl %s6, 1071644672
 	or %s7, 0, %s2
-.LBB0_2:
+.LBB0_2:                                # =>This Inner Loop Header: Depth=1
 	mins.w.sx %s34, %s7, %s4
 	lvl %s34
 	vldu %v0, 4, %s1
@@ -35,7 +37,7 @@ approx_vfsqrts_vvl:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	approx_vfsqrts_vvl, .Lfunc_end0-approx_vfsqrts_vvl
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

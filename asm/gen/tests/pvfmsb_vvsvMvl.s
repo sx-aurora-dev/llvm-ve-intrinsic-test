@@ -1,15 +1,17 @@
 	.text
 	.file	"pvfmsb_vvsvMvl.c"
-	.globl	pvfmsb_vvsvMvl
+	.globl	pvfmsb_vvsvMvl                  # -- Begin function pvfmsb_vvsvMvl
 	.p2align	4
 	.type	pvfmsb_vvsvMvl,@function
-pvfmsb_vvsvMvl:
+pvfmsb_vvsvMvl:                         # @pvfmsb_vvsvMvl
+# %bb.0:
 	brgt.w 1, %s6, .LBB0_3
+# %bb.1:
 	or %s7, 0, (0)1
 	lea %s34, 256
 	lea %s35, 512
 	or %s36, 0, %s6
-.LBB0_2:
+.LBB0_2:                                # =>This Inner Loop Header: Depth=1
 	sra.w.sx %s37, %s36, 1
 	cmps.w.sx %s38, %s36, %s35
 	or %s39, 0, %s34
@@ -35,7 +37,7 @@ pvfmsb_vvsvMvl:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	pvfmsb_vvsvMvl, .Lfunc_end0-pvfmsb_vvsvMvl
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

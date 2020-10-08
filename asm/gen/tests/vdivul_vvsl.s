@@ -1,14 +1,16 @@
 	.text
 	.file	"vdivul_vvsl.c"
-	.globl	vdivul_vvsl
+	.globl	vdivul_vvsl                     # -- Begin function vdivul_vvsl
 	.p2align	4
 	.type	vdivul_vvsl,@function
-vdivul_vvsl:
+vdivul_vvsl:                            # @vdivul_vvsl
+# %bb.0:
 	brgt.w 1, %s3, .LBB0_3
+# %bb.1:
 	or %s4, 0, (0)1
 	lea %s5, 256
 	or %s6, 0, %s3
-.LBB0_2:
+.LBB0_2:                                # =>This Inner Loop Header: Depth=1
 	mins.w.sx %s7, %s6, %s5
 	lvl %s7
 	vld %v0, 8, %s1
@@ -23,7 +25,7 @@ vdivul_vvsl:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	vdivul_vvsl, .Lfunc_end0-vdivul_vvsl
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

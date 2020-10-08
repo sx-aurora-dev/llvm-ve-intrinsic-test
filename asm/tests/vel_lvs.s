@@ -1,9 +1,10 @@
 	.text
 	.file	"vel_lvs.c"
-	.globl	lvsl_svs
+	.globl	lvsl_svs                        # -- Begin function lvsl_svs
 	.p2align	4
 	.type	lvsl_svs,@function
-lvsl_svs:
+lvsl_svs:                               # @lvsl_svs
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vld %v0, 8, %s0
@@ -12,11 +13,12 @@ lvsl_svs:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	lvsl_svs, .Lfunc_end0-lvsl_svs
-
-	.globl	lvsd_svs
+                                        # -- End function
+	.globl	lvsd_svs                        # -- Begin function lvsd_svs
 	.p2align	4
 	.type	lvsd_svs,@function
-lvsd_svs:
+lvsd_svs:                               # @lvsd_svs
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vld %v0, 8, %s0
@@ -25,11 +27,12 @@ lvsd_svs:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	lvsd_svs, .Lfunc_end1-lvsd_svs
-
-	.globl	lvss_svs
+                                        # -- End function
+	.globl	lvss_svs                        # -- Begin function lvss_svs
 	.p2align	4
 	.type	lvss_svs,@function
-lvss_svs:
+lvss_svs:                               # @lvss_svs
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vldu %v0, 4, %s0
@@ -38,7 +41,7 @@ lvss_svs:
 	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	lvss_svs, .Lfunc_end2-lvss_svs
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

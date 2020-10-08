@@ -1,9 +1,10 @@
 	.text
 	.file	"vel_vmv.cc"
-	.globl	_Z3vmvPmPKmi
+	.globl	_Z3vmvPmPKmi                    # -- Begin function _Z3vmvPmPKmi
 	.p2align	4
 	.type	_Z3vmvPmPKmi,@function
-_Z3vmvPmPKmi:
+_Z3vmvPmPKmi:                           # @_Z3vmvPmPKmi
+# %bb.0:
 	lea %s3, 256
 	lvl %s3
 	vld %v0, 8, %s1
@@ -13,11 +14,12 @@ _Z3vmvPmPKmi:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z3vmvPmPKmi, .Lfunc_end0-_Z3vmvPmPKmi
-
-	.globl	_Z5vmv_iPmPKmi
+                                        # -- End function
+	.globl	_Z5vmv_iPmPKmi                  # -- Begin function _Z5vmv_iPmPKmi
 	.p2align	4
 	.type	_Z5vmv_iPmPKmi,@function
-_Z5vmv_iPmPKmi:
+_Z5vmv_iPmPKmi:                         # @_Z5vmv_iPmPKmi
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vld %v0, 8, %s1
@@ -26,11 +28,12 @@ _Z5vmv_iPmPKmi:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z5vmv_iPmPKmi, .Lfunc_end1-_Z5vmv_iPmPKmi
-
-	.globl	_Z10vmv_vsvmvlPmPKmiPj
+                                        # -- End function
+	.globl	_Z10vmv_vsvmvlPmPKmiPj          # -- Begin function _Z10vmv_vsvmvlPmPKmiPj
 	.p2align	4
 	.type	_Z10vmv_vsvmvlPmPKmiPj,@function
-_Z10vmv_vsvmvlPmPKmiPj:
+_Z10vmv_vsvmvlPmPKmiPj:                 # @_Z10vmv_vsvmvlPmPKmiPj
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vld %v0, 8, %s1
@@ -43,11 +46,12 @@ _Z10vmv_vsvmvlPmPKmiPj:
 	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	_Z10vmv_vsvmvlPmPKmiPj, .Lfunc_end2-_Z10vmv_vsvmvlPmPKmiPj
-
-	.globl	_Z12vmv_vsvmvl_iPmPKmiPj
+                                        # -- End function
+	.globl	_Z12vmv_vsvmvl_iPmPKmiPj        # -- Begin function _Z12vmv_vsvmvl_iPmPKmiPj
 	.p2align	4
 	.type	_Z12vmv_vsvmvl_iPmPKmiPj,@function
-_Z12vmv_vsvmvl_iPmPKmiPj:
+_Z12vmv_vsvmvl_iPmPKmiPj:               # @_Z12vmv_vsvmvl_iPmPKmiPj
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vld %v0, 8, %s1
@@ -59,7 +63,7 @@ _Z12vmv_vsvmvl_iPmPKmiPj:
 	b.l.t (, %s10)
 .Lfunc_end3:
 	.size	_Z12vmv_vsvmvl_iPmPKmiPj, .Lfunc_end3-_Z12vmv_vsvmvl_iPmPKmiPj
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

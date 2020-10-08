@@ -1,9 +1,10 @@
 	.text
 	.file	"pack_f32a.c"
-	.globl	vel_pack_f32a
+	.globl	vel_pack_f32a                   # -- Begin function vel_pack_f32a
 	.p2align	4
 	.type	vel_pack_f32a,@function
-vel_pack_f32a:
+vel_pack_f32a:                          # @vel_pack_f32a
+# %bb.0:
 	ldl.zx %s0, (, %s0)
 	lea %s1, 1
 	and %s1, %s1, (32)0
@@ -12,7 +13,7 @@ vel_pack_f32a:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	vel_pack_f32a, .Lfunc_end0-vel_pack_f32a
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

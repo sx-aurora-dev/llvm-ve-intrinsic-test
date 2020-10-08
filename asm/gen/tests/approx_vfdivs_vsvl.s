@@ -1,16 +1,18 @@
 	.text
 	.file	"approx_vfdivs_vsvl.c"
-	.globl	approx_vfdivs_vsvl
+	.globl	approx_vfdivs_vsvl              # -- Begin function approx_vfdivs_vsvl
 	.p2align	4
 	.type	approx_vfdivs_vsvl,@function
-approx_vfdivs_vsvl:
+approx_vfdivs_vsvl:                     # @approx_vfdivs_vsvl
+# %bb.0:
 	and %s3, %s3, (32)0
 	brgt.w 1, %s3, .LBB0_3
+# %bb.1:
 	or %s4, 0, (0)1
 	lea %s5, 256
 	lea.sl %s6, 1065353216
 	or %s7, 0, %s3
-.LBB0_2:
+.LBB0_2:                                # =>This Inner Loop Header: Depth=1
 	mins.w.sx %s34, %s7, %s5
 	lvl %s34
 	vldu %v0, 4, %s2
@@ -32,7 +34,7 @@ approx_vfdivs_vsvl:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	approx_vfdivs_vsvl, .Lfunc_end0-approx_vfdivs_vsvl
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

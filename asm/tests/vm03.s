@@ -1,9 +1,10 @@
 	.text
 	.file	"vm03.cc"
-	.globl	_Z4funcv
+	.globl	_Z4funcv                        # -- Begin function _Z4funcv
 	.p2align	4
 	.type	_Z4funcv,@function
-_Z4funcv:
+_Z4funcv:                               # @_Z4funcv
+# %bb.0:
 	lvm %vm1, 0, (0)1
 	lvm %vm1, 1, (0)1
 	lvm %vm1, 2, (0)1
@@ -19,11 +20,12 @@ _Z4funcv:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z4funcv, .Lfunc_end0-_Z4funcv
-
-	.globl	_Z10_test_vm03v
+                                        # -- End function
+	.globl	_Z10_test_vm03v                 # -- Begin function _Z10_test_vm03v
 	.p2align	4
 	.type	_Z10_test_vm03v,@function
-_Z10_test_vm03v:
+_Z10_test_vm03v:                        # @_Z10_test_vm03v
+# %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -33,6 +35,7 @@ _Z10_test_vm03v:
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s13, %s11)
 	brge.l.t %s11, %s8, .LBB1_2
+# %bb.1:
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
@@ -68,7 +71,7 @@ _Z10_test_vm03v:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

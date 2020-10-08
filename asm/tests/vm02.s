@@ -1,9 +1,10 @@
 	.text
 	.file	"vm02.cc"
-	.globl	_Z4funcDv256_dS_S_Dv256_b
+	.globl	_Z4funcDv256_dS_S_Dv256_b       # -- Begin function _Z4funcDv256_dS_S_Dv256_b
 	.p2align	4
 	.type	_Z4funcDv256_dS_S_Dv256_b,@function
-_Z4funcDv256_dS_S_Dv256_b:
+_Z4funcDv256_dS_S_Dv256_b:              # @_Z4funcDv256_dS_S_Dv256_b
+# %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -13,6 +14,7 @@ _Z4funcDv256_dS_S_Dv256_b:
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s13, %s11)
 	brge.l.t %s11, %s8, .LBB0_2
+# %bb.1:
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
@@ -48,11 +50,12 @@ _Z4funcDv256_dS_S_Dv256_b:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z4funcDv256_dS_S_Dv256_b, .Lfunc_end0-_Z4funcDv256_dS_S_Dv256_b
-
-	.globl	_Z10_test_vm02v
+                                        # -- End function
+	.globl	_Z10_test_vm02v                 # -- Begin function _Z10_test_vm02v
 	.p2align	4
 	.type	_Z10_test_vm02v,@function
-_Z10_test_vm02v:
+_Z10_test_vm02v:                        # @_Z10_test_vm02v
+# %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -62,6 +65,7 @@ _Z10_test_vm02v:
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB1_6
+# %bb.5:
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
@@ -71,10 +75,10 @@ _Z10_test_vm02v:
 	monc
 	or %s0, 0, %s62
 .LBB1_6:
-	st %s18, 48(, %s9)
-	st %s19, 56(, %s9)
-	st %s20, 64(, %s9)
-	st %s21, 72(, %s9)
+	st %s18, 48(, %s9)                      # 8-byte Folded Spill
+	st %s19, 56(, %s9)                      # 8-byte Folded Spill
+	st %s20, 64(, %s9)                      # 8-byte Folded Spill
+	st %s21, 72(, %s9)                      # 8-byte Folded Spill
 	or %s0, 0, (0)1
 	lea %s1, -9216(, %s9)
 	lea.sl %s2, 1072693248
@@ -82,7 +86,7 @@ _Z10_test_vm02v:
 	lea.sl %s4, 1074266112
 	lea %s19, 2048
 	or %s5, 0, %s0
-.LBB1_1:
+.LBB1_1:                                # =>This Inner Loop Header: Depth=1
 	cvt.d.w %s6, %s0
 	st %s6, -2048(%s5, %s9)
 	st %s2, -6144(%s5, %s9)
@@ -96,6 +100,7 @@ _Z10_test_vm02v:
 	adds.w.sx %s0, 1, %s0
 	lea %s1, 4(, %s1)
 	brne.l %s5, %s19, .LBB1_1
+# %bb.2:
 	lea %s20, 256
 	lea %s21, -2048(, %s9)
 	lvl %s20
@@ -132,7 +137,7 @@ _Z10_test_vm02v:
 	or %s0, 0, (0)1
 	or %s2, 1, (0)1
 	or %s1, 0, %s0
-.LBB1_3:
+.LBB1_3:                                # =>This Inner Loop Header: Depth=1
 	ld %s3, -2048(%s1, %s9)
 	ld %s4, -4096(%s1, %s9)
 	fcmp.d %s3, %s3, %s4
@@ -142,11 +147,12 @@ _Z10_test_vm02v:
 	lea %s1, 8(, %s1)
 	and %s2, %s2, (32)0
 	brne.l %s1, %s19, .LBB1_3
+# %bb.4:
 	adds.w.sx %s0, %s2, (0)1
-	ld %s21, 72(, %s9)
-	ld %s20, 64(, %s9)
-	ld %s19, 56(, %s9)
-	ld %s18, 48(, %s9)
+	ld %s21, 72(, %s9)                      # 8-byte Folded Reload
+	ld %s20, 64(, %s9)                      # 8-byte Folded Reload
+	ld %s19, 56(, %s9)                      # 8-byte Folded Reload
+	ld %s18, 48(, %s9)                      # 8-byte Folded Reload
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -155,7 +161,7 @@ _Z10_test_vm02v:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

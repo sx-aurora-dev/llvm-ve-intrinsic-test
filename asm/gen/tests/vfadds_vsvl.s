@@ -1,15 +1,17 @@
 	.text
 	.file	"vfadds_vsvl.c"
-	.globl	vfadds_vsvl
+	.globl	vfadds_vsvl                     # -- Begin function vfadds_vsvl
 	.p2align	4
 	.type	vfadds_vsvl,@function
-vfadds_vsvl:
+vfadds_vsvl:                            # @vfadds_vsvl
+# %bb.0:
 	and %s3, %s3, (32)0
 	brgt.w 1, %s3, .LBB0_3
+# %bb.1:
 	or %s4, 0, (0)1
 	lea %s5, 256
 	or %s6, 0, %s3
-.LBB0_2:
+.LBB0_2:                                # =>This Inner Loop Header: Depth=1
 	mins.w.sx %s7, %s6, %s5
 	lvl %s7
 	vldu %v0, 4, %s2
@@ -24,7 +26,7 @@ vfadds_vsvl:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	vfadds_vsvl, .Lfunc_end0-vfadds_vsvl
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

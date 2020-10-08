@@ -1,9 +1,10 @@
 	.text
 	.file	"negm_mm.c"
-	.globl	negm_mm
+	.globl	negm_mm                         # -- Begin function negm_mm
 	.p2align	4
 	.type	negm_mm,@function
-negm_mm:
+negm_mm:                                # @negm_mm
+# %bb.0:
 	ld %s2, (, %s1)
 	ld %s3, 8(, %s1)
 	ld %s4, 16(, %s1)
@@ -24,7 +25,7 @@ negm_mm:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	negm_mm, .Lfunc_end0-negm_mm
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

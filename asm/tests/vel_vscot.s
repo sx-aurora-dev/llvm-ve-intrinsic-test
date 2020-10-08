@@ -1,9 +1,10 @@
 	.text
 	.file	"vel_vscot.cc"
-	.globl	_Z12vel_vscot_vvPKdPdPKmS1_
+	.globl	_Z12vel_vscot_vvPKdPdPKmS1_     # -- Begin function _Z12vel_vscot_vvPKdPdPKmS1_
 	.p2align	4
 	.type	_Z12vel_vscot_vvPKdPdPKmS1_,@function
-_Z12vel_vscot_vvPKdPdPKmS1_:
+_Z12vel_vscot_vvPKdPdPKmS1_:            # @_Z12vel_vscot_vvPKdPdPKmS1_
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vld %v0, 8, %s0
@@ -16,11 +17,12 @@ _Z12vel_vscot_vvPKdPdPKmS1_:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z12vel_vscot_vvPKdPdPKmS1_, .Lfunc_end0-_Z12vel_vscot_vvPKdPdPKmS1_
-
-	.globl	_Z13vel_vscuot_vvPKfPfPKmS1_
+                                        # -- End function
+	.globl	_Z13vel_vscuot_vvPKfPfPKmS1_    # -- Begin function _Z13vel_vscuot_vvPKfPfPKmS1_
 	.p2align	4
 	.type	_Z13vel_vscuot_vvPKfPfPKmS1_,@function
-_Z13vel_vscuot_vvPKfPfPKmS1_:
+_Z13vel_vscuot_vvPKfPfPKmS1_:           # @_Z13vel_vscuot_vvPKfPfPKmS1_
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vldu %v0, 4, %s0
@@ -33,11 +35,12 @@ _Z13vel_vscuot_vvPKfPfPKmS1_:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z13vel_vscuot_vvPKfPfPKmS1_, .Lfunc_end1-_Z13vel_vscuot_vvPKfPfPKmS1_
-
-	.globl	_Z13vel_vsclot_vvPKiPiPKmS1_
+                                        # -- End function
+	.globl	_Z13vel_vsclot_vvPKiPiPKmS1_    # -- Begin function _Z13vel_vsclot_vvPKiPiPKmS1_
 	.p2align	4
 	.type	_Z13vel_vsclot_vvPKiPiPKmS1_,@function
-_Z13vel_vsclot_vvPKiPiPKmS1_:
+_Z13vel_vsclot_vvPKiPiPKmS1_:           # @_Z13vel_vsclot_vvPKiPiPKmS1_
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vldl.sx %v0, 4, %s0
@@ -50,7 +53,7 @@ _Z13vel_vsclot_vvPKiPiPKmS1_:
 	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	_Z13vel_vsclot_vvPKiPiPKmS1_, .Lfunc_end2-_Z13vel_vsclot_vvPKiPiPKmS1_
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

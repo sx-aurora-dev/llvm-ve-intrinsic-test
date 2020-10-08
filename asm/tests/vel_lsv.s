@@ -1,9 +1,10 @@
 	.text
 	.file	"vel_lsv.c"
-	.globl	lsv_vss
+	.globl	lsv_vss                         # -- Begin function lsv_vss
 	.p2align	4
 	.type	lsv_vss,@function
-lsv_vss:
+lsv_vss:                                # @lsv_vss
+# %bb.0:
 	lea %s3, 256
 	lvl %s3
 	vld %v0, 8, %s0
@@ -13,7 +14,7 @@ lsv_vss:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	lsv_vss, .Lfunc_end0-lsv_vss
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

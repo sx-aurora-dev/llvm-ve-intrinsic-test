@@ -1,9 +1,10 @@
 	.text
 	.file	"vm01.cc"
-	.globl	_Z4funcDv256_dS_S_
+	.globl	_Z4funcDv256_dS_S_              # -- Begin function _Z4funcDv256_dS_S_
 	.p2align	4
 	.type	_Z4funcDv256_dS_S_,@function
-_Z4funcDv256_dS_S_:
+_Z4funcDv256_dS_S_:                     # @_Z4funcDv256_dS_S_
+# %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -13,6 +14,7 @@ _Z4funcDv256_dS_S_:
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s13, %s11)
 	brge.l.t %s11, %s8, .LBB0_2
+# %bb.1:
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
@@ -44,11 +46,12 @@ _Z4funcDv256_dS_S_:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z4funcDv256_dS_S_, .Lfunc_end0-_Z4funcDv256_dS_S_
-
-	.globl	_Z10_test_vm01v
+                                        # -- End function
+	.globl	_Z10_test_vm01v                 # -- Begin function _Z10_test_vm01v
 	.p2align	4
 	.type	_Z10_test_vm01v,@function
-_Z10_test_vm01v:
+_Z10_test_vm01v:                        # @_Z10_test_vm01v
+# %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
 	st %s15, 24(, %s11)
@@ -58,6 +61,7 @@ _Z10_test_vm01v:
 	and %s13, %s13, (32)0
 	lea.sl %s11, -1(%s13, %s11)
 	brge.l %s11, %s8, .LBB1_6
+# %bb.5:
 	ld %s61, 24(, %s14)
 	or %s62, 0, %s0
 	lea %s63, 315
@@ -72,7 +76,7 @@ _Z10_test_vm01v:
 	lea.sl %s3, 1073741824
 	lea %s0, 2048
 	or %s4, 0, %s1
-.LBB1_1:
+.LBB1_1:                                # =>This Inner Loop Header: Depth=1
 	cvt.d.w %s5, %s4
 	st %s5, -4096(%s1, %s9)
 	st %s2, -6144(%s1, %s9)
@@ -81,6 +85,7 @@ _Z10_test_vm01v:
 	lea %s1, 8(, %s1)
 	adds.w.sx %s4, 1, %s4
 	brne.l %s1, %s0, .LBB1_1
+# %bb.2:
 	lea %s1, 256
 	lea %s2, -4096(, %s9)
 	lvl %s1
@@ -98,7 +103,7 @@ _Z10_test_vm01v:
 	or %s1, 0, (0)1
 	or %s3, 1, (0)1
 	or %s2, 0, %s1
-.LBB1_3:
+.LBB1_3:                                # =>This Inner Loop Header: Depth=1
 	ld %s4, -4096(%s2, %s9)
 	ld %s5, -2048(%s2, %s9)
 	fcmp.d %s4, %s4, %s5
@@ -108,6 +113,7 @@ _Z10_test_vm01v:
 	lea %s2, 8(, %s2)
 	and %s3, %s3, (32)0
 	brne.l %s2, %s0, .LBB1_3
+# %bb.4:
 	adds.w.sx %s0, %s3, (0)1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
@@ -117,7 +123,7 @@ _Z10_test_vm01v:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

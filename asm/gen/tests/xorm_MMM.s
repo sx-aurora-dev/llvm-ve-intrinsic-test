@@ -1,9 +1,10 @@
 	.text
 	.file	"xorm_MMM.c"
-	.globl	xorm_MMM
+	.globl	xorm_MMM                        # -- Begin function xorm_MMM
 	.p2align	4
 	.type	xorm_MMM,@function
-xorm_MMM:
+xorm_MMM:                               # @xorm_MMM
+# %bb.0:
 	ld %s3, (, %s1)
 	ld %s4, (, %s2)
 	ld %s5, 8(, %s1)
@@ -57,7 +58,7 @@ xorm_MMM:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	xorm_MMM, .Lfunc_end0-xorm_MMM
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

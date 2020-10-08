@@ -1,9 +1,10 @@
 	.text
 	.file	"vel_vsc.cc"
-	.globl	_Z10vel_vsc_vvPvS_Pm
+	.globl	_Z10vel_vsc_vvPvS_Pm            # -- Begin function _Z10vel_vsc_vvPvS_Pm
 	.p2align	4
 	.type	_Z10vel_vsc_vvPvS_Pm,@function
-_Z10vel_vsc_vvPvS_Pm:
+_Z10vel_vsc_vvPvS_Pm:                   # @_Z10vel_vsc_vvPvS_Pm
+# %bb.0:
 	lea %s3, 256
 	lvl %s3
 	vld %v0, 8, %s2
@@ -13,11 +14,12 @@ _Z10vel_vsc_vvPvS_Pm:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z10vel_vsc_vvPvS_Pm, .Lfunc_end0-_Z10vel_vsc_vvPvS_Pm
-
-	.globl	_Z11vel_vsc_vvmPvS_PmPj
+                                        # -- End function
+	.globl	_Z11vel_vsc_vvmPvS_PmPj         # -- Begin function _Z11vel_vsc_vvmPvS_PmPj
 	.p2align	4
 	.type	_Z11vel_vsc_vvmPvS_PmPj,@function
-_Z11vel_vsc_vvmPvS_PmPj:
+_Z11vel_vsc_vvmPvS_PmPj:                # @_Z11vel_vsc_vvmPvS_PmPj
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vld %v0, 8, %s2
@@ -29,11 +31,12 @@ _Z11vel_vsc_vvmPvS_PmPj:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z11vel_vsc_vvmPvS_PmPj, .Lfunc_end1-_Z11vel_vsc_vvmPvS_PmPj
-
-	.globl	_Z11vel_vscu_vvPvS_Pm
+                                        # -- End function
+	.globl	_Z11vel_vscu_vvPvS_Pm           # -- Begin function _Z11vel_vscu_vvPvS_Pm
 	.p2align	4
 	.type	_Z11vel_vscu_vvPvS_Pm,@function
-_Z11vel_vscu_vvPvS_Pm:
+_Z11vel_vscu_vvPvS_Pm:                  # @_Z11vel_vscu_vvPvS_Pm
+# %bb.0:
 	lea %s3, 256
 	lvl %s3
 	vld %v0, 8, %s2
@@ -43,11 +46,12 @@ _Z11vel_vscu_vvPvS_Pm:
 	b.l.t (, %s10)
 .Lfunc_end2:
 	.size	_Z11vel_vscu_vvPvS_Pm, .Lfunc_end2-_Z11vel_vscu_vvPvS_Pm
-
-	.globl	_Z12vel_vscu_vvmPvS_PmPj
+                                        # -- End function
+	.globl	_Z12vel_vscu_vvmPvS_PmPj        # -- Begin function _Z12vel_vscu_vvmPvS_PmPj
 	.p2align	4
 	.type	_Z12vel_vscu_vvmPvS_PmPj,@function
-_Z12vel_vscu_vvmPvS_PmPj:
+_Z12vel_vscu_vvmPvS_PmPj:               # @_Z12vel_vscu_vvmPvS_PmPj
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vld %v0, 8, %s2
@@ -59,11 +63,12 @@ _Z12vel_vscu_vvmPvS_PmPj:
 	b.l.t (, %s10)
 .Lfunc_end3:
 	.size	_Z12vel_vscu_vvmPvS_PmPj, .Lfunc_end3-_Z12vel_vscu_vvmPvS_PmPj
-
-	.globl	_Z11vel_vscl_vvPvS_Pm
+                                        # -- End function
+	.globl	_Z11vel_vscl_vvPvS_Pm           # -- Begin function _Z11vel_vscl_vvPvS_Pm
 	.p2align	4
 	.type	_Z11vel_vscl_vvPvS_Pm,@function
-_Z11vel_vscl_vvPvS_Pm:
+_Z11vel_vscl_vvPvS_Pm:                  # @_Z11vel_vscl_vvPvS_Pm
+# %bb.0:
 	lea %s3, 256
 	lvl %s3
 	vld %v0, 8, %s2
@@ -73,11 +78,12 @@ _Z11vel_vscl_vvPvS_Pm:
 	b.l.t (, %s10)
 .Lfunc_end4:
 	.size	_Z11vel_vscl_vvPvS_Pm, .Lfunc_end4-_Z11vel_vscl_vvPvS_Pm
-
-	.globl	_Z12vel_vscl_vvmPvS_PmPj
+                                        # -- End function
+	.globl	_Z12vel_vscl_vvmPvS_PmPj        # -- Begin function _Z12vel_vscl_vvmPvS_PmPj
 	.p2align	4
 	.type	_Z12vel_vscl_vvmPvS_PmPj,@function
-_Z12vel_vscl_vvmPvS_PmPj:
+_Z12vel_vscl_vvmPvS_PmPj:               # @_Z12vel_vscl_vvmPvS_PmPj
+# %bb.0:
 	lea %s4, 256
 	lvl %s4
 	vld %v0, 8, %s2
@@ -89,7 +95,7 @@ _Z12vel_vscl_vvmPvS_PmPj:
 	b.l.t (, %s10)
 .Lfunc_end5:
 	.size	_Z12vel_vscl_vvmPvS_PmPj, .Lfunc_end5-_Z12vel_vscl_vvmPvS_PmPj
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

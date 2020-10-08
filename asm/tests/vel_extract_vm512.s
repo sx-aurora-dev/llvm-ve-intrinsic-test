@@ -1,9 +1,10 @@
 	.text
 	.file	"vel_extract_vm512.cc"
-	.globl	_Z18vel_extract_vm512uPmPKj
+	.globl	_Z18vel_extract_vm512uPmPKj     # -- Begin function _Z18vel_extract_vm512uPmPKj
 	.p2align	4
 	.type	_Z18vel_extract_vm512uPmPKj,@function
-_Z18vel_extract_vm512uPmPKj:
+_Z18vel_extract_vm512uPmPKj:            # @_Z18vel_extract_vm512uPmPKj
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vld %v0, 8, %s1
@@ -20,11 +21,12 @@ _Z18vel_extract_vm512uPmPKj:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z18vel_extract_vm512uPmPKj, .Lfunc_end0-_Z18vel_extract_vm512uPmPKj
-
-	.globl	_Z18vel_extract_vm512lPmPKj
+                                        # -- End function
+	.globl	_Z18vel_extract_vm512lPmPKj     # -- Begin function _Z18vel_extract_vm512lPmPKj
 	.p2align	4
 	.type	_Z18vel_extract_vm512lPmPKj,@function
-_Z18vel_extract_vm512lPmPKj:
+_Z18vel_extract_vm512lPmPKj:            # @_Z18vel_extract_vm512lPmPKj
+# %bb.0:
 	lea %s2, 256
 	lvl %s2
 	vld %v0, 8, %s1
@@ -41,7 +43,7 @@ _Z18vel_extract_vm512lPmPKj:
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z18vel_extract_vm512lPmPKj, .Lfunc_end1-_Z18vel_extract_vm512lPmPKj
-
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 9c45d576945a4fddcd08d0c3956139ae53c477e8)"
+                                        # -- End function
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
