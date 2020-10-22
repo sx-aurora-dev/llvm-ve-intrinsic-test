@@ -54,6 +54,6 @@ _Z13vel_vsclot_vvPKiPiPKmS1_:           # @_Z13vel_vsclot_vvPKiPiPKmS1_
 .Lfunc_end2:
 	.size	_Z13vel_vsclot_vvPKiPiPKmS1_, .Lfunc_end2-_Z13vel_vsclot_vvPKiPiPKmS1_
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

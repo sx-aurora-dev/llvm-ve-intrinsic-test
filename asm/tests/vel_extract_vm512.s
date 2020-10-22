@@ -44,6 +44,6 @@ _Z18vel_extract_vm512lPmPKj:            # @_Z18vel_extract_vm512lPmPKj
 .Lfunc_end1:
 	.size	_Z18vel_extract_vm512lPmPKj, .Lfunc_end1-_Z18vel_extract_vm512lPmPKj
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

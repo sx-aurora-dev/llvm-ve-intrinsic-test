@@ -7,6 +7,7 @@ vsrawzx_vvsl:                           # @vsrawzx_vvsl
 # %bb.0:
 	brgt.w 1, %s3, .LBB0_3
 # %bb.1:
+	and %s2, %s2, (32)0
 	or %s4, 0, (0)1
 	lea %s5, 256
 	or %s6, 0, %s3
@@ -26,6 +27,6 @@ vsrawzx_vvsl:                           # @vsrawzx_vvsl
 .Lfunc_end0:
 	.size	vsrawzx_vvsl, .Lfunc_end0-vsrawzx_vvsl
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

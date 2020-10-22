@@ -29,6 +29,6 @@ vfsumd_vvml:                            # @vfsumd_vvml
 .Lfunc_end0:
 	.size	vfsumd_vvml, .Lfunc_end0-vfsumd_vvml
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bf7303a9872881ebd21fb1958340e7d774f9887b)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
