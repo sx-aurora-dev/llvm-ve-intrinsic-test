@@ -78,14 +78,12 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 	st %s18, 48(, %s9)                      # 8-byte Folded Spill
 	st %s19, 56(, %s9)                      # 8-byte Folded Spill
 	st %s20, 64(, %s9)                      # 8-byte Folded Spill
-	st %s21, 72(, %s9)                      # 8-byte Folded Spill
 	or %s0, 0, (0)1
 	lea %s1, -9216(, %s9)
 	lea.sl %s2, 1072693248
 	lea.sl %s3, 1073741824
-	lea.sl %s4, 1074266112
-	lea %s19, 2048
-	or %s5, 0, %s0
+	lea %s4, 2048
+	or %s5, 0, (0)1
 .LBB1_1:                                # =>This Inner Loop Header: Depth=1
 	cvt.d.w %s6, %s0
 	st %s6, -2048(%s5, %s9)
@@ -93,18 +91,18 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 	st %s3, -8192(%s5, %s9)
 	and %s7, 1, %s0
 	stl %s7, (, %s1)
-	or %s34, 0, %s4
+	lea.sl %s34, 1074266112
 	cmov.w.eq %s34, %s6, %s7
 	st %s34, -4096(%s5, %s9)
 	lea %s5, 8(, %s5)
 	adds.w.sx %s0, 1, %s0
 	lea %s1, 4(, %s1)
-	brne.l %s5, %s19, .LBB1_1
+	brne.l %s5, %s4, .LBB1_1
 # %bb.2:
-	lea %s20, 256
-	lea %s21, -2048(, %s9)
-	lvl %s20
-	vld %v0, 8, %s21
+	lea %s18, 256
+	lea %s19, -2048(, %s9)
+	lvl %s18
+	vld %v0, 8, %s19
 	lea %s0, -6144(, %s9)
 	vld %v1, 8, %s0
 	lea %s0, -8192(, %s9)
@@ -125,31 +123,30 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 	svm %s0, %vm1, 1
 	st %s0, 6392(, %s11)
 	svm %s0, %vm1, 0
-	lea %s1, _Z4funcDv256_dS_S_Dv256_b@lo
-	and %s1, %s1, (32)0
-	lea.sl %s12, _Z4funcDv256_dS_S_Dv256_b@hi(, %s1)
-	lea %s18, -11264(, %s9)
 	st %s0, 6384(, %s11)
-	or %s0, 0, %s18
+	lea %s0, _Z4funcDv256_dS_S_Dv256_b@lo
+	and %s0, %s0, (32)0
+	lea.sl %s12, _Z4funcDv256_dS_S_Dv256_b@hi(, %s0)
+	lea %s0, -11264(, %s9)
+	lea %s20, -11264(, %s9)
 	bsic %s10, (, %s12)
-	vld %v0, 8, %s18
-	vst %v0, 8, %s21
+	vld %v0, 8, %s20
+	vst %v0, 8, %s19
 	or %s0, 0, (0)1
 	or %s2, 1, (0)1
-	or %s1, 0, %s0
+	lea %s1, 2048
 .LBB1_3:                                # =>This Inner Loop Header: Depth=1
-	ld %s3, -2048(%s1, %s9)
-	ld %s4, -4096(%s1, %s9)
+	ld %s3, -2048(%s0, %s9)
+	ld %s4, -4096(%s0, %s9)
 	fcmp.d %s3, %s3, %s4
-	or %s4, 0, %s0
+	or %s4, 0, (0)1
 	cmov.d.eq %s4, (63)0, %s3
 	and %s2, %s2, %s4
-	lea %s1, 8(, %s1)
+	lea %s0, 8(, %s0)
 	and %s2, %s2, (32)0
-	brne.l %s1, %s19, .LBB1_3
+	brne.l %s0, %s1, .LBB1_3
 # %bb.4:
 	adds.w.sx %s0, %s2, (0)1
-	ld %s21, 72(, %s9)                      # 8-byte Folded Reload
 	ld %s20, 64(, %s9)                      # 8-byte Folded Reload
 	ld %s19, 56(, %s9)                      # 8-byte Folded Reload
 	ld %s18, 48(, %s9)                      # 8-byte Folded Reload
@@ -162,6 +159,6 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git abc0611048916f1be3a5a11282325b09a6c4d450)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

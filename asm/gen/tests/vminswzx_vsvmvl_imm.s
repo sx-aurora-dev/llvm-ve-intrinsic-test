@@ -31,6 +31,6 @@ vminswzx_vsvmvl_imm:                    # @vminswzx_vsvmvl_imm
 .Lfunc_end0:
 	.size	vminswzx_vsvmvl_imm, .Lfunc_end0-vminswzx_vsvmvl_imm
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git abc0611048916f1be3a5a11282325b09a6c4d450)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

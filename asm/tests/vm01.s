@@ -71,50 +71,50 @@ _Z10_test_vm01v:                        # @_Z10_test_vm01v
 	monc
 	or %s0, 0, %s62
 .LBB1_6:
-	or %s1, 0, (0)1
-	lea.sl %s2, 1072693248
-	lea.sl %s3, 1073741824
-	lea %s0, 2048
-	or %s4, 0, %s1
+	or %s0, 0, (0)1
+	lea.sl %s1, 1072693248
+	lea.sl %s2, 1073741824
+	lea %s3, 2048
+	or %s4, 0, (0)1
 .LBB1_1:                                # =>This Inner Loop Header: Depth=1
 	cvt.d.w %s5, %s4
-	st %s5, -4096(%s1, %s9)
-	st %s2, -6144(%s1, %s9)
-	st %s3, -8192(%s1, %s9)
-	st %s5, -2048(%s1, %s9)
-	lea %s1, 8(, %s1)
+	st %s5, -4096(%s0, %s9)
+	st %s1, -6144(%s0, %s9)
+	st %s2, -8192(%s0, %s9)
+	st %s5, -2048(%s0, %s9)
+	lea %s0, 8(, %s0)
 	adds.w.sx %s4, 1, %s4
-	brne.l %s1, %s0, .LBB1_1
+	brne.l %s0, %s3, .LBB1_1
 # %bb.2:
-	lea %s1, 256
-	lea %s2, -4096(, %s9)
-	lvl %s1
-	vld %v0, 8, %s2
-	lea %s3, -6144(, %s9)
-	vld %v1, 8, %s3
-	lea %s3, -8192(, %s9)
-	vld %v2, 8, %s3
+	lea %s0, 256
+	lea %s1, -4096(, %s9)
+	lvl %s0
+	vld %v0, 8, %s1
+	lea %s2, -6144(, %s9)
+	vld %v1, 8, %s2
+	lea %s2, -8192(, %s9)
+	vld %v2, 8, %s2
 	lvm %vm1, 0, (0)1
 	lvm %vm1, 1, (0)1
 	lvm %vm1, 2, (0)1
 	lvm %vm1, 3, (0)1
 	vfadd.d %v0, %v1, %v2, %vm1
-	vst %v0, 8, %s2
-	or %s1, 0, (0)1
-	or %s3, 1, (0)1
-	or %s2, 0, %s1
+	vst %v0, 8, %s1
+	or %s0, 0, (0)1
+	or %s2, 1, (0)1
+	lea %s1, 2048
 .LBB1_3:                                # =>This Inner Loop Header: Depth=1
-	ld %s4, -4096(%s2, %s9)
-	ld %s5, -2048(%s2, %s9)
-	fcmp.d %s4, %s4, %s5
-	or %s5, 0, %s1
-	cmov.d.eq %s5, (63)0, %s4
-	and %s3, %s3, %s5
-	lea %s2, 8(, %s2)
-	and %s3, %s3, (32)0
-	brne.l %s2, %s0, .LBB1_3
+	ld %s3, -4096(%s0, %s9)
+	ld %s4, -2048(%s0, %s9)
+	fcmp.d %s3, %s3, %s4
+	or %s4, 0, (0)1
+	cmov.d.eq %s4, (63)0, %s3
+	and %s2, %s2, %s4
+	lea %s0, 8(, %s0)
+	and %s2, %s2, (32)0
+	brne.l %s0, %s1, .LBB1_3
 # %bb.4:
-	adds.w.sx %s0, %s3, (0)1
+	adds.w.sx %s0, %s2, (0)1
 	or %s11, 0, %s9
 	ld %s16, 32(, %s11)
 	ld %s15, 24(, %s11)
@@ -124,6 +124,6 @@ _Z10_test_vm01v:                        # @_Z10_test_vm01v
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 3651dc02e3c098e79d4b32ab302d3e91d79ecd17)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git abc0611048916f1be3a5a11282325b09a6c4d450)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
