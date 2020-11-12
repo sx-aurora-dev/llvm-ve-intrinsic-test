@@ -42,6 +42,5 @@ lvss_svs:                               # @lvss_svs
 .Lfunc_end2:
 	.size	lvss_svs, .Lfunc_end2-lvss_svs
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git abc0611048916f1be3a5a11282325b09a6c4d450)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git e570410190bb70408e4f61459b2f988e92caea54)"
 	.section	".note.GNU-stack","",@progbits
-	.addrsig
