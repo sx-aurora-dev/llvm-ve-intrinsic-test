@@ -25,20 +25,20 @@ _Z4funcDv256_dS_S_Dv256_b:              # @_Z4funcDv256_dS_S_Dv256_b
 	or %s0, 0, %s62
 .LBB0_2:
 	lea %s1, 256
-	lea %s2, 240(, %s9)
+	lea %s2, 416(, %s11)
 	lvl %s1
 	vld %v0, 8, %s2
-	lea %s2, 4336(, %s9)
+	lea %s2, 4512(, %s11)
 	vld %v1, 8, %s2
-	lea %s2, 2288(, %s9)
+	lea %s2, 2464(, %s11)
 	vld %v2, 8, %s2
-	ld %s16, 6384(, %s9)
+	ld %s16, 6560(, %s11)
 	lvm %vm1, 0, %s16
-	ld %s16, 6392(, %s9)
+	ld %s16, 6568(, %s11)
 	lvm %vm1, 1, %s16
-	ld %s16, 6400(, %s9)
+	ld %s16, 6576(, %s11)
 	lvm %vm1, 2, %s16
-	ld %s16, 6408(, %s9)
+	ld %s16, 6584(, %s11)
 	lvm %vm1, 3, %s16
 	vfadd.d %v0, %v2, %v1, %vm1
 	vst %v0, 8, %s0
@@ -159,5 +159,5 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git e570410190bb70408e4f61459b2f988e92caea54)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 140246b32bf1e904594de0d2b662880f6a40f9cb)"
 	.section	".note.GNU-stack","",@progbits

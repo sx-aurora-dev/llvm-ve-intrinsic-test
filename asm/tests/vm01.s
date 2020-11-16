@@ -25,12 +25,12 @@ _Z4funcDv256_dS_S_:                     # @_Z4funcDv256_dS_S_
 	or %s0, 0, %s62
 .LBB0_2:
 	lea %s1, 256
-	lea %s2, 240(, %s9)
+	lea %s2, 416(, %s11)
 	lvl %s1
 	vld %v0, 8, %s2
-	lea %s2, 4336(, %s9)
+	lea %s2, 4512(, %s11)
 	vld %v1, 8, %s2
-	lea %s2, 2288(, %s9)
+	lea %s2, 2464(, %s11)
 	vld %v2, 8, %s2
 	lvm %vm1, 0, (0)1
 	lvm %vm1, 1, (0)1
@@ -78,21 +78,21 @@ _Z10_test_vm01v:                        # @_Z10_test_vm01v
 	or %s4, 0, (0)1
 .LBB1_1:                                # =>This Inner Loop Header: Depth=1
 	cvt.d.w %s5, %s4
-	st %s5, -4096(%s0, %s9)
-	st %s1, -6144(%s0, %s9)
-	st %s2, -8192(%s0, %s9)
-	st %s5, -2048(%s0, %s9)
+	st %s5, 4272(%s0, %s11)
+	st %s1, 2224(%s0, %s11)
+	st %s2, 176(%s0, %s11)
+	st %s5, 6320(%s0, %s11)
 	lea %s0, 8(, %s0)
 	adds.w.sx %s4, 1, %s4
 	brne.l %s0, %s3, .LBB1_1
 # %bb.2:
 	lea %s0, 256
-	lea %s1, -4096(, %s9)
+	lea %s1, 4272(, %s11)
 	lvl %s0
 	vld %v0, 8, %s1
-	lea %s2, -6144(, %s9)
+	lea %s2, 2224(, %s11)
 	vld %v1, 8, %s2
-	lea %s2, -8192(, %s9)
+	lea %s2, 176(, %s11)
 	vld %v2, 8, %s2
 	lvm %vm1, 0, (0)1
 	lvm %vm1, 1, (0)1
@@ -104,8 +104,8 @@ _Z10_test_vm01v:                        # @_Z10_test_vm01v
 	or %s2, 1, (0)1
 	lea %s1, 2048
 .LBB1_3:                                # =>This Inner Loop Header: Depth=1
-	ld %s3, -4096(%s0, %s9)
-	ld %s4, -2048(%s0, %s9)
+	ld %s3, 4272(%s0, %s11)
+	ld %s4, 6320(%s0, %s11)
 	fcmp.d %s3, %s3, %s4
 	or %s4, 0, (0)1
 	cmov.d.eq %s4, (63)0, %s3
@@ -124,5 +124,5 @@ _Z10_test_vm01v:                        # @_Z10_test_vm01v
 .Lfunc_end1:
 	.size	_Z10_test_vm01v, .Lfunc_end1-_Z10_test_vm01v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git e570410190bb70408e4f61459b2f988e92caea54)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 140246b32bf1e904594de0d2b662880f6a40f9cb)"
 	.section	".note.GNU-stack","",@progbits

@@ -33,5 +33,5 @@ vand_vvvmvl:                            # @vand_vvvmvl
 .Lfunc_end0:
 	.size	vand_vvvmvl, .Lfunc_end0-vand_vvvmvl
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git e570410190bb70408e4f61459b2f988e92caea54)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 140246b32bf1e904594de0d2b662880f6a40f9cb)"
 	.section	".note.GNU-stack","",@progbits
