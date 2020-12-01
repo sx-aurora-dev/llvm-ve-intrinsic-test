@@ -31,5 +31,5 @@ vfcmpd_vsvmvl:                          # @vfcmpd_vsvmvl
 .Lfunc_end0:
 	.size	vfcmpd_vsvmvl, .Lfunc_end0-vfcmpd_vsvmvl
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 140246b32bf1e904594de0d2b662880f6a40f9cb)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bfa3af73d87fd3c1511a0e3f6781abefc7af02a7)"
 	.section	".note.GNU-stack","",@progbits

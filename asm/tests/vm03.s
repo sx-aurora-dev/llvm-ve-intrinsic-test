@@ -28,12 +28,8 @@ _Z10_test_vm03v:                        # @_Z10_test_vm03v
 # %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
-	st %s15, 24(, %s11)
-	st %s16, 32(, %s11)
 	or %s9, 0, %s11
-	lea %s13, -272
-	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s13, %s11)
+	lea %s11, -272(, %s11)
 	brge.l.t %s11, %s8, .LBB1_2
 # %bb.1:
 	ld %s61, 24(, %s14)
@@ -64,13 +60,11 @@ _Z10_test_vm03v:                        # @_Z10_test_vm03v
 	ldz %s0, %s0
 	srl %s0, %s0, 6
 	or %s11, 0, %s9
-	ld %s16, 32(, %s11)
-	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 140246b32bf1e904594de0d2b662880f6a40f9cb)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bfa3af73d87fd3c1511a0e3f6781abefc7af02a7)"
 	.section	".note.GNU-stack","",@progbits

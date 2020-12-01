@@ -5,48 +5,24 @@
 	.type	_Z4funcDv256_dS_S_Dv256_b,@function
 _Z4funcDv256_dS_S_Dv256_b:              # @_Z4funcDv256_dS_S_Dv256_b
 # %bb.0:
-	st %s9, (, %s11)
-	st %s10, 8(, %s11)
-	st %s15, 24(, %s11)
-	st %s16, 32(, %s11)
-	or %s9, 0, %s11
-	lea %s13, -176
-	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s13, %s11)
-	brge.l.t %s11, %s8, .LBB0_2
-# %bb.1:
-	ld %s61, 24(, %s14)
-	or %s62, 0, %s0
-	lea %s63, 315
-	shm.l %s63, (%s61)
-	shm.l %s8, 8(%s61)
-	shm.l %s11, 16(%s61)
-	monc
-	or %s0, 0, %s62
-.LBB0_2:
 	lea %s1, 256
-	lea %s2, 416(, %s11)
+	lea %s2, 240(, %s11)
 	lvl %s1
 	vld %v0, 8, %s2
-	lea %s2, 4512(, %s11)
+	lea %s2, 4336(, %s11)
 	vld %v1, 8, %s2
-	lea %s2, 2464(, %s11)
+	lea %s2, 2288(, %s11)
 	vld %v2, 8, %s2
-	ld %s16, 6560(, %s11)
+	ld %s16, 6384(, %s11)
 	lvm %vm1, 0, %s16
-	ld %s16, 6568(, %s11)
+	ld %s16, 6392(, %s11)
 	lvm %vm1, 1, %s16
-	ld %s16, 6576(, %s11)
+	ld %s16, 6400(, %s11)
 	lvm %vm1, 2, %s16
-	ld %s16, 6584(, %s11)
+	ld %s16, 6408(, %s11)
 	lvm %vm1, 3, %s16
 	vfadd.d %v0, %v2, %v1, %vm1
 	vst %v0, 8, %s0
-	or %s11, 0, %s9
-	ld %s16, 32(, %s11)
-	ld %s15, 24(, %s11)
-	ld %s10, 8(, %s11)
-	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	_Z4funcDv256_dS_S_Dv256_b, .Lfunc_end0-_Z4funcDv256_dS_S_Dv256_b
@@ -58,12 +34,8 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 # %bb.0:
 	st %s9, (, %s11)
 	st %s10, 8(, %s11)
-	st %s15, 24(, %s11)
-	st %s16, 32(, %s11)
 	or %s9, 0, %s11
-	lea %s13, -17680
-	and %s13, %s13, (32)0
-	lea.sl %s11, -1(%s13, %s11)
+	lea %s11, -17680(, %s11)
 	brge.l %s11, %s8, .LBB1_6
 # %bb.5:
 	ld %s61, 24(, %s14)
@@ -151,13 +123,11 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 	ld %s19, 56(, %s9)                      # 8-byte Folded Reload
 	ld %s18, 48(, %s9)                      # 8-byte Folded Reload
 	or %s11, 0, %s9
-	ld %s16, 32(, %s11)
-	ld %s15, 24(, %s11)
 	ld %s10, 8(, %s11)
 	ld %s9, (, %s11)
 	b.l.t (, %s10)
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 140246b32bf1e904594de0d2b662880f6a40f9cb)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bfa3af73d87fd3c1511a0e3f6781abefc7af02a7)"
 	.section	".note.GNU-stack","",@progbits
