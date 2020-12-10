@@ -102,6 +102,7 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 	lea %s0, -11264(, %s9)
 	lea %s20, -11264(, %s9)
 	bsic %s10, (, %s12)
+	lvl %s18
 	vld %v0, 8, %s20
 	vst %v0, 8, %s19
 	or %s0, 0, (0)1
@@ -129,5 +130,5 @@ _Z10_test_vm02v:                        # @_Z10_test_vm02v
 .Lfunc_end1:
 	.size	_Z10_test_vm02v, .Lfunc_end1-_Z10_test_vm02v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git bfa3af73d87fd3c1511a0e3f6781abefc7af02a7)"
+	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 99c58077b7589ed94981de5c768941146d2435b2)"
 	.section	".note.GNU-stack","",@progbits
