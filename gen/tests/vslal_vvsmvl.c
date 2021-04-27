@@ -1,5 +1,5 @@
 #include "velintrin.h"
-void vslal_vvsmvl(long int* pvx, long int* pvz, unsigned long int sy, unsigned int* pvm, long int* ppt, int n) {
+void vslal_vvsmvl(long int* pvx, long int* pvz, long int sy, unsigned int* pvm, long int* ppt, int n) {
     for (int i = 0; i < n; i += 256) {
         int l = n - i < 256 ? n - i : 256;
         __vr vz = _vel_vld_vssl(8, pvz, l);

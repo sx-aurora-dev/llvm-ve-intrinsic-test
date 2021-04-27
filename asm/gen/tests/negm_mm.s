@@ -26,5 +26,5 @@ negm_mm:                                # @negm_mm
 .Lfunc_end0:
 	.size	negm_mm, .Lfunc_end0-negm_mm
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 99c58077b7589ed94981de5c768941146d2435b2)"
+	.ident	"clang version 12.0.0 (git@github.com:sx-aurora-dev/llvm-project.git 93757b8d0fb62b570c17ae51ba4460552664f85c)"
 	.section	".note.GNU-stack","",@progbits
