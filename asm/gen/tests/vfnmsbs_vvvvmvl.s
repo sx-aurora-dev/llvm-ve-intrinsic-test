@@ -19,100 +19,100 @@ vfnmsbs_vvvvmvl:                        # @vfnmsbs_vvvvmvl
 	or %s42, 0, (0)1
 .LBB0_2:                                # =>This Inner Loop Header: Depth=1
 	mins.w.sx %s49, %s41, %s34
-	adds.l %s44, %s1, %s7
+	adds.l %s43, %s1, %s7
 	lvl %s49
-	vldu %v0, 4, %s44
-	adds.l %s45, %s2, %s7
-	vldu %v1, 4, %s45
-	adds.l %s46, %s3, %s7
-	vldu %v2, 4, %s46
-	adds.l %s47, %s4, %s7
-	vldl.zx %v3, 4, %s47
-	adds.l %s48, %s5, %s7
-	vldu %v4, 4, %s48
+	vldu %v0, 4, %s43
+	adds.l %s44, %s2, %s7
+	vldu %v1, 4, %s44
+	adds.l %s45, %s3, %s7
+	vldu %v2, 4, %s45
+	adds.l %s46, %s4, %s7
+	vldl.zx %v3, 4, %s46
+	adds.l %s47, %s5, %s7
+	vldu %v4, 4, %s47
 	vfmk.w.gt %vm1, %v3
-	adds.l %s43, %s0, %s7
 	vfnmsb.s %v4, %v0, %v1, %v2, %vm1
+	adds.l %s48, %s0, %s7
 	adds.w.sx %s50, %s42, %s34
-	vstu %v4, 4, %s43
+	vstu %v4, 4, %s48
 	brge.w %s50, %s6, .LBB0_7
 # %bb.3:                                #   in Loop: Header=BB0_2 Depth=1
 	adds.w.sx %s49, %s41, (56)1
 	mins.w.sx %s49, %s49, %s34
-	lea %s44, 1024(, %s44)
+	lea %s43, 1024(, %s43)
 	lvl %s49
-	vldu %v0, 4, %s44
+	vldu %v0, 4, %s43
+	lea %s44, 1024(, %s44)
+	vldu %v1, 4, %s44
 	lea %s45, 1024(, %s45)
-	vldu %v1, 4, %s45
+	vldu %v2, 4, %s45
 	lea %s46, 1024(, %s46)
-	vldu %v2, 4, %s46
+	vldl.zx %v3, 4, %s46
 	lea %s47, 1024(, %s47)
-	vldl.zx %v3, 4, %s47
-	lea %s48, 1024(, %s48)
-	vldu %v4, 4, %s48
+	vldu %v4, 4, %s47
 	vfmk.w.gt %vm1, %v3
 	vfnmsb.s %v4, %v0, %v1, %v2, %vm1
-	lea %s43, 1024(, %s43)
+	lea %s48, 1024(, %s48)
 	adds.w.sx %s50, %s42, %s35
-	vstu %v4, 4, %s43
+	vstu %v4, 4, %s48
 	brge.w %s50, %s6, .LBB0_7
 # %bb.4:                                #   in Loop: Header=BB0_2 Depth=1
 	adds.w.sx %s49, %s41, (55)1
 	mins.w.sx %s49, %s49, %s34
-	lea %s44, 1024(, %s44)
+	lea %s43, 1024(, %s43)
 	lvl %s49
-	vldu %v0, 4, %s44
+	vldu %v0, 4, %s43
+	lea %s44, 1024(, %s44)
+	vldu %v1, 4, %s44
 	lea %s45, 1024(, %s45)
-	vldu %v1, 4, %s45
+	vldu %v2, 4, %s45
 	lea %s46, 1024(, %s46)
-	vldu %v2, 4, %s46
+	vldl.zx %v3, 4, %s46
 	lea %s47, 1024(, %s47)
-	vldl.zx %v3, 4, %s47
-	lea %s48, 1024(, %s48)
-	vldu %v4, 4, %s48
+	vldu %v4, 4, %s47
 	vfmk.w.gt %vm1, %v3
 	vfnmsb.s %v4, %v0, %v1, %v2, %vm1
-	lea %s43, 1024(, %s43)
+	lea %s48, 1024(, %s48)
 	adds.w.sx %s50, %s42, %s36
-	vstu %v4, 4, %s43
+	vstu %v4, 4, %s48
 	brge.w %s50, %s6, .LBB0_7
 # %bb.5:                                #   in Loop: Header=BB0_2 Depth=1
 	adds.w.sx %s49, %s41, %s37
 	mins.w.sx %s49, %s49, %s34
-	lea %s44, 1024(, %s44)
+	lea %s43, 1024(, %s43)
 	lvl %s49
-	vldu %v0, 4, %s44
+	vldu %v0, 4, %s43
+	lea %s44, 1024(, %s44)
+	vldu %v1, 4, %s44
 	lea %s45, 1024(, %s45)
-	vldu %v1, 4, %s45
+	vldu %v2, 4, %s45
 	lea %s46, 1024(, %s46)
-	vldu %v2, 4, %s46
+	vldl.zx %v3, 4, %s46
 	lea %s47, 1024(, %s47)
-	vldl.zx %v3, 4, %s47
-	lea %s48, 1024(, %s48)
-	vldu %v4, 4, %s48
+	vldu %v4, 4, %s47
 	vfmk.w.gt %vm1, %v3
 	vfnmsb.s %v4, %v0, %v1, %v2, %vm1
-	lea %s43, 1024(, %s43)
+	lea %s48, 1024(, %s48)
 	adds.w.sx %s50, %s42, %s38
-	vstu %v4, 4, %s43
+	vstu %v4, 4, %s48
 	brge.w %s50, %s6, .LBB0_7
 # %bb.6:                                #   in Loop: Header=BB0_2 Depth=1
 	adds.w.sx %s49, %s41, (54)1
 	mins.w.sx %s49, %s49, %s34
-	lea %s44, 1024(, %s44)
+	lea %s43, 1024(, %s43)
 	lvl %s49
-	vldu %v0, 4, %s44
-	lea %s44, 1024(, %s45)
-	vldu %v1, 4, %s44
-	lea %s44, 1024(, %s46)
-	vldu %v2, 4, %s44
-	lea %s44, 1024(, %s47)
-	vldl.zx %v3, 4, %s44
-	lea %s44, 1024(, %s48)
-	vldu %v4, 4, %s44
+	vldu %v0, 4, %s43
+	lea %s43, 1024(, %s44)
+	vldu %v1, 4, %s43
+	lea %s43, 1024(, %s45)
+	vldu %v2, 4, %s43
+	lea %s43, 1024(, %s46)
+	vldl.zx %v3, 4, %s43
+	lea %s43, 1024(, %s47)
+	vldu %v4, 4, %s43
 	vfmk.w.gt %vm1, %v3
 	vfnmsb.s %v4, %v0, %v1, %v2, %vm1
-	lea %s43, 1024(, %s43)
+	lea %s43, 1024(, %s48)
 	vstu %v4, 4, %s43
 	adds.w.sx %s42, %s42, %s39
 	lea %s7, 5120(, %s7)

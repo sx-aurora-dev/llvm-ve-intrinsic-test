@@ -6,8 +6,7 @@ void vmulul_vsvmvl_imm(unsigned long int* pvx, unsigned long int* pvz, unsigned 
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
         __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr pt = _vel_vld_vssl(8, ppt, l);
-        __vr vx = _vel_vld_vssl(8, pvx, l);
-        vx = _vel_vmulul_vsvmvl(3, vz, vm, pt, l);
+        __vr vx = _vel_vmulul_vsvmvl(3, vz, vm, pt, l);
         _vel_vst_vssl(vx, 8, pvx, l);
         pvx += 256;
         pvz += 256;

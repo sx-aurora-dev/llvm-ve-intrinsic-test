@@ -6,8 +6,7 @@ void vfdivs_vsvmvl(float* pvx, float sy, float* pvz, unsigned int* pvm, float* p
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
         __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr pt = _vel_vldu_vssl(4, ppt, l);
-        __vr vx = _vel_vldu_vssl(4, pvx, l);
-        vx = _vel_vfdivs_vsvmvl(sy, vz, vm, pt, l);
+        __vr vx = _vel_vfdivs_vsvmvl(sy, vz, vm, pt, l);
         _vel_vstu_vssl(vx, 4, pvx, l);
         pvx += 256;
         pvz += 256;
