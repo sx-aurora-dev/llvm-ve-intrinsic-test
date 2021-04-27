@@ -10,13 +10,10 @@ void xorm_mmm(unsigned long int* px, unsigned long int const* py, unsigned long 
     vmz = _vel_lvm_mmss(vmz, 2, pz[2]);
     vmy = _vel_lvm_mmss(vmy, 3, py[3]);
     vmz = _vel_lvm_mmss(vmz, 3, pz[3]);
-
     int vl = 256;
     vmx = _vel_xorm_mmm(vmy, vmz);
-
     px[0] = _vel_svm_sms(vmx, 0);
     px[1] = _vel_svm_sms(vmx, 1);
     px[2] = _vel_svm_sms(vmx, 2);
     px[3] = _vel_svm_sms(vmx, 3);
-
 }

@@ -18,10 +18,8 @@ void negm_MM(unsigned long int* px, unsigned long int const* py, unsigned long i
     vmz = _vel_lvm_MMss(vmz, 6, pz[6]);
     vmy = _vel_lvm_MMss(vmy, 7, py[7]);
     vmz = _vel_lvm_MMss(vmz, 7, pz[7]);
-
     int vl = 256;
     vmx = _vel_negm_MM(vmy);
-
     px[0] = _vel_svm_sMs(vmx, 0);
     px[1] = _vel_svm_sMs(vmx, 1);
     px[2] = _vel_svm_sMs(vmx, 2);
@@ -30,5 +28,4 @@ void negm_MM(unsigned long int* px, unsigned long int const* py, unsigned long i
     px[5] = _vel_svm_sMs(vmx, 5);
     px[6] = _vel_svm_sMs(vmx, 6);
     px[7] = _vel_svm_sMs(vmx, 7);
-
 }
