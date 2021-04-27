@@ -5,35 +5,123 @@
 	.type	vfmsbs_vvvvmvl,@function
 vfmsbs_vvvvmvl:                         # @vfmsbs_vvvvmvl
 # %bb.0:
-	brgt.w 1, %s6, .LBB0_3
+	brgt.w 1, %s6, .LBB0_7
 # %bb.1:
 	or %s7, 0, (0)1
 	lea %s34, 256
-	or %s35, 0, %s6
+	lea %s35, 512
+	lea %s36, 768
+	lea %s37, -768
+	lea %s38, 1024
+	lea %s39, 1280
+	lea %s40, -1280
+	or %s41, 0, %s6
+	or %s42, 0, (0)1
 .LBB0_2:                                # =>This Inner Loop Header: Depth=1
-	mins.w.sx %s36, %s35, %s34
-	lvl %s36
-	vldu %v0, 4, %s1
-	vldu %v1, 4, %s2
-	vldu %v2, 4, %s3
-	vldl.zx %v3, 4, %s4
-	vldu %v4, 4, %s5
+	mins.w.sx %s49, %s41, %s34
+	adds.l %s43, %s1, %s7
+	lvl %s49
+	vldu %v0, 4, %s43
+	adds.l %s44, %s2, %s7
+	vldu %v1, 4, %s44
+	adds.l %s45, %s3, %s7
+	vldu %v2, 4, %s45
+	adds.l %s46, %s4, %s7
+	vldl.zx %v3, 4, %s46
+	adds.l %s47, %s5, %s7
+	vldu %v4, 4, %s47
 	vfmk.w.gt %vm1, %v3
 	vfmsb.s %v4, %v0, %v1, %v2, %vm1
-	vstu %v4, 4, %s0
-	lea %s0, 1024(, %s0)
-	lea %s1, 1024(, %s1)
-	lea %s2, 1024(, %s2)
-	lea %s3, 1024(, %s3)
-	lea %s4, 1024(, %s4)
-	lea %s5, 1024(, %s5)
-	adds.w.sx %s7, %s7, %s34
-	adds.w.sx %s35, %s35, (56)1
-	brlt.w %s7, %s6, .LBB0_2
-.LBB0_3:
+	adds.l %s48, %s0, %s7
+	adds.w.sx %s50, %s42, %s34
+	vstu %v4, 4, %s48
+	brge.w %s50, %s6, .LBB0_7
+# %bb.3:                                #   in Loop: Header=BB0_2 Depth=1
+	adds.w.sx %s49, %s41, (56)1
+	mins.w.sx %s49, %s49, %s34
+	lea %s43, 1024(, %s43)
+	lvl %s49
+	vldu %v0, 4, %s43
+	lea %s44, 1024(, %s44)
+	vldu %v1, 4, %s44
+	lea %s45, 1024(, %s45)
+	vldu %v2, 4, %s45
+	lea %s46, 1024(, %s46)
+	vldl.zx %v3, 4, %s46
+	lea %s47, 1024(, %s47)
+	vldu %v4, 4, %s47
+	vfmk.w.gt %vm1, %v3
+	vfmsb.s %v4, %v0, %v1, %v2, %vm1
+	lea %s48, 1024(, %s48)
+	adds.w.sx %s50, %s42, %s35
+	vstu %v4, 4, %s48
+	brge.w %s50, %s6, .LBB0_7
+# %bb.4:                                #   in Loop: Header=BB0_2 Depth=1
+	adds.w.sx %s49, %s41, (55)1
+	mins.w.sx %s49, %s49, %s34
+	lea %s43, 1024(, %s43)
+	lvl %s49
+	vldu %v0, 4, %s43
+	lea %s44, 1024(, %s44)
+	vldu %v1, 4, %s44
+	lea %s45, 1024(, %s45)
+	vldu %v2, 4, %s45
+	lea %s46, 1024(, %s46)
+	vldl.zx %v3, 4, %s46
+	lea %s47, 1024(, %s47)
+	vldu %v4, 4, %s47
+	vfmk.w.gt %vm1, %v3
+	vfmsb.s %v4, %v0, %v1, %v2, %vm1
+	lea %s48, 1024(, %s48)
+	adds.w.sx %s50, %s42, %s36
+	vstu %v4, 4, %s48
+	brge.w %s50, %s6, .LBB0_7
+# %bb.5:                                #   in Loop: Header=BB0_2 Depth=1
+	adds.w.sx %s49, %s41, %s37
+	mins.w.sx %s49, %s49, %s34
+	lea %s43, 1024(, %s43)
+	lvl %s49
+	vldu %v0, 4, %s43
+	lea %s44, 1024(, %s44)
+	vldu %v1, 4, %s44
+	lea %s45, 1024(, %s45)
+	vldu %v2, 4, %s45
+	lea %s46, 1024(, %s46)
+	vldl.zx %v3, 4, %s46
+	lea %s47, 1024(, %s47)
+	vldu %v4, 4, %s47
+	vfmk.w.gt %vm1, %v3
+	vfmsb.s %v4, %v0, %v1, %v2, %vm1
+	lea %s48, 1024(, %s48)
+	adds.w.sx %s50, %s42, %s38
+	vstu %v4, 4, %s48
+	brge.w %s50, %s6, .LBB0_7
+# %bb.6:                                #   in Loop: Header=BB0_2 Depth=1
+	adds.w.sx %s49, %s41, (54)1
+	mins.w.sx %s49, %s49, %s34
+	lea %s43, 1024(, %s43)
+	lvl %s49
+	vldu %v0, 4, %s43
+	lea %s43, 1024(, %s44)
+	vldu %v1, 4, %s43
+	lea %s43, 1024(, %s45)
+	vldu %v2, 4, %s43
+	lea %s43, 1024(, %s46)
+	vldl.zx %v3, 4, %s43
+	lea %s43, 1024(, %s47)
+	vldu %v4, 4, %s43
+	vfmk.w.gt %vm1, %v3
+	vfmsb.s %v4, %v0, %v1, %v2, %vm1
+	lea %s43, 1024(, %s48)
+	vstu %v4, 4, %s43
+	adds.w.sx %s42, %s42, %s39
+	lea %s7, 5120(, %s7)
+	adds.w.sx %s41, %s41, %s40
+	brlt.w %s42, %s6, .LBB0_2
+.LBB0_7:
 	b.l.t (, %s10)
 .Lfunc_end0:
 	.size	vfmsbs_vvvvmvl, .Lfunc_end0-vfmsbs_vvvvmvl
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 99c58077b7589ed94981de5c768941146d2435b2)"
+	.ident	"clang version 12.0.0 (git@github.com:sx-aurora-dev/llvm-project.git 93757b8d0fb62b570c17ae51ba4460552664f85c)"
 	.section	".note.GNU-stack","",@progbits

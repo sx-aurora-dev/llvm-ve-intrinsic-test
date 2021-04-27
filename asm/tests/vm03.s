@@ -5,10 +5,7 @@
 	.type	_Z4funcv,@function
 _Z4funcv:                               # @_Z4funcv
 # %bb.0:
-	lvm %vm1, 0, (0)1
-	lvm %vm1, 1, (0)1
-	lvm %vm1, 2, (0)1
-	lvm %vm1, 3, (0)1
+	xorm %vm1, %vm0, %vm0
 	svm %s1, %vm1, 3
 	st %s1, 24(, %s0)
 	svm %s1, %vm1, 2
@@ -46,10 +43,7 @@ _Z10_test_vm03v:                        # @_Z10_test_vm03v
 	lea.sl %s12, _Z4funcv@hi(, %s0)
 	lea %s0, -32(, %s9)
 	bsic %s10, (, %s12)
-	lvm %vm1, 0, (0)1
-	lvm %vm1, 1, (0)1
-	lvm %vm1, 2, (0)1
-	lvm %vm1, 3, (0)1
+	xorm %vm1, %vm0, %vm0
 	svm %s0, %vm1, 0
 	svm %s1, %vm1, 1
 	or %s0, %s0, %s1
@@ -66,5 +60,5 @@ _Z10_test_vm03v:                        # @_Z10_test_vm03v
 .Lfunc_end1:
 	.size	_Z10_test_vm03v, .Lfunc_end1-_Z10_test_vm03v
                                         # -- End function
-	.ident	"clang version 12.0.0 (git@socsv218.svp.cl.nec.co.jp:ve-llvm/llvm-project.git 99c58077b7589ed94981de5c768941146d2435b2)"
+	.ident	"clang version 12.0.0 (git@github.com:sx-aurora-dev/llvm-project.git 93757b8d0fb62b570c17ae51ba4460552664f85c)"
 	.section	".note.GNU-stack","",@progbits

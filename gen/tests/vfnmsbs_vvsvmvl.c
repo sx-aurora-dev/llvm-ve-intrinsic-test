@@ -7,8 +7,7 @@ void vfnmsbs_vvsvmvl(float* pvx, float* pvy, float sy, float* pvw, unsigned int*
         __vr vm0 = _vel_vldlzx_vssl(4, pvm, l);
         __vm256 vm = _vel_vfmkwgt_mvl(vm0, l);
         __vr pt = _vel_vldu_vssl(4, ppt, l);
-        __vr vx = _vel_vldu_vssl(4, pvx, l);
-        vx = _vel_vfnmsbs_vvsvmvl(vy, sy, vw, vm, pt, l);
+        __vr vx = _vel_vfnmsbs_vvsvmvl(vy, sy, vw, vm, pt, l);
         _vel_vstu_vssl(vx, 4, pvx, l);
         pvx += 256;
         pvy += 256;
